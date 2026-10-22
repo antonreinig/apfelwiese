@@ -5,7 +5,7 @@ import { useSyncExternalStore } from 'react'
 import { gehe } from '../ui/router.ts'
 
 export interface Einwilligung { zweck: 'nutzung' | 'verbesserung'; erteilt: boolean; zeit: string; textVersion: string }
-export interface KontoDaten { uid: string; email: string; erstellt: string; einwilligungen: Einwilligung[] }
+export interface KontoDaten { uid: string; email: string; erstellt: string; einwilligungen: Einwilligung[]; betreiber?: boolean }
 
 /** Fassung der Texte, denen zugestimmt wird; bei inhaltlicher Änderung erhöhen */
 export const TEXT_VERSION = '2026-10-22'
@@ -26,7 +26,12 @@ async function api<T>(pfad: string, init: RequestInit = {}): Promise<T> {
   // ohne Server (z. B. Entwicklungsserver) kommt statt JSON die App-Seite zurück
   if (!(r.headers.get('content-type') ?? '').includes('application/json')) throw Object.assign(new Error('Server nicht erreichbar'), { status: 503 })
   const d = await r.json().catch(() => ({}))
-  if (!r.ok) throw Object.assign(new Error((d as { fehler?: string }).fehler ?? `Fehler ${r.status}`), { status: r.status })
+  if (!r.ok) {
+    // eigene Meldung der API, sonst Firewall (Mengenbegrenzung) oder Serverfehler
+    const meldung = (d as { fehler?: string }).fehler
+      ?? (r.status === 403 || r.status === 429 ? 'Zu viele Anfragen in kurzer Zeit. Bitte in einigen Minuten erneut versuchen.' : `Fehler ${r.status}`)
+    throw Object.assign(new Error(meldung), { status: r.status })
+  }
   return d as T
 }
 export { api as kontoApi }

@@ -98,13 +98,20 @@ Für eigene Bäume meldest du dich mit deiner E-Mail-Adresse an, ohne Passwort: 
 
 Die Aufbereitung beschreibt [`daten/README.md`](daten/README.md). [`app/scripts/baue-sorten.ts`](app/scripts/baue-sorten.ts) führt alles zu den Dateien der App zusammen.
 
+### Tests und Betrieb
+
+- **Einzeltests** für Merkmalskatalog, Abgleich und 3D-Parameter. Die Bildverarbeitung wird an echten Fotos und einem Video geprüft.
+- **API-Tests** und **Browsertests** (Playwright) gegen die Live-Version. Ein Testkonto meldet sich an, legt einen Baum aus den Beispielfotos an, geht den Rundgang durch und löscht sich wieder.
+- **GitHub Actions** führt die Einzeltests bei jedem Push aus, alle Tests jede Nacht.
+- **Fehlerprotokoll:** Die App meldet unerwartete Fehler an den Server (ohne Inhalte, 30 Tage gespeichert). Der Betreiber sieht sie mit neuen Konten in einer Betriebsübersicht.
+
 ### App und Server
 
 - **Frontend:** Vite, React, TypeScript, three.js, Leaflet. Installierbar als Progressive Web App, die Sortendaten funktionieren auch ohne Netz.
 - **Server:** Vercel Functions in Frankfurt, dazu ein privater Vercel-Blob-Speicher.
   - Anmeldung per E-Mail-Code, die Sitzung steckt in einem signierten HttpOnly-Cookie.
   - Fotos gehen per kurzlebiger, auf einen Pfad beschränkter Upload-URL direkt in den Speicher.
-  - Luftbildkacheln (Esri) und Sortenbilder (Wikimedia Commons) holt eine eigene Funktion ab. Dadurch erreichen die IP-Adressen der Nutzer diese Dienste nicht.
+  - Luftbildkacheln (Esri), Sortenbilder (Wikimedia Commons) und Seiten alter Pomologien (Internet Archive) holt eine eigene Funktion ab. Dadurch erreichen die IP-Adressen der Nutzer diese Dienste nicht.
 - **Auf dem Gerät:** Die App arbeitet lokal in IndexedDB und gleicht im Hintergrund mit dem Server ab.
 
 ---

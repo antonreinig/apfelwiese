@@ -189,7 +189,10 @@ function BaumZuordnen({ sorte }: { sorte: Sorte }) {
   )
 }
 
-/** Wikimedia-Bilder über die eigene Domain laden (vercel.json), damit die IP der Nutzer nicht in die USA geht */
+/** Bilder fremder Server über die eigene Domain laden (vercel.json, api/kachel.ts), damit die IP der Nutzer nicht in die USA geht */
 function bildUrl(u: string) {
-  return u.replace(/^https:\/\/upload\.wikimedia\.org\//, '/wm/')
+  return u
+    .replace(/^https:\/\/upload\.wikimedia\.org\//, '/wm/')
+    .replace(/^https:\/\/thumb\.wikimedia\.org\//, '/wmt/')
+    .replace(/^https:\/\/archive\.org\//, '/ia/')
 }

@@ -4,8 +4,9 @@
 import { json, fehler, herkunftOk, koerper } from './_lib/http.js'
 import { angemeldet, type Einwilligung, type Konto } from './_lib/sitzung.js'
 import { aendereAtomar } from './_lib/speicher.js'
+import { mitProtokoll } from './_lib/protokoll.js'
 
-export async function POST(req: Request) {
+async function post(req: Request) {
   if (!herkunftOk(req)) return fehler(403, 'Herkunft nicht erlaubt')
   const k = await angemeldet(req)
   if (k instanceof Response) return k
@@ -19,3 +20,5 @@ export async function POST(req: Request) {
   if (!neu) return fehler(401, 'Sitzung abgelaufen')
   return json({ einwilligungen: neu.einwilligungen })
 }
+
+export const POST = mitProtokoll('einwilligung', post)

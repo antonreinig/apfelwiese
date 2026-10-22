@@ -7,11 +7,12 @@ import { issueSignedToken } from '@vercel/blob'
 import { json, fehler, herkunftOk, koerper } from './_lib/http.js'
 import { angemeldet, nutzungAkzeptiert } from './_lib/sitzung.js'
 import { FOTO_MUSTER, imLimit } from './_lib/speicher.js'
+import { mitProtokoll } from './_lib/protokoll.js'
 
 const MAX_BYTES = 30 * 1024 * 1024
 const TYPEN = ['image/jpeg', 'image/png', 'image/webp', 'image/heic', 'image/heif']
 
-export async function POST(req: Request) {
+async function post(req: Request) {
   if (!herkunftOk(req)) return fehler(403, 'Herkunft nicht erlaubt')
   const k = await angemeldet(req)
   if (k instanceof Response) return k
@@ -41,3 +42,5 @@ export async function POST(req: Request) {
     return fehler(400, 'Upload nicht erlaubt')
   }
 }
+
+export const POST = mitProtokoll('foto-hochladen', post)

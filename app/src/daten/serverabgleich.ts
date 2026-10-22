@@ -5,6 +5,7 @@
 import { get, set, del, clear } from 'idb-keyval'
 import { uploadPresigned } from '@vercel/blob/client'
 import { setzeServerHaken, alleBaeume, ersetzeBaeume, baeumeGeladen, ladeFotoLokal, type Baum } from './baeume.ts'
+import { meldeFehler } from '../ui/protokoll.ts'
 import { kontoApi, kontoJetzt, bereit, abmelden as kontoAbmelden, setzeAbmeldeHaken } from './konto.ts'
 
 const HOCHGELADEN = 'sync-fotos' // Set der Fotoschlüssel, die schon auf dem Server liegen
@@ -71,6 +72,7 @@ async function abarbeiten() {
     setzeStatus({ laeuft: false, zuletzt: new Date().toISOString() })
   } catch (e) {
     setzeStatus({ laeuft: false, fehler: (e as Error).message })
+    if (navigator.onLine) meldeFehler('upload', e)
     zeitgeber = setTimeout(abarbeiten, 30_000) // später erneut
   }
 }
@@ -120,6 +122,7 @@ export async function synchronisieren() {
     setzeStatus({ laeuft: false, zuletzt: new Date().toISOString() })
   } catch (e) {
     setzeStatus({ laeuft: false, fehler: (e as Error).message })
+    if (navigator.onLine) meldeFehler('abgleich', e)
   }
 }
 

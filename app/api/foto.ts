@@ -4,8 +4,9 @@ import { issueSignedToken, presignUrl } from '@vercel/blob'
 import { json, fehler } from './_lib/http.js'
 import { angemeldet } from './_lib/sitzung.js'
 import { FOTO_MUSTER } from './_lib/speicher.js'
+import { mitProtokoll } from './_lib/protokoll.js'
 
-export async function GET(req: Request) {
+async function get(req: Request) {
   const k = await angemeldet(req)
   if (k instanceof Response) return k
   const key = new URL(req.url).searchParams.get('k') ?? ''
@@ -16,3 +17,5 @@ export async function GET(req: Request) {
   const { presignedUrl } = await presignUrl(token, { operation: 'get', pathname, validUntil: gueltigBis, access: 'private' })
   return json({ url: presignedUrl })
 }
+
+export const GET = mitProtokoll('foto', get)

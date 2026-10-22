@@ -60,12 +60,24 @@
     {
       "source": "/wm/:pfad(.*)",
       "destination": "/api/kachel?art=wm&p=:pfad"
+    },
+    {
+      "source": "/wmt/:pfad(.*)",
+      "destination": "/api/kachel?art=wmt&p=:pfad"
+    },
+    {
+      "source": "/ia/:pfad(.*)",
+      "destination": "/api/kachel?art=ia&p=:pfad"
     }
   ],
   "crons": [
     {
       "path": "/api/aufraeumen",
       "schedule": "7 * * * *"
+    },
+    {
+      "path": "/api/tagesbericht",
+      "schedule": "0 6 * * *"
     }
   ],
   "redirects": [

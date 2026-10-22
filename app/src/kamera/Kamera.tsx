@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { bewerteBefund, eckenBewegung, GRENZEN, type Blattbefund, type Hinweis } from './blatterkennung.ts'
 import BlattWorker from './blattWorker.ts?worker'
+import { meldeFehler } from '../ui/protokoll.ts'
 
 // Kamera mit Live-Erkennung des A4-Blatts. Führt mit Hinweisen, bis alle vier Ecken im Bild
 // sind und das Handy gerade über dem Blatt liegt, und löst dann selbst aus.
@@ -81,6 +82,7 @@ export function Kamera({ onAufnahme, onAbbruch, titel, testfeed }: Props) {
         const alle = await navigator.mediaDevices.enumerateDevices()
         if (aktiv) setGeraete(alle.filter((d) => d.kind === 'videoinput'))
       } catch (e) {
+        if (!(e instanceof Error && e.name === 'NotAllowedError')) meldeFehler('kamera', e)
         setFehler(e instanceof Error && e.name === 'NotAllowedError'
           ? 'Kein Zugriff auf die Kamera. Erlaube den Zugriff in den Einstellungen oder nimm die Fotos mit der Kamera-App auf.'
           : 'Die Kamera lässt sich nicht starten. Nimm die Fotos mit der Kamera-App auf.')

@@ -14,6 +14,7 @@ import { gehe, zurueck } from '../ui/router.ts'
 import { Zurueck, Kreuz, Kamera as KameraSymbol, Foto, Ort, Pfeil } from '../ui/symbole.tsx'
 import { Skizze } from '../ui/Skizze.tsx'
 import { MerkmalChips } from '../ui/MerkmalChips.tsx'
+import { meldeFehler } from '../ui/protokoll.ts'
 
 // Ablauf: Baum anlegen → vier Fotos (je mit Prüfung) → Fragen → Ergebnis mit 3D-Modell und Abgleich
 
@@ -97,6 +98,7 @@ export default function BestimmenSeite({ baumId }: { baumId?: string }) {
         blatt: blatt ?? undefined, blattUrl: blatt ? URL.createObjectURL(blatt) : undefined,
       })
     } catch (e) {
+      meldeFehler('messung', e, `Foto ${i + 1}`)
       if (gilt()) setzeFoto(i, { ...f, fehler: e instanceof Error ? e.message : String(e) })
     }
   }
@@ -376,6 +378,7 @@ function Ergebnis({ fotos, messung, angaben, saat, speichern }: {
   const sichern = async (k?: Kandidat, danach?: string) => {
     setLaeuft(true); setFehler('')
     try { await speichern(k, danach) } catch (e) {
+      meldeFehler('sonstiges', e, 'Baum speichern')
       setFehler(`Speichern fehlgeschlagen: ${e instanceof Error ? e.message : e}. Ist der Speicher des Geräts voll?`)
       setLaeuft(false)
     }

@@ -3,8 +3,9 @@
 import { json, fehler, herkunftOk, koerper } from './_lib/http.js'
 import { angemeldet, abmeldeCookie, type Konto } from './_lib/sitzung.js'
 import { aendereAtomar } from './_lib/speicher.js'
+import { mitProtokoll } from './_lib/protokoll.js'
 
-export async function POST(req: Request) {
+async function post(req: Request) {
   if (!herkunftOk(req)) return fehler(403, 'Herkunft nicht erlaubt')
   const b = await koerper<{ ueberall?: boolean }>(req, 256)
   if (b?.ueberall) {
@@ -13,3 +14,5 @@ export async function POST(req: Request) {
   }
   return json({ ok: true }, 200, { 'set-cookie': abmeldeCookie() })
 }
+
+export const POST = mitProtokoll('abmelden', post)

@@ -23,8 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
-# Testvideo nur lokal
-public/testfeed.mp4
 .vercel
 dev-dist
 .env*
+
+# Playwright
+test-results/
+playwright-report/

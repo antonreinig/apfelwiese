@@ -22,6 +22,8 @@ __pycache__/
 *.HEIC
 *.heic
 *.mp4
+# kleines Testvideo für die Blatterkennung (Tests)
+!app/public/testfeed.mp4
 
 # Fremde Literatur (Urheberrecht) und Ablagen
 *.pdf

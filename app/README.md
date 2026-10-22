@@ -21,6 +21,18 @@ Mit `APFEL_API=live` entstehen echte Konten und Daten auf dem Live-Server. Testk
 
 Testvideo als Kamerabild: `public/testfeed.mp4` (nur lokal, nicht im Deployment) und `?testfeed` an die URL hängen, z. B. `http://localhost:5174/?testfeed#/neu`.
 
+## Tests
+
+```bash
+npm test                 # Einzeltests (node:test): Katalog, Abgleich, 3D-Parameter, Messung, Blatterkennung (ffmpeg nötig)
+npm run test:api         # API gegen BASIS_URL (Standard https://apfelwiese.app), mit RESEND_API_KEY inkl. Testkonto
+npm run test:e2e         # Browsertests mit Playwright (lokal mit installiertem Chrome)
+npm run pruefen          # vor dem Deployment: Typprüfung, Einzeltests, Build
+npm run pruefen:live     # nach dem Deployment: API- und Browsertests gegen die Live-Version
+```
+
+Das Testkonto ist `delivered@resend.dev`. Den Code liest der Test über die Resend-API, am Ende löscht er das Konto. `RESEND_API_KEY` liegt lokal in `.env.local`, bei GitHub als Secret. Die Browsertests prüfen alle Tabs auf Skriptfehler und Verstöße gegen die Sicherheitsregeln. Sie stellen auch den Fall nach, dass nach einem Update ein Teil der App fehlt. Mit Konto gehen sie den ganzen Ablauf durch: Anmelden, Baum aus den Beispielfotos, Rundgang bis „Fertig“, Platz auf der Wiese, Konto löschen.
+
 ## Aufbau
 
 | Ordner/Datei | Inhalt |
@@ -37,11 +49,12 @@ Testvideo als Kamerabild: `public/testfeed.mp4` (nur lokal, nicht im Deployment)
 | `src/kamera/` | Live-Blatterkennung, Kamera, Messung per Code (Entzerren, Weißabgleich, Freistellen, Maße, Farben, Ausschnitte), Worker |
 | `src/seiten/` | Äpfel (`Wiese.tsx`), Baumblatt, Bestimmen, Rundgang, Angleichen, Sorten, Sortenporträt, Wiese (`Karte.tsx`), Anmelden, Info, Installieren, Rückmeldung, Rechtliches; Entwicklerseiten Test3d, TestStielKelch, Vergleich (nur im Dev-Server) |
 | `src/ui/` | Navigation, Router, Symbole, Einführung, Kontopflicht, Übernahme-Dialog, Chips, Leuchtkasten … |
-| `api/` | Vercel Functions: `anmelden`, `bestaetigen`, `anfrage`, `ich`, `abmelden`, `einwilligung`, `baeume`, `foto-hochladen`, `foto`, `konto`, `rueckmeldung`, `kachel` (Proxy für Luftbild und Wikimedia), `aufraeumen` (Cron); gemeinsame Hilfen in `api/_lib/` |
-| `vercel.json` | Region fra1, Sicherheits-Header (CSP), Umleitungen für Luftbild/Wikimedia auf `api/kachel`, Weiterleitung der alten Domain, Cron |
+| `api/` | Vercel Functions: `anmelden`, `bestaetigen`, `anfrage`, `ich`, `abmelden`, `einwilligung`, `baeume`, `foto-hochladen`, `foto`, `konto`, `rueckmeldung`, `protokoll` (Fehler aus der App), `betrieb` (Betriebsübersicht), `kachel` (Proxy für Luftbild, Wikimedia und Internet Archive), `aufraeumen` und `tagesbericht` (Cron); gemeinsame Hilfen in `api/_lib/` |
+| `vercel.json` | Region fra1, Sicherheits-Header (CSP), Umleitungen `/kacheln/luftbild`, `/wm`, `/wmt`, `/ia` auf `api/kachel`, Weiterleitung der alten Domain, Cron |
 | `scripts/baue-sorten.ts` | Führt `../daten/` (NFC, deutsche Quellen, Bilder) zu `public/sorten/` zusammen |
 | `scripts/baue-anleitung.ts` | Erzeugt `public/anleitung/foto1–4.jpg` aus den Beispielfotos |
-| `scripts/test-blatterkennung.ts`, `test-messung.ts` | Tests der Blatterkennung (Video) und Messung (Beispielfotos); Aufruf im Dateikopf |
+| `scripts/test-blatterkennung.ts`, `test-messung.ts` | Ausgabe der Blatterkennung und Messung zum Ansehen; Aufruf im Dateikopf |
+| `tests/` | automatische Tests (`einheit/`, `api/`, `e2e/`), Konfiguration in `playwright.config.ts` |
 
 ## Daten im Blob-Speicher (`apfelwiese-fotos`, privat, fra1)
 
@@ -50,6 +63,8 @@ auth/anfragen/<id>.json        laufende Anmeldung (15 min gültig, Cron löscht 
 auth/zaehler/<hash>.json       Mengenlimits (Cron löscht nach 25 h)
 auth/index/<hash>.json         E-Mail-Hash → Kontokennung
 auth/geloescht/<uid>.json      Marke für den Cron, Reste eines gelöschten Kontos zu entfernen
+log/fehler/<datum>/<id>.json   Fehler aus App und Server (Cron löscht nach 30 Tagen)
+log/ereignisse/<datum>/<id>.json neue und gelöschte Konten, Rückmeldungen (30 Tage)
 n/<uid>/konto.json             Konto, Einwilligungen, Sitzungsversion
 n/<uid>/baeume/<baumId>.json   Bäume ohne Bilddaten
 n/<uid>/f/foto-<id>            Fotos (lokaler Schlüssel foto:<id>)
@@ -72,7 +87,8 @@ Danach `MODELL_VERSION` in `src/apfel3d/modell.ts` erhöhen, wenn sich das Ausse
 | `AW_GEHEIMNIS` | Signatur der Sitzungscookies |
 | `AW_PFEFFER` | geheimer Zusatz für Hashes von E-Mail- und IP-Adressen (nicht ändern, sonst finden Nutzer ihr Konto nicht mehr) |
 | `ARCGIS_KEY` | Esri-Luftbild, nur auf dem Server (`api/kachel.ts`); lokal in `.env.local` für den Dev-Proxy |
-| `CRON_SECRET` | Schutz des stündlichen Aufräum-Jobs |
+| `CRON_SECRET` | Schutz der Cron-Jobs (Aufräumen stündlich, Tagesbericht 06:00 UTC) |
+| `BETREIBER_EMAILS` | Konten mit Zugriff auf die Betriebsseite `#/betrieb` (kommagetrennt) |
 
 ## Betrieb
 
@@ -86,4 +102,4 @@ Danach `MODELL_VERSION` in `src/apfel3d/modell.ts` erhöhen, wenn sich das Ausse
 npx vercel@latest deploy --prod --yes --scope anton-reinigs-projects
 ```
 
-Vorher: beide Typprüfungen, `npm run build`, im Browser testen.
+Vorher `npm run pruefen`, danach `npm run pruefen:live`.

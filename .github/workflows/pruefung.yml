@@ -1,0 +1,57 @@
+# Automatische Prüfung der Apfelwiese
+# - bei jedem Push: Typprüfung, Einzeltests (Katalog, Abgleich, 3D-Parameter, Bildverarbeitung), Build
+# - jede Nacht und von Hand: zusätzlich API- und Browsertests gegen die Live-Version mit Testkonto
+name: Prüfung
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  einheit:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: npm ci
+      - run: npm run pruefen
+
+  live:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    env:
+      CI: 'true'
+      BASIS_URL: https://apfelwiese.app
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run pruefen:live
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-bericht
+          path: |
+            app/playwright-report
+            app/test-results
+          retention-days: 14

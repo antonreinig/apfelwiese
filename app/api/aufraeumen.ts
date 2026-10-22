@@ -1,9 +1,11 @@
 // Stündlicher Cron-Job: abgelaufene Anmeldeanfragen (nach 1 Stunde), alte Zähler für den
-// Missbrauchsschutz (nach 25 Stunden) und Reste gelöschter Konten entfernen.
+// Missbrauchsschutz (nach 25 Stunden), Betriebsprotokoll (nach 30 Tagen) und Reste gelöschter
+// Konten entfernen.
 
 import { list } from '@vercel/blob'
 import { json, fehler } from './_lib/http.js'
 import { loesche, alleUnter } from './_lib/speicher.js'
+import { mitProtokoll } from './_lib/protokoll.js'
 
 async function aelterAls(prefix: string, ms: number) {
   const grenze = Date.now() - ms
@@ -17,12 +19,13 @@ async function aelterAls(prefix: string, ms: number) {
   return pfade
 }
 
-export async function GET(req: Request) {
+async function get(req: Request) {
   const geheim = process.env.CRON_SECRET
   if (!geheim || req.headers.get('authorization') !== `Bearer ${geheim}`) return fehler(401, 'Nicht erlaubt')
   const weg = [
     ...(await aelterAls('auth/anfragen/', 3600_000)),
     ...(await aelterAls('auth/zaehler/', 25 * 3600_000)),
+    ...(await aelterAls('log/', 30 * 24 * 3600_000)),
   ]
   // gelöschte Konten: nach 15 Minuten (alle Upload-URLs abgelaufen) alles unter n/<uid>/ entfernen
   for (const marke of await aelterAls('auth/geloescht/', 15 * 60_000)) {
@@ -33,3 +36,5 @@ export async function GET(req: Request) {
   await loesche(weg)
   return json({ geloescht: weg.length })
 }
+
+export const GET = mitProtokoll('aufraeumen', get)

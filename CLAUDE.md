@@ -28,7 +28,12 @@ PWA zur Bestimmung und Dokumentation alter Apfelsorten aus vier standardisierten
 
 ## Arbeitsweise mit dem Nutzer
 
-- Der Nutzer (Anton) will fertige, getestete Stände **direkt live** haben: typprüfen, bauen, im Browser testen, mit `--prod` deployen, dann berichten.
+- Der Nutzer (Anton) will fertige, getestete Stände **direkt live** haben. Ablauf für jedes Deployment:
+  1. `npm run pruefen` (Typprüfung, Einzeltests, Build)
+  2. `npx vercel@latest deploy --prod --yes --scope anton-reinigs-projects`
+  3. `npm run pruefen:live` (API- und Browsertests gegen apfelwiese.app mit Testkonto)
+  4. berichten
+- Manuelle Tests am Gerät will der Nutzer vorerst nicht. Was sich nur am iPhone prüfen lässt, nenne ich als Grenze.
 - **Git:** Repository im Hauptordner, Branch `main`, öffentlich auf GitHub: https://github.com/antonreinig/apfelwiese (seit 22.10.2026). Committen und pushen nur, wenn der Nutzer darum bittet. Alles im Repository ist öffentlich: keine Schlüssel, keine privaten Kontaktdaten (auch nicht in User-Agents von Skripten). `.gitignore` hält Geheimnisse (`.env*`, `.vercel/`), Videos, PDFs und große Rohdaten (`daten/roh/bilder`, `daten/roh/de`) heraus.
 - Er testet auf dem iPhone. Ich kann nur im Browser-Pane mit Handy-Ansicht testen; was nur am Gerät prüfbar ist, sage ich dazu.
 - Er gibt große Aufgaben auch über Nacht ab und erwartet, dass weitergearbeitet wird.
@@ -53,6 +58,23 @@ PWA zur Bestimmung und Dokumentation alter Apfelsorten aus vier standardisierten
   - Stündlicher Cron `api/aufraeumen.ts`.
   - Sicherheitsprüfung vom 22.10.2026, Ergebnisse in `docs/projektstand.md`.
 
+## Tests und Betrieb
+
+- **Tests** in `app/tests/`:
+  - `einheit/`: Katalog, Abgleich, 3D-Parameter, Messung an den Beispielfotos, Blatterkennung im Testvideo; braucht ffmpeg.
+  - `api/`: gegen `BASIS_URL`, Standard ist die Live-Version.
+  - `e2e/`: Playwright mit dem installierten Chrome. In CI kommt Chromium dazu, lokal wird wegen knappen Speicherplatzes kein Browser heruntergeladen.
+  - Neue Funktionen bekommen einen Test in der passenden Ebene.
+- **GitHub Actions** (`.github/workflows/pruefung.yml`): Bei jedem Push läuft `pruefen`, jede Nacht um 03:30 UTC zusätzlich `pruefen:live`. Der Resend-Schlüssel liegt dort als Secret `RESEND_API_KEY`; GitHub schickt bei Fehlschlag eine Mail.
+- **Firewall-Limit** „Anmeldung begrenzen“: 20 Anfragen je 10 Minuten und IP auf `/api/anmelden`, `/api/bestaetigen`, `/api/rueckmeldung`. Mehrere Testläufe hintereinander stoßen daran (Antwort 403 von Vercel); dann 10 Minuten warten.
+- **Fehlerprotokoll:**
+  - Die App meldet unerwartete Fehler an `/api/protokoll` (`src/ui/protokoll.ts`, Fehlergrenze in `src/ui/Fehlergrenze.tsx`).
+  - API-Routen sind mit `mitProtokoll` umhüllt (`api/_lib/protokoll.ts`).
+  - Ereignisse (neues Konto, Löschung, Rückmeldung) liegen unter `log/` im Blob-Speicher und werden nach 30 Tagen gelöscht.
+- **Betriebsseite** `#/betrieb`: Konten, Ereignisse, gruppierte Fehler mit Ablauf, Mail-Kontingent. Nur sichtbar für E-Mails in `BETREIBER_EMAILS`. Der Cron `api/tagesbericht.ts` (06:00 UTC) schickt eine Mail, wenn es Fehler oder Ereignisse gab.
+- **Vercel-Logs** (etwa 1 Tag): `npx vercel@latest logs requests --since 24h --limit 5000 --json --scope anton-reinigs-projects` zeigt jede Anfrage mit Pfad, Status, Land und Browser.
+- **Nachladefehler nach Updates:** Jeder Tab ist eine eigene Datei mit wechselndem Namen. Ist eine alte Version geöffnet, lädt die App einmal neu (`einmalNeuLaden`); die Fehlergrenze verhindert leere Seiten.
+
 ## Befehle (aus `app/`)
 
 ```bash
@@ -61,6 +83,8 @@ APFEL_API=live npm run dev -- --port 5175        # Dev-Server mit /api → apfel
 npx tsc -p tsconfig.app.json --noEmit            # Typprüfung Frontend
 npx tsc -p api/tsconfig.json                     # Typprüfung API
 npm run build                                    # Build nach dist/
+npm run pruefen                                  # Typprüfung beider Teile, Einzeltests, Build
+npm run pruefen:live                             # API- und Browsertests gegen BASIS_URL (Standard apfelwiese.app)
 npx vercel@latest deploy --yes --scope anton-reinigs-projects           # Vorschau (geschützt)
 npx vercel@latest deploy --prod --yes --scope anton-reinigs-projects    # live
 node --experimental-strip-types scripts/baue-sorten.ts                  # Sortendaten neu erzeugen

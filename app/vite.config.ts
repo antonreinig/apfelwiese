@@ -12,6 +12,8 @@ export default defineConfig({
       ...(process.env.APFEL_API === 'live'
         ? { '/api': { target: 'https://apfelwiese.app', changeOrigin: true, headers: { origin: 'https://apfelwiese.app' }, cookieDomainRewrite: '' } }
         : {}),
+      '/ia': { target: 'https://archive.org', changeOrigin: true, followRedirects: true, rewrite: (p) => p.replace(/^\/ia/, '') },
+      '/wmt': { target: 'https://thumb.wikimedia.org', changeOrigin: true, rewrite: (p) => p.replace(/^\/wmt/, '') },
       '/wm': { target: 'https://upload.wikimedia.org', changeOrigin: true, rewrite: (p) => p.replace(/^\/wm/, '') },
       '/kacheln/luftbild': {
         target: 'https://ibasemaps-api.arcgis.com', changeOrigin: true,
@@ -41,12 +43,12 @@ export default defineConfig({
         ],
       },
       workbox: {
-        navigateFallbackDenylist: [/^\/api\//, /^\/wm\//, /^\/kacheln\//],
+        navigateFallbackDenylist: [/^\/api\//, /^\/wmt?\//, /^\/ia\//, /^\/kacheln\//],
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         runtimeCaching: [
           { urlPattern: /\/sorten\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'sorten' } },
-          { urlPattern: /\/wm\//, handler: 'CacheFirst', options: { cacheName: 'bilder', expiration: { maxEntries: 400 } } },
+          { urlPattern: /\/(wmt?|ia)\//, handler: 'CacheFirst', options: { cacheName: 'bilder', expiration: { maxEntries: 400 } } },
           { urlPattern: /^https:\/\/[abc]?\.?tile\.openstreetmap\.org\//, handler: 'CacheFirst', options: { cacheName: 'karte', expiration: { maxEntries: 500 } } },
         ],
       },

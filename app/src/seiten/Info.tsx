@@ -117,6 +117,7 @@ export default function InfoSeite() {
       <div style={{ marginTop: 20 }}>
         {!istInstalliert() && <Verweis ziel="/installieren">Auf den Home-Bildschirm legen</Verweis>}
         <Verweis ziel="/rueckmeldung">Rückmeldung geben</Verweis>
+        {konto.status === 'angemeldet' && konto.konto.betreiber && <Verweis ziel="/betrieb">Betrieb: Konten, Fehler, Ereignisse</Verweis>}
         <a className="zeile" href="#/" onClick={() => { einfuehrungZuruecksetzen(); setTimeout(() => location.reload(), 50) }} style={{ padding: '12px 0' }}><span className="grow">Einführung noch einmal ansehen</span><Pfeil style={{ width: 18, height: 18, color: 'var(--bleistift)' }} /></a>
         <Verweis ziel="/impressum">Impressum</Verweis>
         <Verweis ziel="/datenschutz">Datenschutz</Verweis>

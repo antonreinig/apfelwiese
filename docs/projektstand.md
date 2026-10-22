@@ -148,6 +148,7 @@ Prototyp als PWA, live unter https://apfelwiese.app (alte Adresse apfelwiese.ver
 | Konto und Server | umgesetzt 22.10.2026: Anmeldung per E-Mail-Code/Link, privater Speicher in Frankfurt, Abgleich zwischen Geräten, Einwilligungen, Kontolöschung, Rückmeldung, Impressum/Datenschutz/Nutzungsbedingungen, Sicherheitsprüfung mit Fixes |
 | Wiese (Karte) | umgesetzt 22.10.2026: Luftbild (Esri über eigenen Proxy), Ortssuche, gemerkter Ausschnitt, Äpfel als Marker, Verschieben nur nach „Verschieben“ |
 | Einführung, Home-Bildschirm-Anleitung | umgesetzt 22.10.2026 |
+| Tests und Betrieb | umgesetzt 22.10.2026: Einzeltests, API- und Browsertests (Playwright), GitHub Actions bei jedem Push und nachts gegen die Live-Version, Fehlerprotokoll aus App und Server, Betriebsseite, Tagesbericht per Mail |
 
 ## Entscheidungen vom 22.10.2026
 
@@ -169,7 +170,7 @@ Prototyp als PWA, live unter https://apfelwiese.app (alte Adresse apfelwiese.ver
 
 ## Offene Punkte und nächste Schritte (Stand 22.10.2026)
 
-**Vor dem Weitergeben an Testpersonen (am iPhone prüfen):**
+**Am iPhone noch nicht geprüft** (manuelle Tests will der Nutzer vorerst nicht; Fehler zeigt jetzt das Fehlerprotokoll):
 - Fotografieren im Safari: Zoom und Objektivwahl, Live-Erkennung, automatisches Auslösen, Kunstlicht.
 - Abstand oben (`--oben` in `app/src/styles.css`, 22 px unter der sicheren Zone): Greift die Unschärfe der Statusleiste (iOS 26) noch in Bedienelemente?
 - Anmeldung in der App auf dem Home-Bildschirm mit Code; Upload großer Kamerafotos; Neigungssensor.

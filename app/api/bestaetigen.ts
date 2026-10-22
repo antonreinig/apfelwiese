@@ -7,6 +7,7 @@ import { json, fehler, herkunftOk, koerper, clientIp, text } from './_lib/http.j
 import { liesJson, schreibeJson, loesche, aendereAtomar, imLimit, anzahlIm } from './_lib/speicher.js'
 import { sitzungCookie, type Konto } from './_lib/sitzung.js'
 import type { Anfrage } from './anmelden.js'
+import { mitProtokoll, protokolliereEreignis } from './_lib/protokoll.js'
 
 const MAX_VERSUCHE = 5
 const MAX_FEHLER_TAG = 10
@@ -17,7 +18,7 @@ function gleich(a: string, b: string) {
 }
 const hash = (t: string) => createHash('sha256').update(t).digest('base64url')
 
-export async function POST(req: Request) {
+async function post(req: Request) {
   if (!herkunftOk(req)) return fehler(403, 'Herkunft nicht erlaubt')
   if (!(await imLimit('bestaetigen-ip:' + clientIp(req), 30, 3600_000))) return fehler(429, 'Zu viele Versuche. Bitte später erneut versuchen.')
   const b = await koerper<{ anfrage?: unknown; code?: unknown; token?: unknown }>(req, 1024)
@@ -60,6 +61,9 @@ export async function POST(req: Request) {
     konto = { uid, email: a.email, erstellt: new Date().toISOString(), version: 1, einwilligungen: [] }
     await schreibeJson(`n/${uid}/konto.json`, konto, false)
     await schreibeJson(indexPfad, { uid })
+    await protokolliereEreignis('konto-neu', uid)
   }
   return json({ ok: true, neu }, 200, { 'set-cookie': sitzungCookie(konto.uid, konto.version) })
 }
+
+export const POST = mitProtokoll('bestaetigen', post)

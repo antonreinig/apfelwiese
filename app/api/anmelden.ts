@@ -5,6 +5,7 @@ import { randomBytes, randomInt, createHash } from 'node:crypto'
 import { json, fehler, herkunftOk, koerper, clientIp, text, EMAIL_MUSTER, APP_URL } from './_lib/http.js'
 import { schreibeJson, geheimHash, imLimit } from './_lib/speicher.js'
 import { sendeMail, escape } from './_lib/mail.js'
+import { mitProtokoll } from './_lib/protokoll.js'
 
 export interface Anfrage {
   emailHash: string
@@ -20,7 +21,7 @@ const GUELTIG_MS = 15 * 60 * 1000
 const STUNDE = 3600_000
 const TAG = 24 * STUNDE
 
-export async function POST(req: Request) {
+async function post(req: Request) {
   if (!herkunftOk(req)) return fehler(403, 'Herkunft nicht erlaubt')
   const b = await koerper<{ email?: unknown }>(req, 1024)
   const email = text(b?.email, 254)?.trim().toLowerCase()
@@ -60,3 +61,5 @@ export async function POST(req: Request) {
   }
   return json({ anfrage: id })
 }
+
+export const POST = mitProtokoll('anmelden', post)

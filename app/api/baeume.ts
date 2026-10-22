@@ -5,6 +5,7 @@ import { json, fehler, herkunftOk, koerper } from './_lib/http.js'
 import { angemeldet, nutzungAkzeptiert } from './_lib/sitzung.js'
 import { liesJson, schreibeJson, loesche, alleUnter, ID_MUSTER } from './_lib/speicher.js'
 import { list } from '@vercel/blob'
+import { mitProtokoll } from './_lib/protokoll.js'
 
 const MAX_BAEUME = 500
 
@@ -36,7 +37,7 @@ function gueltig(b: unknown, id: string): b is BaumDaten {
 
 const serverPfad = (uid: string, key: string) => `n/${uid}/f/${key.replace(':', '-')}`
 
-export async function GET(req: Request) {
+async function get(req: Request) {
   const k = await angemeldet(req)
   if (k instanceof Response) return k
   const pfade = await alleUnter(`n/${k.uid}/baeume/`)
@@ -48,7 +49,7 @@ export async function GET(req: Request) {
   return json({ baeume })
 }
 
-export async function PUT(req: Request) {
+async function put(req: Request) {
   if (!herkunftOk(req)) return fehler(403, 'Herkunft nicht erlaubt')
   const k = await angemeldet(req)
   if (k instanceof Response) return k
@@ -73,7 +74,7 @@ export async function PUT(req: Request) {
   return json({ ok: true })
 }
 
-export async function DELETE(req: Request) {
+async function loeschen(req: Request) {
   if (!herkunftOk(req)) return fehler(403, 'Herkunft nicht erlaubt')
   const k = await angemeldet(req)
   if (k instanceof Response) return k
@@ -87,3 +88,7 @@ export async function DELETE(req: Request) {
   }
   return json({ ok: true })
 }
+
+export const GET = mitProtokoll('baeume', get)
+export const PUT = mitProtokoll('baeume', put)
+export const DELETE = mitProtokoll('baeume', loeschen)

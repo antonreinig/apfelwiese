@@ -9,6 +9,7 @@ import { Einfuehrung, einfuehrungOffen } from './ui/Einfuehrung.tsx'
 import { useKonto, bereit } from './daten/konto.ts'
 import { synchronisieren } from './daten/serverabgleich.ts'
 import { Uebernahme } from './ui/Uebernahme.tsx'
+import { Fehlergrenze } from './ui/Fehlergrenze.tsx'
 
 const BaumSeite = lazy(() => import('./seiten/Baum.tsx'))
 const SorteSeite = lazy(() => import('./seiten/Sorte.tsx'))
@@ -23,6 +24,7 @@ const TestStielKelchSeite = lazy(() => import('./seiten/TestStielKelch.tsx'))
 const AnmeldenSeite = lazy(() => import('./seiten/Anmelden.tsx'))
 const InstallierenSeite = lazy(() => import('./seiten/Installieren.tsx'))
 const RueckmeldungSeite = lazy(() => import('./seiten/Rueckmeldung.tsx'))
+const BetriebSeite = lazy(() => import('./seiten/Betrieb.tsx'))
 const ImpressumSeite = lazy(() => import('./seiten/Rechtliches.tsx').then((m) => ({ default: m.ImpressumSeite })))
 const DatenschutzSeite = lazy(() => import('./seiten/Rechtliches.tsx').then((m) => ({ default: m.DatenschutzSeite })))
 const NutzungSeite = lazy(() => import('./seiten/Rechtliches.tsx').then((m) => ({ default: m.NutzungSeite })))
@@ -72,6 +74,7 @@ export default function App() {
   else if (passt('/anmelden', pfad)) { inhalt = <AnmeldenSeite />; mitNavigation = false }
   else if (passt('/installieren', pfad)) inhalt = <InstallierenSeite />
   else if (passt('/rueckmeldung', pfad)) inhalt = <RueckmeldungSeite />
+  else if (passt('/betrieb', pfad)) inhalt = mitKonto(<BetriebSeite />, 'Betrieb')
   else if (passt('/impressum', pfad)) inhalt = <ImpressumSeite />
   else if (passt('/datenschutz', pfad)) inhalt = <DatenschutzSeite />
   else if (passt('/nutzung', pfad)) inhalt = <NutzungSeite />
@@ -84,7 +87,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <Suspense fallback={<div className="seite" />}>{inhalt}</Suspense>
+      <Fehlergrenze schluessel={pfad.split('?')[0]}><Suspense fallback={<div className="seite" />}>{inhalt}</Suspense></Fehlergrenze>
       {mitNavigation && <Navigation pfad={pfad} />}
       <Uebernahme />
       {einfuehrung && !pfad.startsWith('/anmelden') && !/^\/(impressum|datenschutz|nutzung)/.test(pfad) && <Einfuehrung fertig={() => setEinfuehrung(false)} />}

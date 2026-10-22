@@ -73,3 +73,9 @@ export function nutzungAkzeptiert(k: Konto) {
   const letzte = [...k.einwilligungen].reverse().find((e) => e.zweck === 'nutzung')
   return !!letzte?.erteilt
 }
+
+/** Betreiber der App (E-Mails in BETREIBER_EMAILS, kommagetrennt): sieht die Betriebsübersicht */
+export function istBetreiber(k: Konto) {
+  const liste = (process.env.BETREIBER_EMAILS ?? '').split(',').map((x) => x.trim().toLowerCase()).filter(Boolean)
+  return !!k.email && liste.includes(k.email.toLowerCase())
+}
