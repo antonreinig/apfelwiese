@@ -1,0 +1,21 @@
+relation: https://researchdata.reading.ac.uk/1455/
+title: Characterization and evaluation data from the National Fruit Collection 2025_Apple
+creator: Ordidge, Matt
+creator: Hale, Penny
+description: Data are characterization and evaluation scores and measures collected during the curation of the National Fruit Collection (apple collection). Data were largely collected in line with the published ECPGR Characterization and Evaluation Descriptors for Apple Genetic Resources with additional locally agreed descriptors. The dataset contains scores across 25 traits from 2166 accessions.
+publisher: University of Reading
+date: 2025-09-25
+type: Dataset
+type: NonPeerReviewed
+format: text
+language: en
+rights: ogl
+identifier: https://researchdata.reading.ac.uk/1455/1/NFC_C_E_data_Apple_22_08_25.csv
+format: text
+language: en
+rights: ogl
+identifier: https://researchdata.reading.ac.uk/1455/4/README_Ordidge_Apple_2025.txt
+identifier:   Ordidge, Matt <https://researchdata.reading.ac.uk/view/creators/Ordidge=3AMatt=3A=3A.html> and Hale, Penny <https://researchdata.reading.ac.uk/view/creators/Hale=3APenny=3A=3A.html> (2025): Characterization and evaluation data from the National Fruit Collection 2025_Apple.  University of Reading.   Dataset.   https://doi.org/10.17864/1947.001455 <https://doi.org/10.17864/1947.001455>   
+relation: 10.17864/1947.001455
+language: HASH(0x749fc4c28698)
+

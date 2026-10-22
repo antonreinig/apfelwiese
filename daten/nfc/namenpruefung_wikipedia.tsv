@@ -1,0 +1,83 @@
+nfc_name	deutscher_name	art	ergebnis	artikel	anmerkung
+Ananas Reinette	Ananasrenette	uebersetzung	manuell_bestaetigt	Ananasrenette	Artikel nennt die Umstellung "Reinette Ananas"; Vorgabe im Auftrag
+Gravenstein	Gravensteiner	uebersetzung	bestaetigt	Gravensteiner	
+Belle de Boskoop	Schöner aus Boskoop	uebersetzung	bestaetigt	Schöner aus Boskoop	
+Cox's Orange Pippin	Cox Orange	uebersetzung	bestaetigt	Cox Orange	
+Reinette de Champagne	Champagner Renette	uebersetzung	bestaetigt	Champagnerrenette	
+Reinette Rouge Etoilee	Rote Sternrenette	uebersetzung	manuell_bestaetigt	Rote Sternrenette	Vorgabe im Auftrag; MUNQ 46 enthält "Reinette Étoilée" (INRAE) und "Hvězdnatá reneta" (Tschechien)
+Jacques Lebel	Jakob Lebel	uebersetzung	bestaetigt	Jakob Lebel	
+King of the Pippins	Goldparmäne	uebersetzung	bestaetigt	Goldparmäne	
+Goldparmane	Goldparmäne	schreibweise	bestaetigt	Goldparmäne	
+Duchess of Oldenburg	Charlamowsky	uebersetzung	bestaetigt	Charlamowsky	
+White Transparent	Weißer Klarapfel	uebersetzung	artikel_unsicher	Weißer Klarapfel	Artikel "Weißer Klarapfel": Quellen uneinig, ob Transparent-Sorten Synonyme sind
+Calville Blanc d'Hiver	Weißer Winterkalvill	uebersetzung	bestaetigt	Weißer Winter-Calville	
+Calville Rouge d'Hiver	Roter Winterkalvill	uebersetzung	manuell_bestaetigt	Roter Winter-Calvill	Artikel "Roter Winter-Calvill" nennt Synonym "Winterkalvill"; wörtliche Entsprechung des französischen Namens
+Blenheim Orange	Goldrenette von Blenheim	uebersetzung	bestaetigt	Goldrenette von Blenheim	
+Baumann's Reinette	Baumanns Renette	uebersetzung	manuell_bestaetigt	Baumanns Renette	Artikel nennt "Reinette rouge d’hiver Baumann"; MUNQ-Vorzugsname "Reinette Baumann"
+Reinette Coulon	Coulons Renette	uebersetzung	kein_artikel		
+Landsberger Reinette	Landsberger Renette	uebersetzung	bestaetigt	Landsberger Renette	
+Harberts Reinette	Harberts Renette	uebersetzung	bestaetigt	Harberts Renette	
+Von Zuccalmaglios Renette	Zuccalmaglios Renette	uebersetzung	bestaetigt	Zuccalmaglios Renette	
+Orleans Reinette	Orleansrenette	uebersetzung	manuell_bestaetigt	Orleansrenette	Artikel "Orleansrenette" nennt Synonym "Reinette d'Orleans"
+Zabergau Renette	Zabergäu-Renette	schreibweise	bestaetigt	Zabergäurenette	
+Ribston Pippin	Ribston Pepping	uebersetzung	bestaetigt	Ribston Pepping	
+Peasgood's Nonsuch	Goldrenette von Peasgood	uebersetzung	bestaetigt	Goldrenette von Peasgood	Artikeltitel ist "Goldrenette von Peasgood", "Peasgoods Sondergleichen" ist dort Synonym
+Worcester Pearmain	Worcester Parmäne	uebersetzung	verworfen	Worcester Pearmain	deutschsprachiger Artikel heißt "Worcester Pearmain"; NFC-Name bleibt
+Adams's Pearmain	Adams Parmäne	uebersetzung	bestaetigt	Adams Parmäne	
+Winter Banana	Winterbananenapfel	uebersetzung	bestaetigt	Winterbananenapfel	
+Rome Beauty	Morgenduft	uebersetzung	kein_artikel		
+Red Astrachan	Roter Astrachan	uebersetzung	bestaetigt	Roter Astrachan	
+Court Pendu Plat	Königlicher Kurzstiel	uebersetzung	kein_artikel		
+Holstein	Holsteiner Cox	uebersetzung	bestaetigt	Holsteiner Cox	
+Bismarck	Bismarckapfel	uebersetzung	bestaetigt	Bismarckapfel	
+Boiken	Boikenapfel	uebersetzung	bestaetigt	Boikenapfel	
+Bohnapfel	Rheinischer Bohnapfel	uebersetzung	bestaetigt	Bohnapfel	
+Berner Rosen	Berner Rosenapfel	uebersetzung	bestaetigt	Berner Rosenapfel	
+Dulmener Rosenapfel	Dülmener Rosenapfel	schreibweise	bestaetigt	Dülmener Herbstrosenapfel	
+Schoner aus Herrnhut	Schöner aus Herrnhut	schreibweise	artikel_ohne_nfc_namen	Schöner von Herrnhut	
+Schoner von Nordhausen	Schöner von Nordhausen	schreibweise	kein_artikel		
+Prinz Albrecht von Preussen	Prinz Albrecht von Preußen	schreibweise	bestaetigt	Prinz Albrecht von Preußen	
+Prinzen Apfel	Prinzenapfel	schreibweise	bestaetigt	Prinzenapfel	
+Finkenwerder Prinz	Finkenwerder Herbstprinz	uebersetzung	bestaetigt	Finkenwerder Herbstprinz	
+Spatbluhender Taffetapfel	Spätblühender Taffetapfel	schreibweise	kein_artikel		
+Weisser Winter Taffetapfel	Weißer Wintertaffetapfel	schreibweise	kein_artikel		
+Gelber Munsterlander Borsdorfer	Gelber Münsterländer Borsdorfer	schreibweise	kein_artikel		
+Roter Munsterlander Borsdorfer	Roter Münsterländer Borsdorfer	schreibweise	kein_artikel		
+Altlander Pfannkuchenapfel	Altländer Pfannkuchenapfel	schreibweise	bestaetigt	Altländer Pfannkuchenapfel	
+Altlander Rosenapfel	Altländer Rosenapfel	schreibweise	kein_artikel		
+Altlander Fettapfel	Altländer Fettapfel	schreibweise	kein_artikel		
+Horneburger Pfannkuchen	Horneburger Pfannkuchenapfel	schreibweise	kein_artikel		
+Gustav's Dauerapfel	Gustavs Dauerapfel	schreibweise	kein_artikel		
+Halberstadter Jungfernapfel	Halberstädter Jungfernapfel	schreibweise	kein_artikel		
+Konigin Sophiensapfel	Königin Sophienapfel	schreibweise	kein_artikel		
+Rhode Island Greening	Grünling von Rhode Island	uebersetzung	kein_artikel		
+Reinette du Canada	Kanadarenette	uebersetzung	bestaetigt	Kanadarenette	
+Schweizer Orange	Schweizer Orangenapfel	uebersetzung	bestaetigt	Schweizer Orangenapfel	
+Jubile d'Argovie	Aargauer Jubiläumsapfel	uebersetzung	kein_artikel		
+Lane's Prince Albert	Lanes Prinz Albert	uebersetzung	kein_artikel		
+Manks Codlin	Eveapfel	uebersetzung	bestaetigt	Eveapfel	Artikeltitel "Eveapfel", Synonyme Manks Küchenapfel, Manks Codlin
+Golden Noble	Gelber Edelapfel	uebersetzung	bestaetigt	Gelber Edelapfel	
+Weisses Seidenhemdchen	Weißes Seidenhemdchen	schreibweise	kein_artikel		
+Wilkenburger Herbstreinette	Wilkenburger Herbstrenette	schreibweise	kein_artikel		
+Weidners Goldreinette	Weidners Goldrenette	schreibweise	kein_artikel		
+Schmidtbergers Rote Reinette	Schmidtbergers Rote Renette	schreibweise	kein_artikel		
+Burchardt's Reinette	Burchardts Renette	schreibweise	kein_artikel		
+Heusgen's Golden Reinette	Heusgens Goldrenette	uebersetzung	kein_artikel		
+Neue Goldparmane	Neue Goldparmäne	schreibweise	kein_artikel		
+Brabant Bellefleur	Brabanter Bellefleur	uebersetzung	kein_artikel		
+Alexander	Kaiser Alexander	uebersetzung	bestaetigt	Kaiser Alexander (Apfel)	
+Transparente de Croncels	Transparent von Croncels	uebersetzung	bestaetigt	Transparent von Croncels	Artikeltitel
+London Pippin	Londoner Pepping	uebersetzung	kein_artikel		
+Mother	Lavanttaler Bananenapfel	uebersetzung	artikel_unsicher	Lavanttaler Bananenapfel	Artikel "Lavanttaler Bananenapfel" nennt "American Mother" mit "angeblich"; NFC führt zwei Akzessionen "Mother"
+Parker's Pippin	Parkers Pepping	uebersetzung	bestaetigt	Parkers Pepping	
+Cox's Pomona	Cox' Pomona	uebersetzung	kein_artikel		
+Krugers Dickstiel	Krügers Dickstiel	schreibweise	bestaetigt	Celler Dickstiel	
+Gewurzluiken	Gewürzluiken	schreibweise	bestaetigt	Gewürzluiken	
+Brettacher Samling	Brettacher	uebersetzung	bestaetigt	Brettacher	
+Royal Jubilee	Grahams Jubiläumsapfel	uebersetzung	kein_artikel		
+Osnabrucker Reinette	Osnabrücker Renette	schreibweise	bestaetigt	Osnabrücker Renette	
+Gruner Calviner	Grüner Calviner	schreibweise	kein_artikel		
+Geheimrat Doktor Oldenburg	Geheimrat Dr. Oldenburg	schreibweise	bestaetigt	Geheimrat Dr. Oldenburg	
+Laxton's Superb	Laxtons Superb	schreibweise	bestaetigt	Laxtons Superb	
+Kaiser Wilhelm	Kaiser Wilhelm	gleich	bestaetigt	Peter Broich	
+Roter Eiserapfel	Roter Eiserapfel	gleich	bestaetigt	Roter Eiserapfel	

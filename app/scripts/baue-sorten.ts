@@ -1,0 +1,300 @@
+// Führt die Sortendaten aller Quellen zusammen und schreibt die Dateien für die App:
+//   public/sorten/index.json   Kurzfassung aller Sorten (Liste, 3D-Medaillons, Abgleich)
+//   public/sorten/<id>.json    vollständige Sorte mit Belegen
+//
+//   node --experimental-strip-types scripts/baue-sorten.ts
+//
+// Eingaben (fehlende werden übersprungen), alle unter ../daten/:
+//   de/sorten_de.json, de/quellen.json        deutsche Quellen (alte Pomologien, Wikipedia)
+//   nfc/sorten_nfc.json, nfc/quellen.json     UK National Fruit Collection
+//   bilder/bilder.json, bilder/aliase.json, bilder/farbmessung.json, bilder/quellen.json
+
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs'
+import { join } from 'node:path'
+import type { Sorte, Quelle, SortenEintrag, Sortenbild, Farbmessung, Merkmalswert } from '../src/daten/sorte.ts'
+import { MERKMAL_NACH_ID, auspraegungLabel } from '../src/daten/merkmalskatalog.ts'
+import { darstellungAus, zusammenfassen, STANDARD } from '../src/apfel3d/darstellung.ts'
+
+const DATEN = join(import.meta.dirname, '../../daten')
+const ZIEL = join(import.meta.dirname, '../public/sorten')
+
+const lies = <T,>(p: string, sonst: T): T => {
+  const f = join(DATEN, p)
+  if (!existsSync(f)) { console.log(`  (fehlt: ${p})`); return sonst }
+  return JSON.parse(readFileSync(f, 'utf8')) as T
+}
+
+export function normalisiere(t: string) {
+  return t
+    .toLowerCase()
+    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/['’`´.]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+}
+
+// ------------------------------------------------------------------ Laden
+
+// Deutsche Quellen: Endergebnis, sonst die schon fertigen Arbeitsstapel des Recherche-Agenten
+let de = lies<Sorte[]>('de/sorten_de.json', [])
+const stapelOrdner = join(DATEN, 'de/arbeit/ergebnis')
+const ausStapeln = !de.length && existsSync(stapelOrdner)
+if (ausStapeln) {
+  for (const f of readdirSync(stapelOrdner).filter((f) => /^stapel_\d+\.json$/.test(f)).sort()) {
+    try { de.push(...(JSON.parse(readFileSync(join(stapelOrdner, f), 'utf8')) as Sorte[])) } catch { console.log(`  (unlesbar: ${f})`) }
+  }
+  console.log(`  deutsche Quellen aus ${de.length} Sorten in Arbeitsstapeln`)
+}
+const nfc = lies<Sorte[]>('nfc/sorten_nfc.json', [])
+const bilder = lies<Record<string, { namen: string[]; bilder: Sortenbild[] }>>('bilder/bilder.json', {})
+const bildAliase = lies<Record<string, string>>('bilder/aliase.json', {})
+const farbmessungen = lies<Record<string, Farbmessung[]>>('bilder/farbmessung.json', {})
+const quellen = new Map<string, Quelle>()
+for (const p of ['nfc/quellen.json', 'de/quellen.json', 'bilder/quellen.json']) for (const q of lies<Quelle[]>(p, [])) quellen.set(q.id, q)
+if (ausStapeln) for (const f of readdirSync(stapelOrdner).filter((f) => /_quellen\.json$/.test(f))) {
+  try { for (const q of JSON.parse(readFileSync(join(stapelOrdner, f), 'utf8')) as Quelle[]) if (!quellen.has(q.id)) quellen.set(q.id, q) } catch { /* unvollständig */ }
+}
+console.log(`Eingang: ${de.length} deutsche, ${nfc.length} NFC-Sorten, ${Object.keys(bilder).length} Bildeinträge, ${quellen.size} Quellen`)
+
+// ------------------------------------------------------------------ Zusammenführen
+
+const sorten = new Map<string, Sorte>()
+const alias = new Map<string, string>() // normalisierter Name → Sorten-ID
+const nachMunq = new Map<number, string>()
+
+const namenVon = (s: Sorte) => [s.name, ...s.synonyme.map((x) => x.name)]
+
+function registriere(s: Sorte) {
+  for (const n of namenVon(s)) { const k = normalisiere(n); if (k && !alias.has(k)) alias.set(k, s.id) }
+  if (s.munq) nachMunq.set(s.munq, s.id)
+}
+
+function freieId(id: string) {
+  let k = id, i = 2
+  while (sorten.has(k)) k = `${id}-${i++}`
+  return k
+}
+
+function zusammenfuehren(ziel: Sorte, neu: Sorte) {
+  const bekannt = new Set(namenVon(ziel).map(normalisiere))
+  for (const n of [{ name: neu.name }, ...neu.synonyme]) {
+    if (!bekannt.has(normalisiere(n.name))) { ziel.synonyme.push(n); bekannt.add(normalisiere(n.name)) }
+  }
+  ziel.munq ??= neu.munq
+  ziel.akzessionen = [...(ziel.akzessionen ?? []), ...(neu.akzessionen ?? [])]
+  ziel.herkunft ??= neu.herkunft
+  ziel.merkmale.push(...neu.merkmale)
+  const hatUeberblick = ziel.texte.some((t) => t.thema === 'ueberblick')
+  for (const t of neu.texte) {
+    if (t.thema === 'ueberblick' && hatUeberblick) ziel.texte.push({ ...t, thema: 'frucht', text: `Nach den Erhebungen der National Fruit Collection: ${t.text.charAt(0).toLowerCase()}${t.text.slice(1)}` })
+    else ziel.texte.push(t)
+  }
+  ziel.bilder.push(...neu.bilder)
+  ziel.farbmessung = [...(ziel.farbmessung ?? []), ...(neu.farbmessung ?? [])]
+}
+
+for (const s of de) {
+  const kopie: Sorte = structuredClone(s)
+  kopie.id = freieId(normalisiere(kopie.id || kopie.name))
+  sorten.set(kopie.id, kopie)
+  registriere(kopie)
+}
+let zusammen = 0
+for (const s of nfc) {
+  const treffer = (s.munq && nachMunq.get(s.munq)) || namenVon(s).map((n) => alias.get(normalisiere(n))).find(Boolean)
+  if (treffer) { zusammenfuehren(sorten.get(treffer)!, structuredClone(s)); zusammen++; continue }
+  const kopie: Sorte = structuredClone(s)
+  kopie.id = freieId(normalisiere(kopie.id || kopie.name))
+  sorten.set(kopie.id, kopie)
+  registriere(kopie)
+}
+console.log(`Zusammengeführt: ${zusammen} NFC-Sorten in vorhandene Einträge, ${sorten.size} Sorten insgesamt`)
+
+// Bilder und Farbmessungen über alle Namen zuordnen
+let mitBild = 0, mitFarbe = 0
+for (const s of sorten.values()) {
+  const schluessel = new Set<string>()
+  for (const n of namenVon(s)) {
+    const k = normalisiere(n)
+    schluessel.add(k)
+    if (bildAliase[k]) schluessel.add(bildAliase[k])
+  }
+  const urls = new Set(s.bilder.map((b) => b.url))
+  for (const k of schluessel) {
+    for (const b of bilder[k]?.bilder ?? []) {
+      const url = b.url.split('?')[0]
+      if (!urls.has(url)) { s.bilder.push({ ...b, url }); urls.add(url) }
+    }
+    for (const f of farbmessungen[k] ?? []) {
+      s.farbmessung ??= []
+      if (!s.farbmessung.some((x) => x.bild === f.bild)) s.farbmessung.push({ ...f, bild: f.bild.split('?')[0] })
+    }
+  }
+  if (s.bilder.length) mitBild++
+  if (s.farbmessung?.length) mitFarbe++
+}
+console.log(`Mit Bild: ${mitBild}, mit Farbmessung: ${mitFarbe}`)
+
+// ------------------------------------------------------------------ Prüfen
+
+let fehler = 0
+for (const s of sorten.values()) {
+  s.merkmale = s.merkmale.filter((w: Merkmalswert) => {
+    const m = MERKMAL_NACH_ID[w.merkmal]
+    const ok = m && (m.typ === 'messwert' || m.typ === 'anzahl' || m.typ === 'text' || m.auspraegungen?.some((a) => a.code === String(w.wert)))
+    if (!ok) fehler++
+    return ok
+  })
+}
+if (fehler) console.log(`Verworfen: ${fehler} Merkmalswerte mit unbekannter ID oder unbekanntem Code`)
+
+// ------------------------------------------------------------------ Index
+
+const ABGLEICH = new Set([
+  'frucht_breite', 'frucht_groesse', 'frucht_hoehe_breite', 'frucht_form', 'schale_grundfarbe', 'schale_deckfarbe_anteil',
+  'schale_deckfarbe_farbton', 'schale_deckfarbe_art', 'schale_berostung_wangen', 'schale_berostung_gesamt', 'schale_berostung_stielgrube',
+  'schale_lentizellen_anzahl', 'fleisch_farbe', 'kernhaus_form', 'kernfaecher_oeffnung', 'kelchhoehle_form', 'pflueckreife',
+  'genussreife_ende', 'geschmack_suesse', 'geschmack_saeure', 'fleisch_festigkeit', 'fleisch_saftigkeit', 'kerne_anzahl',
+  'aroma_noten', 'aroma_staerke', 'duft_noten', 'duft_staerke', 'schale_beschaffenheit', 'schale_lentizellen_art', 'kelch_offenheit',
+  'kernhaus_lage', 'kernhaus_achse', 'stiel_laenge', 'genussreife_beginn', 'kernhaus_breite_mm', 'kernhaus_hoehe_mm', 'bluete_zeit',
+])
+const SCHNITT = new Set(['kernhaus', 'kerne', 'kelch'])
+const KURZMONAT = ['', 'Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']
+
+const ersterWert = (s: Sorte, id: string) => s.merkmale.find((w) => w.merkmal === id)?.wert
+
+/** Rang der Bildart: standardisierte NFC-Fotos zuerst, dann andere Fotos, zuletzt Aquarelle und Tafeln */
+function rang(f: Farbmessung) {
+  if (/nfc/i.test(f.methode)) return 0
+  if (/foto/i.test(f.methode)) return 1
+  return 2
+}
+
+function mischeHex(l: string[]) {
+  const c = l.map((h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)))
+  return '#' + [0, 1, 2].map((k) => Math.round(c.reduce((s, x) => s + x[k], 0) / c.length).toString(16).padStart(2, '0')).join('')
+}
+
+// Zielfarbe des Fruchtfleischs je Katalogcode (für den Weißabgleich der Fotos)
+const FLEISCH_ZIEL: Record<string, string> = {
+  weiss: '#f4efe0', cremeweiss: '#f1e7c8', gelblich: '#eedb9e', gruenlich: '#e2e6bd', roetlich: '#eec6b5',
+}
+const rgb = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16))
+const hexAus = (c: number[]) => '#' + c.map((v) => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0')).join('')
+
+/**
+ * Weißabgleich einer Fotomessung am Fruchtfleisch: Die Schnittflächen sind fast weiß bis cremefarben.
+ * Belichtung und Farbstich des Fotos werden so aus Schalen-, Deck- und Rostfarbe herausgerechnet.
+ */
+function abgleichen(f: Farbmessung, fleischCode?: string): Farbmessung {
+  if (!f.fleischfarbe || !/foto/i.test(f.methode)) return f
+  const ist = rgb(f.fleischfarbe)
+  const soll = rgb(FLEISCH_ZIEL[fleischCode ?? ''] ?? FLEISCH_ZIEL.cremeweiss)
+  const faktor = ist.map((v, k) => Math.max(0.85, Math.min(1.8, soll[k] / Math.max(30, v))))
+  const korr = (h?: string) => (h ? hexAus(rgb(h).map((v, k) => v * faktor[k])) : undefined)
+  return { ...f, grundfarbe: korr(f.grundfarbe), deckfarbe: korr(f.deckfarbe), rostfarbe: korr(f.rostfarbe), fleischfarbe: hexAus(soll) }
+}
+
+/** Mittel über alle Messungen der besten verfügbaren Bildart */
+function farbmessungWahl(s: Sorte): Farbmessung | undefined {
+  const fleischCode = zusammenfassen(s.merkmale).find((w) => w.merkmal === 'fleisch_farbe')?.wert as string | undefined
+  const l = (s.farbmessung ?? []).map((f) => abgleichen(f, fleischCode))
+  if (!l.length) return undefined
+  const best = Math.min(...l.map(rang))
+  const g = l.filter((f) => rang(f) === best)
+  const feld = <K extends 'grundfarbe' | 'deckfarbe' | 'rostfarbe' | 'fleischfarbe'>(k: K) => {
+    const w = g.map((f) => f[k]).filter((x): x is string => typeof x === 'string' && /^#[0-9a-f]{6}$/i.test(x))
+    return w.length ? mischeHex(w) : undefined
+  }
+  const anteile = g.map((f) => f.deckfarbeAnteil).filter((x): x is number => typeof x === 'number')
+  const verhaeltnisse = l.filter((f) => rang(f) <= 1).map((f) => f.hoeheZuBreite).filter((x): x is number => typeof x === 'number' && x > 0.5 && x < 1.5)
+  return {
+    hoeheZuBreite: verhaeltnisse.length ? verhaeltnisse.reduce((a, b) => a + b, 0) / verhaeltnisse.length : undefined,
+    bild: g[0].bild,
+    methode: g[0].methode,
+    grundfarbe: feld('grundfarbe'),
+    deckfarbe: feld('deckfarbe'),
+    // Rost wird in den Fotos nicht belastbar erkannt (Bericht der Bildmessung, Spearman 0,15): weglassen
+    rostfarbe: undefined,
+    fleischfarbe: feld('fleischfarbe'),
+    deckfarbeAnteil: anteile.length ? anteile.reduce((a, b) => a + b, 0) / anteile.length : undefined,
+  }
+}
+
+function kurz(s: Sorte) {
+  const t = s.texte.find((x) => x.thema === 'ueberblick')?.text
+  if (!t) return undefined
+  const satz = t.split(/(?<=\.)\s/)[0]
+  return satz.length <= 110 ? satz : satz.slice(0, 107).replace(/\s\S*$/, '') + ' …'
+}
+
+const eintraege: SortenEintrag[] = []
+for (const s of sorten.values()) {
+  const f = farbmessungWahl(s)
+  const { p, belegt } = darstellungAus(zusammenfassen(s.merkmale), f, 1)
+  const darstellung: Record<string, unknown> = {}
+  for (const k of belegt) if (JSON.stringify(p[k]) !== JSON.stringify(STANDARD[k])) darstellung[k] = p[k]
+  // Ohne Angabe zum Anteil: Streifen deuten auf eine größere Fläche, ein bekannter Farbton auf etwas Rot
+  if (!belegt.has('deckfarbeAnteil')) darstellung.deckfarbeAnteil = belegt.has('deckfarbeArt') && p.deckfarbeArt.some((a) => a !== 'verwaschen') ? 0.35 : belegt.has('deckfarbe') ? 0.15 : 0
+
+  const m: Record<string, (string | number)[]> = {}
+  for (const w of s.merkmale) {
+    if (!ABGLEICH.has(w.merkmal)) continue
+    m[w.merkmal] ??= []
+    if (!m[w.merkmal].includes(w.wert)) m[w.merkmal].push(w.wert)
+  }
+  const beginn = Number(ersterWert(s, 'genussreife_beginn') ?? ersterWert(s, 'pflueckreife'))
+  const ende = Number(ersterWert(s, 'genussreife_ende'))
+  const genuss: number[] = []
+  if (beginn) {
+    const bis = ende || beginn
+    for (let k = beginn, n = 0; n < 12; k = (k % 12) + 1, n++) { genuss.push(k); if (k === bis) break }
+  }
+  const reife = beginn && ende && ende !== beginn
+    ? `${KURZMONAT[beginn]}–${KURZMONAT[ende]}`
+    : ersterWert(s, 'pflueckreife') ? `pflückreif ${auspraegungLabel('pflueckreife', ersterWert(s, 'pflueckreife')!)}` : undefined
+  const fruchtbild = s.bilder.find((b) => b.art === 'frucht') ?? s.bilder[0]
+  eintraege.push({
+    id: s.id,
+    name: s.name,
+    synonyme: s.synonyme.map((x) => x.name).filter((n) => n !== s.name).slice(0, 8),
+    darstellung,
+    reife,
+    kurz: kurz(s),
+    bild: fruchtbild?.url,
+    hatBild: s.bilder.length > 0,
+    anzahlMerkmale: new Set(s.merkmale.map((w) => w.merkmal)).size,
+    schnitt: s.merkmale.some((w) => SCHNITT.has(MERKMAL_NACH_ID[w.merkmal]?.gruppe ?? '') || w.merkmal === 'kelchhoehle_form'),
+    genuss: genuss.length ? genuss : undefined,
+    ausfuehrlich: s.texte.length >= 4 && new Set(s.texte.flatMap((t) => t.belege.map((b) => b.quelle))).size >= 2,
+    m,
+  })
+}
+// Alphabetisch; Zuchtnummern und Namen, die mit Ziffern beginnen, ans Ende
+const ziffer = (n: string) => /^[0-9]/.test(n) ? 1 : 0
+eintraege.sort((a, b) => ziffer(a.name) - ziffer(b.name) || a.name.localeCompare(b.name, 'de'))
+
+// ------------------------------------------------------------------ Schreiben
+
+if (existsSync(ZIEL)) for (const f of readdirSync(ZIEL)) rmSync(join(ZIEL, f))
+mkdirSync(ZIEL, { recursive: true })
+const genutzt = new Set<string>()
+for (const s of sorten.values()) {
+  for (const w of s.merkmale) genutzt.add(w.quelle)
+  for (const t of s.texte) for (const b of t.belege) genutzt.add(b.quelle)
+  for (const b of s.bilder) genutzt.add(b.quelle)
+  s.herkunft?.belege.forEach((b) => genutzt.add(b.quelle))
+  writeFileSync(join(ZIEL, `${s.id}.json`), JSON.stringify(s))
+}
+const unbekannt = [...genutzt].filter((q) => !quellen.has(q))
+if (unbekannt.length) console.log(`Warnung: Belege ohne Quelleneintrag: ${unbekannt.join(', ')}`)
+const index = {
+  stand: new Date().toISOString().slice(0, 10),
+  anzahl: eintraege.length,
+  sorten: eintraege,
+  quellen: [...quellen.values()].filter((q) => genutzt.has(q.id)),
+}
+writeFileSync(join(ZIEL, 'index.json'), JSON.stringify(index))
+const groesse = readFileSync(join(ZIEL, 'index.json')).length
+console.log(`Geschrieben: ${eintraege.length} Sorten, index.json ${(groesse / 1024).toFixed(0)} KB, ${index.quellen.length} Quellen`)

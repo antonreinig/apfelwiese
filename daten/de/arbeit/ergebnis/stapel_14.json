@@ -1,0 +1,5672 @@
+[
+ {
+  "id": "heuchelheimer-schneeapfel",
+  "name": "Heuchelheimer Schneeapfel",
+  "synonyme": [
+   {
+    "name": "Schneeweißer Streifling",
+    "beleg": {
+     "quelle": "web_pomologen_verein",
+     "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+    }
+   },
+   {
+    "name": "Gießener Schneeapfel",
+    "beleg": {
+     "quelle": "web_pomologen_verein",
+     "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Zufallssämling des 19. Jahrhunderts aus Heuchelheim bei Gießen (Hessen). Der Mutterbaum soll um 1900 auf dem Gelände des Kindergartens in der Wilhelmstraße gestanden haben. Hessische Lokalsorte 2003.",
+   "belege": [
+    {
+     "quelle": "web_pomologen_verein",
+     "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+    },
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "mittelgroß bis groß",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "mittelgroß bis groß",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "Variabel, kugelig bis leicht hochgebaut, unten abgeplattet",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "mitte",
+    "original": "mittelbauchig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "im Querschnitt unregelmäßig, schwach gerippt",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Glatt und glänzend, im Lager fettig bis klebrig werdend",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Glatt und glänzend",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "fettig",
+    "original": "im Lager fettig bis klebrig werdend",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "bei Vollreife hellgelb bis weißgelb",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "weisslichgelb",
+    "original": "bei Vollreife hellgelb bis weißgelb",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "7",
+    "original": "stiel- und sonnenseits stark rot gestreift und gesprenkelt, bis ¾ der Oberfläche",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "stark rot gestreift und gesprenkelt",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "stark rot gestreift und gesprenkelt",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "stark rot gestreift und gesprenkelt",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "Kelchgrube tief, mittelweit, typ. „kraterförmig“",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "5",
+    "original": "Kelchgrube tief, mittelweit",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch mittelgroß, geschlossen bis halboffen",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "Kelch mittelgroß, geschlossen bis halboffen",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle breit trichterförmig bis dreieckig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Stielgrube eng, tief, feinstrahlig berostet",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "3",
+    "original": "Stielgrube eng, tief",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "feinstrahlig berostet, zimtfarben",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "3",
+    "original": "Stiel kurz bis mittellang, holzig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "5",
+    "original": "Stiel kurz bis mittellang, holzig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Gefäßbündel schwach ausgeprägt, flachzwiebelförmig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kernfaecher_form",
+    "wert": "bohnen",
+    "original": "Kernhauswände bohnenförmig, breit, glänzend",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "rundlich",
+    "original": "Kerne zahlreich, gut ausgebildet, rundlich-breit",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "breit",
+    "original": "Kerne zahlreich, gut ausgebildet, rundlich-breit",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fruchtfleisch Weiß, locker, relativ weich",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "locker, relativ weich",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "saftig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "leicht säuerlich, ausgewogenes Zucker-Säure-Verhältnis",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "ausgewogenes Zucker-Säure-Verhältnis",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "aromatisch, schwacher Duft",
+    "original": "aromatisch, schwacher Duft",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "Ende September, in höheren Lagen bis Mitte Oktober, vom Baum essbar",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "Haltbarkeit bis April",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "5",
+    "original": "Mittelfrüh bis mittelspät, witterungsunempfindlich",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "5",
+    "original": "Mittelstark, breitkugelig, wenig verzweigt",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Früchte werden als Tafelobst geschätzt",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "auch als Wirtschaftsapfel hervorragend geeignet",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "besonders für Obstsalat und für sortenreine Säfte und Weine",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "kugelig bis leicht hoch gebaut",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "schwach gerippter Schale",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "glatt glänzender und schwach gerippter Schale",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "glatt glänzender … Schale",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Das Fruchtfleisch ist hellweiß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "aromatisch mit ausgewogenem Zucker-Säure-Verhältnis",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "aromatisch mit ausgewogenem Zucker-Säure-Verhältnis",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "reift Ende September bis Mitte Oktober",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "5",
+    "original": "Mittelstarker Wuchs",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "sowohl als Tafel- als auch als Wirtschaftsapfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "besonders geeignet zur Verwendung als Backapfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "oder als sortenreiner Mostapfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Hessische Regionalsorte aus Heuchelheim bei Gießen: ein mittelgroßer bis großer, kugeliger, hellgelber Apfel mit kräftigen roten Streifen und schneeweißem, kaum bräunendem Fleisch. Er reift ab Ende September und dient als Tafel-, Back- und Saftapfel. 2003 wurde er zur Hessischen Lokalsorte ernannt.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte entstand im 19. Jahrhundert als Zufallssämling in Heuchelheim bei Gießen. In den 1930er- und 1940er-Jahren wurde sie als „Schneeweißer Streifling“ (Zorn) und „Gießener Schneeapfel“ (Schmidt 1949) geführt. Die örtliche Baumschule Rinn vermehrte sie unter Philipp Rinn I. bis in die 1950er-Jahre. Nach einem Bildbericht über diese Baumschule in der Zeitschrift „Deutsche Baumschule“ 1979 wurden Reiser und Bäume weit über Hessen hinaus verschickt. Der Pomologen-Verein ernannte die Sorte 2003 zur Hessischen Lokalsorte.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist mittelgroß bis groß und in der Form veränderlich: kugelig bis leicht hochgebaut, unten abgeplattet, mittelbauchig, im Querschnitt unregelmäßig und schwach gerippt. Die Kelchgrube ist tief und mittelweit, nach dem Pomologen-Verein typisch kraterförmig mit schwach wulstigem Rand. Der mittelgroße Kelch ist geschlossen bis halb offen, die Kelchblätter sind breit, kurz und am Grund getrennt. Der holzige, braune, am Ende verdickte Stiel ist kurz bis mittellang und sitzt in enger, tiefer Stielgrube.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt und glänzend und wird im Lager fettig bis klebrig. In der Vollreife ist die Grundfarbe hellgelb bis weißgelb; stiel- und sonnenseits ist die Frucht bis zu drei Vierteln kräftig rot gestreift und gesprenkelt. Die Schalenpunkte sind unauffällig. Die Stielgrube ist fein strahlig, zimtfarben berostet. Die Früchte duften angenehm.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Nach dem Sortenblatt des Pomologen-Vereins ist das Kernhaus flach zwiebelförmig, die Gefäßbündellinie nur schwach ausgeprägt. Die Kernhauswände sind bohnenförmig, breit und glänzend. Die Kerne sind zahlreich, gut ausgebildet, rundlich bis breit und hell kastanienbraun. Die Kelchhöhle wird als breit trichterförmig bis dreieckig beschrieben. Am Schnitt ist das Fleisch weiß und bräunt nach dem Anschneiden kaum.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist weiß, locker, relativ weich und saftig. Der Geschmack ist leicht säuerlich und aromatisch, Zucker und Säure halten sich die Waage. Das Fleisch bleibt auch beim Kochen weiß.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Früchte reifen Ende September, in höheren Lagen bis Mitte Oktober, und sind vom Baum essbar. Sie halten bis April, neigen aber ab Februar zum Welken und verlieren Aroma.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Der Schneeapfel wird als Tafelapfel geschätzt und eignet sich ebenso als Wirtschaftsapfel. Weil das Fleisch nicht bräunt, empfehlen ihn die Quellen besonders für Obstsalat, als Backapfel und für sortenreine Säfte und Apfelweine.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst mittelstark mit breitkugeliger, wenig verzweigter Krone; das einjährige Holz ist rötlich, das Laub hellgrün und gesund. Er braucht einen konsequenten Erziehungsschnitt und später regelmäßiges Auslichten. Die Sorte ist anspruchslos an Boden und Klima, frosthart, auch in Lagen bis 500 m geeignet und nur schwach schorfanfällig. Die Blüte ist mittelfrüh bis mittelspät und witterungsunempfindlich. Der Ertrag setzt mittelfrüh ein und wechselt stark zwischen sehr hohen und geringen Ernten.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/Faltblatt_Lokalsorte_2003.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Heuchelheimer_Schneeapfel&oldid=257764605"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "blutroter-kardinal",
+  "name": "Blutroter Kardinal",
+  "synonyme": [
+   {
+    "name": "Blutrother Cardinal",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "318 (Nr. 285)"
+    }
+   },
+   {
+    "name": "Blutrother Winter-Cardinal",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "318 (Nr. 285)"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Alte Sorte unbekannter Herkunft, von Diel als Blutrother Wintercardinal beschrieben. Nach dem Illustrirten Handbuch (1859) nur vereinzelt verbreitet, am ehesten in der Rheingegend.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "257"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 102,
+    "original": "Gestalt 102:75—79",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 77,
+    "original": "Gestalt 102:75—79",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.75,
+    "original": "Gestalt 102:75—79",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "flachrund bis abgestumpft rundlich",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "flachrund bis abgestumpft rundlich",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "etwas stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften wenig verschieden",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "7",
+    "original": "zwischen breit und ungleich über die Frucht laufenden Rippen. Querschnitt nicht rund",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen oder fast geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "Einsenk. meistens tief, oft enge",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "Einsenk. meistens tief, oft enge",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, zuweilen etwas fleischig, mitteldick, an 18 mm lang",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Höhle tief, mittelweit, faltig, rauh berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle tief, mittelweit, faltig, rauh berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "Höhle … rauh berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "grünlichgelb, später gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "sonnenw. blutroth, schattenw. ringsum etwas heller, mehr carmoisinroth überzogen",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "sonnenw. blutroth",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "schattenw. … mehr carmoisinroth überzogen",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "carmoisinroth überzogen, nicht merklich oder undeutlich gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte sparsam oder mittelhäufig, fein",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "5",
+    "original": "Punkte sparsam oder mittelhäufig, fein",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte … fein, hellbräunlichgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 48:34, flachrund zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "offen",
+    "original": "Kammern 12:19 … geräumig, meistens ziemlich weit offen",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. mittelbreit",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 2 bis 3, fast mittelgr., meistens vollkommen, eiförmig, gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_lang",
+    "original": "Kelchhöhle kegelf., ½ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gelblich",
+    "original": "Fleisch gelblich, ziemlich fein",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "erst fest, später markig",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "nicht gewürzt, weinsäuerlich, kaum etwas süss",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "3",
+    "original": "weinsäuerlich, kaum etwas süss",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "November bis März",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "November bis März",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "††",
+    "quelle": "engelbrecht1889",
+    "seite": "318 (Nr. 285)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: stark und breitblättrig, ziemlich geschlossen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "in geräumiger, oft ausgeschweifter ziemlich tiefer Senkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "7",
+    "original": "Stiel: stark, oft fleischig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "in schöner, tiefer, mit sternförmigem … Roste belegter Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "mit sternförmigem, sich oft selbst etwas verbreitendem Roste belegter Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale: glatt, nicht fettig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "bereift",
+    "original": "am Baume … sehr merklich mit Duft belaufen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Grundfarbe in der Reife blaßgelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "ein schönes dunkles karmoisinartiges Blutroth",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "bei stark besonnten Früchten verwaschen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "bei etwas beschatteten … deutlich streifen- und flammenartig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "geflammt",
+    "original": "bei etwas beschatteten … deutlich streifen- und flammenartig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "5",
+    "original": "Punkte fein, ziemlich häufig, im Roth deutlicher und grau",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte fein, ziemlich häufig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "Punkte … im Roth deutlicher und grau",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch: saftvoll, fein, markig, weiß",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "Fleisch: saftvoll, fein, markig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "Fleisch: saftvoll",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "von weinsäuerlichem Geschmacke",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kernhaus: geschlossen, die engen Kammern",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "November bis tief in den Winter",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "recht gute Haushaltsfrucht",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "In der Baumschule wächst er mir stark und gesund",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "257"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Großer, flach gebauter Rambour mit fast ganz blutrot bis karminrot überzogener Schale und weinsäuerlichem Fleisch. Engelbrecht (1889) und das Illustrirte Handbuch (1859) führen ihn als Winterapfel für den Haushalt, genussreif ab November.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "318 (Nr. 285)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte gilt als alt. Diel beschrieb sie als Blutrother Wintercardinal; Synonyme waren nach dem Handbuch nicht bekannt, Diel vermutete die Sorte unter den Kardinaläpfeln Zinks. Oberdieck kannte sie nur als vereinzelt verbreitet, am ehesten in der Rheingegend. Engelbrecht erhielt seine Früchte von Endres in Salzburg.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "318 (Nr. 285)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 102 mm Breite bei 75–79 mm Höhe, kleinere Früchte 77:59–62 mm. Die Form ist flachrund bis abgestumpft rundlich, etwas stielbauchig, zum Kelch hin oft etwas abnehmend; die Hälften sind wenig verschieden. Breite, ungleich über die Frucht laufende Rippen machen den Querschnitt unrund. Der Kelch ist geschlossen oder fast geschlossen und sitzt meist tief und oft eng. Das Handbuch nennt die Kelchsenkung dagegen geräumig und ziemlich tief, bei kleineren Früchten auch eng und flach, mit einigen Beulen am Rand. Der Stiel ist mitteldick bis stark, oft fleischig, nach Engelbrecht etwa 18 mm lang, in tiefer, rau berosteter Stielgrube.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "318 (Nr. 285)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die glatte Schale ist am Baum deutlich beduftet. Die Grundfarbe ist grünlichgelb, später gelb bzw. blassgelb, bei besonnten Früchten aber kaum zu sehen. Sonnenseits liegt ein dunkles Blutrot, schattenseits ein helleres Karminrot, das die Frucht ringsum überzieht. Bei stark besonnten Früchten ist die Röte verwaschen, bei beschatteten deutlich gestreift und geflammt. Die Schalenpunkte sind fein und sparsam bis mäßig häufig, nach Engelbrecht hellbräunlichgelb, nach dem Handbuch im Rot grau.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "318 (Nr. 285)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Engelbrecht beschreibt ein flachrund-zwiebelförmiges Kernhaus von 48:34 mm. Die Kammern (12:19 mm) sind stielwärts gespitzt, kelchwärts abgerundet, etwas zerrissen, geräumig und meist ziemlich weit offen; die Achsenhöhle ist mittelbreit. Je Kammer liegen 2 bis 3 fast mittelgroße, meist vollkommene, eiförmige, gespitzte, dunkelbraune Kerne. Die Kelchhöhle ist kegelförmig und reicht bis zur Hälfte zur Achsenhöhle. Das Handbuch weicht ab: Es nennt das Kernhaus geschlossen, die Kammern eng und mit wenigen vollkommenen Kernen, die Kelchröhre einen starken Kegel. Die Fleischfarbe am Schnitt ist nach Engelbrecht gelblich, nach dem Handbuch weiß.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "318 (Nr. 285)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist ziemlich fein, anfangs fest und später markig, saftig, ohne Gewürz und weinsäuerlich mit kaum merklicher Süße (Engelbrecht). Das Handbuch nennt es saftvoll, fein, markig und weinsäuerlich. Der Geruch der Frucht ist merklich.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "318 (Nr. 285)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Genussreif von November bis März (Engelbrecht), nach dem Handbuch von November bis tief in den Winter. Die Früchte welken nach Engelbrecht nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "318 (Nr. 285)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Beide Werke stufen die Sorte als Wirtschaftsfrucht ein. Oberdieck nennt sie eine recht gute Haushaltsfrucht, die von mehreren anderen Rambours an Güte übertroffen werde.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "318 (Nr. 285)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Nach Diel wächst der Baum lebhaft, geht hoch und bildet eine weit gewölbte, dicht belaubte Krone; er setzt früh Fruchtholz an und trägt sehr reich. Oberdieck sah ihn in der Baumschule stark und gesund wachsen, ähnlich dem Luikenapfel mit langen, unregelmäßig abstehenden Trieben. Die Sommertriebe sind glänzend dunkelviolett bis blutrot und auffällig punktiert, die Blätter groß, eiförmig bis herzförmig.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "257"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "hibernal",
+  "name": "Hibernal",
+  "synonyme": [
+   {
+    "name": "Orsimoi",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+    }
+   },
+   {
+    "name": "Orsimui",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+    }
+   },
+   {
+    "name": "Osimoe",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+    }
+   },
+   {
+    "name": "Romna",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Herkunft Russland oder Vereinigte Staaten; die Sorte wurde in den 1870er- bis 1880er-Jahren erstmals erwähnt. Nach der National Fruit Collection soll sie 1870 nach Russland gelangt und 1880 in den USA verzeichnet worden sein. Nach Mitteleuropa kam sie aus Russland.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+    },
+    {
+     "quelle": "web_nfc",
+     "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "verhältnismäßig große bis sehr große Apfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "9",
+    "original": "verhältnismäßig große bis sehr große Apfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "frucht_breite",
+    "wert": 84,
+    "original": "Höhe von etwa 65,5 mm bei einer Breite von etwa 84 mm",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 65.5,
+    "original": "Höhe von etwa 65,5 mm bei einer Breite von etwa 84 mm",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.78,
+    "original": "Höhe von etwa 65,5 mm bei einer Breite von etwa 84 mm",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "unregelmaessig",
+    "original": "ihre Form ist grob unregelmäßig, stielbauchig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "grob unregelmäßig, stielbauchig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "rau",
+    "original": "die Oberfläche wachsig und rau",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Sowohl die Kelch- als auch die Stielgrube sind weit und mitteltief",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "Sowohl die Kelch- als auch die Stielgrube sind weit und mitteltief",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Sowohl die Kelch- als auch die Stielgrube sind weit und mitteltief",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "Sowohl die Kelch- als auch die Stielgrube sind weit und mitteltief",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "offen",
+    "original": "Aus dem großen, offenen Kelch ragen mittellange bis lange … Blätter",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "kernhaus_lage",
+    "wert": "mitte",
+    "original": "Das mittelgroße Kernhaus liegt mittig in der Frucht",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "kernfaecher_form",
+    "wert": "mondsichel",
+    "original": "die Wände sind halbmondförmig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "weisslichgelb",
+    "original": "Die Grundfarbe … ist weißgelb bis gelbgrün",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelbgruen",
+    "original": "Die Grundfarbe … ist weißgelb bis gelbgrün",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "3",
+    "original": "leicht bis mittelstark orange bis braunrot geflammt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "leicht bis mittelstark orange bis braunrot geflammt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "orange",
+    "original": "orange bis braunrot geflammt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "braunrot",
+    "original": "orange bis braunrot geflammt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "geflammt",
+    "original": "orange bis braunrot geflammt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "3",
+    "original": "Der Apfel ist leicht berostet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "besonders flächig im Bereich der Stielgrube",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fruchtfleisch ist weiß bis cremefarben, grünlich geädert",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fruchtfleisch ist weiß bis cremefarben, grünlich geädert",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "Das delikate, mittelfeste, grobe aber saftige Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "grobe aber saftige Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "9",
+    "original": "von saurem, kräftigem Geschmack",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Im frühen September können die … Früchte geerntet werden",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Der anspruchslose, stark wachsende Apfelbaum",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "ploidie",
+    "wert": "triploid",
+    "original": "Aufgrund von Triploidie",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "Aus dem Fruchtfleisch wird Most bzw. Saft hergestellt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Der Apfel wird auch gern zum Backen verwendet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "Shape: flat (NFC)",
+    "quelle": "web_nfc",
+    "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Flesh: yellowish white, firm and coarse (Smith); cream, firm and coarse (NFC)",
+    "quelle": "web_nfc",
+    "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "7",
+    "original": "Flesh: … firm and coarse",
+    "quelle": "web_nfc",
+    "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "9",
+    "original": "Flavour: acid and astringent (Smith)",
+    "quelle": "web_nfc",
+    "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "culinary apple",
+    "quelle": "web_nfc",
+    "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Großer, flacher, grob unregelmäßiger Apfel mit weißgelber bis gelbgrüner Grundfarbe, orange bis braunrot geflammt, und saurem, grobem Fleisch. Die triploide Sorte stammt aus Russland oder den USA. In Deutschland wird sie vor allem wegen ihrer Frosthärte und ihres aufrechten Wuchses als Stammbildner veredelt; die Früchte dienen für Saft, Most und zum Backen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Hibernal wurde in den 1870er- bis 1880er-Jahren erstmals in den Vereinigten Staaten und in Russland erwähnt; nach Mitteleuropa kam die Sorte aus Russland. Die National Fruit Collection nennt sie entweder russisch oder in den USA entstanden und nach Russland gelangt; sie soll 1870 Russland erreicht haben und wurde 1880 in den USA verzeichnet. Synonyme sind Orsimoi, Orsimui, Osimoe und Romna.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     },
+     {
+      "quelle": "web_nfc",
+      "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Nach Wikipedia ist die Frucht groß bis sehr groß, etwa 84 mm breit und 65,5 mm hoch, bis 200 g schwer, deutlich breiter als hoch, grob unregelmäßig und stielbauchig. Die National Fruit Collection zitiert für Smith (1971) kleinere Maße (50–61 mm hoch, 65–75 mm breit) und beschreibt die Frucht als flach bis mittelhoch, kegelstumpfförmig, an Kelch und Körper gerippt; die eigene Messung der NFC ergab eine starke Rippung. Kelchgrube und Stielgrube sind weit und mitteltief. Aus dem großen, offenen Kelch ragen mittellange bis lange, breite, aufrechte Kelchblätter.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     },
+     {
+      "quelle": "web_nfc",
+      "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist wachsig und rau. Die Grundfarbe ist weißgelb bis gelbgrün, darüber liegt eine leichte bis mittelstarke, orange bis braunrot geflammte Deckfarbe. Die Frucht ist leicht berostet, flächig vor allem in der Stielgrube. Nach der National Fruit Collection ist die Grundfarbe grünlichgelb (Smith) bzw. weißlichgelb, die Deckfarbe orangerot verwaschen mit karminroten Spritzern bzw. gestreift oder flächig orange.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     },
+     {
+      "quelle": "web_nfc",
+      "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Das mittelgroße Kernhaus liegt in der Mitte der Frucht; die Kernhauswände sind halbmondförmig. Die Kelchhöhle ist tief und breit, kegel- bis kegelstumpfförmig. Angaben zur Öffnung der Kammern, zur Achsenhöhle und zu den Kernen liegen nicht vor. Das Fleisch ist am Schnitt weiß bis cremefarben und grünlich geädert.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist weiß bis cremefarben, grünlich geädert, grob, mittelfest und saftig, der Geschmack sauer und kräftig. Die National Fruit Collection beschreibt das Fleisch als gelblichweiß bis cremefarben, fest und grob, den Geschmack nach Smith als sauer und adstringierend.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     },
+     {
+      "quelle": "web_nfc",
+      "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Früchte werden im frühen September geerntet; sie fallen selten vom Baum und halten sich bis Januar.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     },
+     {
+      "quelle": "web_nfc",
+      "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der anspruchslose Baum wächst stark und bildet eine ausladende, breitpyramidale Krone. Er bevorzugt vollsonnige Lagen auf mäßig trockenem bis frischem Boden und ist kaum krankheitsanfällig. Als triploide Sorte braucht er Pollenspender. Die Blüte dauert von Ende April bis Mitte Mai; die National Fruit Collection notierte in Brogdale Blühbeginn am 30. April und Vollblüte am 6. Mai. Der Ertrag ist mittel bis hoch. Wegen Frosthärte und gleichmäßig aufrechtem Wuchs wird Hibernal als Stammbildner verwendet; nach Wikipedia hat dieser Vorteil durch stärkere Temperaturschwankungen im Spätwinter abgenommen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     },
+     {
+      "quelle": "web_nfc",
+      "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Die Früchte werden zu Saft und Most verarbeitet und gern zum Backen verwendet; wirtschaftlich spielt der Fruchtverkauf kaum eine Rolle. Die National Fruit Collection führt Hibernal als Kochapfel. Größere Bedeutung hat die Sorte als frostharter Stammbildner in der Baumschule.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Hibernal_(Apfel)&oldid=227984832"
+     },
+     {
+      "quelle": "web_nfc",
+      "url": "https://www.nationalfruitcollection.org.uk/full2.php?id=2729&&fruit=apple"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "pojnik-apfel",
+  "name": "Pojnik-Apfel",
+  "synonyme": [
+   {
+    "name": "Pojnik Apfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "457"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Siebenbürgen. Nach Lucas im Illustrirten Handbuch (Bd. IV, 1862–65) mehr als 60 Jahre zuvor als Sämling in einer Waldgegend gefunden; dort als „Krone der siebenbürgischen Äpfel“ geschätzt. Erstmals kurz beschrieben in der Pomologischen Monatsschrift 1860.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "457"
+    },
+    {
+     "quelle": "engelbrecht1889",
+     "seite": "336 (Nr. 299)"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 79,
+    "original": "Gestalt 79:57—61",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 59,
+    "original": "Gestalt 79:57—61",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.75,
+    "original": "Gestalt 79:57—61",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "flachrund, wenig stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "wenig stielbauch. Stielwölb. wenig breiter als die Kelchw.",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "Hälften ungleich",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "flach und etwas ungleich über die Frucht laufenden Rippen. Querschn. nicht ganz rund",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "Kelch halb offen bis fast geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch halb offen bis fast geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "Einsenk. ziemlich tief, etwas enge",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "Einsenk. ziemlich tief, etwas enge",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, dünn, etwa 21 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Höhle tief, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle tief, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "Höhle … hellgrünlichbraun berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale ziemlich glatt, mattglänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "hellgrün, später grünlichgelb bis gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "hellgrün, später grünlichgelb bis gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte sparsam, sehr fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte sparsam, sehr fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "Punkte sparsam, sehr fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "3",
+    "original": "Anflüge hellbraunen Rostes finden sich nicht häufig",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 45:30, flachrund zwiebelförm.",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern 11:17 … mittelgeräumig, etwas offen",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. mittelbreit",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne meistens zu 1, klein, eiförmig, gespitzt, kaffeebraun, häufig unvollkommen",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_lang",
+    "original": "Kelchhöhle kegelförmig, ½ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch hellgelblichweiss, ziemlich fein",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "erst fest und abknackend, später markig",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "etwas vorherrschend weinig, nicht ganz so, doch genügend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "etwas vorherrschend weinig, nicht ganz so, doch genügend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "reinettenartig, nicht stark gewürzt",
+    "original": "reinettenartig, doch nicht stark gewürzt",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "1",
+    "original": "Anf. Januar bis Mai",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "5",
+    "original": "Anf. Januar bis Mai",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "fast oo und ††",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "fast oo und ††",
+    "quelle": "engelbrecht1889",
+    "seite": "336 (Nr. 299)"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "Großer, plattrunder, mitunter etwas unregelmäßiger Apfel",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "Großer, plattrunder … Apfel",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "Kelch: Halb offen, etwas breitblättrig, wollig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "in ziemlich tiefer, etwas ausgeschweifter Einsenkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "in weiter, tiefer, mit zimmtgrauem Roste strahlig besetzter Einsenkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "in weiter, tiefer … Einsenkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "7",
+    "original": "mit zimmtgrauem Roste strahlig besetzter Einsenkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale: ziemlich glatt, glänzend",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale: ziemlich glatt, glänzend",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelbgruen",
+    "original": "Grundfarbe vom Baume hellgrün, später gelbgrün",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "0",
+    "original": "ohne eine Spur von Röthe",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte fein, wie Stäubchen zerstreut",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte fein, wie Stäubchen zerstreut",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch: weiß, etwas grobkörnig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "von sehr angenehmem, erhaben süßweinsäuerlichen Geschmack",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "von sehr angenehmem, erhaben süßweinsäuerlichen Geschmack",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchröhre: kurz, weit, abgestumpft kegelförmig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "Die Frucht reift im Dezember und hält sich bis Mai",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "5",
+    "original": "Die Frucht reift im Dezember und hält sich bis Mai",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "ein sehr schätzbarer Tafel- und vorzüglicher Wirthschafts-Apfel",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "ein sehr schätzbarer Tafel- und vorzüglicher Wirthschafts-Apfel",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Der Baum hat einen außerordentlich kräftigen Wuchs",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "457"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Siebenbürgische Landsorte, ein großer, flachrunder, grünlichgelber Winterapfel ohne Röte, mit reinettenartigem, weinig-süßem Fleisch. Engelbrecht (1889) und das Illustrirte Handbuch (Bd. IV) führen ihn als Tafel- und Wirtschaftsapfel, genussreif von Dezember bzw. Januar bis Mai.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "336 (Nr. 299)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Lucas berichtet im Handbuch, die Sorte sei in Siebenbürgen mehr als 60 Jahre zuvor als Sämling in einer Waldgegend gefunden worden und werde dort von den Obstkennern sehr gerühmt. Außer einer kurzen Notiz mit Abbildung in der Pomologischen Monatsschrift 1860 fand er keine Literatur. Engelbrecht erhielt Früchte von Peicker in Hertwigswalde bei Camenz (Schlesien), von Lencer in Bittstädt bei Arnstadt und ein Reis von Lucas in Reutlingen.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "336 (Nr. 299)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 79 mm Breite bei 57–61 mm Höhe und zitiert für das Handbuch 84:55–66 mm. Die Frucht ist flachrund, wenig stielbauchig, die Stielwölbung nur wenig breiter als die Kelchwölbung; die Hälften sind ungleich. Breite, flache Erhabenheiten laufen über die Frucht und stören die Rundung. Der Kelch ist halb offen bis fast geschlossen, ziemlich klein, wollig und bleibt lange grün; er sitzt in ziemlich tiefer, nach Engelbrecht etwas enger Einsenkung. Der dünne, holzige Stiel ist etwa 21 mm lang und steckt in tiefer Stielgrube, die nach Engelbrecht mittelweit, nach dem Handbuch weit und strahlig zimtgrau berostet ist.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "336 (Nr. 299)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist ziemlich glatt, mattglänzend bis glänzend und etwas derb. Vom Baum ist sie hellgrün, später grünlichgelb bis gelb (Engelbrecht) bzw. gelbgrün (Handbuch), ohne jede Röte. Die Schalenpunkte sind fein und zerstreut, nach Engelbrecht bräunlich. Hellbraune Rostanflüge und einzelne große, flache Rostwarzen kommen vor, vor allem auf der Stielhälfte; gegen den Kelch zeigen sich nach dem Handbuch feine weißliche Punkte unter der Schale.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "336 (Nr. 299)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Das Kernhaus ist nach Engelbrecht flachrund-zwiebelförmig, 45:30 mm. Die Kammern (11:17 mm) sind stielwärts spitz, kelchwärts flach abgerundet oder abgestumpft, fast glattwandig, mittelgeräumig und etwas offen; die Achsenhöhle ist mittelbreit. Meist liegt nur ein kleiner, eiförmiger, gespitzter, kaffeebrauner Kern je Kammer, häufig unvollkommen. Die Kelchhöhle ist kegelförmig und reicht bis zur Hälfte zur Achsenhöhle. Das Handbuch nennt das Kernhaus klein, die Achse fast immer schief und die Samen unvollkommen; die Kelchröhre beschreibt es als kurzen, weiten, abgestumpften Kegel. Die Fleischfarbe ist hellgelblichweiß (Engelbrecht) bzw. weiß (Handbuch).",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "336 (Nr. 299)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Engelbrecht fand das Fleisch ziemlich fein, anfangs fest und abknackend, später markig und saftig, reinettenartig, aber wenig gewürzt; die Weinsäure überwiegt etwas, die Süße reicht aus, bei manchen Früchten ist sie stärker. Nach dem Handbuch ist das Fleisch etwas grobkörnig, in der Beschaffenheit der Kanadarenette ähnlich, mit sehr angenehmem süßweinsäuerlichem Geschmack.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "336 (Nr. 299)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Genussreif ab Anfang Januar bis Mai (Engelbrecht); nach dem Handbuch reift die Frucht im Dezember und hält bis Mai. Die Früchte welken nach Engelbrecht nicht, der Geruch ist kaum merklich.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "336 (Nr. 299)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Engelbrecht bewertet die Sorte fast als Tafelfrucht ersten Ranges und als Wirtschaftsfrucht. Lucas nennt sie einen sehr schätzbaren Tafel- und vorzüglichen Wirtschaftsapfel.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "336 (Nr. 299)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst nach Lucas außerordentlich kräftig und ergibt zwei Jahre nach der Veredlung vollständige Hochstämme; das Blatt ist groß und rundlich, die Triebe sind sehr stark. Prof. von Nagy in Klausenburg hielt den Baum für etwas empfindlich, Lucas konnte das nach eigenen Beobachtungen nicht bestätigen und lobte Wuchs und Fruchtbarkeit.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "457"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "himbacher-gruener",
+  "name": "Himbacher Grüner",
+  "synonyme": [],
+  "herkunft": {
+   "text": "Zufallssämling, um 1890 im Garten von Adam Frank in Himbach (Gemeinde Limeshain, Wetteraukreis, Hessen) entstanden.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "Große Früchte mit hoher Saftausbeute",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "9",
+    "original": "sehr hohe Mostgewicht bei gleichzeitig sehr hohem Säuregehalt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "10",
+    "original": "Pflückreife ab Oktober",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "5",
+    "original": "Mittelspäte Blüte",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "7",
+    "original": "Mittelspäte Blüte",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Starkwachsender Baum mit breit ausladender Krone",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "vorwiegend zur Saft- und Apfelweinherstellung verwendet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Sehr seltene hessische Lokalsorte aus Himbach in der Wetterau. Der Himbacher Grüne ist ein großer, säurereicher Wirtschaftsapfel, der vor allem für Saft und Apfelwein genutzt wird. Für 2027 ist er als Hessische Lokalsorte vorgesehen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte entstand um 1890 als Zufallssämling im Garten von Adam Frank in Himbach, heute Gemeinde Limeshain im Wetteraukreis. Ihr Vorkommen in den Obstwiesen von Limeshain wurde bei einer Bestandsaufnahme der Streuobstbestände erfasst; der heutige Bestand stützt sich vor allem auf Nachpflanzungen seit den 1990er-Jahren, unter anderem über Sammelbestellungen der Gemeinde. Die Landesgruppe Hessen des Pomologen-Vereins will die Sorte im November 2026 als Hessische Lokalsorte 2027 auszeichnen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Früchte sind groß und liefern viel Saft. Eine nähere Beschreibung von Form, Schale und Schnitt (Kernhaus, Kelchhöhle) liegt in den ausgewerteten Quellen nicht vor.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Kennzeichnend ist ein sehr hohes Mostgewicht bei gleichzeitig sehr hohem Säuregehalt. Nach einer Untersuchung des Pomologen-Vereins ist auch der Polyphenolgehalt sehr hoch.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Früchte sind ab Oktober pflückreif und halten sich in einem geeigneten Lager bis März oder April.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Der Himbacher Grüne ist ein Wirtschaftsapfel und wird vorwiegend zu Apfelsaft und Apfelwein verarbeitet, wofür ihn Mostgewicht und Säure sehr gut eignen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst stark und bildet eine breit ausladende Krone. Er ist anspruchslos an Klima und Standort, verträgt feuchte Lagen und schwere Böden und gilt als widerstandsfähig gegen Schädlinge. Die Blüte ist mittelspät. Angebaut wird die Sorte überwiegend extensiv auf Streuobstwiesen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Himbacher_Grüner&oldid=271495915"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "hollaender-prinz",
+  "name": "Holländer Prinz",
+  "synonyme": [
+   {
+    "name": "Holländer Prinzenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Herkunft unbekannt. Verbreitet im Alten Land und an der Elbe aufwärts bis ins Wendland; der Name lässt an niederländische Siedler denken, in den Niederlanden ist die Sorte aber nicht bekannt.",
+   "belege": [
+    {
+     "quelle": "web_pomologen_verein",
+     "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+    },
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Mittelgroße, kugelige bis hochkugelige Frucht",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "Mittelgroße, kugelige bis hochkugelige Frucht",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Die Schale ist in der Grundfarbe hellgelb",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "7",
+    "original": "kann bis zu 2/3 karminrot überzogen sein",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "bis zu 2/3 karminrot überzogen",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "bis zu 2/3 karminrot überzogen",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "7",
+    "original": "Charakteristisch sind die großen Lentizellen",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "großen Lentizellen die fließend in hellbraune Rostnetze übergehen",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "7",
+    "original": "Besonders im Stielbereich ist die Frucht grobschuppig, weit auslaufend berostet",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gelblich",
+    "original": "Das etwas gelbliche Fruchtfleisch ist saftig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "Fruchtfleisch ist saftig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "leicht aromatisch und vorherrschend süßlich",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "3",
+    "original": "leicht aromatisch und vorherrschend süßlich",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "leicht aromatisch",
+    "original": "leicht aromatisch",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "wird bei Lagerung mürbe",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Pflückreife Mitte September",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "Genussreife Mitte September bis Mitte November",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "11",
+    "original": "Genussreife Mitte September bis Mitte November",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "5",
+    "original": "wächst mittelstark bis stark",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "wächst mittelstark bis stark",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "ist eine alte Tafelapfelsorte",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Alte norddeutsche Tafelapfelsorte, verbreitet im Alten Land und an der Elbe bis ins Wendland. Die mittelgroße, kugelige Frucht ist hellgelb, bis zu zwei Dritteln karminrot überzogen und hat auffällig große Lentizellen mit hellbraunen Rostnetzen. Der Holländer Prinz war Streuobstsorte des Jahres 2023 in Norddeutschland.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die genaue Herkunft ist unbekannt. Der Name deutet auf die Niederlande, doch ist die Sorte dort nicht bekannt. Weil sie vor allem im Alten Land und weiter elbaufwärts vorkommt, wird vermutet, dass niederländische Siedler sie mitgebracht oder gezogen haben. Das Sortenblatt der Norddeutschen Apfeltage stützt sich auf Loewel und Labus, „Deutsche Äpfel“ (1941), Nr. 27.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist mittelgroß und kugelig bis hochkugelig. Angaben zu Kelch, Stiel und Gruben enthalten die ausgewerteten Quellen nicht.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Grundfarbe ist hellgelb, bis zu zwei Drittel der Schale können karminrot überzogen sein. Typisch sind große Lentizellen, die fließend in hellbraune Rostnetze übergehen. Um den Stiel ist die Frucht grobschuppig und weit auslaufend berostet.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Nähere Angaben zum Kernhaus fehlen. Das Sortenblatt hält fest, dass dem Holländer Prinz die typischen Merkmale der Prinzenäpfel fehlen, etwa das offene Kernhaus und die Walzenform; die Sorte gehöre eher zu den Renetten. Das Fleisch ist am Schnitt etwas gelblich.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das etwas gelbliche Fruchtfleisch ist saftig, leicht aromatisch und vorwiegend süßlich. Im Lager wird es mürbe.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Pflückreif ab Mitte September, genussreif von Mitte September bis Mitte November.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst mittelstark bis stark und gilt als relativ robust.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holländer_Prinz&oldid=232870340"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Trotz des Namens ist der Holländer Prinz kein typischer Prinzenapfel: Nach dem Sortenblatt fehlen ihm das offene Kernhaus und die Walzenform dieser Gruppe.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2023_Hollaender_Prinz.pdf"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "pomeranzenapfel",
+  "name": "Pomeranzenapfel",
+  "synonyme": [
+   {
+    "name": "Pomme Orange d’Allemagne",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "337 (Nr. 300)"
+    }
+   },
+   {
+    "name": "Breitling",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "97"
+    }
+   },
+   {
+    "name": "Breitacher",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "97"
+    }
+   },
+   {
+    "name": "Breitach",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "97"
+    }
+   },
+   {
+    "name": "Schibach",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "97"
+    }
+   },
+   {
+    "name": "Breiter",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "97"
+    }
+   },
+   {
+    "name": "Breitapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "97"
+    }
+   },
+   {
+    "name": "Sternborstorfer",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "97"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Herkunft unbekannt; Diel hielt ihn für eine alte deutsche Sorte. Nach dem Illustrirten Handbuch (Bd. IV) vor allem in den nördlichen Kantonen der Schweiz unter dem Namen Breitling oder Breitacher verbreitet, außerdem im Thurgau und im württembergischen Oberamt Tettnang als Breitapfel.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "97"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 72,
+    "original": "Gestalt 72:45—48",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 46.5,
+    "original": "Gestalt 72:45—48",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.65,
+    "original": "Gestalt 72:45—48",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "flachrund, wenig stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "wenig stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "Hälften etwas ungleich",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "Einsenk. flach, weit",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "Einsenk. flach, weit",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "1",
+    "original": "zwischen flachen, sehr flach, kaum merklich über den Bauch laufenden Rippen",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "Querschn. fast rund",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "7",
+    "original": "Stiel holzig oder etwas fleischig, dick, etwa 6 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Höhle ziemlich tief, sehr weit, fast eben, zart berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "Höhle ziemlich tief, sehr weit",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "Höhle … zart berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale ziemlich glatt, etwas glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale ziemlich glatt, etwas glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "grünlichgelb, später lebhaft gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "3",
+    "original": "sonnenw. nicht weithin leicht geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "5",
+    "original": "Punkte mässig zahlreich, fein bis mitteldick, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte … fein bis mitteldick",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "5",
+    "original": "Punkte … fein bis mitteldick",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "Punkte … bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 39:25, breit zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kammern 12:15 … geräumig, geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "geschlossen",
+    "original": "Achsenh. nur angedeutet",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 1 bis 2, ziemlich gross, vollkommen, eiförm., kurz gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_lang",
+    "original": "Kelchhöhle kegelf., ½ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch hellgelblichweiss, fein, fest",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "7",
+    "original": "Fleisch … fein, fest",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "5",
+    "original": "ziemlich saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "vorherrschend, doch nicht stark weinig, nicht ganz so süss",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "vorherrschend, doch nicht stark weinig, nicht ganz so süss",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "reinettenartig gewürzt, zuweilen fein herb",
+    "original": "reinettenartig gewürzt, zuweilen fein herbe",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "December bis März und länger",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "December bis März und länger",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "o††",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "o††",
+    "quelle": "engelbrecht1889",
+    "seite": "337 (Nr. 300)"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Die Frucht ist mittelgroß",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "plattrund, meist schön regelmäßig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "meist schön regelmäßig, nicht selten eine Seite derselben etwas niedriger",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "nicht selten eine Seite derselben etwas niedriger als die andere",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: geschlossen, liegt in breiter schüsselförmiger Vertiefung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "in breiter schüsselförmiger Vertiefung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "1",
+    "original": "Stiel: sehr kurz",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "3",
+    "original": "in flacher, meist mit Rost bedeckter Einsenkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "7",
+    "original": "in flacher, meist mit Rost bedeckter Einsenkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Schale: schön goldgelb",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "auf der Sonnenseite häufig hell carmoisinroth verwaschen und punktirt",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "hellrot",
+    "original": "hell carmoisinroth verwaschen",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "hell carmoisinroth verwaschen und punktirt",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "hell carmoisinroth verwaschen und punktirt",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "geflammt",
+    "original": "oder die Frucht wie geflammt röthlich angelaufen ist (Oberdieck)",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch: weißgelb, fein, fest, saftreich",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "7",
+    "original": "Fleisch: weißgelb, fein, fest",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "saftreich",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "weinsäuerlichsüß, im Geschmack dem Borstorfer ähnlich",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "weinsäuerlichsüß, im Geschmack dem Borstorfer ähnlich",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kernhaus: breit und geschlossen, vollsamig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "zeitigt im December und hält sich bis in den März",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "zeitigt im December und hält sich bis in den März",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "doerren",
+    "original": "eignet sich vorzüglich zum Dörren",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "läßt sich … ein guter, heller und ziemlich haltbarer Obstwein bereiten",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "97"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Mittelgroßer, stark abgeplatteter, goldgelber Winterapfel mit leichter Sonnenröte und festem, reinettenartigem Fleisch. In der Nordschweiz war er als Breitling oder Breitacher weit verbreitet. Engelbrecht (1889) führt ihn als Tafel- und Wirtschaftsfrucht, das Illustrirte Handbuch hebt seine Eignung zum Dörren und für Obstwein hervor.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "337 (Nr. 300)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Diel beschrieb die Sorte als Pomeranzenapfel und hielt sie für eine alte deutsche Frucht; den Namen erklärte er wohl mit der goldgelben Farbe. Nach J. Mettler-Scherrer (Handbuch Bd. IV) fand man sie in den Kantonen Bern, Aargau, Zürich, St. Gallen, Thurgau, Schwyz und Zug fast überall unter Schweizer Namen wie Breitling, Breitacher, Breitach, Schibach, Breiter oder Breitapfel. Lucas meldete sie aus dem Thurgau und dem Oberamt Tettnang als Breitapfel, in Ehingen hieß sie Sternborstorfer. Bei Metzger bezeichnet „Pomeranzenapfel“ andere Sorten (Zwiebelborsdorfer, Wintergoldpepping). Engelbrecht erhielt Früchte von Hinger in Vaduz.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "337 (Nr. 300)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 72 mm Breite bei 45–48 mm Höhe; nach dem Handbuch erreicht die Frucht bei Diel auch größere Maße. Sie ist flachrund, wenig stielbauchig, die Hälften sind etwas ungleich. Nach dem Handbuch ist sie meist regelmäßig gebaut, eine Seite ist aber nicht selten etwas niedriger. Der geschlossene Kelch sitzt in flacher, weiter, schüsselförmiger Einsenkung; feine, sehr flache Rippen laufen kaum merklich über den Bauch, der Querschnitt ist fast rund. Der Stiel ist dick und sehr kurz (nach Engelbrecht etwa 6 mm). Engelbrecht beschreibt die Stielgrube als ziemlich tief, sehr weit und zart berostet, das Handbuch als flach und meist mit Rost bedeckt.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "337 (Nr. 300)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist ziemlich glatt und etwas glänzend, grünlichgelb, später lebhaft gelb bis goldgelb. Sonnenseits ist sie leicht und nicht weit gerötet (Engelbrecht), nach dem Handbuch häufig hell karminrot verwaschen und punktiert; weniger besonnte Früchte zeigen nach Oberdieck blassere, oft nur punktierte oder wie geflammte Röte. Die Schalenpunkte sind mäßig zahlreich, fein bis mitteldick und bräunlich. Dunkle Flecken, schwärzliche Rostflecken und gelegentlich Warzen kommen vor.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "337 (Nr. 300)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Engelbrecht beschreibt ein breit zwiebelförmiges Kernhaus von 39:25 mm. Die Kammern (12:15 mm) sind an beiden Enden fast gleich abgestumpft, fast glattwandig, geräumig und geschlossen; die Achsenhöhle ist nur angedeutet. Je Kammer liegen 1 bis 2 ziemlich große, vollkommene, eiförmige, kurz gespitzte, dunkel kaffeebraune Kerne. Die Kelchhöhle ist kegelförmig und reicht bis zur Hälfte zur Achsenhöhle. Das Handbuch bestätigt ein breites, geschlossenes Kernhaus mit voll ausgebildeten Samen. Das Fleisch ist am Schnitt hellgelblichweiß bis weißgelb.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "337 (Nr. 300)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist fein und fest, nach Engelbrecht ziemlich saftig, nach dem Handbuch saftreich. Engelbrecht fand es reinettenartig gewürzt, zuweilen fein herb, mit überwiegender, aber nicht starker Weinsäure und etwas geringerer Süße. Das Handbuch nennt den Geschmack weinsäuerlich-süß, dem Borsdorfer ähnlich, nur kaum merklich herber.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "337 (Nr. 300)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Genussreif von Dezember bis März und länger (Engelbrecht); nach dem Handbuch zeitigt die Frucht im Dezember und hält bis in den März. Sie welkt nach Engelbrecht nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "337 (Nr. 300)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Engelbrecht bewertet die Sorte als Tafel- und Wirtschaftsfrucht. Das Handbuch empfiehlt sie vor allem zum Dörren, weil sie schöne Schnitze ergibt, und für einen hellen, ziemlich haltbaren Obstwein. Oberdieck fand sie zunächst weniger wertvoll, später bei wiederholtem Tragen besser und hielt sie für den Landmann geeignet.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "337 (Nr. 300)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Nach dem Handbuch wird der Baum groß, bildet eine breite, gewölbte Krone und erreicht ein hohes Alter. Er trägt fast jedes Jahr, oft reichlich, und ist in der Blüte nicht empfindlich. Die Triebe sind nach Diel braunrot und fein punktiert, das Blatt groß, eiförmig-oval und scharf gezahnt.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Der Name Pomeranzenapfel wurde nach dem Handbuch bei Metzger für andere Sorten gebraucht (Zwiebelborsdorfer, Wintergoldpepping); die Schweizer Breitlinge bei Metzger passen nach Mettler-Scherrer nicht auf diese Sorte. Im Geschmack erinnert sie an den Borsdorfer.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "holsteiner-cox",
+  "name": "Holsteiner Cox",
+  "synonyme": [
+   {
+    "name": "Vahldieks Sämling Nr. 3",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+    }
+   },
+   {
+    "name": "Gelber Holsteiner Cox",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+    }
+   },
+   {
+    "name": "Holsteiner",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Sämling von Cox Orange, gezogen von Johannes Vahldiek in Eutin (Holstein), nach Wikipedia um 1900, nach BUND Lemgo etwa 1920.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+    },
+    {
+     "quelle": "web_bund_lemgo",
+     "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Die Frucht wird mittelgroß bis groß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "Die Frucht wird mittelgroß bis groß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "säuerliches, aromatisch-würziges Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "aromatisch-würzig, ähnlich Cox Orange",
+    "original": "mit einem Aroma, das dem des 'Cox Orange' nahekommt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "meist Ende September pflückreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "in der Regel ab Oktober genussreif und kann bis Dezember … gelagert werden",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "12",
+    "original": "in der Regel ab Oktober genussreif und kann bis Dezember … gelagert werden",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Pflückreife: ab Ende September",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "Genussreife: ab Mitte Oktober",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "2",
+    "original": "Haltbarkeit: bis Februar",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Das Fruchtfleisch ist weiß, fest und saftig",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "7",
+    "original": "Das Fruchtfleisch ist weiß, fest und saftig",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "Das Fruchtfleisch ist weiß, fest und saftig",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "Der Geschmack ist erfrischend feinsäuerlich würzig",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Tafel- und Wirtschaftsapfel",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Tafel- und Wirtschaftsapfel",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Norddeutsche Renette aus Eutin, ein Sämling von Cox Orange. Die mittelgroße bis große Frucht ist grünlichgelb bis rot, das Fleisch weiß, fest und saftig, säuerlich-würzig mit coxähnlichem Aroma. Der Holsteiner Cox reift früher als Cox Orange, ist ab Oktober genussreif und zählt zu den Hauptsorten Schleswig-Holsteins.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+     },
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Johannes Vahldiek zog die Sorte in Eutin als Sämling von Cox Orange, nach Wikipedia um 1900, nach dem Sortenblatt des BUND Lemgo etwa 1920. Nach seinem Tod wurden die Sämlinge in seinem Garten geprüft und nummeriert; diese Sorte erhielt den Namen „Vahldieks Sämling Nr. 3“. Der Eutiner Gartenbauverein verbreitete sie als Lokalsorte. Nach dem Zweiten Weltkrieg wählte die Landwirtschaftskammer Schleswig-Holstein sie zur Vermehrung und Erprobung aus; als „Gelber Holsteiner Cox“ wurde sie in den 1950er- bis 1970er-Jahren im ganzen Land angebaut und 1959 auf der Bundesgartenschau in Dortmund als „hervorragend“ bewertet. Später verbreitete sie sich nach BUND Lemgo vor allem an der Niederelbe.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+     },
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht wird mittelgroß bis groß und ist grünlichgelb bis rot gefärbt. Angaben zu Form, Kelch, Stiel und Gruben enthalten die ausgewerteten Quellen nicht.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Zum Kernhaus, zu den Kammern und zur Kelchhöhle liegen in den ausgewerteten Quellen keine Angaben vor. Das Fleisch ist am Schnitt weiß.",
+    "belege": [
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist weiß, fest und saftig. Wikipedia nennt den Geschmack säuerlich und aromatisch-würzig mit einem Aroma nahe dem des Cox Orange, BUND Lemgo erfrischend fein säuerlich und würzig. Der Vitamin-C-Gehalt ist nach BUND Lemgo sehr hoch; die Sorte gilt dort als für Allergiker meist verträglich.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+     },
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Pflückreif meist ab Ende September, genussreif ab Oktober bzw. ab Mitte Oktober. Die Früchte halten nach Wikipedia bis Dezember, bei guter Lagerung deutlich länger; BUND Lemgo nennt eine Haltbarkeit bis Februar.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+     },
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Tafel- und Wirtschaftsapfel; BUND Lemgo empfiehlt die Sorte auch für den Anbau auf Streuobstwiesen.",
+    "belege": [
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.bund-lemgo.de/download/Holsteiner_Cox.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum ist an das feuchtkühle norddeutsche Klima angepasst, robust und kommt mit mittleren Böden aus.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Holsteiner_Cox&oldid=248784419"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "lothringer-rambour",
+  "name": "Lothringer Rambour",
+  "synonyme": [
+   {
+    "name": "Rambour d’été",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "291 (Nr. 259)"
+    }
+   },
+   {
+    "name": "Rambour franc",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "291 (Nr. 259)"
+    }
+   },
+   {
+    "name": "Summer Rambo",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "291 (Nr. 259)"
+    }
+   },
+   {
+    "name": "Rambour blanc",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Rambour",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Malum Lotharingicum",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Pomme de Notre Dame",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Charmant blanc",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Früher Ramburger",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Weißer Ramburger",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Pfundapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Weißer Sommer-Rambour",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Großer Kornapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Rotgestreifter Pfundapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Rotgestreifter Tellerapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Lothringer Apfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Augustbreitling",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Gestreifter Backapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Großer Breitling",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Herbstbreitling",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Frauenapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Fürstenapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Mühlapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Rambour de France",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Rambour blanc d’été",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Tellerapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Rosenthaler",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Rambour franc d’été",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Rambour rayé",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   },
+   {
+    "name": "Kindskopfapfel",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Alte, von zahlreichen älteren Autoren beschriebene Sorte (u. a. Quintinye, Duhamel, Jonston), Herkunft unbekannt. Den Namen Rambour leitete Menage nach Mayer vom Dorf Rambures bei Amiens in der Picardie ab.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "85"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 87,
+    "original": "Gestalt 87:60—63",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 61.5,
+    "original": "Gestalt 87:60—63",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.71,
+    "original": "Gestalt 87:60—63",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "flachrund, wenig stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "wenig stielbauch. Stielwölb. etwas breiter als die Kelchw.",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "Hälften etwas ungleich",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. mitteltief, weit",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "Einsenk. mitteltief, weit",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "7",
+    "original": "zwischen breit und etwas ungleich über die Frucht laufenden Rippen. Querschn. nicht ganz rund",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, mitteldick, etwa 11 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Höhle tief, weit, flachfaltig",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "Höhle tief, weit, flachfaltig",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "Höhle … hellgrünlichbraun berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale fein, etwas geschmeidig und glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "hellgrünlichgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "7",
+    "original": "sonnenw. oft weithin, namentlich um die Stielwölb. hellcarmoisin überlaufen",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "hellrot",
+    "original": "hellcarmoisin überlaufen und punktirt",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "hellcarmoisin überlaufen und punktirt, dunkler, breit gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "hellcarmoisin überlaufen und punktirt",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "dunkler, breit gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte sparsam, fein, theils gelblichbraun, theils nur Dupfen",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte sparsam, fein",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "theils gelblichbraun",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 51:31, breit zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern 12:17 … mittelgeräumig, etwas offen",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. fast mittelbreit",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne meist zu 2, mittelgr., eiförmig, gespitzt, braun",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle kegelf., ⅖ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch weisslich, etwas grob",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "meistens ziemlich locker",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "vorherrschend, fast ausschliesslich, doch nicht scharf weinig, kaum etwas süss",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "3",
+    "original": "kaum etwas süss",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "Ende Septbr. bis Novemb.",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "11",
+    "original": "Ende Septbr. bis Novemb.",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "††",
+    "quelle": "engelbrecht1889",
+    "seite": "291 (Nr. 259)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "Gestalt: plattrund",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "eine Hälfte der Frucht fast immer niedriger als die andere",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "in ziemlich tiefer, jedoch geräumiger, mit feinen Rippen umgebener Einsenkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "7",
+    "original": "die als ziemlich starke Erhabenheiten bis zum Stiele fortlaufen",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "1",
+    "original": "Stiel: sehr kurz",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "in ziemlich tiefer und weiter, meist rostiger Höhle",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "in ziemlich tiefer und weiter, meist rostiger Höhle",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "meist rostiger Höhle",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "vom Baume hellstrohgelb, später hellgelb",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "auf der S. S. und um den Stiel herum … karmoisinroth gestreift",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "sehr schön abgesetzt karmoisinroth gestreift",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "karmoisinroth gestreift und dazwischen blaßroth geflammt, auch dunkelroth punktirt",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "geflammt",
+    "original": "dazwischen blaßroth geflammt",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "auch dunkelroth punktirt",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch: weiß, locker, grobkörnig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "Fleisch: weiß, locker",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "saftig, angenehm",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "weinsäuerlich, doch ohne Gewürz",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kernhaus: nach Diel fast geschlossen",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "offen",
+    "original": "Ich fand … die Achse hohl auch die Fächer ganz offen (Jahn)",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Ich fand in dem obgezeichneten Apfel die Achse hohl",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "reift nach Diel schon Anfangs September, … doch schon mit November vorüber",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "11",
+    "original": "reift nach Diel schon Anfangs September, … doch schon mit November vorüber",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Paßt zu Torten und Kuchen, überhaupt als Backapfel",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Derselbe wächst in der Jugend sehr stark",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "85"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Sehr großer, flachrunder Herbstapfel mit hellgelber, auf der Sonnenseite karminrot gestreifter und geflammter Schale und lockerem, weinsäuerlichem Fleisch. Das Illustrirte Handbuch zählt ihn zu den größten Äpfeln überhaupt und wurde vor allem als Back- und Marktapfel geschätzt; die Haltbarkeit reicht nur bis November.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte kommt nach dem Illustrirten Handbuch bei allen älteren Autoren vor: Quintinye, Duhamel (als Rambour franc), Merlet, Jonston (Malum Lotharingicum), später Diel (Bd. I, S. 93). Nach Mayer leitete Menage den Namen Rambour vom Dorf Rambures bei Amiens in der Picardie ab; französische Verzeichnisse schrieben oft Rambourg. Engelbrecht nennt außerdem die Namen Rambour d’été (Leroy), Rambour franc (Thomas) und Summer Rambo (Downing). Seine Früchte stammten aus Meißen.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 87 mm Breite bei 60–63 mm Höhe, zitiert aber für das Handbuch weit größere Früchte (112:82–86 mm); Jahn wog einen Apfel zu 27 Lot. Die Frucht ist flachrund, wenig stielbauchig, eine Hälfte ist fast immer niedriger. Der geschlossene Kelch sitzt in mitteltiefer bis ziemlich tiefer, weiter Einsenkung; breite Rippen laufen ungleich über die Frucht bis zum Stiel, der Querschnitt ist nicht ganz rund. Der Stiel ist kurz, nach Engelbrecht etwa 11 mm lang und mitteldick, in tiefer, weiter, meist berosteter Stielgrube. Wegen des kurzen Stiels sitzt die Frucht nach Jahn fest am Zweig.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist fein, etwas geschmeidig und glänzend. Engelbrecht nennt die Grundfarbe hellgrünlichgelb, das Handbuch vom Baum hellstrohgelb, später hellgelb, zum Kelch hin oft noch grünlich. Sonnenseits und um den Stiel ist die Frucht oft weithin hellkarminrot überlaufen und punktiert und darin dunkler, breit karminrot gestreift; dazwischen liegen nach dem Handbuch blassrote Flammen und dunkelrote Punkte. Die Schalenpunkte sind sparsam und fein, teils gelblichbraun.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Nach Engelbrecht ist das Kernhaus breit zwiebelförmig, 51:31 mm. Die Kammern (12:17 mm) sind stielwärts stumpf gespitzt, kelchwärts stärker abgestumpft bis flach abgerundet, wenig zerrissen, mittelgeräumig und etwas offen; die Achsenhöhle ist fast mittelbreit. Meist liegen 2 mittelgroße, eiförmige, gespitzte, braune Kerne je Kammer, zum Teil unvollkommen oder nur angedeutet. Die Kelchhöhle ist kegelförmig und reicht bis etwa ⅖ zur Achsenhöhle. Im Handbuch nennt Diel das Kernhaus fast geschlossen und geräumig, mit wenigen vollkommenen Kernen; Jahn fand dagegen die Achse hohl und die Fächer ganz offen. Das Fleisch ist am Schnitt weißlich.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist weißlich, etwas grob bzw. grobkörnig, meist ziemlich locker und saftig, im Bruch nach dem Handbuch „wie Schnee glänzend“. Der Geschmack ist fast ausschließlich, aber nicht scharf weinsäuerlich, kaum süß und ohne Gewürz.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Genussreif von Ende September bis November (Engelbrecht). Nach Diel reift die Frucht schon Anfang September, ist 14 Tage später am besten und mit November vorüber; in Meiningen reifte sie Ende September oder Anfang Oktober. Sie wird bald stippig und hält sich nicht länger.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Beide Werke führen den Lothringer Rambour als Wirtschaftsapfel. Nach dem Handbuch eignet er sich für Torten, Kuchen und allgemein als Backapfel und behält als große, auffällige Marktfrucht seinen Wert.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst in der Jugend sehr stark mit abwärts stehenden Ästen und wird alt. Er braucht guten Boden und in rauen Lagen etwas Schutz, etwa im Hausgarten, um fruchtbar zu sein. Diel nannte ihn sehr fruchtbar, Liegel und Oberdieck nur mittelmäßig tragbar. Die Blätter sind sehr groß, die Sommertriebe braunrot, silbrig angelaufen und fein punktiert.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Engelbrecht ordnet die Sorte in die erste Gruppe der Rambours ein: Früchte viel breiter als hoch, flachrund, nicht oder wenig stielbauchig. Unter den zahlreichen Synonymen im Handbuch sind allgemeine Namen wie Breitling, Pfundapfel, Tellerapfel oder Fürstenapfel, die auch für andere Sorten gebraucht wurden; „Breitling“ heißt in der Schweiz z. B. auch der Pomeranzenapfel.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "291 (Nr. 259)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "85"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "97"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "horneburger-pfannkuchen",
+  "name": "Horneburger Pfannkuchen",
+  "synonyme": [
+   {
+    "name": "Horneburger",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+    }
+   },
+   {
+    "name": "Horneburger Pfannkuchenapfel",
+    "beleg": {
+     "quelle": "web_arche_noah",
+     "url": "https://www.arche-noah.at/media/horneburger.pdf"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Niederelbe bei Horneburg. Nach den Norddeutschen Apfeltagen (zitiert bei Wikipedia) um 1840 als Zufallssämling vom Obstbauern Jacob Köpke am Horneburger Marschdamm entdeckt und in Neuenkirchen vermehrt; nach Arche Noah vermutlich um 1875 in Horneburg aus einem Samen von Riesenboiken entstanden.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+    },
+    {
+     "quelle": "web_arche_noah",
+     "url": "https://www.arche-noah.at/media/horneburger.pdf"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "Die Frucht … ist groß (70–100 mm)",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "unregelmaessig",
+    "original": "und oft unregelmäßig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Die Schale ist glatt bis leicht rau",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "rau",
+    "original": "Die Schale ist glatt bis leicht rau",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "10",
+    "original": "Die Pflückreife ist im Oktober",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "Die Genussreife liegt zwischen November und März",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "Die Genussreife liegt zwischen November und März",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "sehr robust und starkwüchsig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "ploidie",
+    "wert": "triploid",
+    "original": "Er ist triploid, also kein Pollenspender",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "ist eine Tafelapfel-Sorte",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Er gilt daher als guter Back- und Musapfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "Groß bis sehr groß, 79 mm hoch und 86 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "9",
+    "original": "Groß bis sehr groß, 79 mm hoch und 86 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "frucht_breite",
+    "wert": 86,
+    "original": "79 mm hoch und 86 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 79,
+    "original": "79 mm hoch und 86 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.92,
+    "original": "79 mm hoch und 86 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "stumpfkonisch",
+    "original": "kurz stumpfkegelförmig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "typisch ist die starke Ungleichhälftigkeit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Glatt, glänzend, zäh, am Lager fettig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Glatt, glänzend, zäh, am Lager fettig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "fettig",
+    "original": "am Lager fettig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "weisslichgelb",
+    "original": "Grundfarbe weißlichgelb bis gelb",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Grundfarbe weißlichgelb bis gelb",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "Deckfarbe bis 50% flächig rot, meist aber verwaschen, punktiert und gestreift",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "Deckfarbe bis 50% flächig rot",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "meist aber verwaschen, punktiert und gestreift",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "meist aber verwaschen, punktiert und gestreift",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "meist aber verwaschen, punktiert und gestreift",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "7",
+    "original": "Schalenpunkte groß, in Röte als helle Tupfen mittel auffällig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "in Röte als helle Tupfen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "0",
+    "original": "kein Rost",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "Halboffen bis geschlossen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Halboffen bis geschlossen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenkung mitteltief bis tief, eng",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "Einsenkung mitteltief bis tief, eng",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "Einsenkung mitteltief bis tief, eng",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "roehre_kernhaus",
+    "original": "Kelchhöhle trichterförmig, Kelchröhre bis ins Kernhaus ragend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "1",
+    "original": "Sehr kurz meist unter 10 mm, 3 mm dick",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Einsenkung tief, mittelweit, wenig grünocker berostet",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Einsenkung tief, mittelweit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "wenig grünocker berostet",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gruenlich",
+    "original": "Grünlich bis gelblichweiß",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Grünlich bis gelblichweiß",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "5",
+    "original": "mittelfeinzellig, mittelsaftig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "angenehm mild süßsäuerlich, etwas Parfum",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "angenehm mild süßsäuerlich, etwas Parfum",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "etwas parfümiert",
+    "original": "etwas Parfum",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kernhaus_lage",
+    "wert": "mitte",
+    "original": "Klein, mittelständig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Gefäßbündel gelb oder grün, zwiebelförmig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achse und Kammern weit offen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "offen",
+    "original": "Achse und Kammern weit offen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Pflückreife Ende September",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "Von November bis April",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "Von November bis April",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "3",
+    "original": "Mittelfrüh blühend, lang anhaltend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "5",
+    "original": "Mittelfrüh blühend, lang anhaltend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Stark wachsend, bildet große, breitpyramidale Kronen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "gut lagerbarer Tafelapfel",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "auf Grund der Größe auch für die häusliche Verwertung",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/horneburger.pdf"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Großer, oft unregelmäßiger und ungleichhälftiger Winterapfel von der Niederelbe, weißlichgelb bis gelb mit verwaschener und gestreifter roter Deckfarbe. Kennzeichnend sind die weit offene Achse, Kammern meist ohne Samen und eine Kelchröhre bis ins Kernhaus. Die triploide Sorte war früher im Alten Land stark verbreitet und Streuobstsorte des Jahres 2016 in Norddeutschland.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Über die Entstehung gibt es zwei Angaben. Nach dem von Wikipedia zitierten Sortenblatt der Norddeutschen Apfeltage entdeckte der Obstbauer Jacob Köpke den Zufallssämling um 1840 am Horneburger Marschdamm und vermehrte ihn in Neuenkirchen. Arche Noah nennt eine Entstehung um 1875 in Horneburg aus einem Samen von Riesenboiken. Die Sorte war an der Niederelbe und in den angrenzenden Gebieten stark verbreitet und stand 1939 in einer Altländer Erntestatistik an der Spitze. In Österreich kommt sie zerstreut vor, vor allem in höheren Lagen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist groß bis sehr groß; Arche Noah maß 86 mm Breite bei 79 mm Höhe, Wikipedia nennt 70–100 mm. Sie ist kurz stumpfkegelförmig, oft unregelmäßig und auffällig ungleichhälftig, der Querschnitt oval; um den Kelch ist sie gerippt. Der Kelch ist halb offen bis geschlossen, die Kelchblätter sind breit und mittellang. Er sitzt in mitteltiefer bis tiefer, enger Einsenkung mit breiten Rippen und unebenem Rand. Der Stiel ist sehr kurz, meist unter 10 mm, etwa 3 mm dick und steckt in tiefer, mittelweiter Stielgrube mit sehr unebenem Rand.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt bis leicht rau, glänzend und zäh und wird am Lager fettig. Vom Baum ist sie überwiegend grün, später weißlichgelb bis gelb. Die rote Deckfarbe bedeckt bis zur Hälfte der Frucht, meist verwaschen, punktiert und gestreift; die Ausfärbung schwankt stark von Jahr zu Jahr. Die großen Schalenpunkte erscheinen in der Röte als helle Tupfen. Die Wangen sind rostfrei, die Stielgrube nur wenig grünocker berostet. Am Lager duftet die Frucht stark und würzig.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Nach dem Sortenblatt von Arche Noah ist das Kernhaus klein, mittelständig und zwiebelförmig, die Gefäßbündel sind gelb oder grün. Achse und Kammern sind weit offen, die Kammerwände zerrissen, oft weißfilzig und bogenförmig. Oft fehlen die Samen ganz; gut ausgebildete Samen sind kastanienbraun und etwa 9 × 5 × 3,5 mm groß. Die Kelchhöhle ist trichterförmig, die Kelchröhre reicht bis ins Kernhaus, die Staubfadenreste sitzen mittelständig. Das Fleisch ist am Schnitt grünlich bis gelblichweiß und bräunt nur sehr langsam.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist grünlich bis gelblichweiß, mittelfeinzellig und mittelsaftig, anfangs fest und dicht, später mürber. Frisch ist es säuerlich; mit der Lagerung wird es milder und schmeckt angenehm mild süßsäuerlich mit etwas Parfüm. Es behält nach dem Anschneiden lange seine Farbe, was Arche Noah mit dem hohen Vitamin-C-Gehalt erklärt.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Pflückreif nach Wikipedia im Oktober, nach Arche Noah Ende September. Genussreif von November bis März (Wikipedia) bzw. bis April (Arche Noah). Im Lager tritt Kernhausschimmel auf.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Der Horneburger Pfannkuchen ist ein gut lagerbarer Tafelapfel und wegen seiner Größe auch für die häusliche Verwertung geeignet; Wikipedia nennt ihn einen guten Back- und Musapfel.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst stark und bildet große, breitpyramidale Kronen; er ist sehr robust und gedeiht auch auf moorigen Standorten. Er blüht mittelfrüh, lange und witterungsunempfindlich, ist aber triploid und damit ein schlechter Pollenspender. Die Sorte braucht hohe Boden- und Luftfeuchtigkeit; in trockenen Lagen versagt sie und leidet unter Mehltau. Der Ertrag setzt spät ein, ist dann hoch und regelmäßig. Schorf tritt wenig auf.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Horneburger_Pfannkuchen&oldid=250318750"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Arche Noah nennt mehrere ähnliche Sorten. Falchs Gulderling ist meist stark gerötet, hat gut ausgebildete Samen und keine weit offene Achse. Boikenapfel und Riesenboiken tragen ihre Deckfarbe flächig bzw. verwaschen, ohne Streifen, und haben gut ausgebildete Samen; der Boikenapfel hat schärfere Kelchrippen, der Riesenboiken ist flacher gebaut. Gloria Mundi enthält viele kleine Samen, das Hausmütterchen ist meist ohne Deckfarbe und nur bis Dezember haltbar.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/horneburger.pdf"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "ingrid-marie",
+  "name": "Ingrid-Marie",
+  "synonyme": [
+   {
+    "name": "Ingrid Marie",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+    }
+   },
+   {
+    "name": "Hoed Orange",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+    }
+   },
+   {
+    "name": "Høed Orange",
+    "beleg": {
+     "quelle": "web_pomologen_verein",
+     "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+    }
+   },
+   {
+    "name": "Ingrid Maries Æble",
+    "beleg": {
+     "quelle": "web_pomologen_verein",
+     "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Dänemark: als Zufallssämling auf dem Gelände der Gartenbauschule Flemløse auf Fünen gefunden (nach Wikipedia und Arche Noah um 1910, nach dem Pomologen-Verein 1908), benannt nach der Tochter des Lehrers K. Madsen. Genetisch als Nachkomme von Cox Orange und Cox Pomona bestimmt.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+    },
+    {
+     "quelle": "web_pomologen_verein",
+     "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+    },
+    {
+     "quelle": "web_arche_noah",
+     "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "Der süß-saure Geschmack",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "Der süß-saure Geschmack",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "Anklänge an Cox Orange",
+    "original": "zeigt Anklänge an Cox-Orange",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Die Früchte sind Mitte bis Ende September reif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Tafelapfel",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Mittelgroße, flachkegelförmige Frucht",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachkonisch",
+    "original": "Mittelgroße, flachkegelförmige Frucht, die sich zum Kelch nur etwas mehr verjüngt",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "Der Querschnitt ist fast rund",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Die gelbe Grundfarbe ist bei gut besonnten Früchten nicht mehr zu sehen",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "da der ganze Apfel dunkel karminrot überzogen sein kann",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "dunkel karminrot überzogen",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "dunkel karminrot überzogen sein kann, Flammen sind deutlich sichtbar",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "geflammt",
+    "original": "Flammen sind deutlich sichtbar",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "3",
+    "original": "Einzelne Rostfiguren sind möglich",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Gelblich weiß, saftig, fruchtig aromatisch",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "Gelblich weiß, saftig",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "später mürbe werdend",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "fruchtig aromatisch",
+    "original": "fruchtig aromatisch",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Pflückreife Mitte September",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "Genussreife Ende September bis Dezember",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "12",
+    "original": "Genussreife Ende September bis Dezember",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "5",
+    "original": "Wächst mittelstark und bildet viel kurzes Fruchtholz",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Die Frucht ist mittelgroß, 47-55 mm hoch, 65-75 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "frucht_breite",
+    "wert": 70,
+    "original": "47-55 mm hoch, 65-75 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 51,
+    "original": "47-55 mm hoch, 65-75 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.73,
+    "original": "47-55 mm hoch, 65-75 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "flachrundlich, an Kelch- und Stielseite abgeplattet",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "ziemlich gleichmäßig gebaut",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "mitte",
+    "original": "mittelbauchig, zum Kelch hin etwas stärker abnehmend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "im Querschnitt ziemlich rund",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Ist glatt, fest, hart, bisweilen schwach wachsig, matt bis schwach glänzend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "matt",
+    "original": "matt bis schwach glänzend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelbgruen",
+    "original": "Grundfarbe gelblichgrün bis hellgelb",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Grundfarbe gelblichgrün bis hellgelb",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "Deckfarbe dunkelbraunrot, dunkelrot bis dunkelpurpur",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "7",
+    "original": "Schalenpunkte zahlreich, hell umhöft",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "3",
+    "original": "Bisweilen netzartig berostet",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Ist geschlossen bis offen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "offen",
+    "original": "Ist geschlossen bis offen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "Kelchgrube weit flach, schüsselförmig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "Kelchgrube weit flach, schüsselförmig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "5",
+    "original": "Ist mittellang (15-25mm), holzig, braun",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "Stielgrube weit, mitteltief",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Stielgrube weit, mitteltief",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "strahlig bis netzartig grüngrau berostet",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gruenlich",
+    "original": "Ist grünlich - bis weißlich gelb, seltener an der Schale rötlich",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Ist grünlich - bis weißlich gelb",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "zuerst mittelfest, dann mürbe",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "mittelfeinzellig, saftig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "süß, mildsäuerlich, mit etwas Coxaroma",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "süß, mildsäuerlich",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "etwas Coxaroma",
+    "original": "mit etwas Coxaroma",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "kernhaus_lage",
+    "wert": "mitte",
+    "original": "Ist eher klein, mittelständig, zwiebelförmig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Ist eher klein, mittelständig, zwiebelförmig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achse ist hohl",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "zu den Fächern leicht geöffnet",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "5",
+    "original": "Der Wuchs ist mittelstark, dichttriebig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "5",
+    "original": "Ist mittelspät, mittellang während",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "7",
+    "original": "Ist mittelspät, mittellang während",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Mitte September bis Oktober",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "10",
+    "original": "Mitte September bis Oktober",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Von geeigneten Standorten ausgezeichneter Tafelapfel",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Dänische Sorte aus der Zeit um 1910, eine der traditionellen Apfelsorten des Alten Landes. Die mittelgroße, flachrunde Frucht ist bei guter Besonnung fast ganz dunkel karminrot überzogen und hat zahlreiche hell umhöfte Schalenpunkte; das Fleisch ist saftig, süßsäuerlich mit Anklang an Cox Orange. Genussreif von Ende September bis Dezember. Streuobstsorte des Jahres 2021 in Norddeutschland.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte wurde als Zufallssämling auf dem Gelände der Gartenbauschule Flemløse auf Fünen gefunden, nach Wikipedia und Arche Noah um 1910, nach dem Pomologen-Verein 1908. Der Lehrer K. Madsen entdeckte den Baum zwischen Himbeersträuchern und benannte ihn nach seiner Tochter. Ab 1936 verbreitete die Baumschule C. Matthiesen in Korsør die Sorte. Nach einer genetischen Untersuchung der Universität Kopenhagen (2017) stammt sie von Cox Orange und Cox Pomona ab. Durch den Erwerbsanbau wurde sie vor allem in Norddeutschland bekannt.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist mittelgroß; Arche Noah gibt 47–55 mm Höhe und 65–75 mm Breite an. Sie ist flachrund, an Kelch- und Stielseite abgeplattet, ziemlich gleichmäßig gebaut, mittelbauchig und zum Kelch etwas stärker abnehmend; der Pomologen-Verein beschreibt sie als flachkegelförmig. Der Querschnitt ist fast rund. Der Kelch ist geschlossen bis offen, die Kelchblätter sind lang, aufrecht und bleiben lange grün; er sitzt in weiter, flacher, schüsselförmiger Kelchgrube. Der holzige, braune Stiel ist mittellang (15–25 mm) und steckt in weiter, mitteltiefer Stielgrube.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, fest und hart, bisweilen schwach wachsig, matt bis schwach glänzend. Die Grundfarbe ist gelblichgrün bis hellgelb und bei gut besonnten Früchten kaum zu sehen, weil die ganze Frucht dunkel karminrot überzogen sein kann; Flammen sind deutlich sichtbar. Arche Noah nennt die Deckfarbe dunkelbraunrot, dunkelrot bis dunkelpurpur, in manchen Jahren fast schwarzrot. Typisch sind die zahlreichen, weit und hell umhöften Schalenpunkte in der Deckfarbe. Die Stielgrube ist strahlig bis netzartig grüngrau berostet, auf der Frucht kommen einzelne Rostfiguren oder Rostnetze vor. Die rote Farbe kann sich ins äußere Fruchtfleisch fortsetzen.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Nach Arche Noah ist das Kernhaus eher klein, mittelständig und zwiebelförmig. Die Achse ist hohl und zu den Kammern hin leicht geöffnet. Die Samen sind zahlreich, gut ausgebildet, braun und breitoval zugespitzt. Am Schnitt ist das Fleisch grünlich- bis weißlichgelb, unter der Schale gelegentlich rötlich.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist gelblichweiß bis grünlichgelb, mittelfeinzellig und saftig, zuerst mittelfest, später mürbe. Der Geschmack ist süß und mild säuerlich, fruchtig-aromatisch mit etwas Coxaroma. Wikipedia beschreibt ihn als süßsauer mit Anklängen an Cox Orange.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Pflückreif ab Mitte September, je nach Witterung bis Oktober. Genussreif nach dem Pomologen-Verein von Ende September bis Dezember. Im Obstkeller mit hoher Luftfeuchtigkeit hält sich die Frucht bis Dezember, nach Wikipedia etwa bis Januar; danach welkt und fault sie und wird mehlig.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Ingrid-Marie ist ein Tafelapfel, der auf geeigneten Standorten ausgezeichnete Früchte bringt. Die Sorte ist Elternsorte von Elstar (mit Golden Delicious) und weiteren Sorten wie Alice, Aroma, Ingol, Karin Schneider, Kim und Odin.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst mittelstark und dichttriebig mit aufrechten Leitästen und bildet reichlich kurzes Fruchtholz; die Krone wird später breitkugelig und hängend. Die Blüte ist mittelspät, der Pollen gut. Die Sorte braucht nährstoffreiche, feuchte, durchlässige Böden und ein kühles, luftfeuchtes Klima, wie in Küstengebieten. Sie ist anfällig für Obstbaumkrebs, Fruchtmonilia und Stippe; Risse an Kelch- und Stielgrube begünstigen Fäulnis am Baum. Wikipedia nennt sie ertragreicher und widerstandsfähiger als Cox Orange, Arche Noah beurteilt den Ertrag als stark standortabhängig mit ausgeprägter Alternanz.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ingrid-Marie&oldid=250258317"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Karin Schneider ist eine dunkler gefärbte Rotmutante von Ingrid-Marie, deren Frucht ganz von dunkelroter Deckfarbe überzogen ist.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/2021_Ingrid_Marie.pdf"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/ingrid_marie.pdf"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ }
+]

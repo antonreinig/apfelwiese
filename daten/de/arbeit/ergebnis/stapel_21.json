@@ -1,0 +1,5468 @@
+[
+ {
+  "id": "pommerscher-schneeapfel",
+  "name": "Pommerscher Schneeapfel",
+  "synonyme": [
+   {
+    "name": "Pommersdorfer Schneeapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+    }
+   },
+   {
+    "name": "Schneeapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Wahrscheinlich aus Pommern; erstmals 1902 im Katalog der Baumschule Späth erwähnt, wo sie als in Pommern verbreitete, eigenständige Sorte geführt wird. Vor 1900 in Neuvorpommern verbreitet.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+    },
+    {
+     "quelle": "web_pomologen_verein",
+     "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "groß bis sehr groß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "9",
+    "original": "groß bis sehr groß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Die Früchte sind mittelgroß bis groß",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "Die Früchte sind mittelgroß bis groß",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "weisslichgelb",
+    "original": "helle, fast weiße Schale",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "3",
+    "original": "Wenig gehauchte Röte",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "Wenig gehauchte Röte",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "weißes Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "das weiße, saftige Fleisch",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "grobzellig, saftig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "das weiße, saftige Fleisch",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "ausgeglichenes Zucker-Säure-Verhältnis",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "ausgeglichenes Zucker-Säure-Verhältnis",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "als Tafelapfel mit ausgewogenem Geschmack",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "wird im September geerntet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "erreicht die Pflückreife Ende September",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "zwischen September und Februar genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "2",
+    "original": "zwischen September und Februar genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "11",
+    "original": "hält sich aber bis maximal Anfang November",
+    "quelle": "web_pomologen_verein",
+    "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Regionale Apfelsorte aus Vorpommern mit heller, fast weißer Schale und weißem, saftigem Fleisch, auf die sich der Name bezieht. Die Landesgruppe Mecklenburg-Vorpommern des Pomologen-Vereins wählte sie zum Apfel des Jahres 2022 und nennt sie geeignet für den extensiven Anbau.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte stammt vermutlich aus Pommern. Die älteste bekannte Erwähnung steht im Katalog der Baumschule Späth von 1902; dort heißt es, die Sorte sei in Pommern verbreitet und mit keiner anderen bekannten Sorte identisch. Nach Wikipedia war sie schon vor 1900 in Neuvorpommern verbreitet.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Größenangaben gehen auseinander: Wikipedia nennt die Früchte groß bis sehr groß, das Sortenblatt des Pomologen-Vereins mittelgroß bis groß. Angaben zu Form, Kelch und Stiel liegen in den ausgewerteten Quellen nicht vor.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist hell, fast weiß, mit wenig gehauchter Röte. Als typisch gelten rote Lentizellen.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Zum Längsschnitt liegt nur wenig vor: Das Fleisch ist weiß, die Kerne werden als dunkel und klein beschrieben. Angaben zu Kernhaus, Kammern und Kelchhöhle fehlen in den ausgewerteten Quellen.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist weiß, grobzellig und saftig, Zucker und Säure halten sich die Waage. Mit fortschreitender Lagerung wird es mehlig.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Geerntet wird im September; in Mecklenburg-Vorpommern ist die Frucht Ende September pflückreif. Zur Haltbarkeit widersprechen sich die Quellen: Wikipedia gibt eine Genussreife von September bis Februar an, das Sortenblatt des Pomologen-Vereins eine Haltbarkeit bis höchstens Anfang November.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Die Sorte stellt nur geringe Ansprüche an den Boden und wird für den extensiven Anbau empfohlen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Pommerscher_Schneeapfel&oldid=263272971"
+     },
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Frisch vom Baum wird der Apfel als Tafelfrucht mit ausgewogenem Geschmack genutzt; nach einigen Wochen Lagerung lässt die Qualität nach, weil das Fleisch mehlig wird.",
+    "belege": [
+     {
+      "quelle": "web_pomologen_verein",
+      "url": "https://www.pomologen-verein.de/media/user_upload/Landesgruppen/MV/Pommerscher_Schneeapfel_2022.pdf"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "potts-saemling",
+  "name": "Potts Sämling",
+  "synonyme": [
+   {
+    "name": "Potts Seedling",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+    }
+   },
+   {
+    "name": "Potts' Seedling",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "In den 1840er Jahren von Samuel Potts in Ashton-under-Lyne (Lancashire, England) gezogen, vermutlich aus dem Samen einer eingeführten amerikanischen Sorte; ab 1849/1850 durch den Gärtner John Nelson aus Rotherham verbreitet.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "die Frucht ist mittelgroß bis groß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "die Frucht ist mittelgroß bis groß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelbgruen",
+    "original": "Der Apfel ist gelblich-grün gefärbt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "als Kochapfel weit verbreitet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "im frühen September erntereif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "im September und Oktober genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "10",
+    "original": "im September und Oktober genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "3",
+    "original": "Der Baum selbst wächst schwach",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   },
+   {
+    "merkmal": "ploidie",
+    "wert": "diploid",
+    "original": "Der Apfel ist diploid",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Englischer Herbstapfel mit grünlich-gelber Schale, der im 19. Jahrhundert im Vereinigten Königreich als Kochapfel weit verbreitet war und heute selten geworden ist. Die Sorte gilt neben Cox Orange als mögliche Mutter von James Grieve.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Samuel Potts zog die Sorte in den 1840er Jahren in Lancashire, wohl aus dem Samen einer importierten amerikanischen Sorte. Bekannt wurde sie durch den Gärtner John Nelson aus Rotherham, der sie ab 1850 anbot. Sie verbreitete sich vor allem in Hausgärten und für den örtlichen Markt.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Früchte sind mittelgroß bis groß und gelblich grün gefärbt. Sie gelten als druckempfindlich, eine Eigenschaft, die sie mit James Grieve teilen. In den deutschen Pomologien des 19. Jahrhunderts (Illustrirtes Handbuch, Lauche, Engelbrecht) ist die Sorte nicht beschrieben; Angaben zu Schnitt, Kelch und Stiel liegen daher nicht vor.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Früchte sind Anfang September erntereif und im September und Oktober genussreif; es handelt sich um einen Herbstapfel ohne lange Lagerfähigkeit.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Potts Sämling ist ein Kochapfel: Beim Kochen zerfällt das Fleisch zu Mus. Die Säure reicht aus, um rasches Bräunen der Schnittflächen zu verhindern, trotzdem braucht es nur wenig Zucker zum Ausgleich.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst schwach und wurde Anfang des 20. Jahrhunderts als passend für Stadtgärten beschrieben. Die Sorte ist diploid und kommt daher als Pollenspender für andere Sorten in Frage.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Als Mutter von James Grieve kommen Cox Orange oder Potts Sämling in Betracht. Für Cox Orange spricht die Färbung, für Potts Sämling sprechen Geschmack, Fruchtform und die Stoßempfindlichkeit, die beide Sorten zeigen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Potts_Sämling&oldid=256863047"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "marzipanrenette",
+  "name": "Marzipanrenette",
+  "synonyme": [
+   {
+    "name": "Marzipan-Reinette",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "156 (Nr. 136)"
+    }
+   },
+   {
+    "name": "Marzipanreinette",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "281"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Herkunft unbekannt; um die Mitte des 19. Jahrhunderts in Nassau und am Rhein mehrfach verbreitet. Diel erhielt die Sorte unter diesem Namen aus Koblenz und beschrieb sie in Band III seiner Kernobstsorten (S. 147).",
+   "belege": [
+    {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "281"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 80,
+    "original": "Gestalt 80:60—62, zuweilen kleiner (66:55—61)",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 61,
+    "original": "Gestalt 80:60—62, zuweilen kleiner (66:55—61)",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.76,
+    "original": "Gestalt 80:60—62, zuweilen kleiner (66:55—61)",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "stark abgest. rundlich, zuweilen etwas rundlich kegelförm.",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "etwas stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften fast gleich",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "auf einer Seite oft niedriger",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "Querschn. ziemlich rund",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "zwischen flachen, kaum zum Bauche laufenden Rippen",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "offen",
+    "original": "Kelch offen bis halb offen",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "Kelch offen bis halb offen",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "offen",
+    "original": "Kelch: … offen oder geschlossen",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: … offen oder geschlossen",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. fast mitteltief, mässig weit",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "5",
+    "original": "Einsenk. fast mitteltief, mässig weit",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "seicht eingesenkt stehend in etwas flachen Falten",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, meistens dünn, bis an 18 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "3",
+    "original": "Stiel: kurz",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Höhle mitteltief, weit, wenig faltig, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "Höhle mitteltief, weit, wenig faltig, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "Höhle mitteltief, weit, wenig faltig, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "mit strahligem gelbbraunem Roste gefütterten weiten Höhle",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "7",
+    "original": "mit strahligem gelbbraunem Roste gefütterten weiten Höhle",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "fettig",
+    "original": "Schale geschmeidig, selbst etwas fettig, matt glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "fettig",
+    "original": "im Liegen zähe fettig werdend",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelbgruen",
+    "original": "hellgrün, später gelblichgrün",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelbgruen",
+    "original": "vom Baume hellgrün, später gelbgrün oder blaßgelb",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "vom Baume hellgrün, später gelbgrün oder blaßgelb",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "3",
+    "original": "sonnenw. zuweilen ziemlich dunkelrother Anflug",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "sonnenw. zuweilen ziemlich dunkelrother Anflug",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "sonnenw. zuweilen ziemlich dunkelrother Anflug",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "1",
+    "original": "selten mit etwas blasser Röthe an der Sonnenseite",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "5",
+    "original": "Punkte meist nur ziemlich zahlreiche Dupfen",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "umhoeft_rot",
+    "original": "öfters daselbst rothumkreiste Punkte",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 51:36, flachrund zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern … mässig geräumig, etwas offen",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "die Kammern sind kaum etwas geöffnet",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. meistens ziemlich breit",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "geschlossen",
+    "original": "Kernhaus: voll- oder schwach-hohlachsig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Kernhaus: voll- oder schwach-hohlachsig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne … eiförmig, gespitzt, braun",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle kegelf., oft etwas eckig, ⅖ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gruenlich",
+    "original": "Fleisch hellgrünlichweiss, fast weisslich",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch: weiß oder schwach grünlich weiß",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "mürbe, etwas locker",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "ziemlich fein, locker, mürbe",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "5",
+    "original": "ziemlich saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "locker, mürbe, saftig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "etwas vorherrschend mild weinig, genügend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "etwas vorherrschend mild weinig, genügend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "von schwach aber angenehm parfümirtem süßweinigen Geschmack",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "von schwach aber angenehm parfümirtem süßweinigen Geschmack",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "etwas rosenapfelartig gewürzt",
+    "original": "etwas rosenapfelartig gewürzt",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "schwach, aber angenehm parfümiert",
+    "original": "schwach aber angenehm parfümirtem süßweinigen Geschmack",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "o††",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "o††",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "*++",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "*++",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "Anfang October bis December",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "12",
+    "original": "Anfang October bis December",
+    "quelle": "engelbrecht1889",
+    "seite": "156 (Nr. 136)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "reift im October und dauert durch November",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "11",
+    "original": "reift im October und dauert durch November",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "derselbe wächst lebhaft, setzt viel Fruchtholz an, wird groß",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "281"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Grünlich gelber Herbstapfel mit flachrund-zwiebelförmigem Kernhaus, mürbem, süßweinigem Fleisch und leichtem Rosenapfel-Aroma. Trotz des Namens ordnete schon das Illustrirte Handbuch die Sorte eher den Rosenäpfeln zu als den Renetten; Engelbrecht führt sie 1889 ebenfalls unter den Rosenäpfeln.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "156 (Nr. 136)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Woher die Sorte stammt, ist nicht überliefert. Nach dem Handbuch (Bd. IV, 1862–65) war sie in Nassau und in der Rheingegend mehrfach verbreitet; Diel erhielt sie unter dem Namen Marzipanreinette aus Koblenz. Er wählte den Namen wegen des Duftes nach Makronen, der beim Reiben der Schale auftreten soll; der Bearbeiter im Handbuch konnte diesen Duft nur abgeschwächt bestätigen. Engelbrecht bekam seine Früchte von Jühlke aus Sanssouci bei Potsdam.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "156 (Nr. 136)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß eine große Frucht mit 80 mm Breite und 60–62 mm Höhe, kleinere mit 66 mm Breite und 55–61 mm Höhe. Die Frucht ist stark abgestumpft rundlich, zuweilen etwas rundlich-kegelförmig, leicht stielbauchig, im Querschnitt ziemlich rund. Engelbrecht fand die Hälften fast gleich, das Handbuch nennt eine Seite oft niedriger. Der Kelch ist offen bis halb offen (Handbuch: offen oder geschlossen) und sitzt zwischen flachen Rippen, die als Falten bis über die Frucht laufen können. Die Kelchgrube beschreibt Engelbrecht als fast mitteltief und mäßig weit, das Handbuch als seicht. Der Stiel ist holzig, dünn und kurz, bis etwa 18 mm lang, in einer mitteltiefen, weiten, berosteten Stielgrube; das Handbuch nennt den Rost strahlig und gelbbraun.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "156 (Nr. 136)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist geschmeidig und wird auf dem Lager fettig. Vom Baum ist sie hellgrün, in der Reife gelblich grün bis blassgelb. Röte ist selten: Engelbrecht beobachtete zuweilen einen ziemlich dunkelroten Anflug auf der Sonnenseite, das Handbuch nur selten etwas blasse Röte. Die Schalenpunkte sind ziemlich zahlreich; auf der Sonnenseite sind sie nach dem Handbuch öfter rot umrandet, auf der Schattenseite grün und deutlich, mit der Reife verblassen sie. Die Frucht riecht ziemlich stark.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "156 (Nr. 136)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Das Kernhaus ist flachrund-zwiebelförmig und misst bei Engelbrecht 51 mm in der Breite und 36 mm in der Höhe. Die Kammern (15:21 mm) sind stielwärts spitz, kelchwärts breiter und abgerundet, mäßig geräumig und etwas offen; das Handbuch nennt sie flach und kaum geöffnet. Die Achsenhöhle ist nach Engelbrecht meist ziemlich breit, das Handbuch beschreibt das Kernhaus als voll- oder schwach hohlachsig. Je Kammer liegen ein bis zwei mittelgroße, meist vollkommene, eiförmige, gespitzte braune Kerne. Die Kelchhöhle ist kegelförmig, oft etwas eckig, und reicht etwa zwei Fünftel des Weges zur Achsenhöhle; die Staubfäden sitzen mittelständig. Am Schnitt ist das Fleisch hell grünlich weiß, nach dem Handbuch mit einer grünlichen Ader um das Kernhaus.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "156 (Nr. 136)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist ziemlich fein, locker und mürbe, ziemlich saftig bis saftig. Engelbrecht beschreibt den Geschmack als etwas vorherrschend mild weinig, genügend süß und etwas rosenapfelartig gewürzt; das Handbuch nennt ihn süßweinig und schwach, aber angenehm parfümiert.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "156 (Nr. 136)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Frucht reift im Oktober. Nach dem Handbuch hält sie sich durch den November und wird bis Weihnachten oft stippig und mehlig; Engelbrecht gibt die Genussreife mit Anfang Oktober bis Dezember an.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "156 (Nr. 136)"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst lebhaft, wird groß, setzt viel Fruchtholz an und war im Garten des Bearbeiters im Handbuch sehr fruchtbar. Diel beschrieb die Sommertriebe als schlank, stark wollig und glänzend rotbraun, die Blätter als groß, langoval und scharf gezähnt.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Engelbrecht und das Handbuch werten die Sorte als Tafelapfel, der sich auch für die Wirtschaft eignet. Das Handbuch schätzte sie, weil sie vor den eigentlichen Winteräpfeln reif ist.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "156 (Nr. 136)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "281"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "prinz-albrecht-von-preussen",
+  "name": "Prinz Albrecht von Preußen",
+  "synonyme": [
+   {
+    "name": "Albrechtapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+    }
+   },
+   {
+    "name": "Albrechtsapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+    }
+   },
+   {
+    "name": "Prince Albert de Prusse",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+    }
+   },
+   {
+    "name": "Książę Albrecht Pruski",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+    }
+   },
+   {
+    "name": "Albrechtovo",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "1863 vom Hofgärtner C. Braun im Schlossgarten von Kamenz (Schlesien) aus einem Kern der Sorte Kaiser Alexander gezogen und nach dem damaligen Besitzer der Herrschaft, Prinz Albrecht von Preußen, benannt.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+    },
+    {
+     "quelle": "web_bund_lemgo",
+     "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "Die großen, flachrunden Früchte",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "Die Frucht ist groß",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "frucht_breite",
+    "wert": 82,
+    "original": "rund 65 mm hoch und 82 mm breit",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 65,
+    "original": "rund 65 mm hoch und 82 mm breit",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.79,
+    "original": "rund 65 mm hoch und 82 mm breit",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "Die großen, flachrunden Früchte",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "Die Frucht ist flachrund, Formfaktor 78 – 80",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "mitte",
+    "original": "mittelbauchig, größte Breite bei 24 mm Höhe",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "hellgelbe bis grüngelbe Grundfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "hellgelbe bis grüngelbe Grundfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Die Fruchtschale ist fein, glänzend, blassgelb",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "Deckfarbe von karminrot bis trübrot",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "braunrot",
+    "original": "Deckfarbe von karminrot bis trübrot",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "7",
+    "original": "größtenteils mit einem leuchtenden Rot gestreift und getuscht",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "hellrot",
+    "original": "größtenteils mit einem leuchtenden Rot gestreift und getuscht",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "größtenteils mit einem leuchtenden Rot gestreift und getuscht",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "größtenteils mit einem leuchtenden Rot gestreift und getuscht",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Die Fruchtschale ist fein, glänzend",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "offen",
+    "original": "Der Kelch ist offen, kurzblättrig",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "sitzt in einer 30 mm breiten, aber tiefen Stielbucht [gemeint: Kelchbucht]",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "3",
+    "original": "Der Stiel ist kurz",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "die Stielbucht … mit grünlichem Rost bekleidet",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gruenlich",
+    "original": "Das Fruchtfleisch ist grünlichweiß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Das Fruchtfleisch ist weiß, ins Gelbliche schimmernd",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "markig, saftvoll",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "süßsäuerlich und sehr saftig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "markig, saftvoll",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "süßsäuerlich",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "süßsäuerlich",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "angenehm mildsäuerlich, schwach gewürzt",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "schwach gewürzt",
+    "original": "angenehm mildsäuerlich, schwach gewürzt",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Das Kernhaus ist hohlachsig",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "mit schwach geöffneten Kammern",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "12",
+    "original": "nur bis Dezember lagerfähig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "Reifezeit: Ende Oktober, hält bis Dezember",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "12",
+    "original": "Reifezeit: Ende Oktober, hält bis Dezember",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "gilt daher vorrangig als Tafelobst",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "eine große, schöne Tafel- und Wirtschaftsfrucht",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "eine große, schöne Tafel- und Wirtschaftsfrucht",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "5",
+    "original": "mittelstarkes, gedrungenes Wachstum",
+    "quelle": "web_bund_lemgo",
+    "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+   },
+   {
+    "merkmal": "ploidie",
+    "wert": "diploid",
+    "original": "Die mittelspäte Blüte dieser diploiden Sorte",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Schlesischer Herbstapfel aus der zweiten Hälfte des 19. Jahrhunderts mit großen, flachrunden Früchten, die auf hellgelbem Grund größtenteils rot gestreift und verwaschen sind. Die Sorte gilt als frosthart und wenig schorfanfällig und wird vor allem als Tafelapfel für den Hausgarten genutzt. In den ausgewerteten Pomologien des 19. Jahrhunderts (Illustrirtes Handbuch, Lauche 1883, Engelbrecht 1889) ist sie nicht beschrieben; der unter „Prinz Albert“ bei Lauche beschriebene englische Winterapfel ist eine andere Sorte.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+     },
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     },
+     {
+      "quelle": "lauche_erg1883",
+      "seite": "171 (Nr. 775)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Hofgärtner C. Braun zog die Sorte 1863 im Schlossgarten von Kamenz in Schlesien aus einem Kern von Kaiser Alexander. Benannt ist sie nach dem damaligen Besitzer der Herrschaft Kamenz, Prinz Albrecht von Preußen, dem jüngsten Bruder Kaiser Wilhelms I. In Schlesien war sie verbreitet und galt als geeignet für Gebirgslagen Sie wird auch Albrechtapfel genannt. Die Obsttafel der Gartenzeitschrift „Nach der Arbeit“ ordnet sie der Familie der Ramburen zu.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+     },
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist groß und flachrund; auf der Obsttafel ist eine Frucht von etwa 82 mm Breite und 65 mm Höhe angegeben, mittelbauchig mit senkrecht stehender Achse. Der Kelch ist offen und kurzblättrig und sitzt in einer etwa 30 mm breiten, tiefen Grube (die Obsttafel schreibt hier versehentlich „Stielbucht“). Der Stiel ist kurz und steht in einer rund 35 mm breiten und 20 mm tiefen Stielgrube, die grünlich berostet ist.",
+    "belege": [
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist fein und glänzend. Die Grundfarbe ist blass- bis hellgelb, nach Wikipedia auch grünlich gelb. Die Deckfarbe nimmt einen großen Teil der Frucht ein, ist gestreift und verwaschen; die Obsttafel nennt sie leuchtend rot, Wikipedia gibt eine Spanne von Karminrot bis Trübrot an.",
+    "belege": [
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Die Obsttafel beschreibt das Kernhaus als hohlachsig mit schwach geöffneten Kammern; die Fruchtachse steht senkrecht. Zu Form der Kernfächer, Kernen und Kelchhöhle liegen keine Angaben vor. Das Fleisch ist am Schnitt weiß mit gelblichem Schimmer (Obsttafel) beziehungsweise grünlich weiß (Wikipedia).",
+    "belege": [
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist markig und sehr saftig. Die Obsttafel beschreibt den Geschmack als angenehm mild säuerlich und schwach gewürzt, Wikipedia als süßsäuerlich. Bei Analysen wurde ein hoher Polyphenolgehalt von 1231 mg/l gemessen, deutlich mehr als bei neueren Sorten.",
+    "belege": [
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Reifeangaben weichen voneinander ab: Wikipedia nennt Ende September, die Obsttafel Ende Oktober. Übereinstimmend halten sich die Früchte bis Dezember; die Obsttafel betont, dass sie bis dahin nicht faulen. Für eine längere Lagerung eignet sich die Sorte nicht.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+     },
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst mittelstark und gedrungen, bildet reichlich kurzes Fruchtholz und hat derbes, widerstandsfähiges Laub. Er trägt früh und ziemlich regelmäßig und eignet sich vor allem für frei wachsende Kronen; die Obsttafel rät zu wenig Schnitt und etwas Düngung. Holz und Blüte gelten als sehr frosthart, die Sorte ist kaum schorfanfällig und passt deshalb auch in raue und höhere Lagen. Die Blüte ist mittelspät. Zur Befruchtung widersprechen sich die Quellen: Wikipedia nennt die diploide Sorte einen guten Pollenspender, die Obsttafel bezeichnet die Keimfähigkeit des Pollens als schlecht.",
+    "belege": [
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Die Früchte werden frisch gegessen und verarbeitet; die Obsttafel nennt die Sorte eine Tafel- und Wirtschaftsfrucht. Wegen der kurzen Lagerfähigkeit gilt sie vorrangig als Tafelobst für den Herbst.",
+    "belege": [
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "https://www.obstsortendatenbank.de/osdb/nda/prinz_albrecht_von_preussen_nda.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinz_Albrecht_von_Preußen&oldid=271471644"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "gelber-lavendel-pepping",
+  "name": "Gelber Lavendel-Pepping",
+  "synonyme": [
+   {
+    "name": "Gelber Lavendelpepping",
+    "beleg": {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "113 (Nr. 319)"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Herkunft unbekannt; Diel erhielt die Sorte um 1780 von einem großen Baum im Garten des Deutschen Ordens in Marburg.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_4",
+     "band": "IV",
+     "seite": "113 (Nr. 319)"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 60,
+    "original": "Gestalt 60:50—54",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 52,
+    "original": "Gestalt 60:50—54",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.87,
+    "original": "Gestalt 60:50—54",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "abgest. länglichrund bis rundlich",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "mitte",
+    "original": "Der Bauch sitzt in der Mitte oder nur ein Geringes mehr nach dem Stiele hin",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften wenig verschieden",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "Querschn. fast rund",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "1",
+    "original": "zwischen sehr flach zum Bauche laufenden Falten",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "1",
+    "original": "mit feinen Falten umgeben … nur sehr flach, oft kaum bemerklich",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: kleinblättrig, geschlossen",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "Einsenk. flach, weit",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "Einsenk. flach, weit",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "in weiter, etwas flacher, fast schüsselförmiger Senkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "in weiter, etwas flacher, fast schüsselförmiger Senkung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel meistens holzig, mitteldick, etwa 19mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Höhle mässig tief, zieml. weit",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "Höhle mässig tief, zieml. weit",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "sitzt in ziemlich tiefer Höhlung",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "0",
+    "original": "nicht oder wenig berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "nicht oder wenig berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt, sehr geschmeidig, glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale glatt, sehr geschmeidig, glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "hellgelb, später lebhafter gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "hell citronengelb, an der Sonnenseite häufig goldartig gelb",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "0",
+    "original": "Eigentliche Röthe findet sich nicht",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte meistens sparsam, fein",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte meistens sparsam, fein",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 42:31, zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "offen",
+    "original": "bald ziemlich weit, bald wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "bald ziemlich weit, bald wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. mittelbreit, selbst ziemlich breit",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne … eiförmig, kurz gespitzt, braun",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_lang",
+    "original": "Kelchhöhle meistens kegelf., ½ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "allermeist stark hohlachsig",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "mit nur etwas geöffneten Kammern",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchröhre geht als breiter Kegel oder auch mehr trichterförmig etwas herab",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "trichter_kurz",
+    "original": "Kelchröhre geht als breiter Kegel oder auch mehr trichterförmig etwas herab",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch hellgelblichweiss",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Das Fleisch ist schwach gelblich weiß",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "etwas abknackend, später mürbe",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "später mürbe, saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "fein, saftreich",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "wenig vorherrschend weinig, fast eben so süss",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "wenig vorherrschend weinig, fast eben so süss",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "etwas renettenartig gewürzt",
+    "original": "etwas reinettenartig gewürzt",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "von edlem, nur fein weinsäuerlichem Zuckergeschmack",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "von edlem, nur fein weinsäuerlichem Zuckergeschmack",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "fast oo††",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "fast oo††",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "sehr angenehmer Tafelapfel und für den Haushalt schätzbar",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "sehr angenehmer Tafelapfel und für den Haushalt schätzbar",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "September",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "9",
+    "original": "September",
+    "quelle": "engelbrecht1889",
+    "seite": "402 (Nr. 355)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "8",
+    "original": "Zeitigt Ende Aug. oder Anf. Sept. und hält sich gut 4 Wochen",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "Zeitigt Ende Aug. oder Anf. Sept. und hält sich gut 4 Wochen",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Der Baum wächst lebhaft, ist gesund",
+    "quelle": "illustr_hb_4",
+    "band": "IV",
+    "seite": "113 (Nr. 319)"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Hell zitronengelber Frühherbstapfel ohne eigentliche Röte, in der Form den Goldpeppingen ähnlich. Das Fleisch ist fein, saftig und fein weinsäuerlich süß mit leichter Renettenwürze. Diel stellte die Sorte zu den Rosenäpfeln, das Illustrirte Handbuch und Engelbrecht ordneten sie den Renetten zu, Engelbrecht unter den einfarbigen Renetten.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "402 (Nr. 355)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Herkunft ist nicht überliefert. Diel erhielt die Sorte um 1780 von einem großen Baum im Garten des Deutschen Ordens in Marburg und beschrieb sie als einziger der älteren Pomologen; Oberdieck bezog seine Reiser von Diel über Herrenhausen. Engelbrecht erhielt 1889 Früchte von Peters aus Neuschottland bei Langfuhr in Westpreußen.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "402 (Nr. 355)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 60 mm Breite und 50–54 mm Höhe; das Handbuch nennt die Größe nach Diel die eines recht starken Borsdorfers. Die Frucht ist abgestumpft länglichrund bis rundlich, der Bauch sitzt in der Mitte oder wenig zum Stiel hin, die Hälften sind kaum verschieden und der Querschnitt fast rund. Der geschlossene Kelch sitzt in einer flachen, weiten, fast schüsselförmigen Grube zwischen sehr flachen, kaum sichtbaren Falten. Der Stiel ist holzig, mitteldick und etwa 19 mm lang; die Stielgrube ist mäßig bis ziemlich tief und weit, kaum oder nach dem Handbuch teils strahlig berostet.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "402 (Nr. 355)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, glänzend und auf dem Lager stark geschmeidig. Sie ist hell zitronengelb und wird mit der Reife lebhafter, auf der Sonnenseite goldgelb. Eigentliche Röte fehlt; das Handbuch erwähnt höchstens rote Ränder um einzelne Punkte. Die Schalenpunkte sind meist spärlich und fein, zuweilen bräunlich umrandet; dazu kommen Rostwarzen. Der Geruch ist merklich, nach Diel ungewöhnlich stark.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "402 (Nr. 355)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Engelbrecht beschreibt ein zwiebelförmiges Kernhaus von 42 mm Breite und 31 mm Höhe. Die Kammern (12:18 mm) sind stielwärts spitz, kelchwärts etwas abgerundet, etwas zerrissen und geräumig, bald ziemlich weit, bald wenig offen; die Achsenhöhle ist mittelbreit bis ziemlich breit. Je Kammer liegen zwei bis vier mäßig große, vollkommene, eiförmige, kurz gespitzte braune Kerne. Die Kelchhöhle ist meist kegelförmig und reicht bis zur Hälfte des Weges zur Achsenhöhle, die Staubfäden sitzen mittelständig. Das Handbuch fand das Kernhaus groß, meist stark hohlachsig mit nur etwas geöffneten Kammern, nach Diel dagegen offen und unregelmäßig; die Kerne nennt es kräftig, spitz und schwarzbraun, die Kelchröhre einen breiten Kegel oder kurzen Trichter. Das Fleisch ist am Schnitt hell gelblich weiß.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "402 (Nr. 355)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist fein, anfangs etwas abknackend, später mürbe und saftig. Engelbrecht beschreibt den Geschmack als kaum vorherrschend weinig, fast ebenso süß und etwas renettenartig gewürzt; das Handbuch nennt ihn einen edlen Zuckergeschmack mit feiner Weinsäure und weniger Säure als beim gleichzeitig reifenden Charlamowsky.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "402 (Nr. 355)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Nach dem Handbuch zeitigt die Frucht Ende August oder Anfang September und hält sich gut vier Wochen; Engelbrecht gibt September als Genussreife an.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "402 (Nr. 355)"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst lebhaft und ist gesund. Nach Diel bildet er eine kugelförmige, dicht belaubte Krone und wird, wenn er ausgewachsen ist, recht fruchtbar; Oberdiecks Probezweige trugen früh und voll. Die Sommertriebe sind stark wollig und dunkel braunrot.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Engelbrecht und das Handbuch werten die Sorte als guten Tafelapfel, der auch im Haushalt brauchbar ist. Oberdieck empfahl häufigen Anbau.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "402 (Nr. 355)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Das Handbuch warnt vor einer Verwechslung mit dem frühen Lavendelapfel, einer anderen Sorte. Sehr ähnlich ist die Hildesheimer Saftreinette, die kurz danach reift und weniger kräftig gelb wird. Färbung, Punktierung und Rostwarzen erinnern an die Goldpeppinge.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "113 (Nr. 319)"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "prinzenapfel",
+  "name": "Prinzenapfel",
+  "synonyme": [
+   {
+    "name": "Echter Prinzenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Ananasapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Berliner",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Brienzer",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Flaschenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Glockenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Gugeliapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Haferapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Haierapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Hasenkopp",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Hasenschnäutzchen",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Ibersheimer Prinzenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Immerträger",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Jerusalemapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Katzenkopf",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Klapperapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Melonenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Nonnenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Nonnentitte",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Rotgestreifter Schlotterapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Schlotterapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Trompeter-Apfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Walzenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    }
+   },
+   {
+    "name": "Prinzen-Apfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "57 (Nr. 13)"
+    }
+   },
+   {
+    "name": "Englischer Flaschenapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "57 (Nr. 13)"
+    }
+   },
+   {
+    "name": "Haberapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "57 (Nr. 13)"
+    }
+   },
+   {
+    "name": "Rothgestreifter Schlotterapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "57 (Nr. 13)"
+    }
+   },
+   {
+    "name": "Hasenkopf",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "57 (Nr. 13)"
+    }
+   },
+   {
+    "name": "Fränkischer Nonnenapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "57 (Nr. 13)"
+    }
+   },
+   {
+    "name": "Bunter Langhans",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "57 (Nr. 13)"
+    }
+   },
+   {
+    "name": "Melon",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "80 (Nr. 71)"
+    }
+   },
+   {
+    "name": "Prinz",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "80 (Nr. 71)"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Sehr alte Sorte, wahrscheinlich aus Norddeutschland, bekannt seit etwa 1780; um 1859 in Norddeutschland sehr häufig, auch in Norwegen und England verbreitet.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+    },
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "57 (Nr. 13)"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "mittelgroßer bis großer, walzenförmiger … Apfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "mittelgroßer bis großer, walzenförmiger … Apfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "frucht_breite",
+    "wert": 66,
+    "original": "Gestalt 66:74—77",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 75.5,
+    "original": "Gestalt 66:74—77",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 1.14,
+    "original": "Gestalt 66:74—77",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "walzenfoermig",
+    "original": "eiwalzen- bis langeiförmig",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "eifoermig",
+    "original": "eiwalzen- bis langeiförmig",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "walzenfoermig",
+    "original": "oft vollkommen walzenförmig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "walzenfoermig",
+    "original": "walzenförmiger, ziemlich gleichmäßig gebauter Apfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "etwas stielbauch. oder mittelbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "mitte",
+    "original": "etwas stielbauch. oder mittelbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften wenig verschieden",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "doch ist der Querschnitt nicht ganz rund",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "5",
+    "original": "mittelstarke Rippen, die sich zur Mitte der Frucht abflachen",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "zwischen nach dem Bauche zu sich abflachenden Rippen",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen bis halb offen",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "Kelch geschlossen bis halb offen",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "geschlossen, oder bei großen Früchten halboffen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. mitteltief, enge",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "Einsenk. mitteltief, enge",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "in geräumiger, ziemlich tiefer … Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "in geräumiger, ziemlich tiefer … Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, dünn, etwa 20 mm lang",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "charakteristisch dünn",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Höhle meistens mässig tief und mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle meistens mässig tief und mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "nicht merklich faltig, etwas berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "in einer bald tiefen, bald flachen etwas berosteten Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt, etwas geschmeidig, mattglänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale: glatt, glänzend",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale: glatt, glänzend",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "gelblichgrün, später hellgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "bei der Zeitigung schönes blasses Citronengelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "gelblichgrün, bei Genussreife hellgelb",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "sonnenw. meistens matt, punktirt geröthet, dunkler roth, kurz gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "sonnenw. meistens matt, punktirt geröthet, dunkler roth, kurz gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "punktirt geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "dunkler roth, kurz gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "Besonnte Früchte lebhaft carmoisin gestreift, getuscht und marmorirt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "lebhaft carmoisin gestreift",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "carmoisin gestreift, getuscht und marmorirt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "carmoisin gestreift, getuscht und marmorirt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "marmoriert",
+    "original": "carmoisin gestreift, getuscht und marmorirt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "Die Sonnenseite der Frucht ist oft kräftig gerötet und gestreift",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "7",
+    "original": "Punkte zahlreich, sehr fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte zahlreich, sehr fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "Punkte zahlreich, sehr fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "offen",
+    "original": "Kammern … ziemlich flach, weit offen",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. meistens recht breit",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 1 bis 2, unter mittelgross, eiförmig, lang gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle kegelf., fast ½ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "offen",
+    "original": "Kernhaus offen, unregelmäßig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchröhre: ein breiter abgestumpfter Kegel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch hellgelblichweiss",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch: gelblich weiß",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Das Fruchtfleisch ist gelblichweiß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "ziemlich fein, mürbe, saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "locker, doch fein",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "ziemlich fein, mürbe, saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "locker, doch fein, saftreich",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "relativ fein und saftig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "etwas vorherrschend weinig, fast ebenso süss",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "etwas vorherrschend weinig, fast ebenso süss",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "von weinartigem Zuckergeschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "von weinartigem Zuckergeschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "nicht stark, doch angenehm gewürzt",
+    "original": "nicht stark, doch angenehm gewürzt",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "feine, an Ananas erinnernde Säure",
+    "original": "durch eine feine an Ananas erinnernde Säure gewürzt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "oo††",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "oo††",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Ein edler, sehr geschmackvoller Tafelapfel und zu jedem wirthschaftlichen Zwecke sehr gut brauchbar",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Ein edler, sehr geschmackvoller Tafelapfel und zu jedem wirthschaftlichen Zwecke sehr gut brauchbar",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "October bis Januar",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "1",
+    "original": "October bis Januar",
+    "quelle": "engelbrecht1889",
+    "seite": "80 (Nr. 71)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "September, Oktober, hält bis Weihnachten und oft sogar bis Februar",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "12",
+    "original": "September, Oktober, hält bis Weihnachten und oft sogar bis Februar",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Pflückreif sind die Früchte ab Ende September",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "die Genussreife setzt ab Oktober ein",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "1",
+    "original": "Im Naturlager sind sie bis Januar haltbar",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "7",
+    "original": "Die Blüthe erscheint spät und ist nicht empfindlich",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "7",
+    "original": "Die späte Blütezeit ist unempfindlich gegen Witterungseinflüsse",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "in der Jugend raschwüchsig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "57 (Nr. 13)"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Alte, in Norddeutschland weit verbreitete Herbst- und Wintersorte mit hoher, walzen- bis eiförmiger Frucht, die unter vielen regionalen Namen bekannt ist, etwa Hasenkopp, Nonnenapfel oder Melonenapfel. Die Schale ist zur Reife zitronengelb, sonnenseits mit karminroten Streifen. Das Fleisch ist locker, saftig und weinig süß mit feiner Würze, die oft mit Ananas verglichen wird. Engelbrecht ordnete die Sorte den Schlotteräpfeln zu.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "80 (Nr. 71)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte ist sehr alt und stammt wahrscheinlich aus Norddeutschland; Wikipedia nennt 1780 als Jahr, seit dem sie bekannt ist. Das Handbuch (1859) beschreibt sie als in Norddeutschland sehr häufig, dazu in Norwegen und England. Die vielen Namen spiegeln diese Verbreitung: Nonnen- und Melonenapfel in Hamburg und Holstein, Trompeterapfel in Böhmen, Englischer Flaschenapfel in Norwegen und Ostpreußen, Hasenkopf bei Diel. Engelbrecht erhielt 1889 Früchte von Lauche in Potsdam, von Kolbe in Langwarden und vom Verein für Pomologie in Meiningen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "80 (Nr. 71)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist höher als breit: Engelbrecht maß 66 mm Breite bei 74–77 mm Höhe. Die Form ist veränderlich, oft vollkommen walzenförmig, bei anderen Früchten mehr oval; Engelbrecht nennt sie eiwalzen- bis langeiförmig, etwas stielbauchig oder mittelbauchig, mit wenig verschiedenen Hälften. Flache Rippen laufen vom Kelch her und verflachen zum Bauch hin, sodass der Querschnitt nicht ganz rund ist. Der Kelch ist geschlossen bis halb offen; Engelbrecht beschreibt die Kelchgrube als mitteltief und eng, das Handbuch als geräumig und ziemlich tief. Der Stiel ist auffallend dünn und holzig, etwa 20 mm lang, in einer mäßig tiefen, etwas berosteten Stielgrube.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "80 (Nr. 71)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt und matt glänzend, vom Baum gelblich grün, zur Reife hell zitronengelb. Besonnte Früchte sind karminrot gestreift, getuscht und marmoriert, beschattete nur matt gestreift; Engelbrecht beschreibt die Sonnenseite als punktiert gerötet mit kurzen, dunkleren roten Streifen. Die Schalenpunkte sind zahlreich, sehr fein und bräunlich. Die Schale riecht deutlich, nach Wikipedia an Ananas erinnernd.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "80 (Nr. 71)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Engelbrecht beschreibt ein hohes, breit eilanzettliches Kernhaus von 40 mm Breite und 49 mm Höhe. Die langen Kammern (11:31 mm) sind stielwärts spitz, kelchwärts abgerundet oder abgestumpft, zerrissen, ziemlich flach und weit offen; die Achsenhöhle ist meist recht breit. Je Kammer liegen ein bis zwei unter mittelgroße, eiförmige, lang gespitzte braune Kerne, die oft unvollkommen sind. Die Kelchhöhle ist kegelförmig und reicht fast bis zur Hälfte des Weges zur Achsenhöhle; das Handbuch nennt sie einen breiten, abgestumpften Kegel. Das Handbuch beschreibt das Kernhaus als offen und unregelmäßig, mit selten zahlreichen Kernen. Weil die Kerne einzelner Früchte lose liegen und beim Schütteln klappern, heißt die Sorte auch Klapperapfel. Das Fleisch ist am Schnitt hell gelblich weiß.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "80 (Nr. 71)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist ziemlich fein, locker bis mürbe und saftig. Engelbrecht nennt den Geschmack etwas vorherrschend weinig, fast ebenso süß und angenehm, wenn auch nicht stark gewürzt; das Handbuch beschreibt einen weinartigen Zuckergeschmack, der bei richtiger Reife durch eine feine, an Ananas erinnernde Säure gewürzt ist.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "80 (Nr. 71)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Gepflückt wird ab Ende September. Das Handbuch gibt September und Oktober als Reifezeit an, die Früchte halten bis Weihnachten, oft bis Februar; Engelbrecht nennt Oktober bis Januar. Nach Wikipedia welken die Früchte auf dem Lager leicht und sollten kühl und feucht liegen; Engelbrecht vermerkte dagegen, dass seine Früchte nicht welkten.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "80 (Nr. 71)"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum gedeiht in vielen Böden und auch in rauen Lagen bis etwa 800 m sowie in Küstengebieten, bevorzugt aber feuchten, nahrhaften Boden. In der Jugend wächst er rasch und bildet später eine hochkugelige, etwas licht verzweigte Krone mit leicht hängenden Ästen. Er trägt früh, reich und regelmäßig und kann sehr alt werden; ältere Bäume neigen zu Krebs. Weil die Seitentriebe schlecht austreiben, müssen die Leittriebe mehrere Jahre zurückgeschnitten werden; für Spaliere eignet sich die Sorte nicht. Die Blüte erscheint spät und ist wenig witterungsempfindlich.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Prinzenapfel&oldid=226126657"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Das Handbuch nennt die Sorte einen edlen Tafelapfel, der für jeden wirtschaftlichen Zweck sehr gut taugt, und eine gesuchte Marktfrucht; sie wurde bei der Versammlung deutscher Pomologen in Gotha zum Anbau empfohlen. Engelbrecht bewertet sie als Tafel- und Wirtschaftsapfel.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "57 (Nr. 13)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "80 (Nr. 71)"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Engelbrecht konnte Früchte des Langelandsapfels aus Dänemark nicht von großen, normal entwickelten Prinzenäpfeln unterscheiden. Der Einsender Matthiesen hielt beide für verschiedene Sorten, weil der Baum des Langelandsapfels eher einem Gravensteiner gleiche und früher blühe.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "81 (Nr. 72)"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "purpurroter-agatapfel",
+  "name": "Purpurroter Agatapfel",
+  "synonyme": [
+   {
+    "name": "Agatapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+    }
+   },
+   {
+    "name": "Purpurroter Winteragatapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+    }
+   },
+   {
+    "name": "Purpurrother Agatapfel",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "201 (Nr. 180)"
+    }
+   },
+   {
+    "name": "Purpurrother Winter-Agatapfel",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "201 (Nr. 180)"
+    }
+   },
+   {
+    "name": "Purpurrother Kronenapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "437 (Nr. 202)"
+    }
+   },
+   {
+    "name": "Rode Tulp Kroon",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "437 (Nr. 202)"
+    }
+   },
+   {
+    "name": "Engelsche Aagt",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "437 (Nr. 202)"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Herkunft unbekannt, vermutlich aus Holland: Diel erhielt die Sorte von dort unter dem Namen Rode Tulp Kroon. Oberdieck fand um 1832 in Sulingen (Hannover) zwei alte Hochstämme, die wohl ebenfalls aus Holland stammten.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "437 (Nr. 202)"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "3",
+    "original": "ein kleiner abgestumpft rundlicher … Tafelapfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+   },
+   {
+    "merkmal": "frucht_breite",
+    "wert": 54,
+    "original": "Gestalt 54:46",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 46,
+    "original": "Gestalt 54:46",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.85,
+    "original": "Gestalt 54:46",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "etwas abgest. rundlich",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "Gestalt: kugelförmig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "abgestumpft rundlicher und gleichmäßig gebauter Tafelapfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "mitte",
+    "original": "ziemlich mittelbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "mitte",
+    "original": "Der Bauch sitzt in der Mitte",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften gleich",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "1",
+    "original": "Querschn. rund",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "1",
+    "original": "zwischen sehr kleinen, flach und kaum zum Bauche laufenden Rippen",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch fast geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: starkblättrig, lange grün bleibend, fast geschlossen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "Einsenk. flach, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "5",
+    "original": "Einsenk. flach, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "sitzt in mäßig tiefer Senkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, dünn bis mitteldick, etwa 13 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, dünn bis mitteldick, etwa 13 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel: dünn, holzig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "3",
+    "original": "Höhle ziemlich flach, mässig weit",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle ziemlich flach, mässig weit",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "3",
+    "original": "sitzt in enger, nicht tiefer Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "0",
+    "original": "nicht oder wenig berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "nicht oder wenig berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "bereift",
+    "original": "Schale etwas geschmeidig, beduftet, glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale etwas geschmeidig, beduftet, glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "bereift",
+    "original": "am Baume stark mit Duft belaufen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale: zart, glänzend",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "bereift",
+    "original": "Die Schale ist bereift",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "grünlichgelb, später gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Grundfarbe grünlichgelb, später schön citronengelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "7",
+    "original": "sonnenw. oft weithin dunkelcarmoisinroth, fast ringsum dunkler",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "sonnenw. oft weithin dunkelcarmoisinroth, fast ringsum dunkler",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "dunkelcarmoisinroth, … mehr purpurroth",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "purpurrot",
+    "original": "dunkelcarmoisinroth, … mehr purpurroth",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "lang, oft bandartig gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "bei besonnten die ganze Schale mit dunkler Purpurfarbe rein verwaschen (nach Diel)",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "purpurrot",
+    "original": "mit dunkler Purpurfarbe rein verwaschen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "mit dunkler Purpurfarbe rein verwaschen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "purpurrothen … bandartigen … Streifen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "purpurrot",
+    "original": "intensive rote (purpurne) Farbe und ist gestreift",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "intensive rote (purpurne) Farbe und ist gestreift",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "7",
+    "original": "Dupfen zahlreich, fein, gelblich",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Dupfen zahlreich, fein, gelblich",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "Dupfen zahlreich, fein, gelblich",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "7",
+    "original": "Punkte zahlreich, fein und gelblich",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte zahlreich, fein und gelblich",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "Punkte zahlreich, fein und gelblich",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 33:29, zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern … ziemlich geräumig, etwas offen",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. mittelbreit",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne … ziemlich klein, ungleich eiförmig, gespitzt, braun",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_lang",
+    "original": "Kelchhöhle meistens kegelf. und ½ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "trichter_kurz",
+    "original": "Kelchröhre: meistens kurz, geht zuweilen cylinderförmig bis auf die Spitze des Kernhauses",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gelblich",
+    "original": "Fleisch gelblich, unter der Schale mit röthlichem Anfluge",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gelblich",
+    "original": "stark gelblich, nach der Schale zu oft etwas röthlich gelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "sehr fein, markig bis mürbe",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "sehr fein, markig bis mürbe",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "markig, in der Zeitigung zart und mürbe",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "markig bis mürbe, saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "sehr fein, saftvoll",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "wenig vorherrschend weinig, fast ebenso süss",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "wenig vorherrschend weinig, fast ebenso süss",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "rosenapfelartig gewürzt",
+    "original": "rosenapfelartig gewürzt",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "sehr angenehmen schwach weinartigen Zuckergeschmacke",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "sehr angenehmen schwach weinartigen Zuckergeschmacke",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "stark und eigentümlich gewürzt, etwas alantartig",
+    "original": "von stark und eigenthümlich gewürztem, etwas alantartigen … Zuckergeschmacke",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "oo††",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "oo††",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "für Tafel und Haushalt gleich gut",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "für Tafel und Haushalt gleich gut",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Tafelapfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "Decemb. bis April",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "Decemb. bis April",
+    "quelle": "engelbrecht1889",
+    "seite": "201 (Nr. 180)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "zeitigt im December und hält sich bis zum Frühjahr",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "ab Dezember genussreif und kann bis April gelagert werden",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "ab Dezember genussreif und kann bis April gelagert werden",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Der Baum wächst zwar fein, doch lebhaft und wird groß",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "437 (Nr. 202)"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Kleiner, kugeliger Winterapfel, der auf zitronengelbem Grund oft fast ganz dunkel purpurrot verwaschen oder breit gestreift ist und bläulich beduftet. Das gelbliche Fleisch ist fein, saftig und eigentümlich gewürzt, mit Anklängen an Rosenapfel oder Alant. Das Handbuch nannte ihn einen äußerst kenntlichen, schönen Apfel; Engelbrecht ordnete ihn den Rosenäpfeln zu.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "201 (Nr. 180)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Woher die Sorte stammt, ist unbekannt. Diel erhielt sie aus Holland als Rode Tulp Kroon und beschrieb sie als Purpurroten Winter-Agatapfel; das Handbuch hält den holländischen Namen für möglicherweise falsch. Oberdieck fand die Sorte um 1832 nur einmal, in Sulingen bei Hannover, an zwei starken Hochstämmen und wunderte sich, wie wenig sie verbreitet war. Engelbrecht erhielt 1889 Früchte von Hohm aus Gelnhausen. Die Sorte gilt als möglicher Elternteil von Zuccalmaglios Renette (mit Ananasrenette); diese Abstammung ist unsicher.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "201 (Nr. 180)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist klein: Engelbrecht maß 54 mm Breite und 46 mm Höhe, das Handbuch nennt gut gewachsene Früchte etwa 2½ Zoll breit und 2 Zoll hoch. Sie ist kugelförmig bis etwas abgestumpft rundlich, mittelbauchig, mit gleichen Hälften und rundem Querschnitt; einzelne unregelmäßige Erhebungen können die Rundung stören. Der Kelch ist fast geschlossen, starkblättrig, oft verstümmelt, und sitzt in einer flachen (Engelbrecht) bis mäßig tiefen (Handbuch) Grube mit sehr kleinen, feinen Falten. Der Stiel ist holzig, dünn, bei Engelbrecht etwa 13 mm lang, in einer ziemlich flachen, engen bis mäßig weiten, kaum berosteten Stielgrube, die nach dem Handbuch oft durch einen Fleischwulst verengt ist.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "201 (Nr. 180)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist zart, glänzend und am Baum stark bläulich beduftet. Die Grundfarbe ist grünlich gelb und wird zur Reife zitronengelb; sie ist aber oft kaum zu sehen. Engelbrecht beschreibt die Sonnenseite als weithin dunkel karminrot, rundum dunkler und mehr purpurrot mit langen, bandartigen Streifen. Nach Diel sind besonnte Früchte ganz dunkelpurpurn verwaschen, beschattete breit gestreift; Oberdieck sah die gestreifte Färbung auch an besonnten Früchten. Die Schalenpunkte sind zahlreich, fein und gelblich. Reif riecht die Frucht deutlich nach Veilchen.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "201 (Nr. 180)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Engelbrecht beschreibt ein zwiebelförmiges Kernhaus von 33 mm Breite und 29 mm Höhe. Die Kammern (8:14 mm) sind stielwärts spitz, kelchwärts abgerundet, glattwandig, ziemlich geräumig und etwas offen; die Achsenhöhle ist mittelbreit. Je Kammer liegen ein bis zwei ziemlich kleine, ungleich eiförmige, gespitzte braune Kerne. Die Kelchhöhle ist meist kegelförmig und reicht bis zur Hälfte des Weges zur Achsenhöhle; die Staubfäden sitzen etwa mittelständig. Nach dem Handbuch ist das Kernhaus klein, die Kammern sind oft ungleich groß; Diel fand sie oft ohne Kerne, Oberdieck meist mit Kernen. Die Kelchröhre ist dort meist kurz und reicht zuweilen zylindrisch bis an die Spitze des Kernhauses. Das Fleisch ist am Schnitt gelblich, unter der Schale rötlich angehaucht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "201 (Nr. 180)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist sehr fein, saftig, anfangs markig und in der Reife zart und mürbe. Engelbrecht nennt den Geschmack kaum vorherrschend weinig, fast ebenso süß und rosenapfelartig gewürzt; das Handbuch beschreibt einen stark und eigentümlich gewürzten, etwas alantartigen, schwach weinigen Zuckergeschmack.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "201 (Nr. 180)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Frucht wird im Dezember genussreif und hält sich bis ins Frühjahr; Engelbrecht und Wikipedia nennen April als Ende. Diel gab an, die Früchte welkten im Frühjahr, Oberdieck beobachtete das auf der Obstkammer nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "201 (Nr. 180)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Agatapfel&oldid=266251002"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst mit feinen, aber lebhaften Trieben, wird groß und bildet eine kugelige, dicht und etwas düster belaubte Krone. Er setzt bald viel kurzes Fruchtholz an und ist äußerst fruchtbar, oft so sehr, dass Ausdünnen nötig ist, damit die Früchte nicht zu klein bleiben. Oberdieck fand ihn auf leichtem und schwerem Boden gesund. Die Sommertriebe sind schlank, dicht grauwollig und trüb braunrot.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Engelbrecht und das Handbuch werten die Sorte als Tafelapfel, der ebenso im Haushalt taugt. Oberdieck empfahl häufigen Anbau und hielt eine Pyramide davon für eine Zierde des Obstgartens.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "201 (Nr. 180)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Nach dem Handbuch ist der Doppelte Agatapfel im Aussehen und im Fleisch nahe mit dem Purpurroten Agatapfel verwandt. Diel merkte an, dass Knoop die Tulp Kroon mit dem Roten Winter-Kronenapfel gleichsetzte; den von Diel genannten Namen Leckerbeetje ordnet das Handbuch einer ganz anderen Frucht zu.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "243 (Nr. 106)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "437 (Nr. 202)"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "hahnen-pepping",
+  "name": "Hahnen-Pepping",
+  "synonyme": [
+   {
+    "name": "Cockle's Pippin",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "416 (Nr. 369)"
+    }
+   },
+   {
+    "name": "Cockle-Pippin",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "416 (Nr. 369)"
+    }
+   }
+  ],
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 61,
+    "original": "Gestalt 61:54—55, meistens kleiner (53:49—50)",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 54.5,
+    "original": "Gestalt 61:54—55, meistens kleiner (53:49—50)",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.89,
+    "original": "Gestalt 61:54—55",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "eifoermig",
+    "original": "abgest. eiförmig, etwas stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "abgest. eiförmig, etwas stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften gleich",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "1",
+    "original": "Querschn. rund",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "1",
+    "original": "Einsenk. … eben oder wenig faltig",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen oder sehr wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. mässig tief, oft etwas enge",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "Einsenk. mässig tief, oft etwas enge",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, dünn bis mitteldick, etwa 16 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, dünn bis mitteldick, etwa 16 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Höhle mitteltief, ziemlich weit, eben, meistens zart berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "Höhle mitteltief, ziemlich weit, eben, meistens zart berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "meistens zart berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale theils glatt, theils fein rauh",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "rau",
+    "original": "Schale theils glatt, theils fein rauh",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "grünlichgelb, später gelb, sonnenw. etwas goldiger",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "7",
+    "original": "Punkte zahlreich, fein bis mitteldick, oft etwas eckig, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte zahlreich, fein bis mitteldick",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "5",
+    "original": "Punkte zahlreich, fein bis mitteldick",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "oft etwas eckig, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "3",
+    "original": "Kleine Anflüge von Rost häufig",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 37:31, rundlich zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern 9:19 … geräumig, etwas offen",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. mässig breit",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 2, recht klein, vollkommen, lang eiförmig, gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "trichter_lang",
+    "original": "Kelchhöhle kegeltrichterf., gut ½ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch hellgelblichweiss",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "fest, später zart und mürbe",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "zart und mürbe, saftig, edel",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "wenig vorherrschend weinig, fast eben so süss",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "wenig vorherrschend weinig, fast eben so süss",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "etwas citronatartig gewürzt",
+    "original": "etwas citronatartig gewürzt",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "oo†",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "oo†",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "Ende December bis März",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "Ende December bis März",
+    "quelle": "engelbrecht1889",
+    "seite": "416 (Nr. 369)"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Gelber Winterapfel aus der Gruppe der einfarbigen Renetten, unter dem englischen Namen Cockle's Pippin bekannt. Engelbrecht beschreibt ein feines, saftiges, edles Fleisch mit leichter Zitronatwürze und eine Genussreife von Ende Dezember bis März. Weitere Beschreibungen liegen im ausgewerteten Material nicht vor; das Illustrirte Handbuch (Bd. I, S. 479), auf das Engelbrecht verweist, ist in der vorliegenden Texterfassung nicht lesbar.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "416 (Nr. 369)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Zur Herkunft macht Engelbrecht keine Angaben. Er nennt die englischen Namen Cockle's Pippin (nach Forsyth) und Cockle-Pippin (nach Downing und Thomas' Guide). Seine Früchte erhielt er 1889 von Jühlke aus Sanssouci bei Potsdam.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "416 (Nr. 369)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 61 mm Breite und 54–55 mm Höhe, meist waren die Früchte kleiner (53 mm breit, 49–50 mm hoch). Die Frucht ist abgestumpft eiförmig, etwas stielbauchig, mit gleichen Hälften und rundem Querschnitt. Der Kelch ist geschlossen oder sehr wenig offen und sitzt in einer mäßig tiefen, oft etwas engen, glatten oder wenig faltigen Grube. Der Stiel ist holzig, dünn bis mitteldick, etwa 16 mm lang, in einer mitteltiefen, ziemlich weiten Stielgrube, die meist zart berostet ist.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "416 (Nr. 369)"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist teils glatt, teils fein rau, grünlich gelb und in der Reife gelb, auf der Sonnenseite etwas goldiger; Röte erwähnt Engelbrecht nicht. Die Schalenpunkte sind zahlreich, fein bis mitteldick, oft etwas eckig und bräunlich; kleine Rostanflüge sind häufig. Die Frucht welkt zuweilen etwas und riecht merklich.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "416 (Nr. 369)"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Das Kernhaus ist rundlich-zwiebelförmig und misst 37 mm in der Breite und 31 mm in der Höhe. Die Kammern (9:19 mm) sind stielwärts spitz, kelchwärts abgerundet, fein zerrissen, geräumig und etwas offen; die Achsenhöhle ist mäßig breit. Je Kammer liegen zwei recht kleine, vollkommene, lang eiförmige, gespitzte, dunkelbraune Kerne. Die Kelchhöhle ist kegeltrichterförmig und reicht gut bis zur Hälfte des Weges zur Achsenhöhle; die Staubfäden sitzen im äußeren Drittel. Das Fleisch ist am Schnitt hell gelblich weiß.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "416 (Nr. 369)"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist fein, anfangs fest, in der Reife zart, mürbe und saftig. Engelbrecht nennt den Geschmack edel, kaum vorherrschend weinig und fast ebenso süß, etwas zitronatartig gewürzt.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "416 (Nr. 369)"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Genussreife reicht nach Engelbrecht von Ende Dezember bis März. Auf dem Lager welken die Früchte zuweilen etwas.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "416 (Nr. 369)"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Engelbrecht wertet die Sorte als Tafelapfel, der auch im Haushalt brauchbar ist.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "416 (Nr. 369)"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "purpurroter-cousinot",
+  "name": "Purpurroter Cousinot",
+  "synonyme": [
+   {
+    "name": "Červené tvrdé",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+    }
+   },
+   {
+    "name": "Purpurröd Cousinot",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Genauer Ursprung unbekannt. Die heute unter diesem Namen verbreitete Sorte geht nach Wikipedia auf den Reisermuttergarten Magdeburg zurück und ist dort seit den 1920er Jahren verbreitet; sie gilt als nicht identisch mit Diels historischem Purpurroten Wintercousinot.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Der Apfel wird mittelgroß, meist kleiner als 8 cm im Durchmesser",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "eine runde, meist regelmäßige, hochgebaute Form",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "eine runde, meist regelmäßige, hochgebaute Form",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Die glatte Schale",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelbgruen",
+    "original": "gelblichgrüne bis gelbe Grundfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "gelblichgrüne bis gelbe Grundfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "mit einer meist intensiv roten Deckfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "weist eine leichte Punktierung (Lentizellen) auf",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "ein weißes bis hellgelbliches z. T. von einer rot gefärbten Äderung durchzogenes Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "ein weißes bis hellgelbliches z. T. von einer rot gefärbten Äderung durchzogenes Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "erfrischend, aromatisch",
+    "original": "einen erfrischenden, aromatischen Geschmack",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "10",
+    "original": "Der Apfel ist im Oktober pflückreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "die Genussreife erreicht er spätestens im Dezember",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "früher als Tafel- und Wirtschaftsapfel genutzt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "früher als Tafel- und Wirtschaftsapfel genutzt",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Alter Winterapfel mit mittelgroßen, runden, hochgebauten Früchten und meist intensiv roter Deckfarbe. Wegen dieser Farbe, die sich durch Polieren noch hervorheben lässt, gehört die Sorte zu den Weihnachtsäpfeln und wurde und wird als Christbaumschmuck verwendet. Heute wird sie als Liebhabersorte und im Streuobst angebaut.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Der genaue Ursprung ist nicht bekannt. Nach Wikipedia stammt die heute unter dem Namen Purpurroter Cousinot verbreitete Sorte vom Reisermuttergarten Magdeburg und ist seit den 1920er Jahren in Umlauf. Sie soll nicht identisch sein mit einer verschollenen Sorte, die Diel 1813 als Englische Büschelrenette und 1828 als Purpurroten Wintercousinot beschrieb.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist mittelgroß, meist unter 8 cm im Durchmesser, rund, meist regelmäßig und hoch gebaut. Angaben zu Kelch, Stiel und Längsschnitt der heutigen Sorte liegen im ausgewerteten Material nicht vor.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, auf gelblich grünem bis gelbem Grund meist intensiv rot gefärbt und nur leicht punktiert. Die Röte lässt sich durch Polieren zum Glänzen bringen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist weiß bis hell gelblich und teilweise von roten Adern durchzogen. Der Geschmack wird als erfrischend und aromatisch beschrieben.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Gepflückt wird im Oktober, genussreif ist der Apfel spätestens im Dezember. Bei guter Lagerung hält er sich bis zum Ende des Frühjahrs oder bis in den Frühsommer.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Als Hoch- oder Halbstamm bildet die Sorte eine breite, kugelige, dicht verzweigte Krone. Sie ist anspruchslos, gedeiht auch in kalten Gegenden und setzt dank einer lang andauernden, wenig empfindlichen Blüte meist gut Früchte an.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Früher wurde die Sorte als Tafel- und Wirtschaftsapfel genutzt; wegen ihrer Farbe dient sie auch als Weihnachtsbaumschmuck.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Engelbrecht (1889, Nr. 506) und das Illustrirte Handbuch (Bd. IV, Nr. 383) beschreiben unter dem Namen Purpurroter Cousinot den Purpurroten Winter-Cousinot Diels; das Handbuch setzt ihn mit Diels Englischer Büschelreinette gleich. Nach Wikipedia handelt es sich dabei um eine andere, heute verschollene Sorte. Ob die historischen Beschreibungen auf die heute verbreitete Sorte passen, ist ungeklärt; ihre Angaben sind deshalb hier nicht übernommen.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "559 (Nr. 506)"
+     },
+     {
+      "quelle": "illustr_hb_4",
+      "band": "IV",
+      "seite": "243 (Nr. 383)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Cousinot&oldid=258880903"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "hoerlins-pepping",
+  "name": "Hörlins Pepping",
+  "synonyme": [
+   {
+    "name": "Hörlin's Pepping",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "415 (Nr. 368)"
+    }
+   },
+   {
+    "name": "Hörlin's Winter-Pepping",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "415 (Nr. 368)"
+    }
+   },
+   {
+    "name": "Hörlins Winterpepping",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "135 (Nr. 52)"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Von Stadtpfarrer Hörlin in Sindringen (Württemberg) etwa zwanzig Jahre vor 1859 aus Samen gezogen; Eduard Lucas benannte die Sorte nach ihm.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "135 (Nr. 52)"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "3",
+    "original": "Kleiner plattrunder … Apfel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "frucht_breite",
+    "wert": 57,
+    "original": "Gestalt 57:40 (47:35, Ill. Hdb.)",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 40,
+    "original": "Gestalt 57:40 (47:35, Ill. Hdb.)",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.7,
+    "original": "Gestalt 57:40",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "flachrund, wenig stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "Kleiner plattrunder … Apfel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "flachrund, wenig stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften gleich",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "1",
+    "original": "Querschn. rund",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "1",
+    "original": "Einsenk. mässig tief, weit, eben",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "Kelch halb offen",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "halboffen, doch mehr offen als geschlossen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. mässig tief, weit, eben",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "Einsenk. mässig tief, weit, eben",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "in flacher, weiter Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "7",
+    "original": "in flacher, weiter Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_berostung_kelchgrube",
+    "wert": "5",
+    "original": "charakteristisch mit grauem angespritzten Rost umgeben",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, mitteldick, etwa 15 mm l.",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Höhle mitteltief, mittelweit, eben, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle mitteltief, mittelweit, eben, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "Höhle mitteltief, mittelweit, eben, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "in weiter tiefer mit gelbgrauem Rost strahlig ausgefütterter Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "in weiter tiefer mit gelbgrauem Rost strahlig ausgefütterter Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "7",
+    "original": "mit gelbgrauem Rost strahlig ausgefütterter Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "theils glatt und etwas glänzend, theils fein rauh",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "rau",
+    "original": "theils glatt und etwas glänzend, theils fein rauh",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale: glänzend",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "grün, später grünlichgelb bis ziemlich lebhaft gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "grün, später grünlichgelb bis ziemlich lebhaft gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "grünlich gelb und goldgelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "grünlich gelb und goldgelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "3",
+    "original": "sonnenw. meistens röthlicher Anflug",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "sonnenw. meistens röthlicher Anflug",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "1",
+    "original": "die Sonnenseite röthlich schillernd … Wahre Röthe fehlt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte sparsam, fein, graubraun",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte sparsam, fein, graubraun",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "Punkte sparsam, fein, graubraun",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte einzeln, grau",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "Punkte einzeln, grau",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "5",
+    "original": "Anflüge, selbst Ueberzüge braunen Rostes finden sich häufig",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "7",
+    "original": "Anflüge, selbst Ueberzüge braunen Rostes finden sich häufig",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "3",
+    "original": "Rost figurenartig an der Kelch- und Stielwölbung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kammern 8:12 … glattwandig, geräumig, geschlossen",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. recht schmal",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 2 oder 3, mittelgross, vollkommen, eiförmig, kurz gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "trichter_lang",
+    "original": "Kelchhöhle trichterförmig mit flacher Mündung und breiter Röhre, ⅗ zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "geschlossen",
+    "original": "Kernhaus: geschlossen oder auch hohlaxig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Kernhaus: geschlossen oder auch hohlaxig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "trichter_lang",
+    "original": "Kelchröhre: lang, trichterförmig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch gelblichweiss, etwas bräunlich anlaufend",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch: weiß, gelblich schillernd",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "fein, etwas fest, später markig",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "später markig, saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "etwas vorherrschend kräftig weinig, fast ebenso süss",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "etwas vorherrschend kräftig weinig, fast ebenso süss",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "edel gewürzt",
+    "original": "edel gewürzt",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "von delicatem, weinigem, gewürztem Zuckergeschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "von delicatem, weinigem, gewürztem Zuckergeschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "oo††",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "oo††",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Tafelobst 1. Ranges, sowie auch vortrefflich zu Obstwein und Compots",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "Tafelobst 1. Ranges, sowie auch vortrefflich zu Obstwein und Compots",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Tafelobst 1. Ranges, sowie auch vortrefflich zu Obstwein und Compots",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "1",
+    "original": "Januar bis Mai",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "5",
+    "original": "Januar bis Mai",
+    "quelle": "engelbrecht1889",
+    "seite": "415 (Nr. 368)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "1",
+    "original": "Reife und Nutzung: Januar bis April",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "Reife und Nutzung: Januar bis April",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "135 (Nr. 52)"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Kleiner, flachrunder Winterapfel aus Württemberg, grünlich gelb bis goldgelb mit wenig Röte und viel braunem Rost, besonders um den Kelch. Das Fleisch ist fein, saftig und weinig süß mit edler Würze; die Früchte halten sich ohne zu welken bis in den Sommer. Lucas zählte die Sorte zum Tafelobst ersten Ranges.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "415 (Nr. 368)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Stadtpfarrer Hörlin in Sindringen (Württemberg) zog die Sorte aus Samen, nach dem Handbuch von 1859 etwa zwanzig Jahre zuvor. Eduard Lucas benannte sie nach ihm und beschrieb sie zuerst in seinen „Kernobstsorten Württembergs“ als Hörlins Winterpepping. Engelbrecht erhielt seine Früchte von Fr. Lucas aus Reutlingen.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "415 (Nr. 368)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist klein und flachrund: Engelbrecht maß 57 mm Breite bei 40 mm Höhe, das Handbuch nennt 47:35 mm. Sie ist wenig stielbauchig, die Stielwölbung ist etwas breiter als die Kelchwölbung, die Hälften sind gleich und der Querschnitt rund; nach dem Handbuch machen einzelne breite, sehr flache Erhebungen die Wölbung zuweilen uneben. Der Kelch ist halb offen, eher offen, mit breiten, zurückgeschlagenen Blättchen, in einer weiten, mäßig tiefen bis flachen, glatten Grube, die charakteristisch von grauem, gespritztem Rost umgeben ist. Der Stiel ist holzig, mitteldick, etwa 15 mm lang, in einer mitteltiefen bis tiefen, mittelweiten bis weiten, strahlig gelbgrau berosteten Stielgrube.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "415 (Nr. 368)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist teils glatt und etwas glänzend, teils fein rau. Vom Baum grün, wird sie grünlich gelb bis ziemlich lebhaft gelb, nach dem Handbuch goldgelb. Die Sonnenseite trägt meist einen rötlichen Anflug oder schimmert nur rötlich; wahre Röte fehlt nach dem Handbuch. Die Schalenpunkte sind spärlich, fein und graubraun. Anflüge, oft auch Überzüge von braunem Rost sind häufig, besonders um die Kelchwölbung; dazu kommen einzelne Warzen und Baumflecken. Die Frucht welkt kaum und hat keinen Geruch.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "415 (Nr. 368)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Engelbrecht beschreibt ein kleines, flachrundes Kernhaus von 32 mm Breite und 19 mm Höhe. Die Kammern (8:12 mm) sind stielwärts spitz, kelchwärts abgerundet, glattwandig, geräumig und geschlossen; die Achsenhöhle ist recht schmal. Je Kammer liegen zwei oder drei mittelgroße, vollkommene, eiförmige, kurz gespitzte, kastanienbraune Kerne; das Handbuch nennt gewöhnlich drei je Kammer. Die Kelchhöhle ist trichterförmig mit flacher Mündung und breiter Röhre und reicht drei Fünftel des Weges zur Achsenhöhle, die Staubfäden sitzen im äußeren Drittel. Das Handbuch nennt das Kernhaus geschlossen oder hohlachsig und die Kelchröhre lang trichterförmig. Das Fleisch ist am Schnitt gelblich weiß und läuft etwas bräunlich an.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "415 (Nr. 368)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist fein, anfangs etwas fest, später markig, und saftig. Engelbrecht nennt den Geschmack edel gewürzt, etwas vorherrschend kräftig weinig und fast ebenso süß; das Handbuch beschreibt einen feinen, weinigen, gewürzten Zuckergeschmack.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "415 (Nr. 368)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Genussreif ist die Frucht nach dem Handbuch von Januar bis April, nach Engelbrecht von Januar bis Mai. Sie hält sich ohne zu welken bis in den Sommer.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "415 (Nr. 368)"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst in der Baumschule sehr gut und bildet ohne Pfahl schöne Hochstämme und Pyramiden; die Zweige stehen in spitzen Winkeln. Er gilt als nicht empfindlich. Die Triebe sind bräunlich grau, bewollt, fein punktiert und schlank, die Blätter klein und rundlich eiförmig.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Lucas nannte die Sorte Tafelobst ersten Ranges und hielt sie auch für Obstwein und Kompott für vortrefflich. Engelbrecht wertet sie als Tafel- und Wirtschaftsapfel.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "135 (Nr. 52)"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "415 (Nr. 368)"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "purpurroter-zwiebelapfel",
+  "name": "Purpurroter Zwiebelapfel",
+  "synonyme": [
+   {
+    "name": "Kohlenbacher",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+    }
+   },
+   {
+    "name": "Christkindler",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+    }
+   },
+   {
+    "name": "Franzosenapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+    }
+   },
+   {
+    "name": "Aujäger",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+    }
+   },
+   {
+    "name": "Talapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Lokalsorte aus Mittelbaden zwischen Kenzingen und Kehl; Abstammung unbekannt, nach Wikipedia bereits im 16. Jahrhundert in Straßburg dokumentiert.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "3",
+    "original": "Die Frucht ist klein und rot bis purpurrot",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "Die Frucht ist klein und rot bis purpurrot",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "purpurrot",
+    "original": "Die Frucht ist klein und rot bis purpurrot",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "3",
+    "original": "hat einen kurzen, dicken Stiel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "7",
+    "original": "hat einen kurzen, dicken Stiel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "Der robuste Mostapfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "von November bis März genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "von November bis März genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Der Baum ist starkwüchsig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Regionale Mostapfelsorte aus Mittelbaden mit kleinen, rot bis purpurrot gefärbten Früchten an kurzem, dickem Stiel. Wegen der kräftigen Farbe dienten die Früchte früher als Weihnachtsäpfel, daher auch der Name Christkindler. Die Sorte ist heute selten; der Landesverband für Obstbau, Garten und Landschaft Baden-Württemberg wählte sie zur Streuobstsorte des Jahres 2021.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte stammt aus dem mittelbadischen Raum zwischen Kenzingen und Kehl. Ihre Abstammung ist unbekannt; Wikipedia gibt an, dass sie bereits im 16. Jahrhundert in Straßburg dokumentiert sei. Regional ist sie unter mehreren Namen bekannt, darunter Kohlenbacher, Christkindler, Franzosenapfel, Aujäger und Talapfel. In den ausgewerteten Pomologien des 19. Jahrhunderts (Illustrirtes Handbuch, Lauche, Engelbrecht) ist sie nicht beschrieben; der dort als Synonym des Roten Stettiners genannte „Rothe Zwiebelapfel in Baden“ lässt sich ihr nicht sicher zuordnen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "555 (Nr. 261)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Frucht ist klein und rot bis purpurrot gefärbt; der Stiel ist kurz und dick. Weitere Angaben zu Form, Kelch, Schale und Schnitt liegen im ausgewerteten Material nicht vor.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Früchte sind von November bis März genussreif.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wächst stark, ist sehr robust gegen Krankheiten und eine typische Streuobstsorte.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Die Sorte wird vor allem als Mostapfel genutzt; wegen ihrer Farbe dienten die Früchte früher als Weihnachtsäpfel.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Purpurroter_Zwiebelapfel&oldid=250402612"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ }
+]

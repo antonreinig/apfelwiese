@@ -1,0 +1,49 @@
+frucht_breite messwert mm  
+frucht_hoehe messwert mm  
+frucht_groesse ordinal   1=sehr klein 3=klein 5=mittel 7=groß 9=sehr groß
+frucht_form kategorie   flachrund=flachrund rund=kugelig rundkonisch=rundlich-kegelförmig konisch=kegelförmig stumpfkonisch=stumpf kegelförmig walzenfoermig=walzenförmig glockenfoermig=glockenförmig eifoermig=eiförmig flachkonisch=flach kegelförmig unregelmaessig=unregelmäßig
+frucht_hoehe_breite messwert verhaeltnis  
+frucht_breiteste_stelle kategorie   stiel=zum Stiel hin mitte=in der Mitte kelch=zum Kelch hin
+frucht_rippung ordinal   1=fehlend oder sehr schwach 3=schwach 5=mittel 7=stark 9=sehr stark
+frucht_kronung ordinal   1=fehlend oder schwach 5=mittel 9=stark
+frucht_symmetrie kategorie   symmetrisch=gleichmäßig schief=einseitig, schief
+frucht_gewicht messwert g  
+schale_grundfarbe kategorie   weisslichgelb=weißlich gelb gelb=gelb gruengelb=grünlich gelb gelbgruen=gelblich grün gruen=grün cremegelb=cremegelb orangegelb=orangegelb
+schale_deckfarbe_anteil ordinal   0=keine 1=sehr gering 3=gering 5=mittel 7=groß 9=sehr groß
+schale_deckfarbe_farbton kategorie   orange=orange rosa=rosa hellrot=hellrot rot=rot dunkelrot=dunkelrot purpurrot=purpurrot braunrot=braunrot
+schale_deckfarbe_art kategorie  MEHRFACH verwaschen=verwaschen gestreift=gestreift geflammt=geflammt marmoriert=marmoriert getuepfelt=getupft
+schale_berostung_stielgrube ordinal   0=fehlend 3=gering 5=mittel 7=stark
+schale_berostung_wangen ordinal   0=fehlend 3=gering 5=mittel 7=stark 9=fast vollständig
+schale_berostung_kelchgrube ordinal   0=fehlend 3=gering 5=mittel 7=stark
+schale_lentizellen_anzahl ordinal   3=wenige 5=mittel 7=viele
+schale_lentizellen_groesse ordinal   3=klein 5=mittel 7=groß
+schale_lentizellen_art kategorie  MEHRFACH hell=hell, weißlich braun=bräunlich, berostet umhoeft_gruen=grün umhöft umhoeft_rot=rot umhöft sternfoermig=sternförmig
+schale_beschaffenheit kategorie  MEHRFACH glatt=glatt rau=rau fettig=fettig beim Lagern bereift=bläulich bereift glaenzend=glänzend matt=matt
+stiel_laenge ordinal   1=sehr kurz 3=kurz 5=mittel 7=lang 9=sehr lang
+stiel_dicke ordinal   3=dünn 5=mittel 7=dick
+stielgrube_tiefe ordinal   3=flach 5=mittel 7=tief
+stielgrube_weite ordinal   3=eng 5=mittel 7=weit
+kelch_offenheit kategorie   geschlossen=geschlossen halboffen=halb offen offen=offen
+kelchgrube_tiefe ordinal   3=flach 5=mittel 7=tief
+kelchgrube_weite ordinal   3=eng 5=mittel 7=weit
+kelchhoehle_form kategorie   dreieck_breit=breit dreieckig dreieck_lang=lang dreieckig trichter_kurz=Trichter mit kurzer Röhre trichter_lang=Trichter mit langer Röhre roehre_kernhaus=Röhre bis zum Kernhaus
+kernhaus_form kategorie   spindel=spindelförmig kugelig=kugelig zwiebel=zwiebelförmig herz=herzförmig eifoermig=eiförmig achsenstaendig=achsenständig, schmal
+kernhaus_lage kategorie   stiel=zum Stiel hin mitte=mittig kelch=zum Kelch hin
+kernhaus_achse kategorie   geschlossen=geschlossen offen=offen, hohl
+kernfaecher_oeffnung kategorie   geschlossen=geschlossen teilweise=teilweise offen offen=offen
+kernfaecher_form kategorie   oval=oval bohnen=bohnenförmig mondsichel=mondsichelförmig schlitz=schlitzförmig
+kerne_form kategorie   lang=lang, spitz eifoermig=eiförmig rundlich=rundlich breit=breit
+kerne_anzahl anzahl   
+fleisch_farbe kategorie   weiss=weiß cremeweiss=cremeweiß gelblich=gelblich gruenlich=grünlich roetlich=rötlich
+fleisch_festigkeit ordinal   3=weich, mürbe 5=mittel 7=fest
+fleisch_saftigkeit ordinal   3=wenig saftig 5=mittel 7=saftig
+geschmack_suesse ordinal   3=wenig süß 5=mittel 7=süß
+geschmack_saeure ordinal   3=mild 5=mittel 7=säuerlich 9=sehr sauer
+geschmack_aroma text   
+verwendung kategorie  MEHRFACH tafel=Tafelapfel kueche=Küche und Backen most=Saft und Most brennen=Brennen doerren=Dörren
+pflueckreife kategorie monat  7=Juli 8=August 9=September 10=Oktober 11=November 12=Dezember 1=Januar 2=Februar 3=März 4=April 5=Mai
+genussreife_beginn kategorie monat  7=Juli 8=August 9=September 10=Oktober 11=November 12=Dezember 1=Januar 2=Februar 3=März 4=April 5=Mai
+genussreife_ende kategorie monat  7=Juli 8=August 9=September 10=Oktober 11=November 12=Dezember 1=Januar 2=Februar 3=März 4=April 5=Mai
+bluete_zeit ordinal   3=früh 5=mittel 7=spät
+baum_wuchs ordinal   3=schwach 5=mittel 7=stark
+ploidie kategorie   diploid=diploid triploid=triploid

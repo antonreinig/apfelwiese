@@ -1,0 +1,22 @@
+[
+ {
+  "id": "nfc2025",
+  "werk": "Characterization and Evaluation data from the National Fruit Collection 2025_Apple",
+  "autor": "Matthew Ordidge; Penny Hale (University of Reading; Fruit Advisory Services Team LLP)",
+  "jahr": 2025,
+  "url": "https://doi.org/10.17864/1947.001455",
+  "lizenz": "Open Government Licence v3.0 (© Department for Environment, Food & Rural Affairs; https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)",
+  "abgerufen": "2026-10-22",
+  "anmerkung": "Datei NFC_C_E_data_Apple_22_08_25.csv (SHA-256 1991326e…e2ae789) und README_Ordidge_Apple_2025.txt von https://researchdata.reading.ac.uk/1455/. Bewertungen weitgehend nach ECPGR-Deskriptoren für Apfel (2022), erhoben etwa 2000–2024 in der National Fruit Collection, Brogdale (Kent). Angaben mit Datenquelle \"Smith\" sind laut README aus Smith (1971) National Apple Register of the United Kingdom standardisiert. Im Feld \"seite\" der Belege steht die Akzessionsnummer, bei Fruchtmerkmalen die Datenquelle (Smith 1971 oder NFC-Früchte), bei Verkostungsmerkmalen Prüferin und Datum. Namensangabe nach OGL: \"Contains public sector information licensed under the Open Government Licence v3.0.\""
+ },
+ {
+  "id": "munq2020",
+  "werk": "MUNQ – Malus UNiQue genotype code for grouping apple accessions corresponding to a unique genotypic profile",
+  "autor": "Caroline Denancé; Hélène Muranty; Charles-Eric Durel (INRAE)",
+  "jahr": 2020,
+  "url": "https://doi.org/10.15454/HKGMAS",
+  "lizenz": "Etalab Open Licence 2.0",
+  "abgerufen": "2026-10-22",
+  "anmerkung": "Datei MUNQ_20200909.txt; nur zur Prüfung von Namenszuordnungen genutzt (Vorzugsnamen je MUNQ), nicht als Merkmalsquelle."
+ }
+]

@@ -1,0 +1,5500 @@
+[
+ {
+  "id": "leitheimer-streifling",
+  "name": "Leitheimer Streifling",
+  "synonyme": [
+   {
+    "name": "Kaisersheimer",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "363"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Nach Diel ein Sämling, den der Gärtner Grob in Leitheim bei Kaisersheim (Kaisheim) unweit Donauwörth erzogen hat; Diel beschrieb die Sorte zuerst im 13. Heft seines Werks. Das Handbuch (1859) nennt ihre Verbreitung damals noch sehr beschränkt.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "363"
+    },
+    {
+     "quelle": "engelbrecht1889",
+     "seite": "704 (Nr. 636)"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 65,
+    "original": "Gestalt 65:55—57",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 56,
+    "original": "Gestalt 65:55—57",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.86,
+    "original": "Gestalt 65:55—57",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "eifoermig",
+    "original": "abgestumpft eiförmig",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "etwas stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "Hälften oft etwas ungleich",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "gewöhnlich auf einer Seite etwas niedriger, als auf der andern",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "Querschn. ziemlich rund",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "zwischen ziemlich erhabenen, doch wenig zum Bauche laufenden Falten",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen, grün und braun, wenig bewollt",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: grünlich, langblättrig, spitz, wollig, geschlossen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. oft etwas schräg, mitteltief, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "5",
+    "original": "Einsenk. oft etwas schräg, mitteltief, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "in einer ziemlich tiefen Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, dünn bis mitteldick, etwa 16 mm lang",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, dünn bis mitteldick, etwa 16 mm lang",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Höhle tief, etwas enge, eben",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "3",
+    "original": "Höhle tief, etwas enge, eben",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "Höhle … zart grünlichbraun berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt, etwas geschmeidig, mattglänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale: fein, glatt, geschmeidig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "hellgrün, später grünlichgelb bis hellgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "hellgrün, später grünlichgelb bis hellgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "sonnenw. carmoisinroth überzogen, schattenw. oft ringsum mehr punktirt geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "die ganze Frucht mit einem … dunkeln Carmoisinroth verwaschen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "carmoisinroth überzogen",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "mit einem schönen … dunkeln Carmoisinroth verwaschen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "sonnenw. carmoisinroth überzogen",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "schattenw. oft ringsum mehr punktirt geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "ziemlich reichlich, breit, … deutlich dunkler gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "5",
+    "original": "Punkte mittelzahlreich, sehr fein",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Die weitläufig zerstreuten Punkte sind charakteristisch",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte mittelzahlreich, sehr fein",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "im Dunkelrothen starke hellbräunliche oder gelbliche … Fleckchen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "sternfoermig",
+    "original": "runde oder sternförmige Fleckchen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 41:29, zwiebelförm.",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus: verhältnißmäßig, zwiebelförmig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kammern … mittelgeräumig, nicht oder wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern … mittelgeräumig, nicht oder wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "die Kernfächer geräumig, nur wenig geöffnet",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. schmal",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "mit etwas hohler Achse",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne meistens zu 2, mittelgross, vollkommen, eiförm., gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle kegel- bis kegeltrichterförm., 2/5 zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "trichter_kurz",
+    "original": "Kelchhöhle kegel- bis kegeltrichterförm., 2/5 zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchröhre … ein kurzer, eingebogener Kegel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch weiss, unter der Schale … oft leicht geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch: sehr schön weiß",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "fein, markig, wenig saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "3",
+    "original": "fein, markig, wenig saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "3",
+    "original": "sehr fein, nicht sehr saftig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "vorherrschend weinig, nicht viel weniger süss",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "vorherrschend weinig, nicht viel weniger süss",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "gewürzhaft weinsäuerlichen, etwas himbeerartigen Geschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "gewürzt, etwas himbeerartig",
+    "original": "gewürzhaft weinsäuerlichen, etwas himbeerartigen Geschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "(Ill. H.) o††",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "(Ill. H.) o††",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Zu jeder wirthschaftlichen Nutzung sehr gut",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "auch zum Rohgenuß geeignet",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "December bis April",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "December bis April",
+    "quelle": "engelbrecht1889",
+    "seite": "704 (Nr. 636)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "December, hält sich bis Februar und wohl noch länger",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "2",
+    "original": "December, hält sich bis Februar und wohl noch länger",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "wächst sehr stark",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "363"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Süddeutscher Winterapfel aus der Klasse der Streiflinge, mittelgroß, abgestumpft eiförmig und fast ganz von dunklem Karminrot überzogen und gestreift. Engelbrecht wertete ihn als Tafel- und Wirtschaftsfrucht (o††), das Handbuch hebt seine Haltbarkeit und Eignung für den Landmann hervor.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "704 (Nr. 636)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Diel führt die Sorte auf eine Kernfrucht des Gärtners Grob in Leitheim bei Kaisersheim nahe Donauwörth zurück und nannte sie auch „Kaisersheimer“. Der Bearbeiter im Handbuch (v. Flotow, 1859) fand sie weder bei Metzger noch bei Lucas verzeichnet und nur selten in Baumschulkatalogen. Engelbrecht erhielt 1889 Früchte von Lucas aus Reutlingen und vom Gartenbauverein in Landsberg an der Warthe.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "704 (Nr. 636)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß die Früchte mit 65 mm Breite und 55–57 mm Höhe, die Abbildung im Handbuch zeigte größere Früchte (70:57–66 mm). Die Form ist abgestumpft eiförmig und etwas stielbauchig, die Hälften sind oft etwas ungleich, eine Seite ist niedriger. Der geschlossene, langblättrige Kelch sitzt in einer oft etwas schrägen Einsenkung zwischen ziemlich erhabenen Falten, die sich am Rand rippenartig heben, den runden Querschnitt aber kaum stören. Für die Tiefe der Kelchgrube nennt Engelbrecht „mitteltief“, das Handbuch „ziemlich tief“. Der holzige, dünne bis mitteldicke Stiel ist etwa 16 mm lang und steht in einer tiefen, etwas engen, zart berosteten Stielgrube.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "704 (Nr. 636)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, etwas geschmeidig und mattglänzend, die Grundfarbe geht von Hellgrün zu Grünlichgelb bis Hellgelb über. Sonnenseits ist sie karminrot überzogen, schattenseits oft ringsum punktiert gerötet und dort besonders deutlich breit dunkler gestreift; das Handbuch beschreibt die ganze Frucht als dunkel karminrot verwaschen. Charakteristisch sind die weit zerstreuten Schalenpunkte: im Rot erscheinen sie als hellbräunliche oder gelbliche, runde oder sternförmige Fleckchen. Engelbrecht fand sie mittelzahlreich und sehr fein, oft nur an ihrem gelblichen Hof erkennbar.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "704 (Nr. 636)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Das Kernhaus ist zwiebelförmig, bei Engelbrecht 41 mm breit und 29 mm hoch. Die Kammern sind stielwärts spitz, kelchwärts flach abgerundet, glattwandig, mittelgeräumig und nicht oder nur wenig offen; das Handbuch nennt die Kernfächer geräumig und wenig geöffnet. Die Achsenhöhle ist schmal (Handbuch: „etwas hohler Achse“). Meist liegen zwei mittelgroße, vollkommene, eiförmige, gespitzte und ziemlich dunkelbraune Kerne in jeder Kammer. Die Kelchhöhle ist kegel- bis kegeltrichterförmig und reicht zwei Fünftel bis zur Achsenhöhle; das Handbuch beschreibt sie als kurzen, eingebogenen Kegel. Das weiße Fleisch ist unter der Schale und an den Gefäßbündeln oft leicht gerötet.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "704 (Nr. 636)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist weiß, fein, markig und wenig saftig. Engelbrecht beschreibt den Geschmack als etwas gewürzt, vorherrschend weinig und kaum weniger süß; das Handbuch nennt ihn erfrischend, gewürzhaft weinsäuerlich und etwas himbeerartig. Bei dunkel gefärbten Früchten ist das Fleisch um die Kelchröhre oft fein rötlich.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "704 (Nr. 636)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Engelbrecht gibt die Genussreife von Dezember bis April an, das Handbuch von Dezember bis Februar „und wohl noch länger“. Die Früchte welken nach Engelbrecht nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "704 (Nr. 636)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Das Handbuch nennt den Apfel für jede wirtschaftliche Nutzung sehr gut und auch zum Rohgenuss geeignet; wegen der Haltbarkeit empfahl es ihn besonders dem Landmann. Engelbrecht führt ihn als Tafel- und Haushaltsapfel.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "704 (Nr. 636)"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Nach dem Handbuch wächst der Baum sehr stark, wird schön, trägt reich und ist auch in großer Kälte sehr dauerhaft.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Das Handbuch merkt an, die Sorte solle Diels Kleinem Neuzerling sehr ähnlich sein; eine Beschreibung der Unterschiede gibt es dort nicht.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "363"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "roter-trierer-weinapfel",
+  "name": "Roter Trierer Weinapfel",
+  "synonyme": [
+   {
+    "name": "Roter Holzapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+    }
+   },
+   {
+    "name": "Roter Trier’scher Holzapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+    }
+   },
+   {
+    "name": "Roter Trierer",
+    "beleg": {
+     "quelle": "web_bund_lemgo",
+     "url": "http://www.obstsortendatenbank.de/roter_trierischer_weinapfel.htm"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Sehr alte Sorte unbekannter Abstammung; als Zufallssämling in der Gegend von Trier aufgefunden, wo sie auch Roter Holzapfel oder Roter Trier’scher Holzapfel heißt. Verbreitet vor allem im Südwesten Deutschlands.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "3",
+    "original": "Die kleinen Früchte, mit ungefähr 6 cm Durchmesser",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "7",
+    "original": "festes, sehr saftiges und säuerliches Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "festes, sehr saftiges und säuerliches Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "festes, sehr saftiges und säuerliches Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "werden ausschließlich als Mostapfel verwendet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "10",
+    "original": "Der Apfel wird im Oktober geerntet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "genussreif von November bis März",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "genussreif von November bis März",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "5",
+    "original": "Während H. Petzold den Wuchs als mittelstark einordnet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "kommen die Tafeln … zu einem kräftigen und pyramidalen Wuchs",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Kleinfrüchtiger, sehr saurer Mostapfel aus dem Trierer Raum, heute vor allem im Streuobst Südwestdeutschlands zu finden. Die Früchte werden im Oktober geerntet und halten sich bis in den März.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte ist sehr alt, ihre Abstammung unbekannt. Sie wurde als Zufallssämling in der Gegend von Trier gefunden und ist dort auch als Roter Holzapfel oder Roter Trier’scher Holzapfel bekannt; die BUND-Lemgo-Sortendatenbank führt zusätzlich den Kurznamen Roter Trierer.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+     },
+     {
+      "quelle": "web_bund_lemgo",
+      "url": "http://www.obstsortendatenbank.de/roter_trierischer_weinapfel.htm"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Früchte sind klein und messen etwa 6 cm im Durchmesser. Genauere Angaben zu Form, Schale und Schnitt liegen in den ausgewerteten Quellen nicht vor.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist fest, sehr saftig und säuerlich.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Geerntet wird im Oktober (nach Petzold 1990), genussreif sind die Äpfel von November bis März.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Der Apfel wird ausschließlich zur Mostbereitung verwendet.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum trägt früh, regelmäßig und hoch. Die Wuchsstärke wird unterschiedlich angegeben: Petzold nennt sie mittelstark, die Farbtafeln der Wochenzeitung „Nach der Arbeit“ (1935–1956) beschreiben einen kräftigen, pyramidalen Wuchs. Weil sich die Äste unter dem Behang herabbiegen, wird in der Aufbauphase ein kräftiger Schnitt empfohlen. Die Sorte gilt als frostfest und wenig anfällig für Obstbaumkrebs, aber anfällig für Schorf.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Engelbrecht beschreibt 1889 unter Nr. 597 einen „Rothen Holzapfel“, den er von Hoesch aus Düren erhielt: flachrund, 70 mm breit, dunkel karminrot gestreift, mit vorherrschend süßem, schwach weinigem Fleisch. Diese Frucht ist größer und deutlich weniger sauer als der hier beschriebene kleine, säuerliche Mostapfel; ob es sich um dieselbe Sorte handelt, ist daher offen, und Engelbrechts Werte wurden nicht übernommen.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "664 (Nr. 597)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Trierer_Weinapfel&oldid=265635126"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "birnfoermiger-apfel",
+  "name": "Birnförmiger Apfel",
+  "synonyme": [
+   {
+    "name": "Wahrer birnförmiger Apfel",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "521 (Nr. 469)"
+    }
+   },
+   {
+    "name": "Birnapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "151"
+    }
+   },
+   {
+    "name": "Pomme-Poire",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "521 (Nr. 469)"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Herkunft unbekannt. Diel erhielt die Sorte aus Marburg unter dem Namen Birnapfel und nannte sie Wahrer birnförmiger Apfel; nach dem Handbuch (1859) stand sie nur in einzelnen Gärten Deutschlands.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "151"
+    },
+    {
+     "quelle": "engelbrecht1889",
+     "seite": "521 (Nr. 469)"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 58,
+    "original": "Gestalt 58:60",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 60,
+    "original": "Gestalt 58:60",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 1.03,
+    "original": "Gestalt 58:60",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "kelch",
+    "original": "verkehrt ei- oder eikegelf., sehr kelchbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften gleich",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "1",
+    "original": "Querschn. rund",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "zwischen ziemlich starken, aber kurzen Falten",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen bis fast halb offen, grün, wollig",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: fein, langblättrig, grünlich, wollig, fast ganz geschlossen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. mitteltief, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "5",
+    "original": "Einsenk. mitteltief, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, dünn bis mitteldick, etwa 14 mm lang",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, dünn bis mitteldick, etwa 14 mm lang",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "3",
+    "original": "Höhle sehr flach und enge, oft fast fehlend",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "3",
+    "original": "Höhle sehr flach und enge, oft fast fehlend",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "Höhle … eben, etwas berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt, etwas geschmeidig, matt glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale: fein, glatt, etwas geschmeidig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "hellgrünlichgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "blaßgelblich",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "sonnenw. nicht weithin carmoisin geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "carmoisin geröthet, deutlich dunkler gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "deutlich dunkler gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "auf der Sonnenseite etwas carmoisinroth streifig verrieben",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "5",
+    "original": "Punkte mittel zahlreich, fein, theils braun",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte nicht häufig, fein, braun",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte mittel zahlreich, fein",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "Punkte … theils braun, theils nur Tupfen",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus: zwiebelförmig, oft etwas länger gezogen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern … mittel geräumig, meistens etwas offen",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "offen",
+    "original": "Fächer: etwas eng, offen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. ziemlich schmal",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Axe: lanzettförmig, hohl",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 1 bis 2, mittelgross, eiförmig, kurz gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle kegelf., 2/5 zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle: abgestutzt, kegelförmig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch hellgelblichweiss, fein",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch: schwach gelblich weiß, fein",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "erst fest, später markig",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "in völliger Reife ziemlich mürbe",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "3",
+    "original": "wenig saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "3",
+    "original": "aber etwas trocken",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "etwas weinig, vorherrschend, doch nur mässig süss",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "3",
+    "original": "etwas weinig, vorherrschend, doch nur mässig süss",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "schwach, wenig edel gewürzt; schwach reinettenartig, Duft fast birnartig",
+    "original": "von sehr schwachem, reinettenartigem Geschmack und … fast etwas birnartigem Geruch",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "(Ill. H.) o†",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "(Ill. H.) o†",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "auch als Wirthschaftsobst nur in den 2. Rang zu stellen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "December bis Anfang April",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "December bis Anfang April",
+    "quelle": "engelbrecht1889",
+    "seite": "521 (Nr. 469)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "etwa im Dezember, läßt sich aber leicht bis in den April aufbewahren",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "etwa im Dezember, läßt sich aber leicht bis in den April aufbewahren",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "151"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Mittelgroßer Winterapfel, der vor allem durch seine birnenähnliche Form auffällt: höher als breit, zum Kelch hin am breitesten und zum Stiel verjüngt. Das Handbuch (1859) hielt ihn für pomologisch merkwürdig, als Tafelobst aber nur der Form wegen brauchbar und als Wirtschaftsobst zweitrangig.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Diel erhielt den Apfel aus Marburg als „Birnapfel“ und gab ihm den Namen Wahrer birnförmiger Apfel, um ihn von den französischen „pommes poires“ abzugrenzen; Engelbrecht führt dennoch die Pomme-Poire aus Mas’ Verger als Synonym. Das Handbuch kannte ihn außer bei Diel nur aus den Werken von Christ und Dittrich und fand ihn in französischer und englischer Literatur nicht. Engelbrecht erhielt 1889 Früchte von Hoesch aus Düren und von Palandt aus Hildesheim.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 58 mm Breite bei 60 mm Höhe; die Form ist verkehrt ei- oder eikegelförmig und stark kelchbauchig, mit gleichen Hälften und rundem Querschnitt. Die Gestalt wechselt: Nach dem Handbuch sind die Früchte junger Bäume und an jungem Tragholz eher länglich apfelförmig, später überwiegt die Birnform, oft stärker zum Stiel auslaufend als in der Abbildung; Engelbrecht fand sie zuweilen auch eiförmig und stielbauchig. Der geschlossene bis fast halb offene, wollige Kelch sitzt in einer mitteltiefen, mittelweiten Einsenkung zwischen ziemlich starken, kurzen Falten. Der etwa 14 mm lange, dünne bis mitteldicke Stiel steht in einer sehr flachen, engen, oft fast fehlenden Stielgrube.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, etwas geschmeidig und matt glänzend, hell grünlichgelb (Handbuch: blassgelblich). Sonnenseits ist sie nicht weit karminrot gerötet und deutlich dunkler gestreift. Die feinen Schalenpunkte sind teils braun, teils nur als Tupfen sichtbar; Engelbrecht nennt sie mittelzahlreich, das Handbuch nicht häufig. Die Stielgrube ist etwas berostet.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Engelbrecht beschreibt das Kernhaus als breit lanzettlich (31 mm breit, 41 mm hoch), das Handbuch als zwiebelförmig und oft etwas länger gezogen. Die Kammern sind stielwärts spitz, kelchwärts stark abgerundet, fast glattwandig, mittelgeräumig und meist etwas offen; nach dem Handbuch sind die Fächer etwas eng, offen und mit fein zerrissenen Wänden. Die Achsenhöhle ist ziemlich schmal und hohl, im Handbuch lanzettförmig. Je Kammer liegen ein bis zwei mittelgroße, eiförmige, kurz gespitzte braune Kerne, oft unvollkommen. Die Kelchhöhle ist ein abgestutzter Kegel, der zwei Fünftel zur Achsenhöhle reicht und ohne deutliche Trennung in die Röhre übergeht. Das Fleisch ist am Schnitt hell gelblichweiß.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist fein, zuerst fest, später markig und in voller Reife ziemlich mürbe, dabei wenig saftig bis etwas trocken. Der Geschmack ist schwach und wenig edel gewürzt, etwas weinig mit mäßig vorherrschender Süße; das Handbuch nennt ihn sehr schwach reinettenartig, mit einem schwachen, fast birnenartigen Duft.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Genussreife beginnt im Dezember; die Früchte lassen sich nach beiden Quellen leicht bis in den April lagern und welken nach Engelbrecht nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Engelbrecht führt den Apfel als Tafel- und Haushaltsfrucht. Das Handbuch urteilt strenger: als Tafelobst nur der Form wegen, als Wirtschaftsobst zweiten Ranges und überhaupt vor allem für Pomologen von Interesse.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Nach dem Handbuch wächst der Baum anfangs lebhaft und trägt ziemlich fleißig; er bildet eine kleine, fast kugelförmige Krone mit feinen, etwas hängenden Ästen.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Diel ordnete die Sorte zuerst den Streiflingen zu und hielt sie später für eine Renette; v. Flotow widerspricht im Handbuch dieser Einordnung. Engelbrecht stellt sie zu den Roten Renetten.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "151"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "521 (Nr. 469)"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "roter-winter-calvill",
+  "name": "Roter Winter-Calvill",
+  "synonyme": [
+   {
+    "name": "Roter Himbeerapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+    }
+   },
+   {
+    "name": "Wintererdbeerapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+    }
+   },
+   {
+    "name": "Winterkalvill",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+    }
+   },
+   {
+    "name": "Rother Winter-Calvill",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "53 (Nr. 48)"
+    }
+   },
+   {
+    "name": "Aechter rother Winter-Calvill",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "53 (Nr. 48)"
+    }
+   },
+   {
+    "name": "Calleville rouge d’hiver",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "53 (Nr. 48)"
+    }
+   },
+   {
+    "name": "Red Winter-Calville",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "53 (Nr. 48)"
+    }
+   },
+   {
+    "name": "Calville dit Sanguinole",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Sanguinole",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Calville rouge dedans et dehors",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Calville rouge",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Red Calville",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Winter Red Calville",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Calville rouge couronné",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Rother Winter-Himbeerapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Rother Winter-Erdbeerapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   },
+   {
+    "name": "Rother Winter-Quittenapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Wahrscheinlich ein alter französischer Apfel; das Handbuch (1859) vermutet ihn schon bei Merlet 1675 als „Calville dit Sanguinole“. Eine genomische Stammbaumanalyse (Muranty u. a. 2020) nennt nach Wikipedia Calville Rouge und Reinette Franche als Eltern.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "45"
+    },
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 64,
+    "original": "Gestalt 64:59—62",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 60.5,
+    "original": "Gestalt 64:59—62",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.95,
+    "original": "Gestalt 64:59—62",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Die Äpfel sind mittelgroß, rippig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "symmetrisch",
+    "original": "Hälften ziemlich gleich",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "7",
+    "original": "zwischen flach, doch ziemlich deutlich über die Frucht laufenden Rippen",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "Einsenk. meist flach, mittelweit, zwischen flach … laufenden Rippen",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen, meistens etwas klein",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: langblättrig, grün, … wollig, geschlossen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "Einsenk. meist flach, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "5",
+    "original": "Einsenk. meist flach, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, dünn, 15 mm l. oder länger",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel: dünn, lang, grün und roth",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "7",
+    "original": "Stiel: dünn, lang, grün und roth",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Höhle mitteltief, mittelweit, wenig faltig",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle mitteltief, mittelweit, wenig faltig",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "0",
+    "original": "fast eben, nicht oder wenig berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "fast eben, nicht oder wenig berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt, beduftet, etwas geschmeidig und glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "bereift",
+    "original": "Schale glatt, beduftet, etwas geschmeidig und glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale glatt, beduftet, etwas geschmeidig und glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "bereift",
+    "original": "der feinen glatten, am Baume mit Duft belaufenen, nicht fettigen … Schale",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "grünlichgelb, später gelb",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "Grundfarbe … grünlichgelb, doch nur wenig zu sehen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "sonnenw. dunkel, fast blutartig, schattenw. oft ringsum heller geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "die Frucht ist ringsum carmoisinroth gefärbt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "sonnenw. dunkel, fast blutartig",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "ringsum carmoisinroth gefärbt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "carmoisinroth gefärbt, verwaschen und verrieben",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "Nach der Schattenseite sieht man … oft auch dunklere Streifen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "5",
+    "original": "Punkte ziemlich zahlreich, fein, als helle, gelbliche Tupfen",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "7",
+    "original": "Punkte häufig, fein",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte ziemlich zahlreich, fein",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "als helle, gelbliche Tupfen erscheinend",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "kugelig",
+    "original": "Kernhaus 36:36, meistens rundlich, seltener zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus: groß, zwiebelförm. mit hohler Axe",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern … geräumig, meistens nur recht wenig geöffnet",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "offen",
+    "original": "Fächer geöffnet, geräumig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. ziemlich schmal",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "zwiebelförm. mit hohler Axe",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 1 bis 2, mittelgr., … längl. eiförmig, gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "roehre_kernhaus",
+    "original": "trichterf. mit schmaler Mündung, oft fast bis zur Achsenh. reichend",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch hellgelblichweiss, unter der Schale … oft geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "roetlich",
+    "original": "außerhalb desselben mehr oder weniger roth gefärbt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "fein, ziemlich locker, mürbe",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "fein, zart, mürbe",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "5",
+    "original": "mürbe, mässig saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "5",
+    "original": "nur ziemlich saftig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "fein weinig, vorherrschend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "3",
+    "original": "fein weinig, vorherrschend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "3",
+    "original": "ohne eigentliche Säure",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "edel und kräftig, mehr beerenartig als balsamisch gewürzt",
+    "original": "edel und kräftig, mehr beerenartig als balsamisch gewürzt",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "erdbeer- oder himbeerartig",
+    "original": "starkem, erd- oder himbeerartigem Geschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "(Illustr. Handb.) oo!†",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "(Illustr. Handb.) oo!†",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Im rechten Punkt der Reife ein sehr feiner Tafel-Apfel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "10",
+    "original": "Der Apfel ist im Oktober pflückreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "November bis Januar",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "1",
+    "original": "November bis Januar",
+    "quelle": "engelbrecht1889",
+    "seite": "53 (Nr. 48)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "Zuweilen schon Ende Oktober, zuweilen erst Ende November",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "Zuweilen schon Ende Oktober, zuweilen erst Ende November",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "45"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "von Dezember bis April genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "von Dezember bis April genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Alter, wahrscheinlich französischer Winterapfel aus der Verwandtschaft der Himbeeräpfel: mittelgroß, ringsum dunkel karminrot und bereift, mit mürbem, oft rötlichem Fleisch und erdbeer- bis himbeerartigem Aroma. Im 19. Jahrhundert galt er an guten Standorten als feiner Tafelapfel; heute hat er wirtschaftlich keine Bedeutung mehr.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "53 (Nr. 48)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Das Handbuch hält die Sorte für einen alten französischen Apfel, der vermutlich schon bei Merlet 1675 als „Calville dit Sanguinole“ erscheint. Knoop, Duhamel, Poiteau und andere führten sie als Calville rouge d’hiver, englische Pomologen als Red Calville; Diel nannte sie Aechter rother Winter-Calvill. Schon Diel bemerkte, dass sie zur Familie der Himbeeräpfel gehört und kein echter Kalvill ist. Nach Wikipedia ergab eine genomische Stammbaumanalyse Calville Rouge und Reinette Franche als Eltern. Engelbrecht erhielt 1889 Früchte von Lucas aus Reutlingen, aus der Landesbaumschule Braunschweig und von Hohm aus Gelnhausen.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "53 (Nr. 48)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 64 mm Breite bei 59–62 mm Höhe, das Handbuch 66:59–63 mm; eine vollkommene Hochstammfrucht ist dort etwa ebenso hoch wie breit. Die Form ist abgestumpft länglich rund, zuweilen abgestumpft rundlich, nicht oder wenig stielbauchig, mit ziemlich gleichen Hälften. Flache, aber deutliche Rippen laufen über die Frucht; Wikipedia nennt die Äpfel rippig. Der geschlossene, eher kleine, wollige Kelch sitzt in einer meist flachen, mittelweiten Einsenkung. Der dünne Stiel ist 15 mm oder länger und steht in einer mitteltiefen, mittelweiten, kaum berosteten Stielgrube. Nach dem Handbuch beeinflussen Unterlage, Baumalter und Witterung Form und Farbe stark; auf Johannisstamm bleiben die Früchte niedriger.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "53 (Nr. 48)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, am Baum beduftet, etwas geschmeidig und glänzend, die Grundfarbe grünlichgelb, später gelb, aber kaum sichtbar. Die Frucht ist ringsum karminrot verwaschen, sonnenseits sehr dunkel, fast blutrot; schattenseits zeigen sich im helleren Rot oft dunklere Streifen. Die feinen Schalenpunkte erscheinen als helle, gelbliche Tupfen; Engelbrecht nennt sie ziemlich zahlreich, das Handbuch häufig. Dunkle Baumflecken sind häufig. Nach Wikipedia entwickeln die Früchte oft schwarze Stellen auf der Schale.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "53 (Nr. 48)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Engelbrecht fand das Kernhaus 36 mm breit und hoch, meist rundlich, seltener zwiebelförmig; das Handbuch nennt es groß und zwiebelförmig mit hohler Achse. Die Kammern sind stielwärts spitz, kelchwärts fast immer deutlich abgerundet, zerrissen und geräumig; Engelbrecht sah sie meist nur sehr wenig geöffnet, das Handbuch beschreibt sie als geöffnet, die Kerne klappern zuweilen. Die Achsenhöhle ist ziemlich schmal. Je Kammer liegen ein bis zwei mittelgroße, länglich eiförmige, gespitzte, dunkelbraune Kerne, oft nicht ganz vollkommen. Die oft behaarte Kelchhöhle ist trichterförmig mit schmaler Mündung und reicht oft fast bis zur Achsenhöhle. Am Schnitt ist das Fleisch innerhalb des Kernhauses weiß, außerhalb mehr oder weniger rot gefärbt und rot geadert; Engelbrecht nennt es hellgelblichweiß, unter der Schale und an den Gefäßbündeln oft gerötet.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "53 (Nr. 48)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist fein, locker bis zart und mürbe, nur mäßig saftig. Engelbrecht beschreibt den Geschmack als edel und kräftig, eher beerenartig als balsamisch gewürzt, fein weinig und vorherrschend süß; das Handbuch nennt ihn sehr angenehm, stark erdbeer- oder himbeerartig, ohne eigentliche Säure, mit schwachem Erdbeerduft, der beim Aufschneiden stärker wird. Nach Wikipedia sind die Früchte außerhalb geeigneter Standorte wenig aromatisch.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "53 (Nr. 48)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Angaben zur Genussreife gehen auseinander: Engelbrecht nennt November bis Januar, das Handbuch einen Beginn zuweilen Ende Oktober, zuweilen erst Ende November und eine kurze Haltbarkeit; Wikipedia gibt Pflückreife im Oktober und Genussreife von Dezember bis April an. Die Früchte welken nach Engelbrecht nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "53 (Nr. 48)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Im richtigen Reifezustand ist der Apfel nach dem Handbuch ein sehr feiner Tafelapfel, der für seine volle Güte guten, trockenen Boden, mildes Klima und geschützte Gärten braucht; in England galt er wegen des dortigen Klimas nur als Küchenapfel zweiten Ranges. Engelbrecht führt ihn als Tafel- und Haushaltsfrucht. Wikipedia nennt als Grund für den Bedeutungsverlust die schwarzen Schalenflecken.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "53 (Nr. 48)"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Nach dem Handbuch wächst der Baum nicht stark, trägt bald, aber selten reich, und gilt als etwas empfindlich; auf ungeeignetem Boden leidet er leicht unter Krebs. Man zog ihn damals meist als Topfbaum, Pyramide oder Spalier auf Johannisstamm, obwohl er auch als Hochstamm gedeiht. Wikipedia nennt ihn anfällig für Schorf und Obstbaumkrebs.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_Winter-Calvill&oldid=271287632"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Nach dem Handbuch wird die Sorte oft mit dem Roten Herbst-Calvill verwechselt; Diels Roter Harlemer Himbeerapfel (Framboise rouge rayée) sei vermutlich dieselbe Sorte.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "45"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "roter-von-simonffi",
+  "name": "Roter von Simonffi",
+  "synonyme": [
+   {
+    "name": "Zigeunerapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+    }
+   },
+   {
+    "name": "Simonffy piros",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+    }
+   },
+   {
+    "name": "Zwiebelapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Lokalsorte aus Österreich-Ungarn, in Ungarn als Simonffy piros bekannt. In Niederösterreich, vor allem im Weinviertel, verbreitet; ihre Identität wurde erst durch den Fund einer ungarischen Beschreibung geklärt, die auch ihre Verbreitung zur Zeit der Monarchie belegt.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+    },
+    {
+     "quelle": "web_arche_noah",
+     "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "3",
+    "original": "klein bis maximal mittelgroß",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "klein bis maximal mittelgroß",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "frucht_breite",
+    "wert": 59,
+    "original": "im Schnitt 53 mm hoch und 59 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 53,
+    "original": "im Schnitt 53 mm hoch und 59 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.9,
+    "original": "im Schnitt 53 mm hoch und 59 mm breit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "halbkugelförmig bis rund",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "im Querschnitt fast rund",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "einseitig etwas höher gebaut, sonst sehr ebenmäßig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "glatt, fest, glänzend, vom Baum manchmal etwas bläulich bereift",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "glatt, fest, glänzend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "bereift",
+    "original": "vom Baum manchmal etwas bläulich bereift",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "weisslichgelb",
+    "original": "Grundfarbe grünlichgelb, später weißlichgelb",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "von roter, flächiger Deckfarbe ganz überdeckt",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "die ganze Frucht dunkelweinrot, fast schwärzlich",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "von roter, flächiger Deckfarbe ganz überdeckt",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "schattenseitig noch dunkelweinrot gestreift",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Lentizellen klein, gelblich, wenig auffallend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "Lentizellen klein, gelblich",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "3",
+    "original": "vereinzelt zarte Rostfiguren",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "klein, halboffen bis offen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "offen",
+    "original": "klein, halboffen bis offen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "3",
+    "original": "Einsenkung flach, mittelweit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "5",
+    "original": "Einsenkung flach, mittelweit",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle klein, dreieckig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "3",
+    "original": "meist kurz, auch mittellang, 10–20 mm, dünn",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "5",
+    "original": "meist kurz, auch mittellang, 10–20 mm, dünn",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "10–20 mm, dünn",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Einsenkung tief, eng",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "3",
+    "original": "Einsenkung tief, eng",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "7",
+    "original": "meist mit strahlenförmigem, ockerfarbenen Rost",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Gefäßbündel zwiebelförmig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "kernhaus_lage",
+    "wert": "mitte",
+    "original": "Kernhaus: klein, mittelständig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kammern sehr eng, geschlossen",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gruenlich",
+    "original": "grünlichweiß, anfangs fest, abknackend",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gruenlich",
+    "original": "grünlichweiße … Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "7",
+    "original": "anfangs fest, abknackend, später weicher",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "anfangs fest, abknackend, später weicher",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "später weicher saftig",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "leicht säuerlichsüß, mit starkem Rosenaroma",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "leicht säuerlichsüß, mit starkem Rosenaroma",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "schmeckt süßsäuerlich",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "schmeckt süßsäuerlich",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "starkes Rosenaroma",
+    "original": "mit starkem Rosenaroma; Geschmackstyp McIntosh",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "10",
+    "original": "Anfang bis Mitte Oktober",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "vom Baum weg bis Februar, März",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "2",
+    "original": "vom Baum weg bis Februar, März",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "vom Baum weg bis Februar, März",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "10",
+    "original": "im Oktober ernte- und genussreif und bis März haltbar",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "im Oktober ernte- und genussreif und bis März haltbar",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "ausgezeichneter milder, sehr schöner Tafelapfel",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "5",
+    "original": "Wuchs mittelstark",
+    "quelle": "web_arche_noah",
+    "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Kleiner bis mittelgroßer, fast schwarzroter Winterapfel aus dem ehemaligen Österreich-Ungarn, in Niederösterreich unter dem Namen Zigeunerapfel verbreitet und beliebt. Das Fleisch ist grünlichweiß, saftig, mild säuerlichsüß und deutlich nach Rosen duftend. Die dekorativen Früchte wurden traditionell auch als Christbaumschmuck verwendet.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte stammt aus Österreich-Ungarn; in Ungarn heißt sie Simonffy piros. In Österreich trägt sie mehrere Lokalnamen, etwa Zwiebelapfel (im Burgenland), am häufigsten Zigeunerapfel. Nach dem Arche-Noah-Sortenblatt tragen diesen Namen allerdings viele rote Sorten; die Identität ließ sich erst über eine ungarische Beschreibung klären, die auch die Ausbreitung zur Zeit der Monarchie dokumentiert. Verbreitet ist sie in ganz Niederösterreich, besonders im Weinviertel, und auf Streuobstwiesen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+     },
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Früchte sind klein bis höchstens mittelgroß, im Mittel etwa 59 mm breit und 53 mm hoch, halbkugelig bis rund mit fast rundem Querschnitt; eine Seite ist etwas höher gebaut, sonst wirken sie sehr ebenmäßig. Der kleine, halb offene bis offene Kelch mit stark weißfilzigen Blättchen sitzt in einer flachen, mittelweiten, gefältelten Einsenkung mit fein geripptem Rand. Der meist kurze, teils mittellange Stiel (10–20 mm) ist dünn und steht in einer tiefen, engen Stielgrube mit meist strahlig auslaufendem, ockerfarbenem Rost.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, fest und glänzend, vom Baum manchmal leicht bläulich bereift. Die grünlichgelbe, später weißlichgelbe Grundfarbe ist meist nicht zu sehen, weil eine flächige Röte die Frucht ganz bedeckt; schattenseits ist sie zusätzlich dunkel weinrot gestreift, meist aber die ganze Frucht fast schwärzlich weinrot und wie lackiert. Die Lentizellen sind klein, gelblich und unauffällig, vereinzelt gibt es zarte Rostfiguren und häufig Warzen.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Nach dem Arche-Noah-Sortenblatt ist das Kernhaus klein und sitzt in der Mitte der Frucht; die Gefäßbündellinie ist zwiebelförmig. Die Achse ist nur minimal hohl. Die Kammern sind sehr eng und geschlossen, ihre Wände zerrissen und ohrenförmig. Die Kerne sind rehbraun, oval und etwa 7 mm lang und 4,5 mm breit. Die Kelchhöhle ist klein und dreieckig, die Kelchröhre reicht manchmal dünn bis ins Kernhaus; die Staubfäden sitzen ober- bis mittelständig. Am Schnitt ist das Fleisch grünlichweiß.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das grünlichweiße Fleisch ist anfangs fest und knackig, später weicher und saftig. Es schmeckt mild süßsäuerlich mit kräftigem Rosenaroma; das Sortenblatt ordnet den Geschmack dem Typ McIntosh zu.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Gepflückt wird Anfang bis Mitte Oktober; um Mitte Oktober fallen die Früchte vom Baum, nehmen dabei aber kaum Schaden. Sie sind direkt vom Baum genießbar und lassen sich problemlos bis Februar oder März lagern.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Das Sortenblatt beschreibt den Apfel als milden, sehr schönen Tafelapfel. Traditionell dienten die dekorativen Früchte auch als Christbaumäpfel.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Wuchs ist mittelstark; der Baum bildet schöne, runde, dicht verzweigte, mittelgroße Kronen und eignet sich für alle Baumformen und Unterlagen. Er trägt sehr früh, mittelhoch bis hoch und sehr regelmäßig. Die Sorte gedeiht auf warmen, trockeneren Standorten wie im Weinviertel und auch im südlichen Waldviertel; in raueren Lagen nehmen Schorf und Krebs zu. Die Früchte sind auffällig wenig wurmig; in geringem Maß tritt Kernhausschimmel auf.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     },
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Roter_von_Simonffi&oldid=261001331"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Der Name Zigeunerapfel wird für viele rote Sorten gebraucht und taugt allein nicht zur Bestimmung. Ähnliche Früchte haben nach dem Arche-Noah-Sortenblatt McIntosh, der Schwarzschillernde Kohlapfel und Büttners Schwarzschillernde Goldrenette.",
+    "belege": [
+     {
+      "quelle": "web_arche_noah",
+      "url": "https://www.arche-noah.at/media/roter_von_simonffi_beschreibung_und_foto.pdf"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "weisser-sommer-strichapfel",
+  "name": "Weißer Sommer-Strichapfel",
+  "synonyme": [
+   {
+    "name": "Weisser Sommer-Strichapfel",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "193 (Nr. 172)"
+    }
+   },
+   {
+    "name": "Passe pomme blanche d’été",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "441"
+    }
+   },
+   {
+    "name": "Passe pomme blanche",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "441"
+    }
+   },
+   {
+    "name": "Passe pomme blanche d’automne",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "441"
+    }
+   },
+   {
+    "name": "Weißer Strichapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "441"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Alte Sorte unbekannter Herkunft, bereits bei Merlet als Passe pomme blanche und bei Diel beschrieben. Oberdieck erhielt das Reis aus Herrenhausen unter dem Namen Passe pomme blanche d’automne und fand die Sorte sonst nirgends.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "441"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 70,
+    "original": "Gestalt 70:54—59",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 56.5,
+    "original": "Gestalt 70:54—59",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.81,
+    "original": "Gestalt 70:54—59",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachkonisch",
+    "original": "abgest. flachrund kegelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "etwas stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "Hälften häufig etwas ungleich",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "Oft steht die Kelchfläche durch ungleiche Hälften der Frucht schief",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "Querschnitt fast rund",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "zwischen deutlichen, doch flach zum Bauche laufenden Rippen",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "mit Falten und feinen Beulen umgeben",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen, grün, wollig",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: breitblättrig, grün bleibend, geschlossen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. mitteltief, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "5",
+    "original": "Einsenk. mitteltief, mittelweit",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "in etwas enger, mäßig tiefer Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "in etwas enger, mäßig tiefer Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, mitteldick, etwa 10 mm l., auch länger",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "7",
+    "original": "Stiel: stark, holzig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Höhle tief, mittelweit, schwach faltig",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle tief, mittelweit, schwach faltig",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "in weiter, tiefer … Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "7",
+    "original": "in weiter, tiefer … Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "wenig und zart berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "meistens mit Rost belegter Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt, geschmeidig, etwas glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale glatt, geschmeidig, etwas glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "bereift",
+    "original": "am Baume mit Duft belaufen, geschmeidig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "hellgrünlichgelb, später hellgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Grundfarbe grünlich gelb, später hellgelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "0",
+    "original": "sonnenw. bald nicht, bald leicht punktirt geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "3",
+    "original": "sonnenw. bald nicht, bald leicht punktirt geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "Carmoisinstreifen und dazwischen liegenden häufigen Carmoisinpunkten",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "leicht punktirt geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "auch oft deutlich dunkler gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "mit theils kurz abgesetzten, theils etwas längeren Carmoisinstreifen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "5",
+    "original": "Punkte ziemlich zahlreich, recht fein, meistens nur Tupfen",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte ziemlich zahlreich, recht fein",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "in der Grundfarbe erscheinen sie als weißliche Tupfen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 40:29, zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "geschlossen oder nur stielw. wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "geschlossen oder nur stielw. wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. kurz, mittelbreit",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Kernhaus: ziemlich groß, oft mit hohler Achse",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 1 bis 2, ziemlich gross, … eiförmig, kurz und stumpf gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "breit",
+    "original": "in ihrer Vollkommenheit breit und stumpfspitz",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchhöhle kegel- oder etwas kegeltrichterf., fast 1/2 zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "trichter_kurz",
+    "original": "Kelchhöhle kegel- oder etwas kegeltrichterf., fast 1/2 zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "roehre_kernhaus",
+    "original": "nach Diel ein starker, bis fast auf das Kernhaus herabgehender Cylinder",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_lang",
+    "original": "ich fand sie als breiten, ziemlich herabgehenden Kegel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch weisslich, ziemlich fein, markig",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "ziemlich fein, markig, mässig saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "ziemlich fein, mürbe",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "5",
+    "original": "markig, mässig saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "5",
+    "original": "vor der Ueberreife hinreichend saftvoll",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "wenig gewürzt, wenig weinig, vorherrschend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "3",
+    "original": "wenig gewürzt, wenig weinig, vorherrschend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "von gezuckertem, durch etwas Säure gehobenen, angenehmen Geschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "von gezuckertem, durch etwas Säure gehobenen, angenehmen Geschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "(Illustr. Handb.) o†",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "(Illustr. Handb.) o†",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Ist als Tafelapfel und für den Haushalt brauchbar",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Ist als Tafelapfel und für den Haushalt brauchbar",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "Anfang oder Mitte September bis October",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "10",
+    "original": "Anfang oder Mitte September bis October",
+    "quelle": "engelbrecht1889",
+    "seite": "193 (Nr. 172)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "8",
+    "original": "in warmen Jahren gegen Ende August, in kälterer Mitte September",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "in warmen Jahren gegen Ende August, in kälterer Mitte September",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "Der Baum ist gesund, wächst sehr lebhaft",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "441"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Alter Sommerapfel aus der Gruppe der Rosenäpfel: groß, abgestumpft flachrund bis flach kegelförmig, hellgelb mit wechselnder, meist streifiger Röte und mürbem bis markigem, süßem Fleisch. Er reift im späten Sommer und hält sich nur etwa zwei Wochen. Oberdieck sah in ihm eine größere, später reifende Ausgabe des Weißen Astrachan.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "193 (Nr. 172)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte ist alt: Merlet nannte sie Passe pomme blanche, Diel beschrieb sie als Weißen Sommer-Strichapfel, und die Pomona Franconica bildete sie als Weißen Strichapfel ab. Oberdieck erhielt das Reis aus Herrenhausen als Passe pomme blanche d’automne, wobei er den Zusatz „d’automne“ für einen Fehler hielt, und fand sie sonst nirgends. Engelbrecht erhielt 1889 Früchte von Conrad aus Dreilinden bei Wannsee (Berlin).",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "193 (Nr. 172)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 70 mm Breite bei 54–59 mm Höhe, das Handbuch 69:53–55 mm. Die Frucht ist abgestumpft flachrund und zum Kelch hin flach kegelförmig, etwas stielbauchig; die Hälften sind häufig etwas ungleich, sodass die Kelchfläche schief steht. Der geschlossene, grüne, wollige Kelch sitzt in einer mitteltiefen Einsenkung (Handbuch: etwas eng) zwischen Falten, feinen Beulen und deutlichen, aber flachen Rippen, die über die Frucht laufen; der Querschnitt bleibt fast rund. Der holzige Stiel ist etwa 10 mm lang oder länger, bei Engelbrecht mitteldick, im Handbuch stark, und steht in einer tiefen Stielgrube, die Engelbrecht mittelweit und zart berostet, das Handbuch weit und meist berostet nennt.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "193 (Nr. 172)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, geschmeidig, etwas glänzend und am Baum beduftet, hell grünlichgelb, später hellgelb. Die Röte schwankt stark: Engelbrecht fand die Sonnenseite bald ungefärbt, bald leicht punktiert gerötet und oft deutlich dunkler gestreift; nach Diel trägt sie nur einen blassroten Anflug mit Streifenspuren, während Oberdieck 1857 und 1858 die ganze Sonnenseite und Teile der Schattenseite mit kurzen und längeren Karminstreifen und Karminpunkten gezeichnet sah. Die feinen Schalenpunkte sind ziemlich zahlreich, in der Grundfarbe als weißliche Tupfen sichtbar, in der Röte kaum. Der Duft ist merklich und angenehm.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "193 (Nr. 172)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Das Kernhaus ist zwiebelförmig, bei Engelbrecht 40 mm breit und 29 mm hoch, im Handbuch ziemlich groß und oft hohlachsig. Die Kammern sind stielwärts stumpf gespitzt, kelchwärts flach abgerundet, fast glattwandig, ziemlich geräumig und geschlossen oder nur stielwärts wenig offen. Die Achsenhöhle ist kurz und mittelbreit. Je Kammer liegen ein bis zwei ziemlich große, meist vollkommene, eiförmige, kurz und stumpf gespitzte braune Kerne; das Handbuch fand sie oft unvollkommen und noch halb weiß, gut ausgebildet breit und stumpfspitz. Die Kelchhöhle ist bei Engelbrecht kegel- bis leicht kegeltrichterförmig und reicht fast bis zur halben Tiefe der Achsenhöhle. Die Angaben weichen ab: Diel beschreibt die Kelchröhre als kräftigen Zylinder fast bis zum Kernhaus, Oberdieck als breiten, ziemlich tief reichenden Kegel.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "193 (Nr. 172)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Engelbrecht beschreibt das Fleisch als weißlich, ziemlich fein, markig und mäßig saftig, wenig gewürzt, wenig weinig und vorherrschend süß. Nach dem Handbuch ist es grünlich gelblich bis weiß, mürbe, vor der Überreife ausreichend saftig, angenehm gezuckert und durch etwas Säure gehoben; überreif wird es mehlig, und die Frucht wird wie der Weiße Astrachan zuweilen glasig („cicadirt“).",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "193 (Nr. 172)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Nach Diel reift die Sorte Mitte August oder etwas später; Oberdieck fand sie weiter nördlich in warmen Jahren gegen Ende August, in kühlen Mitte September reif. Engelbrecht gibt Anfang oder Mitte September bis Oktober an. Nach dem Handbuch hält sie sich nur etwa 14 Tage.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "193 (Nr. 172)"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Tafel- und Haushaltsapfel (Engelbrecht o†; Handbuch). Oberdieck hielt ihn für entbehrlich, weil zur selben Zeit schon länger haltbare Sommeräpfel reifen.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "193 (Nr. 172)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum ist nach dem Handbuch gesund, wächst sehr lebhaft, wird nach Diel aber nur mäßig groß, bildet gern etwas flatterhafte, unregelmäßige Äste und trägt außerordentlich reich. Die Sommertriebe sind ziemlich kräftig, trüb erdbraunrot und ziemlich reich punktiert; das Blatt ist eiförmig bis oval, ziemlich groß und stumpf gezähnt.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Oberdieck betont die große Ähnlichkeit mit dem Weißen Astrachan: Der Weiße Sommer-Strichapfel ist größer, reift merklich später und ist ebenso fruchtbar; Fleisch, Mehligwerden und die jährlich wechselnde Färbung gleichen dem Astrachan.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "441"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "rotfranch",
+  "name": "Rotfranch",
+  "synonyme": [
+   {
+    "name": "Weigelts Zinszahler",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+    }
+   },
+   {
+    "name": "Swedenborgs Muskatrenette",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Herkunft und Abstammung unbekannt; die Sorte war schon vor 1800 im Land Hadeln verbreitet.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "3",
+    "original": "rotschalig und klein bis mittelgroß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "rotschalig und klein bis mittelgroß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "rau",
+    "original": "Die Schale ist rau und hat oft braune Berostung",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "weiß bis leicht gelblich",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "weiß bis leicht gelblich",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "einen süßen Geschmack mit nussartigem Aroma",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "nussartig",
+    "original": "einen süßen Geschmack mit nussartigem Aroma",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Mitte September pflückreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "10",
+    "original": "bis Ende Oktober genussreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "ist ein Tafelapfel-Sorte unbekannter Herkunft",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Alte Renette aus dem Land Hadeln, auch als Weigelts Zinszahler oder Swedenborgs Muskatrenette bekannt: ein kleiner bis mittelgroßer, rotschaliger Herbstapfel mit rauer, oft berosteter Schale und süßem, nussartig aromatischem Fleisch.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Abstammung ist unbekannt. Die Sorte war bereits vor 1800 im Land Hadeln verbreitet und wird zu den Renetten gestellt.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Früchte sind klein bis mittelgroß und rotschalig. Die Schale ist rau und häufig braun berostet. Angaben zu Form, Kelch, Stiel und Schnitt liegen in den ausgewerteten Quellen nicht vor.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist weiß bis leicht gelblich und schmeckt süß mit nussartigem Aroma.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Pflückreif ist die Sorte Mitte September, genussreif bis Ende Oktober; sie ist damit ein kurz haltbarer Herbstapfel.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Wikipedia führt Rotfranch als Tafelapfel.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Die Bäume wachsen in der Jugend steil aufrecht und kommen erst spät in den vollen Ertrag.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Rotfranch&oldid=169361800"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "ruhm-aus-kelsterbach",
+  "name": "Ruhm aus Kelsterbach",
+  "synonyme": [
+   {
+    "name": "Schöner aus Kelsterbach",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+    }
+   },
+   {
+    "name": "Kelsterbacher Roter",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Zufallssämling aus Kelsterbach südlich von Frankfurt am Main; nach mündlicher Überlieferung um 1900 auf dem Gelände einer Ziegelei entdeckt, 1934 von Richard Zorn als „Schöner aus Kelsterbach“ zuerst schriftlich beschrieben.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Der mittelgroße Apfel",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "eine glatte, trockene und teilweise glänzende Schale",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "eine glatte, trockene und teilweise glänzende Schale",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "hellrot",
+    "original": "mit einer hellroten Deckfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Das Fruchtfleisch ist weißlich, sehr saftig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "Das Fruchtfleisch ist weißlich, sehr saftig",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "einen süßen bis leicht säuerlichen Geschmack",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "einen süßen bis leicht säuerlichen Geschmack",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "10",
+    "original": "reift im Oktober und kann danach noch länger am Baum hängen bleiben, bevor er eingelagert wird",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "Die Genussreife reicht von Dezember bis März",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "Die Genussreife reicht von Dezember bis März",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "gilt als guter Wirtschaftsapfel, kann aber auch als Essapfel genutzt werden",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "kann aber auch als Essapfel genutzt werden",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "brennen",
+    "original": "für Obstbrände sowie sortenreinen Apfelwein und -saft verwendet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "für Obstbrände sowie sortenreinen Apfelwein und -saft verwendet",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "wobei sie eine kräftige Wuchsform besitzen",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Hessische Lokalsorte aus dem Rhein-Main-Gebiet um Kelsterbach: ein mittelgroßer, hellroter Winterapfel mit sehr saftigem, süßem bis leicht säuerlichem Fleisch, der als Wirtschaftsapfel, für Saft, Apfelwein und Brände und auch zum Frischverzehr dient. 2018 wurde er Hessische Lokalsorte des Jahres.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Nach mündlichen Berichten wurde der Zufallssämling um 1900 auf dem Gelände einer Ziegelei in Kelsterbach entdeckt. Richard Zorn beschrieb ihn 1934 als „Schöner aus Kelsterbach“; weitere Erwähnungen stammen aus den 1940er Jahren, etwa aus dem Sortenverzeichnis von Hessen-Nassau und der Zeitschrift „Das Gartenjahr“. Damals war die Sorte auf den Streuobstwiesen um Frankfurt ziemlich verbreitet und wegen ihrer langen Lagerfähigkeit im Zweiten Weltkrieg sehr gefragt. Weil sie oft für die Rote Sternrenette gehalten wurde, wurde sie kaum noch vermehrt; in den 2000er Jahren standen fast nur noch Altbäume. Seit der Wahl zur Hessischen Lokalsorte 2018 wird sie gezielt nachgepflanzt.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Der Apfel ist mittelgroß. Angaben zu Form, Kelch, Stiel und Schnitt enthalten die ausgewerteten Quellen nicht.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, trocken und stellenweise glänzend, mit hellroter Deckfarbe, die gestreift oder verwaschen sein kann. Auffällig sind zahlreiche Schalenpunkte und Lentizellen.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist weißlich und sehr saftig, der Geschmack süß bis leicht säuerlich.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Früchte reifen im Oktober und können danach noch länger am Baum hängen, bevor sie eingelagert werden. Genussreif sind sie von Dezember bis März und halten sich darüber hinaus.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Die Sorte gilt als guter Wirtschaftsapfel und ist auch als Tafelapfel brauchbar. Wegen ihres Aromas wird sie außerdem für Obstbrände sowie sortenreinen Apfelwein und Apfelsaft verwendet.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum stellt keine besonderen Ansprüche an Klima und Boden, wächst kräftig, kann sehr groß und alt werden und neigt sich mit zunehmendem Alter oft einseitig. Die Erträge sind hoch und regelmäßig. Das lachsrötliche Holz gilt als sehr wertvoll.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "Durch die hellrote Schale mit vielen Schalenpunkten wird der Ruhm aus Kelsterbach häufig mit der Roten Sternrenette verwechselt; ein Teil der vorhandenen Jungbäume ist nach Wikipedia gerade aus solchen Verwechslungen entstanden.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kelsterbach&oldid=253073237"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "echter-winterstreifling",
+  "name": "Echter Winterstreifling",
+  "synonyme": [
+   {
+    "name": "Echter Winter-Streifling",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "698 (Nr. 630)"
+    }
+   },
+   {
+    "name": "Pomme rayée d’hiver",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "698 (Nr. 630)"
+    }
+   },
+   {
+    "name": "Winter-Stripeling",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "175"
+    }
+   },
+   {
+    "name": "Marienthaler",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "175"
+    }
+   },
+   {
+    "name": "Streifling",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "175"
+    }
+   },
+   {
+    "name": "Sträumerling",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "175"
+    }
+   },
+   {
+    "name": "Carmes-Apfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "175"
+    }
+   },
+   {
+    "name": "Dorschen-Apfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "175"
+    }
+   },
+   {
+    "name": "Strömling",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "175"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Nach dem Handbuch (1859) sicher deutschen Ursprungs; damals am Rhein, an der Lahn und überhaupt im südwestlichen Deutschland auf dem Land häufig. Diel beschrieb die Sorte im ersten Heft seines Werks.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "175"
+    },
+    {
+     "quelle": "engelbrecht1889",
+     "seite": "698 (Nr. 630)"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 60,
+    "original": "Gestalt 60:51—54",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 52.5,
+    "original": "Gestalt 60:51—54",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.88,
+    "original": "Gestalt 60:51—54",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "7",
+    "original": "großer, plattrunder, gerippter Apfel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "eifoermig",
+    "original": "abgestumpft eiförmig bis fast flachrund",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "abgestumpft eiförmig bis fast flachrund",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "etwas stielbauch.",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "Hälften nicht ganz gleich",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "aber oft auf einer Seite niedriger",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "Querschn. nicht ganz rund",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "7",
+    "original": "Deutliche Rippen durchziehen den oberen Theil der Wölbung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "zwischen flach, doch deutlich über den Bauch laufenden Falten",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch geschlossen, grün, wenig wollig",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "geschlossen",
+    "original": "Kelch: geschlossen, lang und spitzblättrig (bei großen Exemplaren halboffen)",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "5",
+    "original": "Einsenk. etwas schräg, mässig tief, ziemlich enge",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "Einsenk. etwas schräg, mässig tief, ziemlich enge",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "in ziemlich enger, mit feinen Rippen umgebener Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "3",
+    "original": "Stiel holzig, dünn, etwa 15 mm lang, seltener dick und kurz",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "Höhle tief, mittelweit, fast eben, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle tief, mittelweit, fast eben, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "5",
+    "original": "Höhle tief, mittelweit, fast eben, berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "in tiefer, mit Rost strahlig bekleideter Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "7",
+    "original": "in tiefer, mit Rost strahlig bekleideter Höhle",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt, fast geschmeidig, etwas glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale glatt, fast geschmeidig, etwas glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale: ziemlich fein, glatt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "hellgrün, später grünlichgelb bis hellgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "hellgrün, später grünlichgelb bis hellgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Anfangs hellgrün, später hellgelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "sonnenw. meistens nur punktirt geröthet, ziemlich reichlich dunkel carmoisin gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "5",
+    "original": "Die Sonnenseite mit lebhaft carmoisinrothen Streifen vom Kelch bis Stiel überdeckt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "ziemlich reichlich dunkel carmoisin gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "mit lebhaft carmoisinrothen Streifen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "getuepfelt",
+    "original": "sonnenw. meistens nur punktirt geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "ziemlich reichlich dunkel carmoisin gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "mit lebhaft carmoisinrothen Streifen vom Kelch bis Stiel überdeckt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "dazwischen noch roth punktirt und verwaschen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte sparsam, fein, kaum bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte sparsam, fein, kaum bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 33:27, rundlich zwiebelf.",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern … geräumig, meistens etwas, doch nicht weit offen",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kernhaus: sehr geräumig, hohlaxig, selten offen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. mittelbreit",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Kernhaus: sehr geräumig, hohlaxig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 2, gross, vollkommen, länglich eiförmig, lang und scharf gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "trichter_lang",
+    "original": "Kelchhöhle trichterkegelf., 3/5 bis 2/3 zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_lang",
+    "original": "Kelchröhre: tief und spitz bis fast zum Kernhaus herabgehend",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "gruenlich",
+    "original": "Fleisch hellgrünlich oder gelbgrünlichweiss",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch: weiß, ins Grüngelbliche schillernd",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "fein, mürbe, saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "weich, locker, saftig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "fein, mürbe, saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "weich, locker, saftig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "vorherrschend, ganz angenehm weinsäuerlich, nicht oder kaum merklich süss",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "3",
+    "original": "vorherrschend, ganz angenehm weinsäuerlich, nicht oder kaum merklich süss",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "7",
+    "original": "von angenehmem, weinsäuerlichem Geschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "(Ill. H.) fast o††",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "(Ill. H.) fast o††",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "Guter Tafel- und sehr schätzbarer Wirthschaftsapfel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "Guter Tafel- und sehr schätzbarer Wirthschaftsapfel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "besonders zu Obstmost sehr gut",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "12",
+    "original": "Anf. Dec. bis April",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "Anf. Dec. bis April",
+    "quelle": "engelbrecht1889",
+    "seite": "698 (Nr. 630)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "Reife und Nutzung: November bis April",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "4",
+    "original": "Reife und Nutzung: November bis April",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   },
+   {
+    "merkmal": "baum_wuchs",
+    "wert": "7",
+    "original": "wird groß und stark und ist sehr gesund und dauerhaft",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "175"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Alter südwestdeutscher Landapfel aus der Klasse der Streiflinge: groß, flachrund bis abgestumpft eiförmig, gerippt und sonnenseits karminrot gestreift, mit weichem, saftigem, weinsäuerlichem Fleisch. Er hält bis April und galt im 19. Jahrhundert als guter Tafel- und sehr geschätzter Wirtschafts- und Mostapfel für Landleute und Straßenpflanzungen.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "698 (Nr. 630)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Lucas hielt die Sorte im Handbuch (1859) für sicher deutschen Ursprungs; sie war am Rhein, an der Lahn und im ganzen Südwesten auf dem Land verbreitet. Diel beschrieb sie unter diesem Namen und nannte als Synonyme Winter-Stripeling (Knoop), Marienthaler (Henne), Streifling und Sträumerling (Christ, Sickler) sowie die Lahner Volksnamen Carmes-Apfel und Dorschen-Apfel; in Oberschwaben hieß sie Strömling. Das Handbuch weist darauf hin, dass viele dieser Lokalnamen auch für andere, ähnliche Streiflinge galten. Engelbrecht erhielt 1889 Früchte von Lippold aus Dresden.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "698 (Nr. 630)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 60 mm Breite bei 51–54 mm Höhe und vermerkt, dass die Früchte oft größer und besonders breiter sind (Handbuch 69:52–54 mm, Leroy 78:56–58 mm); das Handbuch nennt den Apfel groß und plattrund. Die Form ist abgestumpft eiförmig bis fast flachrund und etwas stielbauchig, die Hälften sind ungleich, eine Seite oft niedriger. Engelbrecht fand den Querschnitt nicht ganz rund mit flachen, deutlich über den Bauch laufenden Falten; das Handbuch beschreibt deutliche Rippen über die obere Wölbung, einzelne bis zur Stielfläche, die der Frucht oft ein kalvillartiges Aussehen geben. Der geschlossene Kelch (bei großen Früchten halb offen) sitzt in einer mäßig tiefen, ziemlich engen, oft schrägen Einsenkung. Der holzige, meist dünne Stiel ist etwa 15 mm lang und steht in einer tiefen, strahlig berosteten Stielgrube.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "698 (Nr. 630)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, fast geschmeidig und etwas glänzend, anfangs hellgrün, später grünlichgelb bis hellgelb. Die Sonnenseite ist punktiert gerötet und ziemlich reichlich karminrot gestreift; die Streifen laufen vom Kelch bis zum Stiel, dazwischen ist die Röte verwaschen, schattenseits werden die Streifen blasser. Engelbrecht beschreibt die Streifen als dunkel, das Handbuch als lebhaft karminrot. Die Schalenpunkte sind spärlich und fein, Regenflecken sind nicht selten.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "698 (Nr. 630)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Das Kernhaus ist rundlich zwiebelförmig (Engelbrecht 33:27 mm), nach dem Handbuch sehr geräumig und hohlachsig. Die Kammern sind stielwärts stumpf gespitzt, kelchwärts etwas flach abgerundet, etwas zerrissen und geräumig; Engelbrecht fand sie meist etwas, aber nicht weit offen, das Handbuch selten offen. Die Achsenhöhle ist mittelbreit. Je Kammer liegen zwei große, vollkommene, länglich eiförmige, lang und scharf gespitzte braune Kerne. Die Kelchhöhle ist trichterkegelförmig und reicht drei Fünftel bis zwei Drittel zur Achsenhöhle; das Handbuch nennt die Kelchröhre tief und spitz, fast bis zum Kernhaus. Am Schnitt ist das Fleisch hell grünlich bis gelbgrünlich weiß.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "698 (Nr. 630)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist fein, weich bis mürbe, locker und saftig. Es ist nicht gewürzt und schmeckt vorherrschend angenehm weinsäuerlich, kaum merklich süß; einen Duft hat es nach dem Handbuch nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "698 (Nr. 630)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Engelbrecht gibt die Genussreife von Anfang Dezember bis April an, das Handbuch von November bis April. Die Früchte welken nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "698 (Nr. 630)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Engelbrecht bewertet die Sorte als fast tafelwürdig und wertvoll für den Haushalt (fast o††). Nach dem Handbuch ist sie ein guter Tafel- und sehr schätzbarer Wirtschaftsapfel, besonders gut für Obstmost.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "698 (Nr. 630)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum bildet eine hoch gewölbte, kugelige Krone, wird groß und stark und ist sehr gesund und dauerhaft. Die Blüte ist wenig empfindlich, er trägt oft und reich. Die Triebe sind dunkelbraun und wollig, die Blätter wirken in der Masse eigentümlich stahlgrau. Das Handbuch empfahl ihn für Straßenpflanzungen, Baumgüter und Landwirte.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "175"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "ruhm-aus-kirchwerder",
+  "name": "Ruhm aus Kirchwerder",
+  "synonyme": [
+   {
+    "name": "Johannsens Roter Herbstapfel",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+    }
+   },
+   {
+    "name": "Ruhm von Kirchwärder",
+    "beleg": {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Zufallssämling unbekannter Abstammung, vermutlich bei Kirchwerder in den Vierlanden bei Hamburg entstanden; benannt zunächst nach dem Finder Johannsen als Johannsens Roter Herbstapfel.",
+   "belege": [
+    {
+     "quelle": "wikipedia_de",
+     "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "Der Apfel wird mittelgroß",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "eine runde, meist regelmäßige, abgeflachte Form",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gruengelb",
+    "original": "eine grün-gelbe Grundfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "7",
+    "original": "die (meist) von einer intensiv roten, streifigen Deckfarbe überdeckt wird",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "von einer intensiv roten, streifigen Deckfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "von einer intensiv roten, streifigen Deckfarbe",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "ein weißes, saftiges Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "ein weißes, saftiges Fruchtfleisch",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "geschmack_aroma",
+    "wert": "erfrischend, aromatisch",
+    "original": "mit einem erfrischenden, aromatischen Geschmack",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "pflueckreife",
+    "wert": "9",
+    "original": "Der Apfel wird ab September pflückreif",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "9",
+    "original": "die Genußreife beginnt mit der Pflückreife und dauert bis Ende Oktober/Anfang November",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "10",
+    "original": "dauert bis Ende Oktober/Anfang November an",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "11",
+    "original": "dauert bis Ende Oktober/Anfang November an",
+    "quelle": "wikipedia_de",
+    "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Alter Herbstapfel aus den Hamburger Vierlanden: mittelgroß, abgeflacht rund und meist kräftig rot gestreift, mit weißem, saftigem, erfrischend aromatischem Fleisch. Früher im Erwerbsanbau verbreitet, heute nur noch eine Liebhabersorte.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Die Sorte entstand als Zufallssämling, vermutlich bei Kirchwerder in den Vierlanden. Ihr ursprünglicher Name Johannsens Roter Herbstapfel geht auf den Finder zurück; als sie wegen Geschmack und Ertrag im Erwerbsanbau gepflanzt wurde, erhielt sie den werbewirksameren Namen Ruhm aus Kirchwerder (ältere Schreibung Ruhm von Kirchwärder).",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Die Früchte sind mittelgroß, rund, abgeflacht und meist regelmäßig gebaut. Angaben zu Kelch, Stiel und Schnitt enthalten die ausgewerteten Quellen nicht.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die grüngelbe Grundfarbe ist meist von einer kräftig roten, streifigen Deckfarbe überdeckt; schwach gefärbte Früchte kommen vor.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fruchtfleisch ist weiß und saftig, der Geschmack erfrischend und aromatisch.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Äpfel sind ab September pflückreif und gleich genussreif; die Genussreife reicht bis Ende Oktober oder Anfang November.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Die Sorte wurde wegen ihres Geschmacks und ihrer Ertragsstärke im Erwerbsanbau angebaut und wird heute von Liebhabern gepflanzt.",
+    "belege": [
+     {
+      "quelle": "wikipedia_de",
+      "url": "https://de.wikipedia.org/w/index.php?title=Ruhm_aus_Kirchwerder&oldid=268816497"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ },
+ {
+  "id": "roter-baschesapfel",
+  "name": "Roter Baschesapfel",
+  "synonyme": [
+   {
+    "name": "Rother Baschesapfel",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "689 (Nr. 621)"
+    }
+   },
+   {
+    "name": "Basches",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "531"
+    }
+   },
+   {
+    "name": "Schmiedbästlesapfel",
+    "beleg": {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "531"
+    }
+   },
+   {
+    "name": "Muskateller-Luiken",
+    "beleg": {
+     "quelle": "engelbrecht1889",
+     "seite": "689 (Nr. 621)"
+    }
+   }
+  ],
+  "herkunft": {
+   "text": "Württembergische Landsorte, nach Lucas (Handbuch 1859) in den wärmeren Gegenden Württembergs, besonders im Neckar- und Remstal, heimisch und häufig. Der Volksname Schmiedbästlesapfel soll auf einen Schmied namens Sebastian zurückgehen, der die Sorte verbreitet habe.",
+   "belege": [
+    {
+     "quelle": "illustr_hb_1",
+     "band": "I",
+     "seite": "531"
+    }
+   ]
+  },
+  "merkmale": [
+   {
+    "merkmal": "frucht_breite",
+    "wert": 64,
+    "original": "Gestalt 64:46—51",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "frucht_hoehe",
+    "wert": 48.5,
+    "original": "Gestalt 64:46—51",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "frucht_hoehe_breite",
+    "wert": 0.76,
+    "original": "Gestalt 64:46—51",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "frucht_groesse",
+    "wert": "5",
+    "original": "mittelgroßer, gewöhnlich plattrunder, breitrippiger Apfel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "flachrund",
+    "original": "flachrund bis stark abgestumpft rundlich",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "frucht_form",
+    "wert": "rund",
+    "original": "flachrund bis stark abgestumpft rundlich",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "wenig stielbauchig",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "frucht_breiteste_stelle",
+    "wert": "stiel",
+    "original": "der Bauch liegt gewöhnlich mehr nach dem Stiel zu",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "Hälften meistens ungleich",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "frucht_symmetrie",
+    "wert": "schief",
+    "original": "von wechselnder Form und ungleichen Hälften",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "3",
+    "original": "Querschn. nicht ganz rund",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "frucht_rippung",
+    "wert": "7",
+    "original": "Mehrere breite flache Erhabenheiten laufen über die ganze Frucht",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "frucht_kronung",
+    "wert": "5",
+    "original": "zwischen meistens sehr deutlichen, flach zum Bauche laufenden Falten",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "offen",
+    "original": "Kelch offen bis halb offen, grün und braun",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "halboffen",
+    "original": "Kelch offen bis halb offen, grün und braun",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kelch_offenheit",
+    "wert": "offen",
+    "original": "Kelch: offen, kurzblättrig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "Einsenk. schräg, tief, enge",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kelchgrube_weite",
+    "wert": "3",
+    "original": "Einsenk. schräg, tief, enge",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kelchgrube_tiefe",
+    "wert": "7",
+    "original": "in charakteristisch tiefer, etwas faltiger und sehr unregelmäßiger Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "stiel_dicke",
+    "wert": "5",
+    "original": "Stiel holzig, mitteldick, etwa 9 mm lang",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "stiel_laenge",
+    "wert": "3",
+    "original": "Stiel: kurz, holzig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "5",
+    "original": "Höhle mitteltief, mittelweit bis etwas enge",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "5",
+    "original": "Höhle mitteltief, mittelweit bis etwas enge",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "stielgrube_weite",
+    "wert": "3",
+    "original": "Höhle mitteltief, mittelweit bis etwas enge",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "3",
+    "original": "fast eben, zart, hellbraun berostet",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "stielgrube_tiefe",
+    "wert": "7",
+    "original": "in tiefer, grünlichgelber … Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_berostung_stielgrube",
+    "wert": "7",
+    "original": "mit feinem zimmtfarbigen Rost strahlig bekleideter Einsenkung",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale glatt, etwas geschmeidig und glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale glatt, etwas geschmeidig und glänzend",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glatt",
+    "original": "Schale: glatt, glänzend, etwas geschmeidig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_beschaffenheit",
+    "wert": "glaenzend",
+    "original": "Schale: glatt, glänzend, etwas geschmeidig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "grünlichgelb, später hellgelb",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_grundfarbe",
+    "wert": "gelb",
+    "original": "Grundfarbe blaß citronengelb",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "7",
+    "original": "sonnenw. oft weithin carmoisin überzogen",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_anteil",
+    "wert": "9",
+    "original": "Fast die ganze Frucht ist sehr schön dunkelcarmoisin verwaschen und gestreift",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "rot",
+    "original": "sonnenw. oft weithin carmoisin überzogen",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_farbton",
+    "wert": "dunkelrot",
+    "original": "sehr schön dunkelcarmoisin verwaschen und gestreift",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "sonnenw. oft weithin carmoisin überzogen",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "dunkler und lang, häufig ringsum gestreift",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "verwaschen",
+    "original": "dunkelcarmoisin verwaschen und gestreift",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_deckfarbe_art",
+    "wert": "gestreift",
+    "original": "dunkelcarmoisin verwaschen und gestreift",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_lentizellen_anzahl",
+    "wert": "3",
+    "original": "Punkte sparsam, ziemlich fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_lentizellen_groesse",
+    "wert": "3",
+    "original": "Punkte sparsam, ziemlich fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "braun",
+    "original": "Punkte sparsam, ziemlich fein, bräunlich",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "im Roth als helle Tupfen erscheinend",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "schale_lentizellen_art",
+    "wert": "hell",
+    "original": "Punkte fein, blaßroth und weißlich",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "schale_berostung_wangen",
+    "wert": "3",
+    "original": "außerdem findet man glatte, hellgelbe Rostmale",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "kernhaus_form",
+    "wert": "zwiebel",
+    "original": "Kernhaus 36:22, zwiebelförm.",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "geschlossen",
+    "original": "Kammern … mässig geräumig, nicht oder wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kernfaecher_oeffnung",
+    "wert": "teilweise",
+    "original": "Kammern … mässig geräumig, nicht oder wenig offen",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Achsenh. ziemlich schmal",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kernhaus_achse",
+    "wert": "offen",
+    "original": "Kernhaus: ziemlich weit nach unten, hohlachsig",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "kerne_form",
+    "wert": "eifoermig",
+    "original": "Kerne zu 1 bis 2, fast mittelgross, vollkommen, eiförmig, gespitzt",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_lang",
+    "original": "Kelchhöhle kegelförm., 1/2 zur Achsenh.",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "kelchhoehle_form",
+    "wert": "dreieck_breit",
+    "original": "Kelchröhre: ein weiter nicht tief herabgehender Kegel",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "cremeweiss",
+    "original": "Fleisch hellgelblichweiss, unter der Schale kaum merklich geröthet",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "fleisch_farbe",
+    "wert": "weiss",
+    "original": "Fleisch: weiß, etwas ins Grünliche schimmernd",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "5",
+    "original": "fein, markig bis mürbe, ziemlich saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "fleisch_festigkeit",
+    "wert": "3",
+    "original": "fein, markig bis mürbe, ziemlich saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "5",
+    "original": "markig bis mürbe, ziemlich saftig",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "fleisch_saftigkeit",
+    "wert": "7",
+    "original": "unter der Schale mitunter geröthet, saftreich",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "sanft weinig, ebenso oder etwas vorherrschend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "5",
+    "original": "sanft weinig, ebenso oder etwas vorherrschend süss",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "geschmack_suesse",
+    "wert": "7",
+    "original": "von süßweinsaurem Geschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "geschmack_saeure",
+    "wert": "5",
+    "original": "von süßweinsaurem Geschmack",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "(Illustr. Handb.) fast o††",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "(Illustr. Handb.) fast o††",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "tafel",
+    "original": "angenehm zum Rohgenuß und auf dem Obstmarkt beliebt",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "most",
+    "original": "sehr schätzbar aber zur Obstmostbereitung, wie auch zum Backen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "verwendung",
+    "wert": "kueche",
+    "original": "sehr schätzbar aber zur Obstmostbereitung, wie auch zum Backen",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "Nov. bis März",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "genussreife_ende",
+    "wert": "3",
+    "original": "Nov. bis März",
+    "quelle": "engelbrecht1889",
+    "seite": "689 (Nr. 621)"
+   },
+   {
+    "merkmal": "genussreife_beginn",
+    "wert": "11",
+    "original": "November, December, hält bis in das Frühjahr",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   },
+   {
+    "merkmal": "bluete_zeit",
+    "wert": "7",
+    "original": "Er blüht sehr spät",
+    "quelle": "illustr_hb_1",
+    "band": "I",
+    "seite": "531"
+   }
+  ],
+  "texte": [
+   {
+    "thema": "ueberblick",
+    "text": "Württembergischer Streifling aus dem Neckar- und Remstal: mittelgroß, flachrund mit breiten, flachen Rippen und fast ganz dunkel karminrot verwaschen und gestreift. Der Winterapfel war im 19. Jahrhundert auf dem Obstmarkt beliebt und wurde vor allem für Most und zum Backen geschätzt.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     }
+    ]
+   },
+   {
+    "thema": "herkunft",
+    "text": "Nach Lucas im Handbuch (1859) ist die Sorte in den wärmeren Gegenden Württembergs, vor allem im Neckar- und Remstal, heimisch und häufig. Allgemein heißt sie Basches oder Rother Baschesapfel, daneben Schmiedbästlesapfel, was auf einen Schmied namens Sebastian als Verbreiter deuten soll. Lucas hatte sie zuvor als Muskateller-Luiken geführt, hielt diesen Namen aber für unpassend, weil der Apfel keinen Muskatgeschmack hat. Engelbrecht erhielt 1889 von Lucas aus Reutlingen Früchte unter beiden Namen und ordnet sie den Streiflingen zu.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     }
+    ]
+   },
+   {
+    "thema": "frucht",
+    "text": "Engelbrecht maß 64 mm Breite bei 46–51 mm Höhe. Die Frucht ist flachrund bis stark abgestumpft rundlich, wenig stielbauchig und in der Form wechselnd, die Hälften sind meist ungleich. Über die Frucht laufen mehrere breite, flache Erhabenheiten; der Querschnitt ist nicht ganz rund. Der offene bis halb offene, kurzblättrige Kelch sitzt in einer schrägen, engen und auffällig tiefen, unregelmäßig gefalteten Einsenkung. Der kurze, holzige, mitteldicke Stiel (etwa 9 mm) steht in einer mitteltiefen (Handbuch: tiefen) Stielgrube, die strahlig zimtfarben bis hellbraun berostet ist.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     }
+    ]
+   },
+   {
+    "thema": "schale",
+    "text": "Die Schale ist glatt, glänzend und etwas geschmeidig. Die grünlichgelbe, später hellgelbe Grundfarbe (Handbuch: blass zitronengelb) ist meist nur an der Stielwölbung rein zu sehen; sonnenseits ist die Frucht weithin karminrot überzogen und häufig ringsum dunkler, lang gestreift, nach dem Handbuch fast ganz dunkelkarminrot verwaschen und gestreift. Die spärlichen, feinen Schalenpunkte sind bräunlich und erscheinen im Rot als helle Tupfen; dazu kommen glatte, hellgelbe Rostflecken.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     }
+    ]
+   },
+   {
+    "thema": "schnitt",
+    "text": "Das Kernhaus ist zwiebelförmig und flach (Engelbrecht 36:22 mm); nach dem Handbuch sitzt es ziemlich weit nach unten und ist hohlachsig. Die Kammern sind stielwärts gespitzt, kelchwärts abgerundet, glattwandig, mäßig geräumig und nicht oder wenig offen; das Handbuch nennt sie rundlich und voll besetzt. Die Achsenhöhle ist ziemlich schmal. Je Kammer liegen ein bis zwei fast mittelgroße, vollkommene, eiförmige, gespitzte, kastanienbraune Kerne. Die Angaben zur Kelchhöhle weichen ab: Engelbrecht fand einen Kegel bis zur halben Tiefe der Achsenhöhle, das Handbuch einen weiten, nicht tief reichenden Kegel. Das Fleisch ist am Schnitt hell gelblichweiß, unter der Schale kaum merklich gerötet.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     }
+    ]
+   },
+   {
+    "thema": "fleisch_geschmack",
+    "text": "Das Fleisch ist fein, markig bis mürbe und ziemlich saftig (Handbuch: saftreich), weiß mit grünlichem Schimmer. Es ist kaum gewürzt; Engelbrecht beschreibt es als sanft weinig und ebenso oder etwas mehr süß, das Handbuch als süßweinsäuerlich.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     }
+    ]
+   },
+   {
+    "thema": "reife_lagerung",
+    "text": "Die Genussreife beginnt im November; Engelbrecht gibt November bis März an, nach dem Handbuch hält sich die Frucht bis ins Frühjahr. Sie welkt nicht.",
+    "belege": [
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     },
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     }
+    ]
+   },
+   {
+    "thema": "verwendung",
+    "text": "Nach dem Handbuch angenehm zum Rohverzehr und auf dem Obstmarkt beliebt, besonders wertvoll aber für die Mostbereitung und zum Backen. Engelbrecht bewertet die Sorte als fast tafelwürdig und wertvoll für den Haushalt (fast o††).",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     }
+    ]
+   },
+   {
+    "thema": "baum",
+    "text": "Der Baum wird ziemlich ausladend, treibt anfangs kräftiges, dunkelrotbraunes, stark weißgrau punktiertes Holz und hat kräftige, breit eiförmige Blätter. Er ist sehr fruchtbar, wenig empfindlich gegen Witterung und blüht sehr spät. Die Landleute im Neckar- und Remstal pflanzten ihn gern.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     }
+    ]
+   },
+   {
+    "thema": "unterscheidung",
+    "text": "In der späten Blüte und den Sommertrieben ähnelt die Sorte nach dem Handbuch stark den Luiken; mit dem Muskateller-Luiken ist sie nach Lucas und Engelbrecht identisch.",
+    "belege": [
+     {
+      "quelle": "illustr_hb_1",
+      "band": "I",
+      "seite": "531"
+     },
+     {
+      "quelle": "engelbrecht1889",
+      "seite": "689 (Nr. 621)"
+     }
+    ]
+   }
+  ],
+  "bilder": []
+ }
+]

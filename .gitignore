@@ -1,0 +1,32 @@
+# Geheimnisse und lokale Konfiguration
+.env
+.env.*
+!.env.example
+.vercel/
+
+# Abhängigkeiten und Build
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+*.tsbuildinfo
+
+# System
+.DS_Store
+*.log
+
+# Große Medien und Testaufnahmen (liegen nur lokal)
+*.MOV
+*.mov
+*.HEIC
+*.heic
+*.mp4
+
+# Fremde Literatur (Urheberrecht) und Ablagen
+*.pdf
+Claude outputs/
+
+# Große Rohdaten; klein und zum Nachbauen nötig bleiben roh/nfc, roh/munq, roh/wikipedia_namen
+daten/roh/bilder/
+daten/roh/de/
