@@ -23,7 +23,8 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: app/package-lock.json
-      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: ffmpeg (statischer Build, schneller als apt)
+        run: curl -sL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | sudo tar -xJ --strip-components=1 -C /usr/local/bin --wildcards '*/ffmpeg' && ffmpeg -version | head -1
       - run: npm ci
       - run: npm run pruefen
 
