@@ -24,7 +24,7 @@ jobs:
           cache: npm
           cache-dependency-path: app/package-lock.json
       - name: ffmpeg (statischer Build, schneller als apt)
-        run: curl -sL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | sudo tar -xJ --strip-components=1 -C /usr/local/bin --wildcards '*/ffmpeg' && ffmpeg -version | head -1
+        run: curl -sfL https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz | sudo tar -xJ --strip-components=2 -C /usr/local/bin --wildcards '*/bin/ffmpeg' && ffmpeg -version | head -1
       - run: npm ci
       - run: npm run pruefen
 
