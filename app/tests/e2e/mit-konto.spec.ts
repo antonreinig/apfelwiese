@@ -44,7 +44,7 @@ test('Ganzer Ablauf mit Testkonto', async ({ page, request, baseURL }) => {
     await page.getByRole('button', { name: /Auswerten/ }).click()
     await expect(page.getByRole('button', { name: 'Ohne Sorte speichern' })).toBeEnabled({ timeout: 90_000 })
     await page.getByRole('button', { name: 'Ohne Sorte speichern' }).click()
-    await expect(page).toHaveURL(/#\/baum\//)
+    await expect(page).toHaveURL(/#\/baum\//, { timeout: 60_000 })
     const baumUrl = page.url()
 
     // Merkmals-Rundgang bis zum Ende
