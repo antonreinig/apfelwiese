@@ -4,7 +4,7 @@
 import type { SortenEintrag } from './sorte.ts'
 import { NACHBARN } from './einstellungen.ts'
 
-export const MONATSNAMEN = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+export { MONATSNAMEN } from '../ui/format.ts'
 
 const hat = (s: SortenEintrag, merkmal: string, ...codes: string[]) => (s.m?.[merkmal] ?? []).some((w) => codes.includes(String(w)))
 const zahl = (s: SortenEintrag, merkmal: string) => s.m?.[merkmal]?.find((w) => typeof w === 'number') as number | undefined

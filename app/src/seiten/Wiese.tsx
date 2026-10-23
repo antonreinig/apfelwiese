@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ApfelBuehne, Medaillon } from '../apfel3d/Buehne.tsx'
-import { useBaeume, sortiert, type Baum } from '../daten/baeume.ts'
+import { useBaeume, sortiert, VERTRAUEN, type Baum } from '../daten/baeume.ts'
 import { useSortenindex, parameterAusEintrag } from '../daten/sorten.ts'
 import { modellFuerBaum, roemisch } from '../daten/baumModell.ts'
 import { gehe } from '../ui/router.ts'
 import { Plus, Raster, Einzeln, Hoch, Info, Person } from '../ui/symbole.tsx'
 import { Sortenname } from '../ui/Sortenname.tsx'
 import { apfelDesTages } from '../daten/erkunden.ts'
+import { OHNE_KONTO, OFFLINE } from '../ui/Kontopflicht.tsx'
 import { useKonto, bereit, zurAnmeldung } from '../daten/konto.ts'
 
 const ANSICHT_SCHLUESSEL = 'wiese-ansicht'
@@ -22,17 +23,17 @@ export function WieseSeite() {
   useEffect(() => { try { localStorage.setItem(ANSICHT_SCHLUESSEL, ansicht) } catch { /* privat */ } }, [ansicht])
 
   const konto = useKonto()
-  if (konto.status !== 'laedt' && !bereit(konto)) return <LeereWiese ohneKonto />
+  if (konto.status !== 'laedt' && !bereit(konto)) return <LeereWiese ohneKonto offline={konto.status === 'offline'} />
   if (geladen && liste.length === 0) return <LeereWiese />
 
   return (
     <div className="seite" style={{ display: 'flex', flexDirection: 'column', paddingBottom: 0 }}>
       <div className="tafelkopf">
-        <span>Meine Äpfel</span>
+        <span>Meine Bäume</span>
         <span style={{ display: 'flex', gap: 6 }}>
-          <button className="rund-knopf" style={{ width: 36, height: 36 }} aria-label="Über die App" onClick={() => gehe('/info')}><Info /></button>
+          <button className="rund-knopf" aria-label="Über die App" onClick={() => gehe('/info')}><Info /></button>
           <button
-            className="rund-knopf" style={{ width: 36, height: 36 }}
+            className="rund-knopf"
             aria-label={ansicht === 'einzeln' ? 'Alle Bäume als Raster' : 'Einzelansicht'}
             onClick={() => setAnsicht(ansicht === 'einzeln' ? 'raster' : 'einzeln')}
           >
@@ -53,7 +54,7 @@ function KontoKnopf() {
   const konto = useKonto()
   const buchstabe = konto.status === 'angemeldet' ? konto.konto.email.slice(0, 1).toUpperCase() : ''
   return (
-    <button className="rund-knopf" style={{ width: 36, height: 36, fontSize: 17 }} aria-label="Konto und Einstellungen" onClick={() => gehe('/konto')}>
+    <button className="rund-knopf" style={{ fontSize: 18 }} aria-label="Konto" onClick={() => gehe('/konto')}>
       {buchstabe || <Person />}
     </button>
   )
@@ -156,10 +157,10 @@ function Karussell({ liste, modelle, onRaster }: { liste: Baum[]; modelle: Retur
         <div style={{ textAlign: 'center', opacity: naehe, transition: 'opacity .1s', minHeight: 132 }}>
           <Sortenname baum={baum} groesse={46} />
           <div className="klein kursiv" style={{ marginTop: 2 }}>
-            {baum.bestimmung.status === 'vorschlag' ? 'vermutlich · ' : ''}
+            {baum.bestimmung.status === 'vorschlag' || baum.bestimmung.status === 'pomologe' || baum.bestimmung.status === 'dna' ? `${VERTRAUEN[baum.bestimmung.status].label} · ` : ''}
             {baum.name}{baum.ort ? ` · ${baum.ort}` : ''}
           </div>
-          <div className="sehr-klein" style={{ marginTop: 10, letterSpacing: '0.08em', fontVariant: 'small-caps' }}>
+          <div className="sehr-klein" style={{ marginTop: 10, letterSpacing: '0.08em', fontVariant: 'small-caps' }} aria-label={`Baum ${index + 1} von ${liste.length}`}>
             Tafel {roemisch(index + 1)} von {roemisch(liste.length)}
           </div>
           <button className="knopf leise" style={{ marginTop: 6, border: 'none' }} onClick={() => gehe(`/baum/${baum.id}`)}>
@@ -169,7 +170,7 @@ function Karussell({ liste, modelle, onRaster }: { liste: Baum[]; modelle: Retur
       )}
 
       <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0 calc(var(--nav-hoehe) + var(--sicher-unten) + 14px)' }}>
-        <button className="knopf haupt" onClick={() => gehe('/neu')} style={{ minHeight: 50, padding: '0 26px' }}>
+        <button className="knopf haupt gross" onClick={() => gehe('/neu')}>
           <Plus /> Neuen Baum bestimmen
         </button>
       </div>
@@ -191,12 +192,12 @@ function WieseRaster({ liste }: { liste: Baum[] }) {
             </div>
             <Sortenname baum={b} groesse={20} block />
             <span className="sehr-klein kursiv">{b.name}</span>
-            <span className="sehr-klein" style={{ display: 'block', fontVariant: 'small-caps' }}>{roemisch(i + 1)}</span>
+            <span className="sehr-klein" style={{ display: 'block', fontVariant: 'small-caps' }} aria-hidden>{roemisch(i + 1)}</span>
           </a>
         ))}
       </div>
       <div style={{ position: 'fixed', left: 0, right: 0, bottom: 'calc(var(--nav-hoehe) + var(--sicher-unten) + 14px)', display: 'flex', justifyContent: 'center', zIndex: 10 }}>
-        <button className="knopf haupt" onClick={() => gehe('/neu')} style={{ minHeight: 50, padding: '0 26px' }}>
+        <button className="knopf haupt gross" onClick={() => gehe('/neu')}>
           <Plus /> Neuen Baum bestimmen
         </button>
       </div>
@@ -206,33 +207,35 @@ function WieseRaster({ liste }: { liste: Baum[] }) {
 
 // ------------------------------------------------------------------ Leere Wiese: Sorte zum Kennenlernen
 
-function LeereWiese({ ohneKonto = false }: { ohneKonto?: boolean }) {
+function LeereWiese({ ohneKonto = false, offline = false }: { ohneKonto?: boolean; offline?: boolean }) {
   const index = useSortenindex()
   // dieselbe Sorte wie der Apfel des Tages im Tab Sorten
   const sorte = useMemo(() => (index ? apfelDesTages(index.sorten) ?? null : null), [index])
   return (
     <div className="seite" style={{ display: 'flex', flexDirection: 'column' }}>
       <div className="tafelkopf">
-        <span>Meine Äpfel</span>
-        <span style={{ display: 'flex', gap: 10, alignItems: 'center' }}>Apfel des Tages
-          <button className="rund-knopf" style={{ width: 36, height: 36 }} aria-label="Über die App" onClick={() => gehe('/info')}><Info /></button>
+        <span>Meine Bäume</span>
+        <span style={{ display: 'flex', gap: 6 }}>
+          <button className="rund-knopf" aria-label="Über die App" onClick={() => gehe('/info')}><Info /></button>
           <KontoKnopf />
         </span>
       </div>
-      <div style={{ position: 'relative', flex: 1, minHeight: 300, margin: '0 -16px' }}>
+      <div style={{ position: 'relative', flex: 1, minHeight: 280, margin: '0 -16px' }}>
         {sorte && <ApfelBuehne aepfel={[parameterAusEintrag(sorte)]} className="buehne" />}
       </div>
       {sorte && (
         <a href={`#/sorte/${sorte.id}`} style={{ textAlign: 'center', textDecoration: 'none' }}>
+          <div className="sehr-klein" style={{ letterSpacing: '0.08em', fontVariant: 'small-caps' }}>Apfel des Tages</div>
           <div className="name" style={{ fontSize: 46 }}>{sorte.name}</div>
           <div className="klein kursiv">Mehr über diese Sorte</div>
         </a>
       )}
-      <p className="hinweis" style={{ textAlign: 'center' }}>{ohneKonto ? 'Melde dich an, um deine eigenen Apfelbäume zu bestimmen und zu sammeln.' : 'Noch keine eigenen Äpfel. Fotografiere vier Äpfel eines Baums, um ihn hier anzulegen.'}</p>
-      <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: 'calc(var(--nav-hoehe) + var(--sicher-unten) + 8px)' }}>
-        {ohneKonto
+      <p className="hinweis" style={{ textAlign: 'center', marginBottom: 10 }}>{offline ? OFFLINE : ohneKonto ? OHNE_KONTO : 'Noch keine eigenen Bäume. Fotografiere vier Äpfel eines Baums, um ihn hier anzulegen.'}</p>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, paddingBottom: 'calc(var(--nav-hoehe) + var(--sicher-unten) + 8px)' }}>
+        {offline ? null : ohneKonto
           ? <button className="knopf haupt" onClick={() => zurAnmeldung('/')}>Anmelden</button>
           : <button className="knopf haupt" onClick={() => gehe('/neu')}><Plus /> Ersten Baum bestimmen</button>}
+        <button className="knopf leise" style={{ border: 'none' }} onClick={() => gehe('/sorten/ratgeber')}>Welcher Apfelbaum passt zu dir?</button>
       </div>
     </div>
   )

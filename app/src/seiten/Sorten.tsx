@@ -1,8 +1,9 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { Medaillon } from '../apfel3d/Buehne.tsx'
 import { useSortenindex, parameterAusEintrag, normalisiere } from '../daten/sorten.ts'
-import { Suche, Pfeil, Kompass, Wuerfel, Zurueck, Stern } from '../ui/symbole.tsx'
-import { zurueck } from '../ui/router.ts'
+import { Suche, Kompass, Wuerfel, Stern } from '../ui/symbole.tsx'
+import { Seitenkopf, Verweis, Verweiskarte } from '../ui/Seite.tsx'
+import { zahl, MONATE_KURZ } from '../ui/format.ts'
 import type { SortenEintrag } from '../daten/sorte.ts'
 import {
   apfelDesTages, zufaelligeSorte, reifekalender, regionSorten, regionsarten, REGIONSART, SAMMLUNGEN, SAMMLUNG_NACH_ID,
@@ -14,7 +15,6 @@ import { useEinstellungen, setzeRegion, BUNDESLAENDER, BUNDESLAND_NAME } from '.
 // und Listen für Suche, Sammlung, Monat, Region und alle Sorten.
 
 const SEITE = 40
-const MONATE = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']
 
 /** Gut beschriebene Sorten mit Bild zuerst (für Reihen auf der Startseite) */
 const zuerstGut = (l: SortenEintrag[]) => [...l].sort((a, b) => Number(b.hatBild) - Number(a.hatBild) || Number(!!b.ausfuehrlich) - Number(!!a.ausfuehrlich) || b.anzahlMerkmale - a.anzahlMerkmale)
@@ -44,8 +44,8 @@ export function SortenSeite() {
   return (
     <div className="seite" ref={ref}>
       <div className="tafelkopf">
-        <span>Sortenverzeichnis</span>
-        <span>{index ? `${index.anzahl.toLocaleString('de-DE')} Sorten` : ''}</span>
+        <span>Sorten</span>
+        <span>{index ? `${zahl(index.anzahl)} im Verzeichnis` : ''}</span>
       </div>
       <div style={{ position: 'relative', marginTop: 12 }}>
         <Suche style={{ position: 'absolute', left: 12, top: 12, width: 20, height: 20, color: 'var(--bleistift)' }} />
@@ -99,10 +99,7 @@ function Erkunden({ sorten }: { sorten: SortenEintrag[] }) {
       <Reifekalender sorten={sorten} />
       <Sammlungen sorten={sorten} />
       <BezugKarte />
-      <a className="zeile" href="#/sorten/alle" style={{ marginTop: 18, padding: '14px 0' }}>
-        <span className="grow">Alle {sorten.length.toLocaleString('de-DE')} Sorten von A bis Z</span>
-        <Pfeil style={{ width: 18, height: 18, color: 'var(--bleistift)' }} />
-      </a>
+      <div style={{ marginTop: 18 }}><Verweis ziel="/sorten/alle">Alle {zahl(sorten.length)} Sorten von A bis Z</Verweis></div>
     </>
   )
 }
@@ -110,8 +107,8 @@ function Erkunden({ sorten }: { sorten: SortenEintrag[] }) {
 function Ueberschrift({ titel, ziel, anzahl }: { titel: string; ziel?: string; anzahl?: number }) {
   return (
     <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, margin: '26px 0 8px' }}>
-      <h2 className="kapitaelchen" style={{ fontSize: 17 }}>{titel}</h2>
-      {ziel && <a href={`#${ziel}`} className="sehr-klein" style={{ whiteSpace: 'nowrap' }}>{anzahl !== undefined ? `alle ${anzahl}` : 'alle'}</a>}
+      <h2 className="abschnitt-titel" style={{ marginBottom: 0 }}>{titel}</h2>
+      {ziel && <a href={`#${ziel}`} className="klein" style={{ whiteSpace: 'nowrap', padding: '10px 0 10px 12px', margin: '-10px 0' }}>{anzahl !== undefined ? `alle ${zahl(anzahl)}` : 'alle'}</a>}
     </div>
   )
 }
@@ -126,7 +123,7 @@ function ApfelDesTages({ sorten }: { sorten: SortenEintrag[] }) {
     <section className="karte-papier" style={{ marginTop: 16, padding: '12px 14px' }} aria-label={zufall ? 'Zufallsfund' : 'Apfel des Tages'}>
       <div className="tafelkopf" style={{ borderBottom: 'none', paddingBottom: 0 }}>
         <span>{zufall ? 'Zufallsfund' : `Apfel des Tages · ${datum}`}</span>
-        <button className="rund-knopf" style={{ width: 34, height: 34 }} aria-label="Zufällige Sorte" onClick={() => setZufall(zufaelligeSorte(sorten, s.id) ?? null)}><Wuerfel /></button>
+        <button className="rund-knopf" aria-label="Zufällige Sorte" onClick={() => setZufall(zufaelligeSorte(sorten, s.id) ?? null)}><Wuerfel /></button>
       </div>
       <a href={`#/sorte/${s.id}`} style={{ display: 'flex', gap: 14, alignItems: 'center', textDecoration: 'none', marginTop: 4 }}>
         <Medaillon p={parameterAusEintrag(s)} groesse={108} />
@@ -141,28 +138,14 @@ function ApfelDesTages({ sorten }: { sorten: SortenEintrag[] }) {
 }
 
 function RatgeberKarte() {
-  return (
-    <a href="#/sorten/ratgeber" className="karte-papier" style={{ display: 'flex', gap: 14, alignItems: 'center', marginTop: 12, textDecoration: 'none', background: 'var(--tinte)', color: 'var(--papier)', borderColor: 'var(--tinte)' }}>
-      <Kompass style={{ width: 40, height: 40, flex: 'none' }} />
-      <span style={{ flex: 1 }}>
-        <span style={{ display: 'block', fontSize: 20 }}>Welcher Apfelbaum passt zu dir?</span>
-        <span style={{ display: 'block', fontSize: 15, opacity: 0.8 }}>Neun Fragen zu Lage, Boden, Platz und Geschmack</span>
-      </span>
-      <Pfeil style={{ width: 20, height: 20, flex: 'none' }} />
-    </a>
-  )
+  return <Verweiskarte dunkel ziel="/sorten/ratgeber" symbol={<Kompass />} titel="Welcher Apfelbaum passt zu dir?" text="Neun Fragen zu Lage, Boden, Platz und Geschmack" />
 }
 
 function BezugKarte() {
   return (
-    <a href="#/sorten/bezug" className="karte-papier" style={{ display: 'flex', gap: 14, alignItems: 'center', marginTop: 26, textDecoration: 'none' }}>
-      <Stern style={{ width: 36, height: 36, flex: 'none', color: 'var(--blatt)' }} />
-      <span style={{ flex: 1 }}>
-        <span style={{ display: 'block', fontSize: 19 }}>Alte Sorten bekommen und erhalten</span>
-        <span className="klein" style={{ display: 'block' }}>Baumschulen, Reiserbörsen, Sortenbestimmung und wie du Sorten weitergibst</span>
-      </span>
-      <Pfeil style={{ width: 20, height: 20, flex: 'none', color: 'var(--bleistift)' }} />
-    </a>
+    <div style={{ marginTop: 26 }}>
+      <Verweiskarte ziel="/sorten/bezug" symbol={<Stern />} titel="Alte Sorten bekommen und erhalten" text="Baumschulen, Reiserbörsen, Sortenbestimmung und wie du Sorten weitergibst" />
+    </div>
   )
 }
 
@@ -227,7 +210,7 @@ const kurzArt = (a: Regionsart[]) => a.includes('h') ? 'hier entstanden' : a.inc
 export function RegionWahl({ klein = false }: { klein?: boolean }) {
   const { region } = useEinstellungen()
   return (
-    <select className="eingabe" aria-label="Bundesland" value={region ?? ''} onChange={(e) => setzeRegion(e.target.value || null)} style={klein ? { minHeight: 36, padding: '4px 10px', width: 'auto' } : undefined}>
+    <select className="eingabe" aria-label="Bundesland" value={region ?? ''} onChange={(e) => setzeRegion(e.target.value || null)} style={klein ? { width: 'auto' } : undefined}>
       <option value="">Bundesland wählen</option>
       {BUNDESLAENDER.map((b) => <option key={b.code} value={b.code}>{b.name}</option>)}
     </select>
@@ -242,13 +225,15 @@ function Reifekalender({ sorten }: { sorten: SortenEintrag[] }) {
     <section>
       <Ueberschrift titel="Reifekalender" />
       <p className="sehr-klein" style={{ margin: '-4px 0 8px' }}>Wie viele Sorten in welchem Monat genussreif sind. Tippe auf einen Monat.</p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 4, alignItems: 'end', height: 112 }} role="list">
+      <div role="list">
         {n.map((x, i) => (
-          <a key={i} href={`#/sorten/monat/${i + 1}`} role="listitem" aria-label={`${MONATSNAMEN[i]}: ${x} Sorten`}
-            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '100%', textDecoration: 'none', gap: 3 }}>
-            <span style={{ fontSize: 10, color: 'var(--tinte-2)', fontFamily: 'var(--ui)' }}>{x}</span>
-            <span style={{ width: '100%', height: `${Math.max(3, (x / max) * 70)}px`, borderRadius: 4, background: i === jetzt ? 'var(--siegel)' : 'color-mix(in srgb, var(--blatt) 70%, transparent)' }} />
-            <span style={{ fontSize: 12, color: i === jetzt ? 'var(--tinte)' : 'var(--tinte-2)' }}>{MONATE[i].slice(0, 1)}</span>
+          <a key={i} href={`#/sorten/monat/${i + 1}`} role="listitem" aria-label={`${MONATSNAMEN[i]}: ${zahl(x)} Sorten`}
+            style={{ display: 'flex', alignItems: 'center', gap: 10, minHeight: 36, textDecoration: 'none', color: i === jetzt ? 'var(--tinte)' : 'var(--tinte-2)', fontWeight: i === jetzt ? 500 : 400 }}>
+            <span style={{ width: 34, fontSize: 15 }}>{MONATE_KURZ[i]}</span>
+            <span style={{ flex: 1, height: 14 }}>
+              <span style={{ display: 'block', height: '100%', width: `${Math.max(1.5, (x / max) * 100)}%`, borderRadius: 4, background: i === jetzt ? 'var(--siegel)' : 'color-mix(in srgb, var(--blatt) 70%, transparent)' }} />
+            </span>
+            <span style={{ width: 46, textAlign: 'right', fontSize: 15 }}>{zahl(x)}</span>
           </a>
         ))}
       </div>
@@ -269,7 +254,7 @@ function Sammlungen({ sorten }: { sorten: SortenEintrag[] }) {
             <a key={sm.id} href={`#/sorten/sammlung/${sm.id}`} style={{ flex: 'none', width: 74, textAlign: 'center', textDecoration: 'none', color: 'inherit' }}>
               <span aria-hidden style={{ display: 'block', width: 52, height: 52, margin: '0 auto', borderRadius: '50%', background: sm.farbe, border: '0.5px solid var(--linie-stark)', boxShadow: 'var(--schatten)' }} />
               <span style={{ display: 'block', fontSize: 14, lineHeight: 1.2, marginTop: 6 }}>{sm.titel}</span>
-              <span className="sehr-klein">{inhalt[sm.id].length}</span>
+              <span className="sehr-klein">{zahl(inhalt[sm.id].length)}</span>
             </a>
           ))}
         </div>
@@ -285,7 +270,7 @@ function Sammlungen({ sorten }: { sorten: SortenEintrag[] }) {
                 {v && <Medaillon p={parameterAusEintrag(v)} groesse={44} />}
                 <span style={{ minWidth: 0 }}>
                   <span style={{ display: 'block', fontSize: 17, lineHeight: 1.2 }}>{sm.titel}</span>
-                  <span className="sehr-klein">{inhalt[sm.id].length} Sorten</span>
+                  <span className="sehr-klein">{zahl(inhalt[sm.id].length)} Sorten</span>
                 </span>
               </a>
             )
@@ -298,7 +283,7 @@ function Sammlungen({ sorten }: { sorten: SortenEintrag[] }) {
           {gruppe('thema').map((sm) => (
             <a key={sm.id} href={`#/sorten/sammlung/${sm.id}`} className="karte-papier" style={{ padding: '10px 12px', textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: 2 }}>
               <span style={{ fontSize: 17, lineHeight: 1.2 }}>{sm.titel}</span>
-              <span className="sehr-klein">{inhalt[sm.id].length} Sorten</span>
+              <span className="sehr-klein">{zahl(inhalt[sm.id].length)} Sorten</span>
             </a>
           ))}
         </div>
@@ -340,11 +325,9 @@ export function SortenListeSeite({ art, wert }: { art: 'alle' | 'sammlung' | 'mo
 
   return (
     <div className="seite" ref={ref}>
-      <button className="rund-knopf" onClick={() => zurueck('/sorten')} aria-label="Zurück"><Zurueck /></button>
-      <h1 className="name" style={{ fontSize: 42, marginTop: 8 }}>{inhalt?.titel ?? ''}</h1>
-      {inhalt?.text && <p className="klein kursiv" style={{ marginTop: 0 }}>{inhalt.text}</p>}
+      <Seitenkopf zurueckZu="/sorten" titel={inhalt?.titel ?? ''} untertitel={inhalt?.text} />
       {art === 'region' && <RegionWahl klein />}
-      {inhalt && <p className="sehr-klein" style={{ marginBottom: 0 }}>{inhalt.sorten.length.toLocaleString('de-DE')} Sorten</p>}
+      {inhalt && <p className="sehr-klein" style={{ marginBottom: 0 }}>{zahl(inhalt.sorten.length)} Sorten</p>}
       {inhalt && <Liste sorten={inhalt.sorten} region={art === 'region' ? code : undefined} nachbarAb={'nachbarAb' in inhalt ? inhalt.nachbarAb : undefined} />}
     </div>
   )
@@ -365,7 +348,7 @@ function Liste({ sorten, region, nachbarAb }: { sorten: SortenEintrag[]; region?
     <div style={{ marginTop: 8 }}>
       {sorten.slice(0, anzahl).map((s, i) => (
         <div key={s.id}>
-          {nachbarAb !== undefined && i === nachbarAb && i > 0 && <h2 className="kapitaelchen" style={{ fontSize: 16, marginTop: 18, color: 'var(--tinte-2)' }}>Aus den Nachbarländern</h2>}
+          {nachbarAb !== undefined && i === nachbarAb && i > 0 && <h2 className="abschnitt-titel" style={{ marginTop: 18 }}>Aus den Nachbarländern</h2>}
           <a className="zeile" href={`#/sorte/${s.id}`}>
             <Medaillon p={parameterAusEintrag(s)} groesse={60} />
             <div className="grow">

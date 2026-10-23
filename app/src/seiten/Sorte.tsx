@@ -4,8 +4,9 @@ import { useSorte, useSortenindex, parameterAusSorte, parameterAusEintrag } from
 import type { Sorte, Textthema, Merkmalswert, Quelle, SortenEintrag } from '../daten/sorte.ts'
 import { MERKMAL_NACH_ID, GRUPPEN, auspraegungLabel, type Gruppe } from '../daten/merkmalskatalog.ts'
 import { BelegRegister, Fussnoten, Belegliste } from '../ui/Belege.tsx'
-import { zurueck, gehe } from '../ui/router.ts'
-import { Zurueck, Pfeil } from '../ui/symbole.tsx'
+import { gehe } from '../ui/router.ts'
+import { Stern } from '../ui/symbole.tsx'
+import { Seitenkopf, Verweiskarte, Wertzeile } from '../ui/Seite.tsx'
 import { BUNDESLAND_NAME } from '../daten/einstellungen.ts'
 import { useBaeume, aktualisiereBaum, VERTRAUEN } from '../daten/baeume.ts'
 
@@ -22,7 +23,8 @@ const THEMEN: [Textthema, string][] = [
   ['unterscheidung', 'Verwechslung und Unterscheidung'],
 ]
 
-export default function SorteSeite({ id }: { id: string }) {
+/** Sortenporträt; mit `schliessen` als Überlagerung (etwa im Bestimmungsablauf, der dabei erhalten bleibt) */
+export default function SorteSeite({ id, schliessen }: { id: string; schliessen?: () => void }) {
   const sorte = useSorte(id)
   const index = useSortenindex()
   const eintrag = index?.sorten.find((s) => s.id === id)
@@ -32,13 +34,11 @@ export default function SorteSeite({ id }: { id: string }) {
 
   return (
     <div className="seite" style={{ paddingTop: 0 }}>
-      <div style={{ position: 'sticky', top: 0, zIndex: 3, paddingTop: 'var(--oben)', display: 'flex' }}>
-        <button className="rund-knopf" onClick={() => zurueck('/sorten')} aria-label="Zurück"><Zurueck /></button>
-      </div>
-      <div style={{ position: 'relative', height: 300, margin: '-44px -16px 0' }}>
+      <Seitenkopf zurueckZu="/sorten" onZurueck={schliessen} />
+      <div style={{ position: 'relative', height: 290, margin: '-6px -16px 0' }}>
         {p && <ApfelBuehne aepfel={[p]} className="buehne" />}
       </div>
-      <h1 className="name" style={{ fontSize: 48, textAlign: 'center' }}>{sorte?.name ?? eintrag?.name ?? ''}</h1>
+      <h1 className="name titel-objekt" style={{ textAlign: 'center' }}>{sorte?.name ?? eintrag?.name ?? ''}</h1>
       {sorte === null && <p className="hinweis" style={{ textAlign: 'center' }}>Zu dieser Sorte liegen noch keine Angaben vor.</p>}
       {sorte && <Inhalt sorte={sorte} quellen={quellen} eintrag={eintrag} />}
     </div>
@@ -56,17 +56,17 @@ function Inhalt({ sorte, quellen, eintrag }: { sorte: Sorte; quellen: Map<string
       )}
       <hr className="doppellinie" />
 
+      <AufEinenBlick sorte={sorte} eintrag={eintrag} />
       {sorte.herkunft && (
         <p style={{ marginTop: 0 }}><span className="kapitaelchen">Herkunft.</span> {sorte.herkunft.text}<Fussnoten belege={sorte.herkunft.belege} /></p>
       )}
-      <Einordnung sorte={sorte} eintrag={eintrag} />
 
       {THEMEN.map(([thema, titel]) => {
         const texte = sorte.texte.filter((t) => t.thema === thema)
         if (!texte.length) return null
         return (
           <section key={thema} style={{ marginBottom: 14 }}>
-            <h2 className="kapitaelchen" style={{ fontSize: 17, color: 'var(--tinte-2)', marginBottom: 4 }}>{titel}</h2>
+            <h2 className="abschnitt-titel">{titel}</h2>
             {texte.map((t, i) => (
               <p key={i} style={{ margin: '0 0 8px' }}>{t.text}<Fussnoten belege={t.belege} /></p>
             ))}
@@ -77,16 +77,12 @@ function Inhalt({ sorte, quellen, eintrag }: { sorte: Sorte; quellen: Map<string
       <Bilder sorte={sorte} />
       <Merkmale werte={sorte.merkmale} />
       <BaumZuordnen sorte={sorte} />
-      <a href="#/sorten/bezug" className="karte-papier" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', margin: '18px 0' }}>
-        <span style={{ flex: 1 }}>
-          <span style={{ display: 'block' }}>Einen Baum dieser Sorte bekommen</span>
-          <span className="sehr-klein" style={{ display: 'block' }}>Baumschulen mit alten Sorten, Reiserbörsen, Veredeln vom eigenen Baum</span>
-        </span>
-        <Pfeil style={{ width: 18, height: 18, color: 'var(--bleistift)' }} />
-      </a>
+      <div style={{ margin: '18px 0' }}>
+        <Verweiskarte ziel="/sorten/bezug" symbol={<Stern />} titel="Einen Baum dieser Sorte bekommen" text="Baumschulen mit alten Sorten, Reiserbörsen, Veredeln vom eigenen Baum" />
+      </div>
 
       <hr className="haarlinie" />
-      <h2 className="kapitaelchen" style={{ fontSize: 17, color: 'var(--tinte-2)', marginBottom: 8 }}>Quellen</h2>
+      <h2 className="abschnitt-titel">Quellen</h2>
       <Belegliste quellen={quellen} />
       <p className="sehr-klein kursiv" style={{ marginTop: 12 }}>
         Das 3D-Modell ist aus den belegten Merkmalen{sorte.farbmessung?.length ? ' und aus Farben, die per Programm aus einem Referenzbild gemessen wurden,' : ''} berechnet. Es zeigt einen typischen Apfel der Sorte; einzelne Früchte weichen ab.
@@ -100,32 +96,55 @@ const LAENDER: Record<string, string> = {
   PL: 'Polen', CZ: 'Tschechien', AT: 'Österreich', CH: 'Schweiz', IT: 'Italien', RU: 'Russland', UA: 'Ukraine', LV: 'Lettland', LT: 'Litauen',
   EE: 'Estland', US: 'USA', CA: 'Kanada', NZ: 'Neuseeland', AU: 'Australien', JP: 'Japan', HU: 'Ungarn', SK: 'Slowakei', SI: 'Slowenien', LU: 'Luxemburg', FI: 'Finnland', IM: 'Isle of Man', ES: 'Spanien', PT: 'Portugal', HR: 'Kroatien', RO: 'Rumänien', BY: 'Belarus',
 }
-const REGION_ART = { herkunft: 'entstanden', regionalsorte: 'Regionalsorte', empfehlung: 'empfohlen für den Streuobstbau', verbreitung: 'verbreitet' }
+const REGION_ART: Record<string, string> = { herkunft: 'Entstanden in', regionalsorte: 'Regionalsorte in', empfehlung: 'Für den Streuobstbau empfohlen in', verbreitung: 'Verbreitet in' }
 
-/** Kurze Einordnung: Land, Regionen, Alter, Seltenheit, jeweils mit Beleg */
-function Einordnung({ sorte, eintrag }: { sorte: Sorte; eintrag?: SortenEintrag }) {
+/** Werte eines Merkmals ohne Dubletten, je Wert mit seinen Belegen */
+function werteMit(sorte: Sorte, merkmal: string) {
+  const m = new Map<string, Merkmalswert[]>()
+  for (const w of sorte.merkmale) if (w.merkmal === merkmal) m.set(String(w.wert), [...(m.get(String(w.wert)) ?? []), w])
+  return [...m.entries()].map(([wert, ws]) => ({ text: auspraegungLabel(merkmal, wert), belege: ws.flatMap((w) => w.belege ?? [w]) }))
+}
+
+/** Auf einen Blick: Herkunft, Alter, Region, Gefährdung, Reife, Nutzung und Anbau, jeweils mit Beleg */
+function AufEinenBlick({ sorte, eintrag }: { sorte: Sorte; eintrag?: SortenEintrag }) {
   const zeilen: React.ReactNode[] = []
+  const liste = (merkmal: string, praefix = '') => {
+    const w = werteMit(sorte, merkmal)
+    return w.length ? w.map((x, i) => <span key={i}>{i ? '; ' : ''}{praefix}{x.text}<Fussnoten belege={x.belege} /></span>) : null
+  }
   const h = sorte.herkunft
-  if (h?.land) zeilen.push(<span key="land">{h.landSicher === false ? 'vermutlich aus ' : 'aus '}{LAENDER[h.land] ?? h.land}{h.ort ? ` (${h.ort})` : ''}{h.jahr ? `, um ${h.jahr}` : ''}<Fussnoten belege={h.belege} /></span>)
-  else if (eintrag?.beschrieben) zeilen.push(<span key="alt">beschrieben {eintrag.beschrieben}</span>)
-  const nachRegion = new Map<string, typeof sorte.regionen>()
-  for (const r of sorte.regionen ?? []) nachRegion.set(r.region, [...(nachRegion.get(r.region) ?? []), r])
-  for (const [region, rs] of nachRegion) {
+  if (h?.land) zeilen.push(<Wertzeile key="herkunft" titel="Herkunft">{h.landSicher === false ? 'vermutlich ' : ''}{LAENDER[h.land] ?? h.land}{h.ort ? ` (${h.ort})` : ''}{h.jahr ? `, um ${h.jahr}` : ''}<Fussnoten belege={h.belege} /></Wertzeile>)
+  if (eintrag?.alt) zeilen.push(<Wertzeile key="alt" titel="Alter">alte Sorte, belegt vor 1950{!h?.jahr && eintrag.beschrieben ? ` (beschrieben ${eintrag.beschrieben})` : ''}</Wertzeile>)
+  for (const art of ['herkunft', 'regionalsorte', 'empfehlung', 'verbreitung'] as const) {
+    const rs = (sorte.regionen ?? []).filter((r) => r.art === art)
+    if (!rs.length) continue
     zeilen.push(
-      <span key={region}>
-        <a href={`#/sorten/region/${region}`}>{BUNDESLAND_NAME[region] ?? region}</a>: {rs!.map((r, i) => (
-          <span key={i}>{i ? ', ' : ''}{REGION_ART[r.art]}<Fussnoten belege={r.belege} /></span>
-        ))}
-      </span>,
+      <Wertzeile key={art} titel={REGION_ART[art]}>
+        {rs.map((r, i) => <span key={r.region}>{i ? ', ' : ''}<a href={`#/sorten/region/${r.region}`}>{BUNDESLAND_NAME[r.region] ?? r.region}</a><Fussnoten belege={r.belege} /></span>)}
+      </Wertzeile>,
     )
   }
-  for (const g of sorte.gefaehrdung ?? []) zeilen.push(<span key={`g${g.stufe}`} style={{ color: 'var(--siegel)' }}>{g.stufe === 'selten' && g.original ? <>Seltenheit: „{g.original}“</> : g.stufe}<Fussnoten belege={g.belege} /></span>)
+  if (sorte.gefaehrdung?.length) {
+    zeilen.push(
+      <Wertzeile key="gefaehrdung" titel="Gefährdung">
+        {sorte.gefaehrdung.map((g, i) => <span key={i} style={{ color: 'var(--siegel)' }}>{i ? '; ' : ''}{g.stufe === 'selten' && g.original ? `„${g.original}“` : g.stufe}<Fussnoten belege={g.belege} /></span>)}
+      </Wertzeile>,
+    )
+  }
+  if (eintrag?.reife) zeilen.push(<Wertzeile key="reife" titel="Genussreif">{eintrag.reife}</Wertzeile>)
+  for (const [m, titel] of [['lagerfaehigkeit', 'Lagerfähigkeit'], ['verwendung', 'Verwendung'], ['baum_wuchs', 'Wuchs'], ['standort_klima', 'Lage'], ['standort_boden', 'Boden'], ['anfaelligkeit_schorf', 'Schorf'], ['anfaelligkeit_mehltau', 'Mehltau'], ['anfaelligkeit_krebs', 'Obstbaumkrebs'], ['bluete_frost', 'Blüte bei Frost']] as const) {
+    const l = liste(m)
+    if (l) zeilen.push(<Wertzeile key={m} titel={titel}>{l}</Wertzeile>)
+  }
+  if (werteMit(sorte, 'ploidie').some((x) => x.text === 'triploid')) {
+    zeilen.push(<Wertzeile key="ploidie" titel="Befruchtung">triploid: guter Ertrag nur mit zwei anderen Sorten in der Nähe<Fussnoten belege={werteMit(sorte, 'ploidie').flatMap((x) => x.belege)} /></Wertzeile>)
+  }
   if (!zeilen.length) return null
   return (
-    <ul className="klein" style={{ listStyle: 'none', padding: '8px 12px', margin: '0 0 16px', border: '0.5px solid var(--linie)', borderRadius: 10, background: 'var(--papier-3)' }}>
-      {eintrag?.alt && <li><span className="kapitaelchen">Alte Sorte</span>, belegt vor 1950</li>}
-      {zeilen.map((z, i) => <li key={i}>{z}</li>)}
-    </ul>
+    <section style={{ marginBottom: 18 }} aria-label="Auf einen Blick">
+      <h2 className="abschnitt-titel">Auf einen Blick</h2>
+      <div style={{ fontSize: 16 }}>{zeilen}</div>
+    </section>
   )
 }
 
@@ -143,19 +162,16 @@ function Merkmale({ werte }: { werte: Merkmalswert[] }) {
   if (!gruppen.length) return null
   return (
     <section style={{ marginTop: 18 }}>
-      <h2 className="kapitaelchen" style={{ fontSize: 17, color: 'var(--tinte-2)', marginBottom: 4 }}>Merkmale</h2>
+      <h2 className="abschnitt-titel">Merkmale</h2>
       {gruppen.map(([g, ws]) => (
         <div key={g} style={{ marginBottom: 10 }}>
           <div className="sehr-klein kursiv" style={{ borderBottom: '0.5px solid var(--linie)', paddingBottom: 2 }}>{GRUPPEN[g]}</div>
           {zusammenfassen(ws).map(([mid, eintraege]) => (
-            <div key={mid} style={{ display: 'flex', gap: 12, padding: '5px 0', borderBottom: '0.5px dotted var(--linie)', fontSize: 16 }}>
-              <span style={{ flex: '0 0 44%', color: 'var(--tinte-2)' }}>{MERKMAL_NACH_ID[mid].name}</span>
-              <span style={{ flex: 1 }}>
-                {eintraege.map((w, i) => (
-                  <span key={i}>{i ? '; ' : ''}{auspraegungLabel(mid, w.wert)}<Fussnoten belege={w.belege ?? [w]} /></span>
-                ))}
-              </span>
-            </div>
+            <Wertzeile key={mid} titel={MERKMAL_NACH_ID[mid].name}>
+              {eintraege.map((w, i) => (
+                <span key={i}>{i ? '; ' : ''}{auspraegungLabel(mid, w.wert)}<Fussnoten belege={w.belege ?? [w]} /></span>
+              ))}
+            </Wertzeile>
           ))}
         </div>
       ))}
@@ -181,7 +197,7 @@ function Bilder({ sorte }: { sorte: Sorte }) {
   const b = gross !== null ? bilder[gross] : null
   return (
     <section style={{ margin: '18px 0' }}>
-      <h2 className="kapitaelchen" style={{ fontSize: 17, color: 'var(--tinte-2)', marginBottom: 6 }}>Bilder</h2>
+      <h2 className="abschnitt-titel">Bilder</h2>
       <div className="chips" style={{ gap: 10 }}>
         {bilder.map((x, i) => (
           <button key={i} onClick={() => setGross(i)} style={{ padding: 0, border: '0.5px solid var(--linie)', background: 'var(--papier-3)', borderRadius: 8, flex: 'none' }}>
@@ -222,7 +238,7 @@ function BaumZuordnen({ sorte }: { sorte: Sorte }) {
                 gehe(`/baum/${b.id}`)
               }}>
               <span className="grow">{b.name}</span>
-              <span className="sehr-klein">{b.bestimmung.sorteName ?? 'unbestimmt'}</span>
+              <span className="sehr-klein">{b.bestimmung.sorteName ?? VERTRAUEN.unbestimmt.label}</span>
             </button>
           ))}
           <button className="knopf leise" onClick={() => setOffen(false)}>Abbrechen</button>

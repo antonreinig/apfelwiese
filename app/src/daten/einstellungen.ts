@@ -72,6 +72,7 @@ function setze(neu: Partial<Einstellungen>) {
 export function useEinstellungen(): Einstellungen {
   return useSyncExternalStore((h) => { hoerer.add(h); return () => hoerer.delete(h) }, () => stand)
 }
+export const einstellungenJetzt = () => stand
 export const setzeRegion = (region: string | null) => setze({ region })
 export const setzeDarstellung = (darstellung: Darstellung) => setze({ darstellung })
 

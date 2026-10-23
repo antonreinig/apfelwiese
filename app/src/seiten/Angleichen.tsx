@@ -8,6 +8,7 @@ import { Schnittansicht } from '../apfel3d/Schnitt.tsx'
 import { MERKMAL_NACH_ID } from '../daten/merkmalskatalog.ts'
 import { zurueck } from '../ui/router.ts'
 import { Zurueck } from '../ui/symbole.tsx'
+import { Laden, NichtGefunden, Farbfeld } from '../ui/Seite.tsx'
 import { useBlobUrl } from './Baum.tsx'
 
 // Modell angleichen: echtes Foto neben dem 3D-Apfel. Farben per Pipette aus dem Foto abnehmen,
@@ -111,7 +112,7 @@ const AUSWAHL: Record<Ansicht, { schluessel: Schluessel; merkmal: string; mehrfa
 }
 
 export default function AngleichenSeite({ id }: { id: string }) {
-  const { baeume } = useBaeume()
+  const { baeume, geladen } = useBaeume()
   const index = useSortenindex()
   const baum = baeume.find((b) => b.id === id)
   const satz = baum ? letzterFotosatz(baum) : undefined
@@ -128,7 +129,9 @@ export default function AngleichenSeite({ id }: { id: string }) {
   const fotoKey = satz ? satz.blatt?.[a.foto] ?? satz.vorschau?.[a.foto] ?? satz.fotos[a.foto] : null
   const fotoUrl = useBlobUrl(fotoKey)
 
-  if (!baum || !p) return <div className="seite"><p className="hinweis">Lädt …</p></div>
+  if (!geladen) return <Laden />
+  if (!baum) return <NichtGefunden text="Diesen Baum gibt es nicht mehr." />
+  if (!p) return <Laden />
 
   const setze = <K extends Schluessel>(k: K, v: ApfelParameter[K]) => {
     setP({ ...p, [k]: v })
@@ -152,10 +155,14 @@ export default function AngleichenSeite({ id }: { id: string }) {
 
   return (
     <div className="seite" style={{ paddingTop: 0, paddingBottom: 40 }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10, position: 'sticky', top: 0, zIndex: 4, background: 'var(--papier)', padding: 'var(--oben) 0 8px' }}>
-        <button className="rund-knopf" onClick={() => zurueck(`/baum/${id}`)} aria-label="Zurück"><Zurueck /></button>
-        <div style={{ flex: 1 }} className="kapitaelchen">Modell angleichen</div>
-        <button className="knopf haupt" disabled={!geaendert.size} onClick={speichern}>{gespeichert ? 'Gespeichert' : 'Speichern'}</button>
+      <div className="kopf-fest" style={{ marginTop: 0 }}>
+        <button className="rund-knopf" aria-label="Zurück" onClick={() => {
+          // ungespeicherte Regler und Farben nicht stillschweigend verwerfen
+          if (geaendert.size && !gespeichert && !confirm('Deine Änderungen am Modell sind noch nicht gespeichert. Ohne Speichern zurück?')) return
+          zurueck(`/baum/${id}`)
+        }}><Zurueck /></button>
+        <span className="tafelkopf" style={{ flex: 1, borderBottom: 'none', paddingBottom: 0 }}><span>Modell angleichen</span></span>
+        <button className="knopf haupt klein" disabled={!geaendert.size || gespeichert} onClick={speichern}>{gespeichert ? 'Gespeichert' : 'Speichern'}</button>
       </div>
 
       <div className="chips" style={{ marginBottom: 8 }}>
@@ -180,15 +187,15 @@ export default function AngleichenSeite({ id }: { id: string }) {
         </div>
       )}
 
-      <h2 className="kapitaelchen" style={{ fontSize: 16, color: 'var(--tinte-2)', margin: '16px 0 4px' }}>Farben aus dem Foto</h2>
+      <h2 className="abschnitt-titel" style={{ marginTop: 16 }}>Farben aus dem Foto</h2>
       <p className="sehr-klein" style={{ margin: '0 0 8px' }}>{pipette ? `Tippe im Foto auf: ${pipette.titel}${pipette.klein ? ' (ein einzelner Punkt genügt; zum Vergrößern die Lupe nutzen)' : ''}.` : 'Wähle, welche Farbe du abnehmen willst, und tippe dann im Foto auf die Stelle.'}</p>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
         {PIPETTEN[ansicht].map((x) => {
           const wert = p[x.schluessel] as string | null
           return (
             <button key={x.schluessel} className={`chip ${pipette?.schluessel === x.schluessel ? 'an' : ''}`} onClick={() => setPipette(pipette?.schluessel === x.schluessel ? null : x)}>
-              <span style={{ width: 16, height: 16, borderRadius: '50%', background: wert ?? 'transparent', border: '0.5px solid var(--linie-stark)', display: 'inline-block' }} />
-              {x.titel}{geaendert.has(x.schluessel) ? ' ·' : ''}
+              <Farbfeld farbe={wert ?? 'transparent'} groesse={16} />
+              {x.titel}{geaendert.has(x.schluessel) ? <span className="sehr-klein" style={{ color: 'inherit' }}> (geändert)</span> : null}
             </button>
           )
         })}
@@ -226,7 +233,7 @@ export default function AngleichenSeite({ id }: { id: string }) {
         </div>
       )}
 
-      <h2 className="kapitaelchen" style={{ fontSize: 16, color: 'var(--tinte-2)', margin: '18px 0 4px' }}>Form und Einzelheiten</h2>
+      <h2 className="abschnitt-titel" style={{ marginTop: 18 }}>Form und Einzelheiten</h2>
       {REGLER[ansicht].map((r) => (
         <ReglerZeile key={r.schluessel} r={r} wert={p[r.schluessel] as number} geaendert={geaendert.has(r.schluessel)} onChange={(v) => setze(r.schluessel, v as never)} />
       ))}
@@ -241,7 +248,7 @@ function ReglerZeile({ r, wert, geaendert, onChange }: { r: Regler; wert: number
   return (
     <label style={{ display: 'block', margin: '10px 0' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between' }} className="klein">
-        <span style={{ color: 'var(--tinte)' }}>{r.titel}{geaendert ? ' ·' : ''}</span>
+        <span style={{ color: 'var(--tinte)' }}>{r.titel}{geaendert ? <span className="sehr-klein"> (geändert)</span> : null}</span>
         <span>{r.einheit ? `${wert.toFixed(1)} ${r.einheit}` : ''}</span>
       </div>
       <input type="range" min={r.min} max={r.max} step={r.schritt} value={wert} onChange={(e) => onChange(Number(e.target.value))} style={{ width: '100%', accentColor: 'var(--tinte)' }} />

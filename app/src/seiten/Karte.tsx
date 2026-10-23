@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { BUNDESLAND_NAME, setzeRegion, einstellungenJetzt } from '../daten/einstellungen.ts'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { get, set } from 'idb-keyval'
@@ -9,6 +10,7 @@ import { medaillonBild } from '../apfel3d/medaillonBild.ts'
 import { gehe } from '../ui/router.ts'
 import { Suche, Ort, Kreuz, Pfeil } from '../ui/symbole.tsx'
 import { Sortenname } from '../ui/Sortenname.tsx'
+import { Meldung } from '../ui/Seite.tsx'
 
 // Die Wiese als Luftbild: eigene Bäume als Äpfel an ihrem Standort. Beim Öffnen zeigt die Karte
 // alle Bäume, sonst den gemerkten Ausschnitt der Wiese. Verschieben nur nach „Verschieben“.
@@ -171,16 +173,16 @@ export default function KarteSeite() {
           : (
             <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
               <div className="karte-papier" style={{ flex: 1, padding: '6px 12px', display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span className="kapitaelchen" style={{ fontSize: 16, flex: 1 }}>Meine Wiese</span>
+                <h1 className="kapitaelchen" style={{ fontSize: 16, flex: 1, margin: 0 }}>Meine Wiese</h1>
                 <span className="sehr-klein">{mitOrt.length} {mitOrt.length === 1 ? 'Baum' : 'Bäume'}</span>
               </div>
               <button className="rund-knopf" aria-label="Zur Wiese zurück" title="Zur Wiese zurück" onClick={() => karte.current && zurWiese(karte.current, mitOrt, ausschnitt ?? null, true)}><Ort /></button>
               <button className="rund-knopf" aria-label="Ausschnitt der Wiese neu festlegen" title="Wiese neu festlegen" onClick={() => setEinrichten(true)}><Suche /></button>
             </div>
           )}
-        <div className="chips" style={{ alignSelf: 'flex-start', background: 'color-mix(in srgb, var(--papier) 88%, transparent)', borderRadius: 999, padding: 2 }}>
-          <button className={`chip ${art === 'luftbild' ? 'an' : ''}`} onClick={() => setArt('luftbild')}>Luftbild</button>
-          <button className={`chip ${art === 'karte' ? 'an' : ''}`} onClick={() => setArt('karte')}>Karte</button>
+        <div className="chips" role="radiogroup" aria-label="Kartenart" style={{ alignSelf: 'flex-start', background: 'color-mix(in srgb, var(--papier) 88%, transparent)', borderRadius: 999, padding: 2 }}>
+          <button role="radio" aria-checked={art === 'luftbild'} className={`chip ${art === 'luftbild' ? 'an' : ''}`} onClick={() => setArt('luftbild')}>Luftbild</button>
+          <button role="radio" aria-checked={art === 'karte'} className={`chip ${art === 'karte' ? 'an' : ''}`} onClick={() => setArt('karte')}>Straßenkarte</button>
         </div>
       </div>
 
@@ -201,7 +203,7 @@ export default function KarteSeite() {
                 <Sortenname baum={baum} groesse={30} />
                 <div className="sehr-klein kursiv">{VERTRAUEN[baum.bestimmung.status].label} · {baum.name}</div>
               </div>
-              <button className="rund-knopf" style={{ width: 34, height: 34 }} aria-label="Schließen" onClick={() => setGewaehlt(null)}><Kreuz /></button>
+              <button className="rund-knopf" aria-label="Schließen" onClick={() => setGewaehlt(null)}><Kreuz /></button>
             </div>
             <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
               <button className="knopf leise" style={{ flex: 1 }} onClick={() => setVerschieben({ id: baum.id, lat: baum.standort!.lat, lng: baum.standort!.lng })}>Verschieben</button>
@@ -241,7 +243,7 @@ function apfelIcon(url: string | null, aktiv: boolean) {
 
 // ------------------------------------------------------------------ Wiese einrichten: Ort suchen und merken
 
-interface Treffer { name: string; lat: number; lng: number; bbox?: [number, number, number, number] }
+interface Treffer { name: string; lat: number; lng: number; bbox?: [number, number, number, number]; region?: string }
 
 function Einrichten({ karte, merken, abbrechen }: { karte: L.Map | null; merken: () => void; abbrechen?: () => void }) {
   const [text, setText] = useState('')
@@ -255,13 +257,14 @@ function Einrichten({ karte, merken, abbrechen }: { karte: L.Map | null; merken:
     setLaeuft(true); setFehler('')
     try {
       // Nominatim: nur auf ausdrückliche Suche, keine Vorschläge beim Tippen (Nutzungsrichtlinie)
-      const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&accept-language=de&q=${encodeURIComponent(text.trim())}`
+      const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&addressdetails=1&accept-language=de&q=${encodeURIComponent(text.trim())}`
       const r = await fetch(url)
       if (!r.ok) throw new Error()
-      const d = await r.json() as { display_name: string; lat: string; lon: string; boundingbox?: string[] }[]
+      const d = await r.json() as { display_name: string; lat: string; lon: string; boundingbox?: string[]; address?: Record<string, string> }[]
       setTreffer(d.map((x) => ({
         name: x.display_name, lat: +x.lat, lng: +x.lon,
         bbox: x.boundingbox ? [+x.boundingbox[0], +x.boundingbox[1], +x.boundingbox[2], +x.boundingbox[3]] : undefined,
+        region: x.address?.['ISO3166-2-lvl4'],
       })))
     } catch {
       setFehler('Die Suche hat nicht geklappt. Bitte später noch einmal versuchen.')
@@ -273,6 +276,8 @@ function Einrichten({ karte, merken, abbrechen }: { karte: L.Map | null; merken:
     if (!karte) return
     if (t.bbox) karte.flyToBounds([[t.bbox[0], t.bbox[2]], [t.bbox[1], t.bbox[3]]], { maxZoom: 18, duration: 1 })
     else karte.flyTo([t.lat, t.lng], 17, { duration: 1 })
+    // Bundesland der Wiese als Region für den Tab Sorten, wenn noch keine gewählt ist (bleibt auf dem Gerät)
+    if (t.region && BUNDESLAND_NAME[t.region] && !einstellungenJetzt().region) setzeRegion(t.region)
     setTreffer(null)
   }
 
@@ -288,8 +293,8 @@ function Einrichten({ karte, merken, abbrechen }: { karte: L.Map | null; merken:
   return (
     <div className="karte-papier" style={{ boxShadow: 'var(--schatten)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline' }}>
-        <div className="kapitaelchen" style={{ fontSize: 16, flex: 1 }}>Wo steht deine Wiese?</div>
-        {abbrechen && <button className="knopf leise" style={{ minHeight: 32, padding: '0 10px', fontSize: 15 }} onClick={abbrechen}>Abbrechen</button>}
+        <h1 className="kapitaelchen" style={{ fontSize: 16, flex: 1, margin: 0 }}>Wo steht deine Wiese?</h1>
+        {abbrechen && <button className="knopf leise klein" onClick={abbrechen}>Abbrechen</button>}
       </div>
       <form onSubmit={suchen} style={{ display: 'flex', gap: 8, marginTop: 6 }}>
         <input className="eingabe" value={text} onChange={(e) => setText(e.target.value)} placeholder="Ort, Straße oder Flurname" enterKeyHint="search" />
@@ -303,8 +308,8 @@ function Einrichten({ karte, merken, abbrechen }: { karte: L.Map | null; merken:
           ))}
         </div>
       )}
-      {fehler && <div className="sehr-klein" style={{ color: 'var(--warn)', marginTop: 6 }}>{fehler}</div>}
-      <div className="sehr-klein" style={{ marginTop: 6 }}>Zoome so weit hinein, dass deine Bäume zu sehen sind, und merke dir den Ausschnitt. Suche: © OpenStreetMap-Mitwirkende, Nominatim.</div>
+      <Meldung art="fehler">{fehler}</Meldung>
+      <div className="sehr-klein" style={{ marginTop: 6 }}>Zoome so weit hinein, dass deine Bäume zu sehen sind, und merke dir den Ausschnitt. Das Bundesland des Suchtreffers übernimmt die App als Region für die Sorten. Suche: © OpenStreetMap-Mitwirkende, Nominatim.</div>
       <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
         <button className="knopf leise" style={{ flex: 'none', padding: '0 14px' }} onClick={hier} aria-label="Mein Standort"><Ort /> Hier</button>
         <button className="knopf haupt" style={{ flex: 1, whiteSpace: 'nowrap', padding: '0 12px' }} onClick={merken}>Das ist meine Wiese</button>
@@ -317,15 +322,16 @@ function OhneStandort({ liste, platzieren }: { liste: Baum[]; platzieren: (b: Ba
   const [offen, setOffen] = useState(false)
   return (
     <div className="karte-papier" style={{ boxShadow: 'var(--schatten)', padding: '8px 14px' }}>
-      <button style={{ background: 'none', border: 'none', padding: 0, width: '100%', textAlign: 'left', fontSize: 15 }} onClick={() => setOffen(!offen)}>
-        {liste.length} {liste.length === 1 ? 'Baum' : 'Bäume'} ohne Standort {offen ? '▾' : '▸'}
+      <button aria-expanded={offen} style={{ background: 'none', border: 'none', padding: 0, width: '100%', minHeight: 40, textAlign: 'left', fontSize: 16, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }} onClick={() => setOffen(!offen)}>
+        {liste.length} {liste.length === 1 ? 'Baum' : 'Bäume'} ohne Standort
+        <Pfeil style={{ width: 18, height: 18, transform: offen ? 'rotate(90deg)' : 'none', color: 'var(--bleistift)' }} />
       </button>
       {offen && (
         <div style={{ maxHeight: 200, overflowY: 'auto' }}>
           {liste.map((b) => (
             <div key={b.id} className="zeile" style={{ padding: '6px 0' }}>
               <div className="grow"><Sortenname baum={b} groesse={22} /><div className="sehr-klein kursiv">{b.name}</div></div>
-              <button className="knopf" style={{ minHeight: 34, fontSize: 15, padding: '0 12px' }} onClick={() => platzieren(b)}>Platzieren</button>
+              <button className="knopf klein" onClick={() => platzieren(b)}>Platzieren</button>
             </div>
           ))}
         </div>

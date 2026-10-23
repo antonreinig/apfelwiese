@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import { zurueck } from '../ui/router.ts'
-import { Zurueck } from '../ui/symbole.tsx'
+import { Seitenkopf } from '../ui/Seite.tsx'
 
 // Anleitung: App zum Home-Bildschirm hinzufügen, je nach Gerät und Browser.
 
@@ -91,14 +90,13 @@ export default function InstallierenSeite() {
   const t = TEXTE[u]
   return (
     <div className="seite">
-      <button className="rund-knopf" onClick={() => zurueck('/info')} aria-label="Zurück"><Zurueck /></button>
-      <h1 className="name" style={{ fontSize: 40, marginTop: 8 }}>Auf den Home-Bildschirm</h1>
+      <Seitenkopf zurueckZu="/konto" titel="Auf den Home-Bildschirm" />
       <p className="klein">Als App auf dem Home-Bildschirm startet die Apfelwiese bildschirmfüllend und der Browser räumt ihre Daten nicht auf. Ohne Netz kannst du sie trotzdem öffnen.</p>
       {istInstalliert() && <p className="hinweis">Du nutzt die Apfelwiese bereits als App vom Home-Bildschirm.</p>}
       {angebot && (
         <button className="knopf haupt" style={{ width: '100%', margin: '8px 0 16px' }} onClick={() => { angebot.prompt(); setAngebot(null) }}>Jetzt installieren</button>
       )}
-      <h2 className="kapitaelchen" style={{ fontSize: 17 }}>{t.titel}</h2>
+      <h2 className="abschnitt-titel" style={{ marginTop: 16 }}>{t.titel}</h2>
       <ol style={{ paddingLeft: 22 }}>
         {t.schritte.map((s, i) => <li key={i} style={{ marginBottom: 8 }}>{s}</li>)}
       </ol>

@@ -23,6 +23,7 @@ PWA zur Bestimmung und Dokumentation alter Apfelsorten aus vier standardisierten
 - Äpfel werden in der App **immer freigestellt** gezeigt. Das A4-Blatt dient nur als Maßstab und Weißabgleich. Originalfotos bleiben unverändert erhalten.
 - App-Vorschläge fließen **nie** als Referenz in die Sortendatenbank zurück. Dort landen nur bestätigte Bestimmungen (Pomologe, DNA, ggf. Nutzerkonsens).
 - Jeder Wert in der Sortendatenbank trägt seine Quelle (Werk/Datensatz, Band, Seite) und Lizenz.
+- **Oberfläche einheitlich:** Seitenkopf, Ablaufkopf, Abschnitt, Verweis, Meldung aus `app/src/ui/Seite.tsx`, Zahlen und Daten aus `app/src/ui/format.ts`. Regeln für Köpfe, Titel, Knöpfe, Begriffe und Lesbarkeit in `docs/ux-konzept.md` (Abschnitt „Einheitliche Gestaltung“). Neue Seiten folgen diesen Mustern statt eigener Inline-Stile.
 - Sprache in App und Dokumentation: Deutsch. Fachbegriffe nach dem NAP-Deskriptorenhandbuch. Code-Bezeichner sind ebenfalls deutsch (`baum`, `sorte`, `merkmal`, `speichereBaum` …); neuer Code folgt dem.
 - **Datenschutz:** Neue externe Dienste, Cookies oder Datenflüsse erst einbauen, wenn die Datenschutzerklärung (`app/src/seiten/Rechtliches.tsx`) angepasst ist. Bilder fremder Server laufen über `api/kachel.ts`, Vercel-Rewrites auf fremde Hosts leiten die Nutzer-IP weiter (geprüft am 22.10.2026). Bei inhaltlicher Änderung von Nutzungsbedingungen oder Einwilligungstext `TEXT_VERSION` in `app/src/daten/konto.ts` erhöhen.
 

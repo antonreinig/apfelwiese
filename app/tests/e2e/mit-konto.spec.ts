@@ -37,7 +37,7 @@ test('Ganzer Ablauf mit Testkonto', async ({ page, request, baseURL }) => {
   // Konto-Knopf in der Kopfleiste zeigt das Konto mit Abmelden und Löschen
   await expect(page.getByText('Bevor es losgeht')).toHaveCount(0)
   await page.goto('/')
-  await page.getByRole('button', { name: 'Konto und Einstellungen' }).click()
+  await page.getByRole('button', { name: 'Konto', exact: true }).click()
   await expect(page.getByText(email)).toBeVisible()
   await expect(page.getByRole('button', { name: 'Konto löschen' })).toBeVisible()
   await expect(page.getByRole('button', { name: 'Sicherung herunterladen' })).toBeVisible()

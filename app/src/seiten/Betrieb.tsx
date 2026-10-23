@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { kontoApi } from '../daten/konto.ts'
-import { zurueck } from '../ui/router.ts'
-import { Zurueck } from '../ui/symbole.tsx'
+import { Seitenkopf, Meldung } from '../ui/Seite.tsx'
 
 // Betriebsübersicht nur für den Betreiber: Konten, Ereignisse, Fehler der letzten Tage, Kontingente.
 
@@ -36,9 +35,8 @@ export default function BetriebSeite() {
 
   return (
     <div className="seite">
-      <button className="rund-knopf" onClick={() => zurueck('/info')} aria-label="Zurück"><Zurueck /></button>
-      <h1 className="name" style={{ fontSize: 40, marginTop: 8 }}>Betrieb</h1>
-      {fehler && <p className="klein" style={{ color: 'var(--warn)' }}>{fehler}</p>}
+      <Seitenkopf zurueckZu="/konto" titel="Betrieb" />
+      <Meldung art="fehler">{fehler}</Meldung>
       {!d && !fehler && <p className="hinweis">Lädt …</p>}
       {d && (
         <>

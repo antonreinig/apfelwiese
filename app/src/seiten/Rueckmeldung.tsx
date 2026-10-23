@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useKonto, kontoApi } from '../daten/konto.ts'
-import { zurueck } from '../ui/router.ts'
-import { Zurueck } from '../ui/symbole.tsx'
+import { Seitenkopf, Meldung } from '../ui/Seite.tsx'
 
 declare const __APP_STAND__: string
 
@@ -29,8 +28,7 @@ export default function RueckmeldungSeite() {
 
   return (
     <div className="seite">
-      <button className="rund-knopf" onClick={() => zurueck('/info')} aria-label="Zurück"><Zurueck /></button>
-      <h1 className="name" style={{ fontSize: 40, marginTop: 8 }}>Rückmeldung</h1>
+      <Seitenkopf zurueckZu="/info" titel="Rückmeldung" />
       {fertig ? (
         <p>Danke, deine Nachricht ist angekommen.</p>
       ) : (
@@ -45,7 +43,7 @@ export default function RueckmeldungSeite() {
             </label>
           )}
           <p className="sehr-klein">Mitgeschickt werden {konto.status === 'angemeldet' ? 'deine Konto-E-Mail, ' : ''}die zuletzt geöffnete Seite, der App-Stand und die Browserkennung, damit sich Fehler nachvollziehen lassen. <a href="#/datenschutz">Datenschutz</a></p>
-          {fehler && <p className="klein" style={{ color: 'var(--warn)' }}>{fehler}</p>}
+          <Meldung art="fehler">{fehler}</Meldung>
           <button className="knopf haupt" style={{ width: '100%' }} disabled={laeuft || text.trim().length < 3} onClick={senden}>{laeuft ? 'Wird gesendet …' : 'Senden'}</button>
         </>
       )}

@@ -40,7 +40,7 @@ export function Leuchtkasten({ bilder, start, titel, onSchliessen }: {
         </>}
       </div>
       <div
-        style={{ flex: 1, overflow: zoom ? 'auto' : 'hidden', display: 'flex', alignItems: zoom ? 'flex-start' : 'center', justifyContent: zoom ? 'flex-start' : 'center', padding: zoom ? 0 : 12, touchAction: zoom ? 'pan-x pan-y' : 'pan-y' }}
+        style={{ flex: 1, overflow: zoom ? 'auto' : 'hidden', display: 'flex', alignItems: zoom ? 'flex-start' : 'center', justifyContent: zoom ? 'flex-start' : 'center', padding: zoom ? 0 : 12, touchAction: zoom ? 'pan-x pan-y pinch-zoom' : 'pan-y pinch-zoom' }}
         onPointerDown={(e) => { zug.current = { x: e.clientX, t: Date.now() } }}
         onPointerUp={(e) => {
           const z = zug.current

@@ -10,7 +10,7 @@ export const VERTRAUEN: Record<Vertrauen, { label: string; tinte: boolean; siege
   unbestimmt: { label: 'noch unbestimmt', tinte: false },
   vorschlag: { label: 'App-Vorschlag', tinte: false },
   nutzer: { label: 'von dir bestimmt', tinte: true },
-  pomologe: { label: 'vom Pomologen bestätigt', tinte: true, siegel: 'P' },
+  pomologe: { label: 'pomologisch bestätigt', tinte: true, siegel: 'P' },
   dna: { label: 'per DNA bestätigt', tinte: true, siegel: 'DNA' },
 }
 

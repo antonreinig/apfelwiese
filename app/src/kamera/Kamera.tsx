@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
+import { Kreuz } from '../ui/symbole.tsx'
 import { bewerteBefund, eckenBewegung, GRENZEN, type Blattbefund, type Hinweis } from './blatterkennung.ts'
 import BlattWorker from './blattWorker.ts?worker'
 import { meldeFehler } from '../ui/protokoll.ts'
@@ -215,7 +216,7 @@ export function Kamera({ onAufnahme, onAbbruch, titel, testfeed }: Props) {
 
       {/* Kopf */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, padding: 'var(--oben) 14px 10px', background: 'linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,0))', display: 'flex', alignItems: 'center', gap: 10 }}>
-        <button onClick={onAbbruch} aria-label="Abbrechen" style={{ background: 'rgba(0,0,0,.4)', border: 'none', color: '#fff', width: 40, height: 40, borderRadius: 20, fontSize: 20 }}>✕</button>
+        <button onClick={onAbbruch} aria-label="Kamera schließen" style={{ background: 'rgba(0,0,0,.4)', border: 'none', color: '#fff', width: 44, height: 44, borderRadius: 22, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Kreuz style={{ width: 22, height: 22 }} /></button>
         <div style={{ flex: 1, fontSize: 15, lineHeight: 1.3 }}>{titel}</div>
         <button onClick={() => setEinstellungen(!einstellungen)} aria-label="Kamera-Einstellungen" style={{ background: 'rgba(0,0,0,.4)', border: 'none', color: '#fff', height: 40, padding: '0 12px', borderRadius: 20, fontSize: 13 }}>Kamera</button>
       </div>

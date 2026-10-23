@@ -33,15 +33,18 @@ export function Fussnoten({ belege }: { belege: Beleg[] }) {
   if (!reg || !belege.length) return null
   const nummern = [...new Set(belege.map((b) => reg.nummer(b)))].sort((a, b) => a - b)
   return (
-    <sup className="ui" style={{ fontSize: 10, color: 'var(--bleistift)', marginLeft: 2 }}>
+    <sup className="ui" style={{ fontSize: 12, color: 'var(--bleistift)', marginLeft: 2 }}>
       {nummern.map((n, i) => (
-        <a key={n} href={`#beleg-${n}`} onClick={(e) => { e.preventDefault(); document.getElementById(`beleg-${n}`)?.scrollIntoView({ behavior: 'smooth' }) }} style={{ textDecoration: 'none' }}>
+        <a key={n} href={`#beleg-${n}`} onClick={(e) => { e.preventDefault(); document.getElementById(`beleg-${n}`)?.scrollIntoView({ behavior: 'smooth' }) }} style={{ textDecoration: 'none', padding: '6px 2px', margin: '-6px 0' }} aria-label={`Beleg ${n}`}>
           {i ? ',' : ''}{n}
         </a>
       ))}
     </sup>
   )
 }
+
+/** ISO-Datum (2026-10-23) als 23.10.2026; anderes unverändert */
+const datum = (d: string) => /^\d{4}-\d{2}-\d{2}$/.test(d) ? d.split('-').reverse().join('.') : d
 
 /** Seitenzahlen mit „S.“, andere Fundstellen (z. B. Akzessionsnummern) wie angegeben */
 const seite = (s: string) => (/^[0-9IVXLC]/.test(s) ? `S. ${s}` : s)
@@ -61,12 +64,12 @@ export function Belegliste({ quellen }: { quellen: Map<string, Quelle> }) {
             {q ? (
               <>
                 {q.autor ? `${q.autor}: ` : ''}<i>{q.werk}</i>{q.jahr ? ` (${q.jahr})` : ''}
-                {b.band ? `, Bd. ${b.band}` : ''}{b.seite ? `, ${seite(b.seite)}` : ''}. {q.lizenz}.
+                {b.band ? `, Bd. ${b.band}` : ''}{b.seite ? `, ${seite(b.seite)}` : ''}.{q.lizenz ? ` ${q.lizenz}.` : ''}{q.abgerufen ? ` Abgerufen am ${datum(q.abgerufen)}.` : ''}
               </>
             ) : (
               <>{b.quelle}{b.band ? `, Bd. ${b.band}` : ''}{b.seite ? `, ${seite(b.seite)}` : ''}.</>
             )}
-            {url && <> <a href={url} target="_blank" rel="noreferrer">Quelle öffnen</a></>}
+            {url && <> <a href={url} target="_blank" rel="noreferrer">Quelle</a></>}
           </li>
         )
       })}

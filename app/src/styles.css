@@ -9,7 +9,8 @@
   --papier-3: #fbf8f1;
   --tinte: #2a2119;
   --tinte-2: #5b4d3e;
-  --bleistift: #8b857c;
+  /* Bleistiftgrau: Kontrast 4,8 : 1 auf Papier, auch für kleine Schrift */
+  --bleistift: #6e685f;
   --linie: rgba(60, 44, 28, 0.22);
   --linie-stark: rgba(60, 44, 28, 0.45);
   --siegel: #8c2f23;
@@ -61,6 +62,7 @@
   --blatt: #9dbb7c;
   --warn: #e2a24a;
   --gut: #8cc483;
+  --schatten: 0 8px 24px -12px rgba(0, 0, 0, 0.6);
   color-scheme: dark;
 }
 
@@ -98,7 +100,7 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .name.bleistift { color: var(--bleistift); }
 .kursiv { font-style: italic; }
 .klein { font-size: 15px; color: var(--tinte-2); }
-.sehr-klein { font-size: 13px; color: var(--tinte-2); }
+.sehr-klein { font-size: 14px; color: var(--tinte-2); }
 .ui { font-family: var(--ui); }
 .kapitaelchen { font-variant: small-caps; letter-spacing: 0.06em; }
 
@@ -137,6 +139,11 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .knopf:active { transform: scale(0.98); }
 .knopf.haupt { background: var(--tinte); color: var(--papier); border-color: var(--tinte); }
 .knopf.leise { background: transparent; }
+.knopf.gross { min-height: 50px; padding: 0 26px; }
+.knopf.breit { width: 100%; }
+.knopf.klein { min-height: 40px; padding: 0 14px; font-size: 16px; }
+/* Löschen und andere endgültige Aktionen */
+.knopf.gefahr { background: transparent; color: var(--siegel); border-color: var(--siegel); }
 .knopf[disabled] { opacity: 0.5; }
 .knopf svg { width: 20px; height: 20px; }
 .rund-knopf {
@@ -153,12 +160,46 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .zeile:last-child { border-bottom: none; }
 .zeile .grow { flex: 1; min-width: 0; }
 .zeile .name { font-size: 27px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.zeile.verweis { padding: 12px 0; min-height: 48px; }
+.zeile > svg { width: 18px; height: 18px; flex: none; color: var(--bleistift); }
+
+/* Seitenbausteine (ui/Seite.tsx) */
+/* Seiten mit festem Kopf: der Kopf übernimmt den Abstand zur Statusleiste */
+.seite:has(> .kopf-fest:first-child) { padding-top: 0; }
+.kopf-fest {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  margin: 0 -16px; padding: var(--oben) 16px 8px;
+  background: color-mix(in srgb, var(--papier) 90%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+.titel { font-size: 40px; margin-top: 6px; }
+.titel-objekt { font-size: 46px; }
+.titel-schritt { font-size: 34px; }
+.abschnitt { margin-top: 24px; }
+.abschnitt-titel { font-size: 17px; font-variant: small-caps; letter-spacing: 0.06em; color: var(--tinte-2); margin-bottom: 6px; }
+.verweiskarte { display: flex; gap: 14px; align-items: center; margin-top: 12px; text-decoration: none; color: inherit; }
+.verweiskarte > svg:first-child { width: 36px; height: 36px; flex: none; color: var(--blatt); }
+.verweiskarte > svg:last-child { width: 20px; height: 20px; flex: none; color: var(--bleistift); }
+.verweiskarte-titel { display: block; font-size: 19px; line-height: 1.3; }
+.verweiskarte-text { display: block; font-size: 15px; color: var(--tinte-2); }
+.verweiskarte.dunkel { background: var(--tinte); color: var(--papier); border-color: var(--tinte); }
+.verweiskarte.dunkel > svg, .verweiskarte.dunkel .verweiskarte-text { color: var(--papier); }
+.verweiskarte.dunkel .verweiskarte-text { opacity: 0.8; }
+.meldung { font-size: 15px; margin: 8px 0; }
+.meldung.fehler { color: var(--warn); }
+.meldung.erfolg { color: var(--gut); }
+.farbfeld { display: inline-block; flex: none; border-radius: 50%; border: 0.5px solid var(--linie-stark); vertical-align: middle; }
+.wertzeile { display: flex; gap: 12px; padding: 5px 0; border-bottom: 0.5px dotted var(--linie); font-size: 16px; }
+.wertzeile-titel { flex: 0 0 40%; color: var(--tinte-2); }
+.wertzeile-wert { flex: 1; min-width: 0; }
+.haekchen { width: 22px; height: 22px; margin-top: 3px; flex: none; }
 
 .medaillon { flex: none; border-radius: 50%; position: relative; }
 .medaillon > div { width: 100%; height: 100%; }
 
 .chip {
-  display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 4px 14px; border-radius: 999px;
   border: 0.5px solid var(--linie-stark); font-size: 15px; background: transparent; cursor: pointer; white-space: nowrap;
 }
 .chip.an { background: var(--tinte); color: var(--papier); border-color: var(--tinte); }

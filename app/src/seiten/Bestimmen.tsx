@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { lazy, Suspense, useMemo, useRef, useState } from 'react'
 import { Kamera, type Aufnahme } from '../kamera/Kamera.tsx'
 import { werteAus, messungAusFotos, blattImFoto, ausschnitteAus } from '../kamera/auswerten.ts'
 import { bewerteBefund, type Blattbefund } from '../kamera/blatterkennung.ts'
@@ -11,7 +11,12 @@ import { ApfelBuehne, Medaillon } from '../apfel3d/Buehne.tsx'
 import { parameterAusEintrag } from '../daten/sorten.ts'
 import { MERKMAL_NACH_ID } from '../daten/merkmalskatalog.ts'
 import { gehe, zurueck } from '../ui/router.ts'
-import { Zurueck, Kreuz, Kamera as KameraSymbol, Foto, Ort, Pfeil } from '../ui/symbole.tsx'
+import { Kamera as KameraSymbol, Foto, Ort, Pfeil } from '../ui/symbole.tsx'
+import { Ablaufkopf, Meldung } from '../ui/Seite.tsx'
+import { zahl } from '../ui/format.ts'
+
+const SorteSeite = lazy(() => import('./Sorte.tsx'))
+const STANDORT_FEHLER = 'Standort nicht verfügbar. Erlaube den Zugriff in den Einstellungen oder versuch es draußen noch einmal.'
 import { Skizze } from '../ui/Skizze.tsx'
 import { MerkmalChips } from '../ui/MerkmalChips.tsx'
 import { meldeFehler } from '../ui/protokoll.ts'
@@ -179,14 +184,8 @@ export default function BestimmenSeite({ baumId }: { baumId?: string }) {
 
   return (
     <div className="seite" style={{ paddingBottom: 40 }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <button className="rund-knopf" onClick={schrittZurueck} aria-label="Einen Schritt zurück"><Zurueck /></button>
-        <div className="tafelkopf" style={{ flex: 1, border: 'none' }}>
-          <span>{vorhanden ? vorhanden.name : 'Neuer Baum'}</span>
-          <Fortschritt schritt={schritt} fotos={fotos} />
-        </div>
-        <button className="rund-knopf" onClick={abbrechen} aria-label="Abbrechen"><Kreuz /></button>
-      </div>
+      <Ablaufkopf name={vorhanden ? vorhanden.name : 'Neuer Baum'} schritt={<Fortschritt schritt={schritt} fotos={fotos} />}
+        zurueck={schrittZurueck} schliessen={abbrechen} schliessenLabel="Abbrechen" />
 
       {schritt.art === 'baum' && (
         <BaumAnlegen name={name} setName={setName} standardName={standardName} ort={ort} setOrt={setOrt} standort={standort} setStandort={setStandort}
@@ -216,7 +215,7 @@ export default function BestimmenSeite({ baumId }: { baumId?: string }) {
 function Fortschritt({ schritt, fotos }: { schritt: Schritt; fotos: (Foto | null)[] }) {
   const aktiv = schritt.art === 'foto' || schritt.art === 'pruefen' ? schritt.i : -1
   return (
-    <span style={{ display: 'flex', gap: 5 }} aria-label="Fortschritt">
+    <span style={{ display: 'flex', gap: 5 }} role="img" aria-label={`${fotos.filter(Boolean).length} von 4 Fotos aufgenommen`}>
       {[0, 1, 2, 3].map((i) => (
         <span key={i} style={{ width: 9, height: 9, borderRadius: '50%', border: '1px solid var(--tinte-2)', background: fotos[i] ? 'var(--tinte)' : i === aktiv ? 'var(--linie-stark)' : 'transparent' }} />
       ))}
@@ -231,18 +230,21 @@ function BaumAnlegen(p: {
   standort?: Baum['standort']; setStandort: (s: Baum['standort']) => void; weiter: () => void
 }) {
   const [suche, setSuche] = useState(false)
+  const [ortFehler, setOrtFehler] = useState('')
   return (
     <div>
-      <h1 className="name" style={{ fontSize: 40, marginTop: 14 }}>Neuer Baum</h1>
+      <h1 className="name titel">Neuer Baum</h1>
       <p className="klein" style={{ marginTop: 0 }}>Du brauchst vier typische Äpfel von diesem Baum, ein weißes A4-Blatt, ein scharfes Messer und gleichmäßiges Licht ohne Blitz.</p>
       <label className="feld"><span>Bezeichnung</span><input className="eingabe" value={p.name} onChange={(e) => p.setName(e.target.value)} placeholder={`${p.standardName}, z. B. Baum am Gartentor`} /></label>
       <label className="feld"><span>Ort (optional)</span><input className="eingabe" value={p.ort} onChange={(e) => p.setOrt(e.target.value)} placeholder="z. B. Obstwiese am Deich" /></label>
       <button className="knopf" disabled={suche} onClick={() => {
-        setSuche(true)
-        navigator.geolocation?.getCurrentPosition(
+        setSuche(true); setOrtFehler('')
+        if (!navigator.geolocation) { setSuche(false); setOrtFehler(STANDORT_FEHLER); return }
+        navigator.geolocation.getCurrentPosition(
           (pos) => { p.setStandort({ lat: pos.coords.latitude, lng: pos.coords.longitude, genauigkeit: pos.coords.accuracy }); setSuche(false) },
-          () => setSuche(false), { enableHighAccuracy: true, timeout: 15000 })
-      }}><Ort /> {p.standort ? 'Standort übernommen' : suche ? 'Suche …' : 'Standort übernehmen'}</button>
+          () => { setSuche(false); setOrtFehler(STANDORT_FEHLER) }, { enableHighAccuracy: true, timeout: 15000 })
+      }}><Ort /> {p.standort ? 'Standort übernommen' : suche ? 'Suche Standort …' : 'Aktuellen Standort übernehmen'}</button>
+      <Meldung art="fehler">{ortFehler}</Meldung>
       <p className="sehr-klein">Der Standort wird in deinem Konto gespeichert und nur dir angezeigt.</p>
       <div style={{ marginTop: 24 }}><button className="knopf haupt" onClick={p.weiter}>Weiter zu den Fotos <Pfeil /></button></div>
     </div>
@@ -259,7 +261,7 @@ function FotoSchritt({ i, onKamera, onDatei, onUeberspringen }: { i: number; onK
   return (
     <div>
       <div className="sehr-klein kapitaelchen" style={{ marginTop: 14 }}>Foto {i + 1} von 4</div>
-      <h1 className="name" style={{ fontSize: 34, lineHeight: 1.2 }}>{f.titel}</h1>
+      <h1 className="name titel-schritt" style={{ lineHeight: 1.2 }}>{f.titel}</h1>
       <figure style={{ margin: '10px 0', display: 'flex', gap: 12, alignItems: 'flex-end' }}>
         <img src={`/anleitung/foto${i + 1}.jpg`} alt={`Beispiel: ${f.titel}`}
           style={{ width: '58%', aspectRatio: '210 / 297', objectFit: 'cover', borderRadius: 3, border: '0.5px solid var(--linie)', boxShadow: '0 6px 18px -10px rgba(60,40,20,.5)' }} />
@@ -341,11 +343,11 @@ function Fragen({ angaben, setAngaben, weiter }: { angaben: Record<string, strin
   const pflueck = angaben.pflueckreife?.[0]
   return (
     <div>
-      <h1 className="name" style={{ fontSize: 36, marginTop: 14 }}>Was die Fotos nicht zeigen</h1>
+      <h1 className="name titel-schritt" style={{ marginTop: 14 }}>Was die Fotos nicht zeigen</h1>
       <p className="klein" style={{ marginTop: 0 }}>Probier einen Apfel und riech daran. Alles ist freiwillig, jede Angabe hilft beim Abgleich.</p>
       {FRAGEN.map((gruppe) => (
         <section key={gruppe.titel} style={{ marginTop: 18 }}>
-          <h2 className="kapitaelchen" style={{ fontSize: 16, color: 'var(--tinte-2)', margin: '0 0 4px' }}>{gruppe.titel}</h2>
+          <h2 className="abschnitt-titel">{gruppe.titel}</h2>
           {gruppe.merkmale.map((id) => (
             <div key={id} style={{ margin: '10px 0' }}>
               <div className="klein" style={{ marginBottom: 6 }}>{MERKMAL_NACH_ID[id].name}{MERKMAL_NACH_ID[id].mehrfach ? ' (mehrere möglich)' : ''}</div>
@@ -398,9 +400,9 @@ function Ergebnis({ fotos, messung, angaben, saat, speichern }: {
         </div>
       )}
 
-      <h2 className="kapitaelchen" style={{ fontSize: 17, color: 'var(--tinte-2)' }}>Vorläufiger Abgleich</h2>
+      <h2 className="abschnitt-titel">Vorläufiger Abgleich</h2>
       <p className="sehr-klein" style={{ marginTop: 2 }}>
-        Verglichen werden nur Größe, Form, Farben und deine Angaben, Merkmal für Merkmal, mit allen {index?.anzahl ?? ''} Sorten. Kernhaus und Kelch fließen noch nicht ein. Das Ergebnis ist ein Vorschlag, keine Bestimmung; es kann auch sein, dass keine Sorte passt.
+        Verglichen werden nur Größe, Form, Farben und deine Angaben, Merkmal für Merkmal, mit allen {index ? zahl(index.anzahl) : ''} Sorten. Kernhaus und Kelch fließen noch nicht ein. Das Ergebnis ist ein Vorschlag, keine Bestimmung; es kann auch sein, dass keine Sorte passt.
       </p>
       {!kandidaten.length && <p className="hinweis">Zu wenige Merkmale für einen Abgleich.</p>}
       {kandidaten.map((k) => <KandidatZeile key={k.sorte.id} k={k} onWahl={() => sichern(k)} gesperrt={gesperrt} eigen={p} />)}
@@ -409,7 +411,7 @@ function Ergebnis({ fotos, messung, angaben, saat, speichern }: {
         <button className="knopf haupt" disabled={gesperrt} onClick={() => sichern(undefined, '/angleichen')}>{offen ? 'Warte auf die Auswertung …' : 'Speichern und Modell angleichen'}</button>
         <button className="knopf" disabled={gesperrt} onClick={() => sichern()}>Ohne Sorte speichern</button>
         <p className="sehr-klein" style={{ margin: 0 }}>Passt das Modell nicht zu deinem Apfel? Beim Angleichen nimmst du Farben direkt aus dem Foto ab und stellst Form, Kernhaus und Kerne ein. Danach rechnet der Abgleich mit deinen Angaben.</p>
-        {fehler && <p className="sehr-klein" style={{ color: 'var(--warn)' }}>{fehler}</p>}
+        <Meldung art="fehler">{fehler}</Meldung>
       </div>
     </div>
   )
@@ -417,15 +419,17 @@ function Ergebnis({ fotos, messung, angaben, saat, speichern }: {
 
 export function KandidatZeile({ k, onWahl, gesperrt, eigen }: { k: Kandidat; onWahl: () => void; gesperrt: boolean; eigen?: ApfelParameter }) {
   const [offen, setOffen] = useState(false)
+  const [portraet, setPortraet] = useState(false)
   return (
     <div style={{ borderBottom: '0.5px solid var(--linie)', padding: '8px 0' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }} onClick={() => setOffen(!offen)}>
+      <button aria-expanded={offen} onClick={() => setOffen(!offen)}
+        style={{ display: 'flex', alignItems: 'center', gap: 12, width: '100%', background: 'none', border: 'none', padding: 0, textAlign: 'left', cursor: 'pointer' }}>
         <Medaillon p={parameterAusEintrag(k.sorte)} groesse={54} />
         <div style={{ flex: 1, minWidth: 0 }}>
           <div className="name bleistift" style={{ fontSize: 26, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{k.sorte.name}</div>
           <div className="sehr-klein">{Math.round(k.punkte * 100)} % Übereinstimmung in {k.verglichen} Merkmalen</div>
         </div>
-      </div>
+      </button>
       {offen && (
         <div style={{ marginTop: 8 }}>
           {eigen && (
@@ -442,14 +446,20 @@ export function KandidatZeile({ k, onWahl, gesperrt, eigen }: { k: Kandidat; onW
           )}
           {k.begruendung.map((b) => (
             <div key={b.merkmal} className="sehr-klein" style={{ display: 'flex', gap: 8, padding: '2px 0' }}>
-              <span style={{ width: 14, color: b.passung > 0.7 ? 'var(--gut)' : b.passung > 0.3 ? 'var(--bleistift)' : 'var(--warn)' }}>{b.passung > 0.7 ? '✓' : b.passung > 0.3 ? '~' : '✗'}</span>
+              <span style={{ width: 14, color: b.passung > 0.7 ? 'var(--gut)' : b.passung > 0.3 ? 'var(--bleistift)' : 'var(--warn)' }} role="img" aria-label={b.passung > 0.7 ? 'passt' : b.passung > 0.3 ? 'passt teilweise' : 'passt nicht'}>{b.passung > 0.7 ? '✓' : b.passung > 0.3 ? '~' : '✗'}</span>
               <span style={{ flex: 1 }}>{MERKMAL_NACH_ID[b.merkmal]?.name}: dein Apfel {b.eigen}, Sorte {b.sorte}</span>
             </div>
           ))}
           <div style={{ display: 'flex', gap: 8, marginTop: 8 }}>
-            <a className="knopf leise" href={`#/sorte/${k.sorte.id}`} target="_blank" rel="noreferrer">Sorte ansehen</a>
+            <button className="knopf leise" onClick={() => setPortraet(true)}>Sorte ansehen</button>
             <button className="knopf" disabled={gesperrt} onClick={onWahl}>Als Vorschlag speichern</button>
           </div>
+        </div>
+      )}
+      {/* Sortenporträt als Überlagerung: der Bestimmungsablauf bleibt erhalten, auch in der App auf dem Home-Bildschirm */}
+      {portraet && (
+        <div role="dialog" aria-modal="true" aria-label={k.sorte.name} style={{ position: 'fixed', inset: 0, zIndex: 1500, background: 'var(--papier)', display: 'flex', flexDirection: 'column' }}>
+          <Suspense fallback={<div className="seite" />}><SorteSeite id={k.sorte.id} schliessen={() => setPortraet(false)} /></Suspense>
         </div>
       )}
     </div>

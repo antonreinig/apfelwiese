@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
-import { zurueck } from '../ui/router.ts'
-import { Zurueck } from '../ui/symbole.tsx'
+import { Seitenkopf } from '../ui/Seite.tsx'
 
 // Impressum, Datenschutzhinweise und Nutzungsbedingungen. Stand der Texte: TEXT_VERSION in konto.ts.
 
@@ -9,8 +8,7 @@ const STAND = '23. Oktober 2026'
 function Rahmen({ titel, children }: { titel: string; children: ReactNode }) {
   return (
     <div className="seite rechtstext">
-      <button className="rund-knopf" onClick={() => zurueck('/info')} aria-label="Zurück"><Zurueck /></button>
-      <h1 className="name" style={{ fontSize: 40, marginTop: 8 }}>{titel}</h1>
+      <Seitenkopf zurueckZu="/info" titel={titel} />
       <p className="sehr-klein">Stand: {STAND}</p>
       <hr className="doppellinie" />
       {children}
@@ -18,7 +16,7 @@ function Rahmen({ titel, children }: { titel: string; children: ReactNode }) {
   )
 }
 
-const H = ({ children }: { children: ReactNode }) => <h2 className="kapitaelchen" style={{ fontSize: 17, marginTop: 22 }}>{children}</h2>
+const H = ({ children }: { children: ReactNode }) => <h2 className="abschnitt-titel" style={{ marginTop: 24 }}>{children}</h2>
 
 export function ImpressumSeite() {
   return (
@@ -67,7 +65,7 @@ export function DatenschutzSeite() {
       <H>6. Karte, Luftbild und Ortssuche</H>
       <p><b>Luftbild:</b> World Imagery von Esri (Environmental Systems Research Institute, Inc., 380 New York Street, Redlands, CA 92373, USA). Die Kacheln holt unser Server ab und reicht sie an die App weiter. Esri erhält dabei nur die Kachelkoordinaten und die Adresse unseres Servers, keine Daten von dir.</p>
       <p><b>Kartenansicht „Karte“</b> und <b>Ortssuche:</b> OpenStreetMap Foundation, St John’s Innovation Centre, Cowley Road, Cambridge CB4 0WS, Vereinigtes Königreich. Beim Laden der Kartenkacheln und bei einer Suche erhält die OSMF deine IP-Adresse, die Browserkennung, die Adresse unserer App als Herkunft und bei der Suche den Suchbegriff. Für das Vereinigte Königreich besteht ein Angemessenheitsbeschluss der EU-Kommission. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, weil du die Karte bzw. Suche ausdrücklich nutzt. Datenschutzerklärung: <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noreferrer">osmfoundation.org</a>.</p>
-      <p><b>Eigener Standort:</b> Nur wenn du „Hier“ oder „Standort übernehmen“ antippst, fragt die App deinen Standort über den Browser ab. Die Koordinaten werden nur gespeichert, wenn du sie einem Baum zuordnest.</p>
+      <p><b>Eigener Standort:</b> Nur wenn du „Hier“ oder „Aktuellen Standort übernehmen“ antippst, fragt die App deinen Standort über den Browser ab. Die Koordinaten werden nur gespeichert, wenn du sie einem Baum zuordnest.</p>
 
       <H>7. Rückmeldungen</H>
       <p>Wenn du über „Rückmeldung geben“ schreibst, gehen deine Nachricht, eine freiwillige Kontaktadresse (bei Anmeldung deine Konto-E-Mail), die aktuelle Seite der App, der App-Stand und die Browserkennung per E-Mail (Versand über Resend, Abschnitt 3) an das Postfach des Verantwortlichen bei Google (Gmail). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an der Bearbeitung deiner Nachricht und der Verbesserung der App. Die Nachrichten werden gelöscht, sobald sie erledigt sind, spätestens nach zwölf Monaten. Zum Schutz vor Missbrauch gilt eine Höchstzahl von Nachrichten (Zähler wie in Abschnitt 3).</p>
@@ -77,7 +75,7 @@ export function DatenschutzSeite() {
       <p><b>Fehlerprotokoll und Betriebsübersicht:</b> Tritt in der App oder auf dem Server ein unerwarteter Fehler auf, wird er protokolliert: Zeitpunkt, Art und Meldung des Fehlers, technischer Ablauf, betroffene Seite der App, App-Stand, Browserkennung und, wenn du angemeldet bist, deine Kontokennung. Fotos, Bäume und andere Inhalte gehören nicht dazu. Außerdem wird festgehalten, wann ein Konto angelegt oder gelöscht und wann eine Rückmeldung geschickt wurde. Der Verantwortliche sieht diese Angaben in einer Betriebsübersicht, zusammen mit den Konten (E-Mail-Adresse, Anlagedatum, Zahl der Bäume und Bilder), und erhält höchstens einmal täglich eine Zusammenfassung per E-Mail. Zweck ist, Fehler zu finden und den Betrieb zu überwachen; Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Die Einträge liegen im privaten Speicher in Frankfurt am Main und werden nach 30 Tagen gelöscht.</p>
 
       <H>9. Speicher auf deinem Gerät und Sensoren</H>
-      <p>Die App speichert im Browser (IndexedDB, localStorage) deine Bäume und Fotos, gerenderte Apfelbilder, den Ausschnitt deiner Wiese und Einstellungen wie die gewählte Ansicht, dein Bundesland für die Sortenauswahl, die Darstellung (hell oder dunkel) und deine Antworten im Sortenratgeber. Diese Einstellungen gehen nicht an den Server. Ein Service Worker hält die App, die Sortendaten, angesehene Sortenbilder und Kartenkacheln für die Nutzung ohne Netz vor. Beim Abmelden werden die Kartenkacheln entfernt. Das ist für die von dir gewünschte Funktion unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Kamera und Bewegungssensoren (für das Neigen des 3D-Apfels) werden nur im Browser genutzt; Sensordaten verlassen dein Gerät nicht. Schriften sind in die App eingebunden; es gibt keine Statistik- oder Werbedienste.</p>
+      <p>Die App speichert im Browser (IndexedDB, localStorage) deine Bäume und Fotos, gerenderte Apfelbilder, den Ausschnitt deiner Wiese und Einstellungen wie die gewählte Ansicht, dein Bundesland für die Sortenauswahl (von dir gewählt oder aus der Ortssuche der Wiese übernommen), die Darstellung (hell oder dunkel) und deine Antworten im Sortenratgeber. Diese Einstellungen gehen nicht an den Server. Ein Service Worker hält die App, die Sortendaten, angesehene Sortenbilder und Kartenkacheln für die Nutzung ohne Netz vor. Beim Abmelden werden die Kartenkacheln entfernt. Das ist für die von dir gewünschte Funktion unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Kamera und Bewegungssensoren (für das Neigen des 3D-Apfels) werden nur im Browser genutzt; Sensordaten verlassen dein Gerät nicht. Schriften sind in die App eingebunden; es gibt keine Statistik- oder Werbedienste.</p>
 
       <H>10. Deine Rechte</H>
       <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21). Einwilligungen kannst du jederzeit widerrufen. Dein Konto mit allen Daten löschst du selbst unter „Konto“ (Knopf oben rechts auf der Startseite); eine Sicherung deiner Bäume kannst du dort als Datei herunterladen. Für alles Weitere genügt eine E-Mail an die oben genannte Adresse.</p>

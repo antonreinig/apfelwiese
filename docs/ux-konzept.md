@@ -28,20 +28,21 @@ Umbenannt am 22.10.2026: Der bisherige Start „Wiese“ heißt „Äpfel“ (Ap
 | **Sortenratgeber** (`#/sorten/ratgeber`) | Neun Fragen (Region, Lage, Boden, Platz, Nutzung, Geschmack, Pflege, Bäume in der Nähe, alte/regionale Sorte), eine je Bildschirm. Ergebnis: Sorten mit Gründen dafür und dagegen und den Lücken der Datenlage, Hinweise zum Kauf (Baumform, Befruchtung, Spätfrost, Pflanzzeit), Weg zu den Bezugsquellen. Bewertet nur Sorten mit Angaben zum Anbau; fehlende Angaben zählen nicht gegen eine Sorte. |
 | **Wiese** | Eigene Bäume als 3D-Äpfel auf dem Luftbild (Esri World Imagery, über die eigene Domain geladen), umschaltbar auf OpenStreetMap. Beim ersten Öffnen sucht man den Ort (Nominatim, nur auf Knopfdruck) und merkt sich den Ausschnitt der Wiese. Beim Öffnen des Tabs zeigt die Karte diesen Ausschnitt, erweitert um alle Bäume. Antippen eines Apfels zeigt Sorte und „Zum Baum“; Verschieben nur nach „Verschieben“ und „Standort sichern“. Bäume ohne Standort lassen sich platzieren. Jede Person sieht nur ihre eigenen Bäume. |
 
-„Bestimmen“ ist ein Ablauf und kein Ort; er sitzt im Knopf auf der Wiese und im Baumblatt („Weitere vier Fotos“).
+„Bestimmen“ ist ein Ablauf und kein Ort; er sitzt im Knopf „Neuen Baum bestimmen“ im Tab Äpfel und im Baumblatt („Weitere vier Fotos“).
 
 ## Bildschirme (umgesetzt)
 
-### Wiese
+### Äpfel (Start, Kopfzeile „Meine Bäume“)
 - Großer 3D-Apfel, dreht sich langsam; Neigung verschiebt Kamera und Licht um wenige Grad. Auf dem Desktop folgt die Neigung dem Mauszeiger.
 - Name in Schreibschrift, darunter Status und Baumbezeichnung, Tafelnummer in römischen Ziffern.
 
 ### Baumblatt
 - 3D-Apfel mit Umschalter **Ganz / Aufgeschnitten**; aufgeschnitten mit **Längs- und Querschnitt** (Kernhauslinie, Kernfächer, Kerne, Kelchhöhle; aus Parametern gezeichnet).
-- Bestimmung mit Vertrauensstufe; Sorte zuordnen, als vom Pomologen oder per DNA bestätigt markieren.
+- Bestimmung mit Vertrauensstufe; Sorte zuordnen, als pomologisch oder per DNA bestätigt markieren (Name bzw. Labor in einem Formular der App). Eine bestätigte Bestimmung wird nie ohne Rückfrage überschrieben oder zurückgesetzt.
 - Fotos je Fotosatz, **freigestellt** angezeigt; Original per Antippen.
 - Gemessene Werte mit Hinweisen zur Messung.
-- Eigene Angaben (Geschmack, Reife …), Notizen, Standort.
+- Eigene Angaben: Reife, Geschmack, Verwendung sichtbar, alle übrigen (Schale, Duft, Geschmacksnoten, Baum) aufklappbar.
+- Abschnitt „Baum“ (Bezeichnung, Ort, Notizen) und „Standort“ (Koordinaten) getrennt.
 
 ### Bestimmen
 1. Baum anlegen (Bezeichnung, Ort, Standort optional).
@@ -107,8 +108,25 @@ Rückmeldungen aus dem ersten Durchgang am iPhone und was daraus wurde:
 - **Viele 3D-Medaillons**: eine gemeinsame WebGL-Leinwand für alle Medaillons (three.js mit drei `View`), Medaillons rendern erst in Sichtweite, Schalentexturen werden nacheinander erzeugt.
 - **Konto per E-Mail-Code** (seit 22.10.2026): sechsstelliger Code plus Anmeldelink. Der Code ist nötig, weil Links aus der Mail-App auf dem iPhone im Browser landen und nicht in der App auf dem Home-Bildschirm. Ohne Konto: nur Sorten. Mit Konto: Bäume und Fotos im privaten Speicher (Vercel Blob, Frankfurt), Kopie im Gerätespeicher; Abgleich beim Start und nach jeder Änderung. Abmelden entfernt die Daten vom Gerät.
 - **Einwilligung:** Pflicht ist die Zustimmung zu Nutzungsbedingungen und Speicherung im Konto. Die Nutzung der Fotos zur Verbesserung der App ist ein eigenes, freiwilliges Häkchen (Kopplungsverbot, Art. 7 Abs. 4 DSGVO), widerrufbar unter „Konto“.
-- **Einführung** mit drei Tafeln beim ersten Start; **Anleitung Home-Bildschirm** je nach Gerät (Safari, Chrome iOS, Chrome Android, Samsung); **Rückmeldung** per Formular an den Betreiber.
+- **Einführung** mit vier Tafeln beim ersten Start, nur auf der Startseite (geteilte Links öffnen direkt); **Anleitung Home-Bildschirm** je nach Gerät (Safari, Chrome iOS, Chrome Android, Samsung); **Rückmeldung** per Formular an den Betreiber.
 - **Abstand oben** (`--oben` in styles.css): Bedienelemente liegen 22 px unter der sicheren Zone, damit der weiche Rand der Statusleiste unter iOS 26 sie nicht verdeckt. Am Gerät prüfen.
+
+## Einheitliche Gestaltung (seit 23.10.2026)
+
+Gemeinsame Bausteine in `app/src/ui/Seite.tsx`, Formate in `app/src/ui/format.ts`, Klassen in `app/src/styles.css`.
+
+| Thema | Regel |
+|---|---|
+| Kopf | Drei Muster: **Tab-Startseite** mit `tafelkopf` und dem Namen des Bereichs („Meine Bäume“, „Sorten“, „Meine Wiese“); **Unterseite** mit `Seitenkopf` (fester Zurück-Knopf, Schreibschrift-Titel `.titel`); **Ablauf** (Bestimmen, Ratgeber, Rundgang) mit `Ablaufkopf`: links ein Schritt zurück, Mitte Name und „x von y“, rechts ✕ zum Beenden. |
+| Titel | `.titel` 40 px für Seiten, `.titel-objekt` 46 px für Baum- und Sortennamen, `.titel-schritt` 34 px für Fragen und Schritte. |
+| Abschnitte | `Abschnitt` mit `h2.abschnitt-titel` (17 px, Kapitälchen, Tinte 2). |
+| Verweise | Innerhalb der App `Verweis` (Zeile mit Pfeil) oder `Verweiskarte`; externe Links heißen „Quelle“ (Beleg) oder „Website“. Seitenwechsel als Link, Aktionen als Knopf. |
+| Knöpfe | Tippflächen mindestens 40 px, runde Knöpfe 44 px. `.haupt` für die Hauptaktion, `.gross` nur für „Neuen Baum bestimmen“, `.klein` für Nebenaktionen in Abschnitten, `.gefahr` für Löschen. Chips nur zum Auswählen, nie als Aktion. |
+| Meldungen | `Meldung` (15 px; Fehler in Warnfarbe mit `role="alert"`). Muster: Was ist passiert, was du tun kannst. Ladezustand „Wird geladen …“, gelöschte Bäume mit Weg zurück. |
+| Begriffe | Einträge heißen **Bäume** (der Tab heißt „Äpfel“). „Vorschlag“ ist nur das Ergebnis der App, „Bestimmung“ nur eine Zuordnung durch Menschen; Statustexte aus `VERTRAUEN` (`App-Vorschlag`, `von dir bestimmt`, `pomologisch bestätigt`, `per DNA bestätigt`). Überschriften „Meine …“, Fließtext „deine“. Knopf überall „Aktuellen Standort übernehmen“. „Konto“ statt „Konto und Einstellungen“, „Datenschutz“ als Link. |
+| Zahlen und Daten | Tausenderpunkt (`zahl`), Datum „23. Oktober 2026“ (`datum`), kurz „23.10.2026“ in Listen, Uhrzeit ohne Sekunden. |
+| Lesbarkeit | Kleinste Schrift 14 px (`.sehr-klein`) nur für Metadaten; Inhalte ab 15 px. Bleistiftgrau mit 4,8 : 1 Kontrast. Fußnoten 12 px mit größerer Tippfläche. |
+| Navigation | „Zurück“ bleibt in der App: Ist der vorige Verlaufseintrag nicht von der App, führt der Knopf zur übergeordneten Seite. Jede Seite beginnt oben. Ohne Konto gibt es keine Sackgasse (Zurück-Knopf und Tab-Leiste). |
 
 ## Offene Punkte
 

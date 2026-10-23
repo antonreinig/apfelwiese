@@ -7,7 +7,7 @@ import { VERTRAUEN } from '../daten/baeume.ts'
  */
 export function Sortenname({ baum, groesse = 32, block = false }: { baum: Baum; groesse?: number; block?: boolean }) {
   const v = VERTRAUEN[baum.bestimmung.status]
-  const name = baum.bestimmung.sorteName ?? 'Unbekannte Sorte'
+  const name = baum.bestimmung.sorteName ?? 'Sorte noch unbestimmt'
   return (
     <span
       className={`name ${v.tinte ? '' : 'bleistift'}`}

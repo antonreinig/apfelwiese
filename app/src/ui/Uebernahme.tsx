@@ -14,7 +14,7 @@ export function Uebernahme() {
         <h2 className="kapitaelchen" style={{ fontSize: 17 }}>Bäume übernehmen?</h2>
         <p className="klein">Auf diesem Gerät {n === 1 ? 'liegt ein Baum' : `liegen ${n} Bäume`}, die noch keinem Konto gehören. Sollen sie in dein Konto <b>{s.frage.email}</b> übernommen und auf dem Server gesichert werden?</p>
         <div style={{ display: 'flex', gap: 10 }}>
-          <button className="knopf leise" style={{ flex: 1 }} disabled={laeuft} onClick={() => entscheiden(false)}>Vom Gerät entfernen</button>
+          <button className="knopf gefahr" style={{ flex: 1 }} disabled={laeuft} onClick={() => entscheiden(false)}>Vom Gerät entfernen</button>
           <button className="knopf haupt" style={{ flex: 1 }} disabled={laeuft} onClick={() => entscheiden(true)}>Übernehmen</button>
         </div>
       </div>

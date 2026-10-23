@@ -12,8 +12,10 @@ test('Einführung erscheint beim ersten Start und lässt sich durchblättern', a
   await page.getByRole('button', { name: 'Weiter' }).click()
   await expect(page.getByText('Dein Apfel in 3D')).toBeVisible()
   await page.getByRole('button', { name: 'Weiter' }).click()
+  await expect(page.getByText('Sorten entdecken')).toBeVisible()
+  await page.getByRole('button', { name: 'Weiter' }).click()
   await page.getByRole('button', { name: 'Loslegen' }).click()
-  await expect(page.getByText('Meine Äpfel')).toBeVisible()
+  await expect(page.getByText('Meine Bäume')).toBeVisible()
 })
 
 test('Alle Tabs und Seiten laden ohne Fehler', async ({ page }) => {
@@ -24,15 +26,15 @@ test('Alle Tabs und Seiten laden ohne Fehler', async ({ page }) => {
   await expect(page.getByRole('button', { name: 'Anmelden' })).toBeVisible()
 
   await page.getByRole('link', { name: 'Sorten' }).click()
-  await expect(page.getByText('Sortenverzeichnis')).toBeVisible()
+  await expect(page.getByRole('searchbox', { name: 'Sorte suchen' })).toBeVisible()
   await page.getByPlaceholder('Name oder Synonym').fill('Gravensteiner')
   await page.getByText('Gravensteiner', { exact: true }).first().click()
   await expect(page.getByText('Herkunft', { exact: false }).first()).toBeVisible()
 
   await page.getByRole('link', { name: 'Wiese' }).click()
-  await expect(page.getByText('Deine Wiese')).toBeVisible()
+  await expect(page.getByText('Meine Wiese')).toBeVisible()
 
-  for (const [pfad, text] of [['#/info', 'So funktioniert es'], ['#/konto', 'Deine Region'], ['#/sorten/bezug', 'Pomologen'], ['#/sorten/sammlung/renetten', 'Renetten'], ['#/sorten/monat/10', 'Genussreif im Oktober'], ['#/impressum', 'Loki-Schmidt-Platz'], ['#/datenschutz', 'Fehlerprotokoll'], ['#/nutzung', 'Sortenvorschläge'], ['#/installieren', 'Home-Bildschirm'], ['#/anmelden', 'Code per E-Mail schicken']] as const) {
+  for (const [pfad, text] of [['#/info', 'So funktioniert es'], ['#/konto', 'Darstellung'], ['#/sorten/bezug', 'Pomologen'], ['#/sorten/sammlung/renetten', 'Renetten'], ['#/sorten/monat/10', 'Genussreif im Oktober'], ['#/impressum', 'Loki-Schmidt-Platz'], ['#/datenschutz', 'Fehlerprotokoll'], ['#/nutzung', 'Sortenvorschläge'], ['#/installieren', 'Home-Bildschirm'], ['#/anmelden', 'Code per E-Mail schicken']] as const) {
     await page.goto('/' + pfad)
     await nichtLeer(page)
     await expect(page.getByText(text).first()).toBeVisible()
@@ -44,7 +46,7 @@ test('Kopfleiste führt zu Konto und Einstellungen; die Region steuert den Sorte
   const fehler = konsolenfehler(page)
   await ohneEinfuehrung(page)
   await page.goto('/')
-  await page.getByRole('button', { name: 'Konto und Einstellungen' }).click()
+  await page.getByRole('button', { name: 'Konto', exact: true }).click()
   await expect(page.getByText('Du bist nicht angemeldet')).toBeVisible()
   await page.getByRole('combobox', { name: 'Bundesland' }).selectOption('DE-HH')
   await page.getByRole('radio', { name: 'Dunkel' }).click()
@@ -116,6 +118,6 @@ test('Ohne 3D-Grafik (kein WebGL) erscheint ein flacher Apfel statt eines Fehler
   await expect(page.getByRole('img', { name: 'Apfel' }).first()).toBeVisible()
   await expect(page.getByText('Da ist etwas schiefgelaufen')).toHaveCount(0)
   await page.getByRole('link', { name: 'Sorten' }).click()
-  await expect(page.getByText('Sortenverzeichnis')).toBeVisible()
+  await expect(page.getByRole('searchbox', { name: 'Sorte suchen' })).toBeVisible()
   expect(fehler, fehler.join('\n')).toEqual([])
 })

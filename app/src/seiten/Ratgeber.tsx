@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Medaillon } from '../apfel3d/Buehne.tsx'
 import { useSortenindex, parameterAusEintrag } from '../daten/sorten.ts'
 import { zurueck } from '../ui/router.ts'
-import { Zurueck, Pfeil } from '../ui/symbole.tsx'
+import { Ablaufkopf, Abschnitt, Verweis } from '../ui/Seite.tsx'
 import { empfehlungen, START, type Antworten, type Empfehlung } from '../daten/ratgeber.ts'
 import { useEinstellungen, setzeRegion, BUNDESLAENDER, BUNDESLAND_NAME } from '../daten/einstellungen.ts'
 import { steckbrief } from '../daten/erkunden.ts'
@@ -104,13 +104,13 @@ export default function RatgeberSeite() {
 
   return (
     <div className="seite">
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <button className="rund-knopf" onClick={() => (schritt > 0 && schritt < FRAGEN.length ? gehe(schritt - 1) : zurueck('/sorten'))} aria-label="Zurück"><Zurueck /></button>
-        <span className="tafelkopf" style={{ flex: 1, borderBottom: 'none' }}>
-          <span>Sortenratgeber</span>
-          <span>{schritt < FRAGEN.length ? `Frage ${schritt + 1} von ${FRAGEN.length}` : 'Ergebnis'}</span>
-        </span>
-      </div>
+      <Ablaufkopf
+        name="Sortenratgeber"
+        schritt={schritt < FRAGEN.length ? `Frage ${schritt + 1} von ${FRAGEN.length}` : 'Ergebnis'}
+        zurueck={() => (schritt > 0 ? gehe(schritt - 1) : zurueck('/sorten'))}
+        schliessen={() => zurueck('/sorten')}
+        schliessenLabel="Ratgeber schließen"
+      />
       {schritt < FRAGEN.length
         ? <FrageAnsicht frage={FRAGEN[schritt]} antworten={antworten} setze={setze} weiter={() => gehe(schritt + 1)} />
         : <Ergebnis antworten={antworten} aendern={gehe} neu={() => setStand({ antworten: { ...START, region: einst.region }, schritt: 0 })} />}
@@ -132,7 +132,7 @@ function FrageAnsicht({ frage, antworten, setze, weiter }: { frage: Frage; antwo
   }
   return (
     <div style={{ marginTop: 18 }}>
-      <h1 className="name" style={{ fontSize: 38 }}>{frage.titel}</h1>
+      <h1 className="name titel-schritt">{frage.titel}</h1>
       {frage.text && <p className="klein kursiv" style={{ marginTop: 4 }}>{frage.text}</p>}
       {frage.id === 'region' ? (
         <div style={{ display: 'grid', gap: 8, marginTop: 14 }}>
@@ -177,7 +177,7 @@ function Ergebnis({ antworten, aendern, neu }: { antworten: Antworten; aendern: 
   const e = useMemo(() => (index ? empfehlungen(index.sorten, antworten) : null), [index, antworten])
   return (
     <div style={{ marginTop: 12 }}>
-      <h1 className="name" style={{ fontSize: 40 }}>Diese Sorten passen</h1>
+      <h1 className="name titel-schritt">Diese Sorten passen</h1>
       <div className="chips" style={{ flexWrap: 'wrap', marginTop: 8 }}>
         {FRAGEN.map((f, i) => <button key={f.id} className="chip" onClick={() => aendern(i)} aria-label={`${f.titel} ändern`}>{antwortText(f, antworten)}</button>)}
       </div>
@@ -195,10 +195,7 @@ function Ergebnis({ antworten, aendern, neu }: { antworten: Antworten; aendern: 
 
       <Kaufhinweise antworten={antworten} />
 
-      <a href="#/sorten/bezug" className="zeile" style={{ marginTop: 10, padding: '14px 0' }}>
-        <span className="grow">Wo bekomme ich diese Sorten? Baumschulen, Reiserbörsen, Pomologen</span>
-        <Pfeil style={{ width: 18, height: 18, color: 'var(--bleistift)' }} />
-      </a>
+      <div style={{ marginTop: 10 }}><Verweis ziel="/sorten/bezug">Wo bekomme ich diese Sorten? Baumschulen, Reiserbörsen, Pomologen</Verweis></div>
       <button className="knopf leise" onClick={neu} style={{ marginTop: 14 }}>Ratgeber neu beginnen</button>
     </div>
   )
@@ -237,13 +234,12 @@ function Kaufhinweise({ antworten }: { antworten: Antworten }) {
   h.push({ titel: 'Pflanzzeit', text: 'Wurzelnackte Bäume von Ende September bis Anfang Dezember oder von Anfang März bis Ende April, an frostfreien Tagen. Im Herbst ist das Angebot am größten.', quelle: L.lwgPflanzzeit })
   if (antworten.region && LANDESGRUPPE[antworten.region]) h.push({ titel: 'Beratung', text: `Regionale Sortenlisten, Ausstellungen und Kurse kennt die ${LANDESGRUPPE[antworten.region].titel} des Pomologen-Vereins.`, quelle: LANDESGRUPPE[antworten.region] })
   return (
-    <section style={{ marginTop: 26 }}>
-      <h2 className="kapitaelchen" style={{ fontSize: 17, marginBottom: 6 }}>Worauf du beim Kauf achten solltest</h2>
+    <Abschnitt titel="Worauf du beim Kauf achten solltest">
       {h.map((x) => (
         <p key={x.titel} style={{ margin: '0 0 10px' }}>
           <span className="kapitaelchen">{x.titel}.</span> {x.text} <a href={x.quelle.url} target="_blank" rel="noreferrer" className="sehr-klein">Quelle</a>
         </p>
       ))}
-    </section>
+    </Abschnitt>
   )
 }

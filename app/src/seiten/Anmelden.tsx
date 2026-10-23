@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useKonto, codeAnfordern, bestaetigen, einwilligen, aktuelleEinwilligung, bereit, zielNachAnmeldung, eigeneAnfrage, kontoApi } from '../daten/konto.ts'
-import { gehe, zurueck } from '../ui/router.ts'
-import { Zurueck } from '../ui/symbole.tsx'
+import { gehe } from '../ui/router.ts'
+import { Seitenkopf, Meldung } from '../ui/Seite.tsx'
 
 // Anmeldung ohne Passwort: E-Mail eingeben, Code aus der E-Mail eintippen (oder den Link öffnen).
 // Danach einmalig den Nutzungsbedingungen zustimmen; die Verbesserungsnutzung ist freiwillig.
@@ -60,10 +60,10 @@ export default function AnmeldenSeite() {
   if (fremderLink) {
     return (
       <div className="seite">
-        <h1 className="name" style={{ fontSize: 40 }}>Anmelden?</h1>
+        <h1 className="name titel">Anmelden?</h1>
         <p>Mit diesem Link meldest du dich als <b>{fremderLink.email}</b> an.</p>
         <p className="klein">Fahre nur fort, wenn das deine Adresse ist und du die Anmeldung selbst angefordert hast. Hat dir jemand diesen Link geschickt, brich ab.</p>
-        {fehler && <p className="klein" style={{ color: 'var(--warn)' }}>{fehler}</p>}
+        <Meldung art="fehler">{fehler}</Meldung>
         <div style={{ display: 'flex', gap: 10 }}>
           <button className="knopf leise" style={{ flex: 1 }} onClick={() => { setFremderLink(null); gehe('/', true) }}>Abbrechen</button>
           <button className="knopf haupt" style={{ flex: 1 }} disabled={laeuft} onClick={() => {
@@ -77,8 +77,7 @@ export default function AnmeldenSeite() {
 
   return (
     <div className="seite">
-      <button className="rund-knopf" onClick={() => zurueck('/')} aria-label="Zurück"><Zurueck /></button>
-      <h1 className="name" style={{ fontSize: 44, marginTop: 8 }}>Anmelden</h1>
+      <Seitenkopf titel="Anmelden" />
       <p className="klein">Mit deinem Konto liegen deine Bäume und Fotos sicher auf dem Server und sind auf jedem deiner Geräte da. Ein Passwort brauchst du nicht: Wir schicken dir einen Code per E-Mail.</p>
 
       {!anfrage ? (
@@ -96,14 +95,14 @@ export default function AnmeldenSeite() {
               onChange={(e) => { const v = e.target.value.replace(/\D/g, '').slice(0, 6); setCode(v); if (v.length === 6) pruefen(v) }} />
           </label>
           <button className="knopf haupt" disabled={laeuft || code.length !== 6} onClick={() => pruefen(code)} style={{ width: '100%' }}>{laeuft ? 'Wird geprüft …' : 'Anmelden'}</button>
-          <p className="sehr-klein">Keine E-Mail bekommen? Schau im Spam-Ordner nach oder <button className="knopf leise" style={{ minHeight: 0, padding: '0 4px', fontSize: 13, border: 'none' }} onClick={() => { setAnfrage(null); setCode('') }}>fordere einen neuen Code an</button>.</p>
+          <p className="sehr-klein">Keine E-Mail bekommen? Schau im Spam-Ordner nach oder <button className="knopf leise klein" style={{ border: 'none', padding: '0 4px', textDecoration: 'underline' }} onClick={() => { setAnfrage(null); setCode('') }}>fordere einen neuen Code an</button>.</p>
           <p className="sehr-klein">Auf dem iPhone mit der App auf dem Home-Bildschirm: Gib den Code hier ein. Der Link in der E-Mail öffnet sich im Browser und meldet nur dort an.</p>
         </div>
       )}
       {laeuft && !anfrage && !email && <p className="hinweis">Anmeldung wird geprüft …</p>}
-      {fehler && <p className="klein" style={{ color: 'var(--warn)' }}>{fehler}</p>}
+      <Meldung art="fehler">{fehler}</Meldung>
       <hr className="haarlinie" />
-      <p className="sehr-klein"><a href="#/datenschutz">Datenschutzhinweise</a> · <a href="#/impressum">Impressum</a></p>
+      <p className="sehr-klein"><a href="#/datenschutz">Datenschutz</a> · <a href="#/impressum">Impressum</a></p>
     </div>
   )
 }
@@ -123,18 +122,18 @@ function Zustimmung() {
   }
   return (
     <div className="seite">
-      <h1 className="name" style={{ fontSize: 40 }}>Bevor es losgeht</h1>
+      <h1 className="name titel">Bevor es losgeht</h1>
       <p>Deine Bäume, Fotos, Standorte und Angaben werden in deinem Konto auf einem Server in Frankfurt am Main gespeichert, damit du sie nicht verlierst und auf mehreren Geräten nutzen kannst. Nur du hast darauf Zugriff. Du kannst dein Konto mit allen Daten jederzeit unter „Konto“ löschen.</p>
       <label style={{ display: 'flex', gap: 12, alignItems: 'flex-start', margin: '16px 0' }}>
-        <input type="checkbox" checked={nutzung} onChange={(e) => setNutzung(e.target.checked)} style={{ width: 22, height: 22, marginTop: 3, flex: 'none' }} />
+        <input type="checkbox" checked={nutzung} onChange={(e) => setNutzung(e.target.checked)} className="haekchen" />
         <span>Ich habe die <a href="#/nutzung">Nutzungsbedingungen</a> und die <a href="#/datenschutz">Datenschutzhinweise</a> gelesen und bin mit der Speicherung meiner Daten in meinem Konto einverstanden. <i>(erforderlich)</i></span>
       </label>
       <label style={{ display: 'flex', gap: 12, alignItems: 'flex-start', margin: '16px 0' }}>
-        <input type="checkbox" checked={verbesserung} onChange={(e) => setVerbesserung(e.target.checked)} style={{ width: 22, height: 22, marginTop: 3, flex: 'none' }} />
+        <input type="checkbox" checked={verbesserung} onChange={(e) => setVerbesserung(e.target.checked)} className="haekchen" />
         <span>Meine Fotos und Angaben dürfen zusätzlich verwendet werden, um die App zu verbessern, etwa um die Blatterkennung, die Messung und den Sortenvorschlag zu testen und weiterzuentwickeln. Sie werden dafür nicht veröffentlicht. <i>(freiwillig, jederzeit widerrufbar)</i></span>
       </label>
       <p className="sehr-klein">Die Bestimmung funktioniert auch ohne das zweite Häkchen. Du kannst diese Einwilligung jederzeit unter „Konto“ ändern.</p>
-      {fehler && <p className="klein" style={{ color: 'var(--warn)' }}>{fehler}</p>}
+      <Meldung art="fehler">{fehler}</Meldung>
       <button className="knopf haupt" style={{ width: '100%' }} disabled={!nutzung || laeuft} onClick={absenden}>{laeuft ? 'Wird gespeichert …' : 'Weiter'}</button>
     </div>
   )

@@ -4,7 +4,8 @@ import { MERKMALE, GRUPPEN, auspraegungLabel, type Merkmal, type Ansicht } from 
 import { darstellungAus, farbenOhne, saatAusText, type Wert } from '../apfel3d/darstellung.ts'
 import { ApfelBuehne } from '../apfel3d/Buehne.tsx'
 import { Schnittansicht, type Schnittart } from '../apfel3d/Schnitt.tsx'
-import { zurueck, gehe as geheZu } from '../ui/router.ts'
+import { zurueck } from '../ui/router.ts'
+import { Ablaufkopf, Laden, NichtGefunden } from '../ui/Seite.tsx'
 import { Zurueck, Pfeil } from '../ui/symbole.tsx'
 import { useBlobUrl } from './Baum.tsx'
 
@@ -40,7 +41,7 @@ function fokusFuer(m: Merkmal): Fokus {
 // ------------------------------------------------------------------ Seite
 
 export default function RundgangSeite({ id }: { id: string }) {
-  const { baeume } = useBaeume()
+  const { baeume, geladen } = useBaeume()
   const baum = baeume.find((b) => b.id === id)
   const satz = baum ? letzterFotosatz(baum) : undefined
   const [schritt, setSchritt] = useState(0)
@@ -61,7 +62,8 @@ export default function RundgangSeite({ id }: { id: string }) {
     return darstellungAus([...ueber, ...werte], farbenOhne(satz?.messung?.farben, korrigiert), saatAusText(id)).p
   }, [m, vorschau, werte, satz, id, baum])
 
-  if (!baum || !m) return <div className="seite"><p className="hinweis">Baum nicht gefunden.</p></div>
+  if (!geladen) return <Laden />
+  if (!baum || !m) return <NichtGefunden text="Diesen Baum gibt es nicht mehr." />
   const fokus = fokusFuer(m)
 
   const speichern = async (code: string) => {
@@ -78,7 +80,8 @@ export default function RundgangSeite({ id }: { id: string }) {
   const abschliessen = async () => {
     await auswahlSichern()
     setFertig(true)
-    setTimeout(() => geheZu(`/baum/${id}`, true), 900)
+    // zurück zum Baumblatt, von dem der Rundgang meist geöffnet wurde (kein doppelter Verlaufseintrag)
+    setTimeout(() => zurueck(`/baum/${id}`), 900)
   }
   const zuruecksetzen = async () => {
     await aktualisiereBaum(baum.id, (b) => ({ ...b, angaben: b.angaben.filter((a) => a.merkmal !== m.id) }))
@@ -86,15 +89,11 @@ export default function RundgangSeite({ id }: { id: string }) {
 
   return (
     <div className="seite" style={{ paddingBottom: 30 }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <button className="rund-knopf" onClick={() => zurueck(`/baum/${id}`)} aria-label="Zurück"><Zurueck /></button>
-        <div className="tafelkopf" style={{ flex: 1, border: 'none' }}>
-          <span>{GRUPPEN[m.gruppe]}</span>
-          <span>{schritt + 1} / {merkmale.length}</span>
-        </div>
-      </div>
+      <Ablaufkopf name={GRUPPEN[m.gruppe]} schritt={`${schritt + 1} von ${merkmale.length}`}
+        zurueck={schritt > 0 ? () => gehe(schritt - 1) : undefined}
+        schliessen={async () => { await auswahlSichern(); zurueck(`/baum/${id}`) }} schliessenLabel="Rundgang beenden" />
 
-      <h1 className="name" style={{ fontSize: 36, marginTop: 6 }}>{m.name}</h1>
+      <h1 className="name titel-schritt" style={{ marginTop: 6 }}>{m.name}</h1>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 6 }}>
         {satz ? <Einzelaepfel satz={satz} merkmal={m} /> : <div className="sehr-klein">Keine Fotos</div>}
@@ -119,7 +118,7 @@ export default function RundgangSeite({ id }: { id: string }) {
           const aktiv = vorschau === a.code || (vorschau === null && istEigen)
           return (
             <button key={a.code} className={`chip ${aktiv ? 'an' : ''}`} onClick={() => setVorschau(vorschau === a.code ? null : a.code)} title={a.beschreibung}>
-              {a.label}{istEigen ? ' ·' : ''}
+              {a.label}{istEigen ? <span className="sehr-klein" style={{ color: 'inherit', opacity: 0.8 }}> (bisher)</span> : null}
             </button>
           )
         })}
@@ -134,7 +133,7 @@ export default function RundgangSeite({ id }: { id: string }) {
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 22 }}>
         <button className="knopf leise" disabled={schritt === 0} onClick={() => gehe(schritt - 1)}><Zurueck /> Zurück</button>
         {letzter
-          ? <button className="knopf haupt" disabled={fertig} onClick={abschliessen}>{fertig ? 'Gespeichert ✓' : 'Fertig'}</button>
+          ? <button className="knopf haupt" disabled={fertig} onClick={abschliessen}>{fertig ? 'Gespeichert' : 'Fertig'}</button>
           : <button className="knopf haupt" onClick={() => gehe(schritt + 1)}>Weiter <Pfeil /></button>}
       </div>
     </div>
@@ -196,8 +195,8 @@ function Einzelaepfel({ satz, merkmal }: { satz: Fotosatz; merkmal: Merkmal }) {
           </div>
         )}
         {elemente.length > 1 && <>
-          <button className="rund-knopf" aria-label="Vorheriger Apfel" onClick={() => blaettern(-1)} style={{ position: 'absolute', left: 4, top: '50%', marginTop: -16, width: 32, height: 32, opacity: 0.85 }}><Zurueck /></button>
-          <button className="rund-knopf" aria-label="Nächster Apfel" onClick={() => blaettern(1)} style={{ position: 'absolute', right: 4, top: '50%', marginTop: -16, width: 32, height: 32, opacity: 0.85 }}><Pfeil /></button>
+          <button className="rund-knopf" aria-label="Vorheriger Apfel" onClick={() => blaettern(-1)} style={{ position: 'absolute', left: 2, top: '50%', marginTop: -22, opacity: 0.85 }}><Zurueck /></button>
+          <button className="rund-knopf" aria-label="Nächster Apfel" onClick={() => blaettern(1)} style={{ position: 'absolute', right: 2, top: '50%', marginTop: -22, opacity: 0.85 }}><Pfeil /></button>
         </>}
       </div>
       <figcaption className="sehr-klein" style={{ marginTop: 2 }}>

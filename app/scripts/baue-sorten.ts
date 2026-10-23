@@ -186,7 +186,7 @@ if (anbau.length) console.log(`Anbau: ${anbauWerte} Werte aus ${anbau.length} So
 /** Externe Listen (Ratgeber-Recherche): Quellen mit eigenem Präfix, Sorten über ihre ID in der App */
 interface ListenQuelle { id: string; titel: string; herausgeber?: string; url?: string; abgerufen?: string; anmerkung?: string }
 function listenQuellen(qs: ListenQuelle[]) {
-  for (const q of qs) quellen.set(`rg_${q.id}`, { id: `rg_${q.id}`, werk: q.titel, autor: q.herausgeber, url: q.url, abgerufen: q.abgerufen, anmerkung: q.anmerkung, lizenz: 'Angabe übernommen, Quelle verlinkt' })
+  for (const q of qs) quellen.set(`rg_${q.id}`, { id: `rg_${q.id}`, werk: q.titel, autor: q.herausgeber, url: q.url, abgerufen: q.abgerufen, anmerkung: q.anmerkung, lizenz: '' })
 }
 const regionen = lies<{ quellen: ListenQuelle[]; zuordnungen: { sorte: string; name_in_quelle?: string; region: string; art: Regionszuordnung['art']; quelle: string; seite?: string }[] }>('ratgeber/regionen.json', { quellen: [], zuordnungen: [] })
 listenQuellen(regionen.quellen)

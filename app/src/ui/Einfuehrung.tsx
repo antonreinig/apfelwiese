@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react'
 import { Medaillon } from '../apfel3d/Buehne.tsx'
 import { useSortenindex, parameterAusEintrag } from '../daten/sorten.ts'
-import { Wiese as WieseSymbol, Apfel } from './symbole.tsx'
+import { Wiese as WieseSymbol, Apfel, Buch } from './symbole.tsx'
+import { zahl } from './format.ts'
 
-// Einführung beim ersten Start: drei Tafeln, wischbar. Später erneut aufrufbar unter „Über die App“.
+// Einführung beim ersten Start: vier Tafeln, wischbar. Später erneut aufrufbar unter „Konto“.
 
 const GESEHEN = 'einfuehrung-gesehen'
 
@@ -19,6 +20,7 @@ export function Einfuehrung({ fertig }: { fertig: () => void }) {
   const start = useRef<number | null>(null)
   const index = useSortenindex()
   const sorte = index?.sorten.find((s) => s.id === 'ananasrenette') ?? index?.sorten.find((s) => s.hatBild)
+  const ueber = `über ${zahl(Math.floor((index?.anzahl || 1900) / 100) * 100)}`
 
   const schliessen = () => {
     try { localStorage.setItem(GESEHEN, '1') } catch { /* privat */ }
@@ -34,7 +36,12 @@ export function Einfuehrung({ fertig }: { fertig: () => void }) {
     {
       bild: sorte ? <Medaillon p={parameterAusEintrag(sorte)} groesse={190} /> : <Apfel style={{ width: 120, height: 120 }} />,
       titel: 'Dein Apfel in 3D',
-      text: 'Aus den Fotos misst die App Größe, Form und Farben und baut ein 3D-Modell. Im Merkmals-Rundgang prüfst du Schritt für Schritt Stiel, Kelch, Kernhaus und Geschmack. Daraus entsteht ein Sortenvorschlag aus über 1.900 beschriebenen Sorten. Sicher wird eine Bestimmung erst durch Pomologen oder DNA.',
+      text: `Aus den Fotos misst die App Größe, Form und Farben und baut ein 3D-Modell. Im Merkmals-Rundgang prüfst du Schritt für Schritt Stiel, Kelch, Kernhaus und Geschmack. Daraus entsteht ein Sortenvorschlag aus ${ueber} beschriebenen Sorten. Sicher wird eine Bestimmung erst durch eine Pomologin, einen Pomologen oder DNA.`,
+    },
+    {
+      bild: <Buch style={{ width: 120, height: 120, color: 'var(--blatt)' }} />,
+      titel: 'Sorten entdecken',
+      text: `Im Tab „Sorten“ stöberst du ohne Konto in ${ueber} Sorten: Apfel des Tages, Sorten aus deiner Region, seltene Sorten zum Erhalten. Der Ratgeber hilft bei der Wahl eines neuen Baums und zeigt, wo es alte Sorten gibt.`,
     },
     {
       bild: <WieseSymbol style={{ width: 120, height: 120, color: 'var(--blatt)' }} />,
@@ -59,11 +66,11 @@ export function Einfuehrung({ fertig }: { fertig: () => void }) {
       }}
     >
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <button className="knopf leise" style={{ minHeight: 36, border: 'none' }} onClick={schliessen}>Überspringen</button>
+        <button className="knopf leise" style={{ border: 'none' }} onClick={schliessen}>Überspringen</button>
       </div>
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 18, textAlign: 'center' }}>
         <div style={{ minHeight: 200, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{t.bild}</div>
-        <h1 className="name" style={{ fontSize: 42 }}>{t.titel}</h1>
+        <h1 className="name titel">{t.titel}</h1>
         <p style={{ maxWidth: 420, margin: 0 }}>{t.text}</p>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: 8, margin: '16px 0' }} aria-hidden>

@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
-import { zurueck } from '../ui/router.ts'
-import { Zurueck } from '../ui/symbole.tsx'
+import { Seitenkopf, Abschnitt } from '../ui/Seite.tsx'
 import { useEinstellungen, BUNDESLAND_NAME } from '../daten/einstellungen.ts'
 import { L, LANDESGRUPPE, REGIONAL, STAND_BEZUG, type Link } from '../daten/bezug.ts'
 import { RegionWahl } from './Sorten.tsx'
@@ -11,15 +10,6 @@ import { RegionWahl } from './Sorten.tsx'
 const Q = ({ l, children }: { l: Link; children?: ReactNode }) => (
   <a href={l.url} target="_blank" rel="noreferrer">{children ?? l.titel}</a>
 )
-
-function Abschnitt({ titel, children }: { titel: string; children: ReactNode }) {
-  return (
-    <section style={{ marginTop: 26 }}>
-      <h2 className="kapitaelchen" style={{ fontSize: 18, marginBottom: 6 }}>{titel}</h2>
-      {children}
-    </section>
-  )
-}
 
 const JAHR: [string, string][] = [
   ['Februar, März', 'Reiserbörsen; Edelreiser im Winter geschnitten, im Frühjahr veredelt'],
@@ -35,9 +25,8 @@ export default function BezugSeite() {
   const regional = region ? REGIONAL[region] ?? [] : []
   return (
     <div className="seite">
-      <button className="rund-knopf" onClick={() => zurueck('/sorten')} aria-label="Zurück"><Zurueck /></button>
-      <h1 className="name" style={{ fontSize: 40, marginTop: 8 }}>Alte Sorten bekommen und erhalten</h1>
-      <p className="klein kursiv" style={{ marginTop: 4 }}>Viele alte Sorten stehen nur noch auf wenigen Wiesen. Wer eine davon pflanzt oder einen alten Baum vermehren lässt, hilft, sie zu erhalten. So kommst du an gute Bäume.</p>
+      <Seitenkopf zurueckZu="/sorten" titel="Alte Sorten bekommen und erhalten" />
+      <p className="klein kursiv" style={{ marginTop: 2 }}>Viele alte Sorten stehen nur noch auf wenigen Wiesen. Wer eine davon pflanzt oder einen alten Baum vermehren lässt, hilft, sie zu erhalten. So kommst du an gute Bäume.</p>
 
       <Abschnitt titel="Übers Jahr">
         <div style={{ borderLeft: '1.5px solid var(--blatt)', paddingLeft: 14, marginLeft: 4 }}>
@@ -54,7 +43,7 @@ export default function BezugSeite() {
             {LANDESGRUPPE[region] && (
               <p style={{ margin: '0 0 8px' }}>Für {BUNDESLAND_NAME[region]} ist die <Q l={LANDESGRUPPE[region]} /> des Pomologen-Vereins zuständig. Dort stehen Ausstellungen, Kurse und Reiserbörsen.</p>
             )}
-            {regional.map((r) => <p key={r.text} style={{ margin: '0 0 8px' }}>{r.text} <Q l={r.link}>Mehr</Q></p>)}
+            {regional.map((r) => <p key={r.text} style={{ margin: '0 0 8px' }}>{r.text} <Q l={r.link}>Website</Q></p>)}
             <p style={{ margin: '0 0 8px' }}><a href={`#/sorten/region/${region}`}>Sorten aus {BUNDESLAND_NAME[region]}</a> in der Datenbank.</p>
           </div>
         )}
@@ -66,7 +55,7 @@ export default function BezugSeite() {
       </Abschnitt>
 
       <Abschnitt titel="2. Einen Baum kaufen">
-        <p>Alte Sorten führen vor allem kleinere Baumschulen. Der NABU sammelt nach Bundesländern Baumschulen, die Hochstämme anbieten. <Q l={L.nabuBaumschulen}>Liste</Q></p>
+        <p>Alte Sorten führen vor allem kleinere Baumschulen. Der NABU sammelt nach Bundesländern Baumschulen, die Hochstämme anbieten. <Q l={L.nabuBaumschulen}>Website</Q></p>
         <p>Günstig und regional sind <span className="kapitaelchen">Sammelbestellungen</span>: Landkreise, Landschaftspflegeverbände und Naturschutzgruppen bestellen im Spätsommer heimische Sorten und geben die Bäume im November aus. Frag bei deinem Landkreis oder der NABU- oder BUND-Gruppe vor Ort.</p>
         <p><span className="kapitaelchen">Woran du einen guten Hochstamm erkennst:</span> Stammhöhe mindestens 180 cm, gerader, unverletzter Stamm, drei bis vier gut verteilte Seitentriebe, sauber verwachsene Veredelungsstelle, frische Wurzeln. <Q l={L.stuttgartPflanzung}>Quelle</Q></p>
         <p><span className="kapitaelchen">Frag nach der Unterlage.</span> Sie bestimmt Größe, Lebensdauer und Ertragsbeginn mehr als die Sorte:</p>

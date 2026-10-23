@@ -66,7 +66,9 @@ export default function App() {
   let inhalt: React.ReactNode
   let mitNavigation = true
   let p: Record<string, string> | null
-  const mitKonto = (n: React.ReactNode, titel?: string) => <Kontopflicht titel={titel}>{n}</Kontopflicht>
+  // Ohne Konto zeigt Kontopflicht einen Hinweis; dann immer mit Tab-Leiste, damit es keine Sackgasse gibt
+  let brauchtKonto = false
+  const mitKonto = (n: React.ReactNode, titel?: string) => { brauchtKonto = true; return <Kontopflicht titel={titel}>{n}</Kontopflicht> }
   if ((p = passt('/baum/:id/merkmale', pfad))) { inhalt = mitKonto(<RundgangSeite id={p.id} />); mitNavigation = false }
   else if ((p = passt('/baum/:id/angleichen', pfad))) { inhalt = mitKonto(<AngleichenSeite id={p.id} />); mitNavigation = false }
   else if ((p = passt('/baum/:id', pfad))) inhalt = mitKonto(<BaumSeite id={p.id} />)
@@ -76,7 +78,7 @@ export default function App() {
   else if (passt('/sorten/alle', pfad)) inhalt = <SortenListeSeite art="alle" />
   else if ((p = passt('/sorten/:art/:wert', pfad)) && ['sammlung', 'monat', 'region'].includes(p.art)) inhalt = <SortenListeSeite key={pfad} art={p.art as 'sammlung'} wert={p.wert} />
   else if (passt('/sorten', pfad)) inhalt = <SortenSeite />
-  else if (passt('/wiese', pfad) || passt('/karte', pfad)) inhalt = mitKonto(<KarteSeite />, 'Deine Wiese')
+  else if (passt('/wiese', pfad) || passt('/karte', pfad)) inhalt = mitKonto(<KarteSeite />, 'Meine Wiese')
   else if (passt('/info', pfad)) inhalt = <InfoSeite />
   else if (passt('/konto', pfad)) inhalt = <KontoSeite />
   else if (passt('/anmelden', pfad)) { inhalt = <AnmeldenSeite />; mitNavigation = false }
@@ -92,13 +94,16 @@ export default function App() {
   else if (passt('/neu', pfad)) { inhalt = mitKonto(<BestimmenSeite />); mitNavigation = false }
   else if ((p = passt('/neu/:baumId', pfad))) { inhalt = mitKonto(<BestimmenSeite baumId={p.baumId} />); mitNavigation = false }
   else inhalt = <WieseSeite />
+  if (brauchtKonto && konto.status !== 'laedt' && !istBereit) mitNavigation = true
 
   return (
     <div className="app">
-      <Fehlergrenze schluessel={pfad.split('?')[0]}><Suspense fallback={<div className="seite" />}>{inhalt}</Suspense></Fehlergrenze>
+      {/* key: jede Seite neu aufbauen, damit sie oben beginnt und nicht die Scrollposition der vorigen erbt */}
+      <Fehlergrenze key={pfad.split('?')[0]} schluessel={pfad.split('?')[0]}><Suspense fallback={<div className="seite" />}>{inhalt}</Suspense></Fehlergrenze>
       {mitNavigation && <Navigation pfad={pfad} />}
       <Uebernahme />
-      {einfuehrung && !pfad.startsWith('/anmelden') && !/^\/(impressum|datenschutz|nutzung)/.test(pfad) && <Einfuehrung fertig={() => setEinfuehrung(false)} />}
+      {/* Einführung nur auf der Startseite: geteilte Links auf Sorten oder Seiten öffnen direkt */}
+      {einfuehrung && pfad === '/' && <Einfuehrung fertig={() => setEinfuehrung(false)} />}
     </div>
   )
 }

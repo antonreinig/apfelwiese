@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ApfelBuehne } from '../apfel3d/Buehne.tsx'
-import { useBaeume, aktualisiereBaum, loescheBaum, ladeFoto, VERTRAUEN, type Baum, type Vertrauen } from '../daten/baeume.ts'
+import { useBaeume, aktualisiereBaum, loescheBaum, ladeFoto, VERTRAUEN, type Baum } from '../daten/baeume.ts'
 import { useSortenindex, normalisiere } from '../daten/sorten.ts'
 import { modellFuerBaum } from '../daten/baumModell.ts'
 import { MERKMALE, MERKMAL_NACH_ID, auspraegungLabel } from '../daten/merkmalskatalog.ts'
-import { zurueck, gehe } from '../ui/router.ts'
-import { Zurueck, Kamera, Ort, Muell, Pfeil } from '../ui/symbole.tsx'
+import { gehe } from '../ui/router.ts'
+import { Kamera, Ort, Muell, Pfeil } from '../ui/symbole.tsx'
+import { Seitenkopf, Abschnitt, Laden, NichtGefunden, Meldung, Wertzeile, Farbfeld } from '../ui/Seite.tsx'
+import { datum, datumKurz } from '../ui/format.ts'
 import { Sortenname } from '../ui/Sortenname.tsx'
 import { Leuchtkasten } from '../ui/Leuchtkasten.tsx'
 import { MerkmalChips } from '../ui/MerkmalChips.tsx'
@@ -20,22 +22,21 @@ export default function BaumSeite({ id }: { id: string }) {
   const modell = useMemo(() => (baum ? modellFuerBaum(baum, index) : null), [baum, index])
   const [schnitt, setSchnitt] = useState(false)
 
-  if (!geladen) return <div className="seite" />
-  if (!baum || !modell) return <div className="seite"><p className="hinweis">Diesen Baum gibt es nicht mehr.</p><a href="#/">Zu meinen Äpfeln</a></div>
+  if (!geladen) return <Laden />
+  if (!baum || !modell) return <NichtGefunden text="Diesen Baum gibt es nicht mehr." />
 
   const aendern = (teil: Partial<Baum>) => aktualisiereBaum(baum.id, (b) => ({ ...b, ...teil }))
   const herkunft = { messung: '3D-Modell aus den Messwerten dieses Baums', sorte: 'Typischer Apfel der Sorte, noch nicht aus deinen Fotos gemessen', keine: 'Noch nicht vermessen' }[modell.herkunft]
 
   return (
     <div className="seite" style={{ paddingTop: 0 }}>
-      <div style={{ position: 'sticky', top: 0, zIndex: 3, paddingTop: 'var(--oben)', display: 'flex', justifyContent: 'space-between' }}>
-        <button className="rund-knopf" onClick={() => zurueck('/')} aria-label="Zurück"><Zurueck /></button>
-        <div className="chips" style={{ background: 'color-mix(in srgb, var(--papier) 80%, transparent)', borderRadius: 999, padding: 2 }}>
-          <button className={`chip ${!schnitt ? 'an' : ''}`} onClick={() => setSchnitt(false)}>Ganz</button>
-          <button className={`chip ${schnitt ? 'an' : ''}`} onClick={() => setSchnitt(true)}>Aufgeschnitten</button>
+      <Seitenkopf rechts={
+        <div className="chips" role="radiogroup" aria-label="Ansicht">
+          <button role="radio" aria-checked={!schnitt} className={`chip ${!schnitt ? 'an' : ''}`} onClick={() => setSchnitt(false)}>Ganz</button>
+          <button role="radio" aria-checked={schnitt} className={`chip ${schnitt ? 'an' : ''}`} onClick={() => setSchnitt(true)}>Aufgeschnitten</button>
         </div>
-      </div>
-      <div style={{ position: 'relative', height: 300, margin: '-44px -16px 0' }}>
+      } />
+      <div style={{ position: 'relative', height: 290, margin: '-6px -16px 0' }}>
         {schnitt ? <Schnittansicht p={modell.p} className="buehne" /> : <ApfelBuehne aepfel={[modell.p]} className="buehne" />}
       </div>
       <div style={{ textAlign: 'center' }}>
@@ -47,19 +48,20 @@ export default function BaumSeite({ id }: { id: string }) {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 20 }}>
         {baum.fotosaetze.length > 0 && <a className="knopf" href={`#/baum/${baum.id}/angleichen`}>Modell mit dem Foto angleichen <Pfeil /></a>}
-        <a className="knopf leise" href={`#/baum/${baum.id}/merkmale`}>Merkmale am eigenen Apfel ansehen <Pfeil /></a>
+        <a className="knopf leise" href={`#/baum/${baum.id}/merkmale`}>Merkmals-Rundgang <Pfeil /></a>
       </div>
 
       <BestimmungAbschnitt baum={baum} aendern={aendern} />
       <FotoAbschnitt baum={baum} />
       <MessAbschnitt baum={baum} />
-      <AngabenAbschnitt baum={baum} aendern={aendern} />
+      <AngabenAbschnitt baum={baum} />
+      <BaumAbschnitt baum={baum} aendern={aendern} />
       <OrtAbschnitt baum={baum} aendern={aendern} />
 
       <hr className="haarlinie" />
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
         <button className="knopf" onClick={() => gehe(`/neu/${baum.id}`)}><Kamera /> Weitere vier Fotos</button>
-        <button className="knopf leise" onClick={async () => {
+        <button className="knopf gefahr" onClick={async () => {
           if (confirm(`„${baum.name}“ mit allen Fotos löschen? Er wird auch aus deinem Konto entfernt.`)) { await loescheBaum(baum.id); gehe('/', true) }
         }}><Muell /> Baum löschen</button>
       </div>
@@ -67,53 +69,63 @@ export default function BaumSeite({ id }: { id: string }) {
   )
 }
 
-function Abschnitt({ titel, children }: { titel: string; children: React.ReactNode }) {
-  return (
-    <section style={{ marginBottom: 22 }}>
-      <h2 className="kapitaelchen" style={{ fontSize: 17, color: 'var(--tinte-2)', marginBottom: 6 }}>{titel}</h2>
-      {children}
-    </section>
-  )
-}
-
 // ------------------------------------------------------------------ Bestimmung
+
+/** Fragt nach, bevor eine bestätigte Bestimmung (Pomologe, DNA) überschrieben wird */
+export function bestimmungErsetzen(alt: Baum['bestimmung'], neu: string) {
+  if (alt.status !== 'pomologe' && alt.status !== 'dna') return true
+  return confirm(`„${alt.sorteName}“ ist ${VERTRAUEN[alt.status].label}. Wirklich ${neu}?`)
+}
 
 function BestimmungAbschnitt({ baum, aendern }: { baum: Baum; aendern: (t: Partial<Baum>) => void }) {
   const [waehlen, setWaehlen] = useState(false)
+  const [bestaetigen, setBestaetigen] = useState<'pomologe' | 'dna' | null>(null)
+  const [von, setVon] = useState('')
   const b = baum.bestimmung
-  const setzeStatus = (status: Vertrauen, von?: string) =>
-    aendern({ bestimmung: { ...b, status, von, datum: new Date().toISOString().slice(0, 10), anmerkung: undefined } })
+  const heute = () => new Date().toISOString().slice(0, 10)
   return (
     <Abschnitt titel="Bestimmung">
       {b.sorteId ? (
         <p style={{ margin: '0 0 8px' }}>
           <a href={`#/sorte/${b.sorteId}`}>{b.sorteName}</a> – {VERTRAUEN[b.status].label}
-          {b.von ? ` (${b.von})` : ''}{b.datum ? `, ${new Date(b.datum).toLocaleDateString('de-DE')}` : ''}.
+          {b.von ? ` (${b.von})` : ''}{b.datum ? `, ${datum(b.datum)}` : ''}.
         </p>
       ) : (
         <p className="hinweis" style={{ margin: '0 0 8px' }}>Noch keine Sorte zugeordnet.</p>
       )}
       {b.anmerkung && <p className="klein" style={{ marginTop: 0 }}>{b.anmerkung}</p>}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-        <button className="chip" onClick={() => setWaehlen(!waehlen)}>{b.sorteId ? 'Andere Sorte' : 'Sorte zuordnen'}</button>
-        {b.sorteId && b.status !== 'pomologe' && (
-          <button className="chip" onClick={() => {
-            const von = prompt('Name des Pomologen oder der Pomologin, der oder die die Sorte bestätigt hat:')
-            if (von) setzeStatus('pomologe', von)
-          }}>Vom Pomologen bestätigt</button>
-        )}
-        {b.sorteId && b.status !== 'dna' && (
-          <button className="chip" onClick={() => {
-            const von = prompt('Labor oder Untersuchung (z. B. SSR-Analyse, Jahr):')
-            if (von) setzeStatus('dna', von)
-          }}>Per DNA bestätigt</button>
-        )}
-        {b.sorteId && (
-          <button className="chip" onClick={() => aendern({ bestimmung: { status: 'unbestimmt' } })}>Zurücksetzen</button>
-        )}
+        <button className="knopf klein" onClick={() => setWaehlen(!waehlen)} aria-expanded={waehlen}>{b.sorteId ? 'Andere Sorte' : 'Sorte zuordnen'}</button>
+        {b.sorteId && b.status !== 'pomologe' && <button className="knopf klein" onClick={() => { setBestaetigen('pomologe'); setVon('') }}>Pomologisch bestätigt</button>}
+        {b.sorteId && b.status !== 'dna' && <button className="knopf klein" onClick={() => { setBestaetigen('dna'); setVon('') }}>Per DNA bestätigt</button>}
       </div>
+      {bestaetigen && (
+        <form className="karte-papier" style={{ marginTop: 10 }} onSubmit={(e) => {
+          e.preventDefault()
+          if (!von.trim()) return
+          aendern({ bestimmung: { ...b, status: bestaetigen, von: von.trim(), datum: heute(), anmerkung: undefined } })
+          setBestaetigen(null)
+        }}>
+          <label className="feld" style={{ marginTop: 0 }}>
+            <span>{bestaetigen === 'pomologe' ? `Wer hat „${b.sorteName}“ bestätigt? Name der Pomologin oder des Pomologen` : `Welche Untersuchung hat „${b.sorteName}“ bestätigt? Labor, Verfahren, Jahr`}</span>
+            <input className="eingabe" value={von} onChange={(e) => setVon(e.target.value)} autoFocus placeholder={bestaetigen === 'pomologe' ? 'z. B. Name, Norddeutsche Apfeltage 2026' : 'z. B. SSR-Analyse, JKI, 2026'} />
+          </label>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button className="knopf haupt" type="submit" disabled={!von.trim()}>Speichern</button>
+            <button className="knopf leise" type="button" onClick={() => setBestaetigen(null)}>Abbrechen</button>
+          </div>
+        </form>
+      )}
       <AbgleichAnzeige baum={baum} aendern={aendern} />
-      {waehlen && <SortenAuswahl onWahl={(id, name) => { aendern({ bestimmung: { status: 'nutzer', sorteId: id, sorteName: name, datum: new Date().toISOString().slice(0, 10) } }); setWaehlen(false) }} />}
+      {waehlen && <SortenAuswahl onWahl={(id, name) => {
+        if (!bestimmungErsetzen(b, `durch deine eigene Bestimmung „${name}“ ersetzen`)) return
+        aendern({ bestimmung: { status: 'nutzer', sorteId: id, sorteName: name, datum: heute() } }); setWaehlen(false)
+      }} />}
+      {b.sorteId && (
+        <button className="knopf leise klein" style={{ marginTop: 10, border: 'none', paddingLeft: 0 }} onClick={() => {
+          if (bestimmungErsetzen(b, 'zurücksetzen')) aendern({ bestimmung: { status: 'unbestimmt' } })
+        }}>Zuordnung zurücksetzen</button>
+      )}
     </Abschnitt>
   )
 }
@@ -128,7 +140,7 @@ function AbgleichAnzeige({ baum, aendern }: { baum: Baum; aendern: (t: Partial<B
   if (!werte.length) return null
   return (
     <div style={{ marginTop: 10 }}>
-      <button className="chip" onClick={() => setOffen(!offen)}>{offen ? 'Abgleich ausblenden' : 'Vorläufigen Abgleich anzeigen'}</button>
+      <button className="knopf leise klein" onClick={() => setOffen(!offen)} aria-expanded={offen}>{offen ? 'Abgleich ausblenden' : 'Vorläufigen Abgleich anzeigen'}</button>
       {offen && (
         <div style={{ marginTop: 8 }}>
           <p className="sehr-klein" style={{ margin: '0 0 4px' }}>
@@ -137,8 +149,8 @@ function AbgleichAnzeige({ baum, aendern }: { baum: Baum; aendern: (t: Partial<B
           {kandidaten.map((k) => (
             <KandidatZeile key={k.sorte.id} k={k} gesperrt={false} eigen={eigen} onWahl={() => {
               const b = baum.bestimmung
-              if (b.status !== 'unbestimmt' && b.status !== 'vorschlag' &&
-                !confirm(`Die bisherige Bestimmung „${b.sorteName}“ (${VERTRAUEN[b.status].label}) durch den App-Vorschlag „${k.sorte.name}“ ersetzen?`)) return
+              if (b.status === 'nutzer' && !confirm(`Deine eigene Bestimmung „${b.sorteName}“ durch den App-Vorschlag „${k.sorte.name}“ ersetzen?`)) return
+              if (!bestimmungErsetzen(b, `durch den App-Vorschlag „${k.sorte.name}“ ersetzen`)) return
               aendern({
                 bestimmung: {
                   status: 'vorschlag', sorteId: k.sorte.id, sorteName: k.sorte.name, datum: new Date().toISOString().slice(0, 10),
@@ -194,7 +206,7 @@ function Fotosatz({ satz }: { satz: Baum['fotosaetze'][number] }) {
   const [offen, setOffen] = useState<number | null>(null)
   return (
     <div style={{ marginBottom: 12 }}>
-      <div className="sehr-klein">{new Date(satz.datum).toLocaleDateString('de-DE')}</div>
+      <div className="sehr-klein">{datumKurz(satz.datum)}</div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6, marginTop: 4 }}>
         {urls.map((u, i) => (
           <button key={i} onClick={() => u && setOffen(i)} aria-label={FOTOTITEL[i]}
@@ -228,19 +240,14 @@ function MessAbschnitt({ baum }: { baum: Baum }) {
   if (!m) return null
   return (
     <Abschnitt titel="Gemessen">
-      {m.werte.map((w, i) => (
-        <div key={i} style={{ display: 'flex', gap: 12, padding: '4px 0', borderBottom: '0.5px dotted var(--linie)' }}>
-          <span style={{ flex: '0 0 50%', color: 'var(--tinte-2)' }}>{MERKMAL_NACH_ID[w.merkmal]?.name ?? w.merkmal}</span>
-          <span>{auspraegungLabel(w.merkmal, w.wert)}</span>
-        </div>
-      ))}
+      {m.werte.map((w, i) => <Wertzeile key={i} titel={MERKMAL_NACH_ID[w.merkmal]?.name ?? w.merkmal}>{auspraegungLabel(w.merkmal, w.wert)}</Wertzeile>)}
       {m.objekte.length > 0 && (
         <p className="klein">Einzelmaße (Breite × Höhe): {m.objekte.map((o) => `${Math.round(o.breiteMm)} × ${Math.round(o.hoeheMm)} mm`).join('; ')}</p>
       )}
       {(m.farben.grundfarbe || m.farben.deckfarbe) && (
         <p className="klein" style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-          {m.farben.grundfarbe && <><Farbfeld f={m.farben.grundfarbe} /> Grundfarbe</>}
-          {m.farben.deckfarbe && <><Farbfeld f={m.farben.deckfarbe} /> Deckfarbe {m.farben.deckfarbeAnteil !== undefined ? `(${Math.round(m.farben.deckfarbeAnteil * 100)} %)` : ''}</>}
+          {m.farben.grundfarbe && <><Farbfeld farbe={m.farben.grundfarbe} /> Grundfarbe</>}
+          {m.farben.deckfarbe && <><Farbfeld farbe={m.farben.deckfarbe} /> Deckfarbe {m.farben.deckfarbeAnteil !== undefined ? `(${Math.round(m.farben.deckfarbeAnteil * 100)} %)` : ''}</>}
         </p>
       )}
       {m.hinweise.map((h, i) => <p key={i} className="sehr-klein kursiv" style={{ margin: '4px 0' }}>{h}</p>)}
@@ -248,31 +255,61 @@ function MessAbschnitt({ baum }: { baum: Baum }) {
   )
 }
 
-const Farbfeld = ({ f }: { f: string }) => <span style={{ width: 18, height: 18, borderRadius: '50%', background: f, border: '0.5px solid var(--linie-stark)', display: 'inline-block' }} />
 
 // ------------------------------------------------------------------ Eigene Angaben (aus dem Katalog: erfassung = abfrage)
 
-function AngabenAbschnitt({ baum, aendern }: { baum: Baum; aendern: (t: Partial<Baum>) => void }) {
+// Die häufigsten Angaben zuerst; die übrigen (Duft, Geschmacksnoten, Schale, Baum) aufklappbar
+const HAUPTANGABEN = ['pflueckreife', 'genussreife_beginn', 'genussreife_ende', 'geschmack_suesse', 'geschmack_saeure', 'fleisch_festigkeit', 'fleisch_saftigkeit', 'verwendung']
+
+function AngabenAbschnitt({ baum }: { baum: Baum }) {
   const fragen = MERKMALE.filter((m) => m.erfassung === 'abfrage' && m.auspraegungen)
   const werte = (id: string) => baum.angaben.filter((a) => a.merkmal === id).map((a) => String(a.wert))
   const setze = (id: string, w: string[]) => aktualisiereBaum(baum.id, (b) => ({
     ...b, angaben: [...b.angaben.filter((a) => a.merkmal !== id), ...w.map((wert) => ({ merkmal: id, wert }))],
   }))
   const pflueck = werte('pflueckreife')[0]
+  const frage = (m: (typeof fragen)[number]) => (
+    <div key={m.id} style={{ margin: '10px 0' }}>
+      <div className="klein" style={{ marginBottom: 5 }}>{m.name}{m.mehrfach ? ' (mehrere möglich)' : ''}</div>
+      <MerkmalChips merkmal={m.id} werte={werte(m.id)} onChange={(w) => setze(m.id, w)}
+        abMonat={m.id.startsWith('genussreife') ? (m.id === 'genussreife_ende' ? werte('genussreife_beginn')[0] ?? pflueck : pflueck) : undefined} />
+    </div>
+  )
+  const haupt = HAUPTANGABEN.map((id) => fragen.find((m) => m.id === id)).filter((m): m is (typeof fragen)[number] => !!m)
+  const weitere = fragen.filter((m) => !HAUPTANGABEN.includes(m.id))
+  const weitereAusgefuellt = weitere.filter((m) => werte(m.id).length).length
   return (
     <Abschnitt titel="Deine Angaben">
-      <p className="sehr-klein" style={{ marginTop: 0 }}>Was die Fotos nicht zeigen. Hilft beim Abgleich mit den Sorten.</p>
-      {fragen.map((m) => (
-        <div key={m.id} style={{ margin: '10px 0' }}>
-          <div className="klein" style={{ marginBottom: 5 }}>{m.name}{m.mehrfach ? ' (mehrere möglich)' : ''}</div>
-          <MerkmalChips merkmal={m.id} werte={werte(m.id)} onChange={(w) => setze(m.id, w)}
-            abMonat={m.id.startsWith('genussreife') ? (m.id === 'genussreife_ende' ? werte('genussreife_beginn')[0] ?? pflueck : pflueck) : undefined} />
-        </div>
-      ))}
+      <p className="sehr-klein" style={{ marginTop: 0 }}>Was die Fotos nicht zeigen: Reife, Geschmack, Verwendung. Hilft beim Abgleich mit den Sorten. Wird sofort gespeichert.</p>
+      {haupt.map(frage)}
+      <details style={{ marginTop: 12 }}>
+        <summary className="klein" style={{ cursor: 'pointer', minHeight: 44, display: 'flex', alignItems: 'center' }}>
+          Weitere Angaben: Schale, Duft, Geschmacksnoten, Baum{weitereAusgefuellt ? ` (${weitereAusgefuellt} ausgefüllt)` : ''}
+        </summary>
+        {weitere.map(frage)}
+      </details>
+    </Abschnitt>
+  )
+}
+
+// ------------------------------------------------------------------ Baum: Bezeichnung, Ort, Notizen
+
+function BaumAbschnitt({ baum, aendern }: { baum: Baum; aendern: (t: Partial<Baum>) => void }) {
+  return (
+    <Abschnitt titel="Baum">
+      <label className="feld" style={{ marginTop: 0 }}>
+        <span>Bezeichnung</span>
+        <input className="eingabe" defaultValue={baum.name} onBlur={(e) => e.target.value.trim() && e.target.value !== baum.name && aendern({ name: e.target.value.trim() })} />
+      </label>
+      <label className="feld">
+        <span>Ort</span>
+        <input className="eingabe" defaultValue={baum.ort} placeholder="z. B. Obstwiese am Deich" onBlur={(e) => e.target.value !== (baum.ort ?? '') && aendern({ ort: e.target.value })} />
+      </label>
       <label className="feld">
         <span>Notizen</span>
         <textarea className="eingabe" defaultValue={baum.notizen} onBlur={(e) => e.target.value !== (baum.notizen ?? '') && aendern({ notizen: e.target.value })} placeholder="Alter des Baums, Herkunft der Sorte, Erinnerungen …" />
       </label>
+      <p className="sehr-klein" style={{ marginTop: 0 }}>Änderungen werden gespeichert, sobald du ein Feld verlässt.</p>
     </Abschnitt>
   )
 }
@@ -284,14 +321,6 @@ function OrtAbschnitt({ baum, aendern }: { baum: Baum; aendern: (t: Partial<Baum
   const [fehler, setFehler] = useState('')
   return (
     <Abschnitt titel="Standort">
-      <label className="feld" style={{ marginTop: 0 }}>
-        <span>Bezeichnung des Baums</span>
-        <input className="eingabe" defaultValue={baum.name} onBlur={(e) => e.target.value.trim() && e.target.value !== baum.name && aendern({ name: e.target.value.trim() })} />
-      </label>
-      <label className="feld">
-        <span>Ort</span>
-        <input className="eingabe" defaultValue={baum.ort} placeholder="z. B. Obstwiese am Deich" onBlur={(e) => e.target.value !== (baum.ort ?? '') && aendern({ ort: e.target.value })} />
-      </label>
       {baum.standort ? (
         <p className="klein">Koordinaten gespeichert ({baum.standort.lat.toFixed(4)}, {baum.standort.lng.toFixed(4)}). <a href={`#/wiese?baum=${baum.id}`}>Auf der Wiese zeigen</a></p>
       ) : (
@@ -299,13 +328,14 @@ function OrtAbschnitt({ baum, aendern }: { baum: Baum; aendern: (t: Partial<Baum
       )}
       <button className="knopf" disabled={laeuft} onClick={() => {
         setLaeuft(true); setFehler('')
+        if (!navigator.geolocation) { setLaeuft(false); setFehler('Standort nicht verfügbar. Erlaube den Zugriff in den Einstellungen oder versuch es draußen noch einmal.'); return }
         navigator.geolocation.getCurrentPosition(
           (pos) => { aendern({ standort: { lat: pos.coords.latitude, lng: pos.coords.longitude, genauigkeit: pos.coords.accuracy } }); setLaeuft(false) },
-          () => { setFehler('Standort nicht verfügbar. Erlaube den Zugriff oder versuch es draußen noch einmal.'); setLaeuft(false) },
+          () => { setFehler('Standort nicht verfügbar. Erlaube den Zugriff in den Einstellungen oder versuch es draußen noch einmal.'); setLaeuft(false) },
           { enableHighAccuracy: true, timeout: 15000 },
         )
       }}><Ort /> {laeuft ? 'Suche Standort …' : baum.standort ? 'Standort neu bestimmen' : 'Aktuellen Standort übernehmen'}</button>
-      {fehler && <p className="sehr-klein" style={{ color: 'var(--warn)' }}>{fehler}</p>}
+      <Meldung art="fehler">{fehler}</Meldung>
     </Abschnitt>
   )
 }

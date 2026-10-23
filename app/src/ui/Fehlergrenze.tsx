@@ -27,7 +27,7 @@ export class Fehlergrenze extends Component<{ children: ReactNode; schluessel?: 
     if (!this.state.fehler) return this.props.children
     return (
       <div className="seite" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', gap: 12 }}>
-        <h1 className="name" style={{ fontSize: 38 }}>Da ist etwas schiefgelaufen</h1>
+        <h1 className="name titel">Da ist etwas schiefgelaufen</h1>
         <p className="klein" style={{ maxWidth: 360 }}>Diese Seite ließ sich nicht anzeigen. Der Fehler wurde gemeldet. Meist hilft es, die App neu zu laden.</p>
         <button className="knopf haupt" onClick={() => window.location.reload()}>Neu laden</button>
         <a className="klein" href="#/">Zur Startseite</a>
