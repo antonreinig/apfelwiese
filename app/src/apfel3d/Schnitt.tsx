@@ -31,13 +31,15 @@ function abdunkeln(hex: string, f: number) {
 
 /** Umriss des Längsschnitts (Ebene z = 0) aus der echten Verformung */
 function laengsUmriss(p: ApfelParameter, n = 96): THREE.Vector2[] {
-  const pr = profil(p, n)
+  // Gruben sind unregelmäßig: rechts und links der jeweilige Umriss in dieser Richtung
+  const prR = profil(p, n, 0)
+  const prL = profil(p, n, Math.PI)
   const rechts: THREE.Vector2[] = []
   const links: THREE.Vector2[] = []
   for (let i = 0; i <= n; i++) {
     const t = i / n
-    const a = verformung(p, 0, t, pr[i])
-    const b = verformung(p, Math.PI, t, pr[i])
+    const a = verformung(p, 0, t, prR[i])
+    const b = verformung(p, Math.PI, t, prL[i])
     rechts.push(new THREE.Vector2(a.r + a.dx, a.y))
     links.push(new THREE.Vector2(-b.r + b.dx, b.y))
   }

@@ -8,7 +8,7 @@ import { schalenbilder } from './schale.ts'
 import { baueStiel, baueKelch, entsorgen as teilEntsorgen } from './stielKelch.ts'
 
 /** Bei Änderungen am Aussehen erhöhen: verwirft zwischengespeicherte Medaillon-Bilder */
-export const MODELL_VERSION = 5
+export const MODELL_VERSION = 6
 
 // ------------------------------------------------------------------ Schalenmaterial, geteilt
 
@@ -23,24 +23,33 @@ function holeMaterial(key: string, p: ApfelParameter, aufloesung: number) {
   map.anisotropy = 4
   const rough = new THREE.CanvasTexture(b.rauheit)
   const bump = new THREE.CanvasTexture(b.relief)
-  for (const t of [map, rough, bump]) {
+  const glanz = new THREE.CanvasTexture(b.glanz)
+  for (const t of [map, rough, bump, glanz]) {
     t.wrapS = THREE.RepeatWrapping
     t.wrapT = THREE.ClampToEdgeWrapping
   }
-  // Glanz: von matt-rau (Renetten, Rost) bis wachsig-glänzend
+  // Apfelschale: Kutikula mit Wachs. Matte Sorten (Renetten, berostete) streuen das Licht breit,
+  // wachsige glänzen mit einer zweiten, glatten Schicht. Rost und Schalenpunkte tragen kein Wachs
+  // (Glanzkarte schwarz) und bleiben matt. Bereifung und der feine Flaum matter Schalen als Sheen.
+  const wachs = Math.max(0, p.glanz - 0.5) * 1.1
   const material = new THREE.MeshPhysicalMaterial({
     map,
     roughnessMap: rough,
     roughness: 1,
     bumpMap: bump,
-    bumpScale: 0.6,
-    clearcoat: 0.05 + p.glanz * 0.85,
-    clearcoatRoughness: 0.55 - p.glanz * 0.45,
-    sheen: p.bereifung,
-    sheenColor: new THREE.Color('#c9d3e6'),
-    sheenRoughness: 0.7,
+    bumpScale: 0.5,
+    ior: 1.45,
+    specularIntensity: 0.55 + p.glanz * 0.45,
+    clearcoat: wachs,
+    clearcoatMap: wachs > 0 ? glanz : null,
+    clearcoatRoughness: 0.32 - p.glanz * 0.12,
+    // Bereifung: zarter, kühler Hauch an den Rändern; zu stark färbt sie rote Äpfel violett
+    sheen: Math.max(p.bereifung * 0.55, (1 - p.glanz) * 0.3),
+    sheenColor: new THREE.Color(p.bereifung > 0.3 ? '#d9dee8' : '#e8e2d2'),
+    sheenRoughness: 0.75,
     side: THREE.DoubleSide,
   })
+  if (!wachs) glanz.dispose()
   materialSpeicher.set(key, { material, nutzer: 1 })
   return material
 }
@@ -54,7 +63,7 @@ function freigeben(key: string) {
   setTimeout(() => {
     const x = materialSpeicher.get(key)
     if (x && x.nutzer <= 0) {
-      x.material.map?.dispose(); x.material.roughnessMap?.dispose(); x.material.bumpMap?.dispose()
+      x.material.map?.dispose(); x.material.roughnessMap?.dispose(); x.material.bumpMap?.dispose(); x.material.clearcoatMap?.dispose()
       x.material.dispose()
       materialSpeicher.delete(key)
     }

@@ -135,6 +135,9 @@ const DECKFARBE: Record<string, string> = {
   orange: '#cc5a2c', rosa: '#c9606a', hellrot: '#c03c34', rot: '#a52824',
   dunkelrot: '#7a1c1c', purpurrot: '#721d33', braunrot: '#8a3b25',
 }
+/** Glanz je Angabe zur Schale (0 matt … 1 wachsig glänzend) */
+const GLANZ: Record<string, number> = { matt: 0.15, rau: 0.2, glatt: 0.5, glaenzend: 0.75, fettig: 0.9 }
+
 const FLEISCH: Record<string, string> = {
   weiss: '#f6f1e2', cremeweiss: '#f2e8c9', gelblich: '#efdb9d', gruenlich: '#e2e6bd', roetlich: '#efc6b5',
 }
@@ -193,6 +196,8 @@ export function darstellungAus(werte: Wert[], farben?: Messfarben, saat = 1): { 
   const belegt = new Set<keyof ApfelParameter>()
   const gesehen = new Set<string>()
   let breitesteStelle: string | undefined
+  const glanzWerte: number[] = []
+  let rauOderMatt = false
   const masse: { kernhausBreite?: number; kernhausHoehe?: number; kernfachBreite?: number; kernfachHoehe?: number } = {}
   const setze = <K extends keyof ApfelParameter>(k: K, v: ApfelParameter[K]) => { p[k] = v; belegt.add(k) }
 
@@ -257,9 +262,9 @@ export function darstellungAus(werte: Wert[], farben?: Messfarben, saat = 1): { 
         if (c === 'umhoeft_rot') setze('punkteHof', '#b34036')
         break
       case 'schale_beschaffenheit':
-        if (c === 'glaenzend') setze('glanz', 0.8)
-        if (c === 'matt' || c === 'rau') setze('glanz', 0.18)
-        if (c === 'fettig') setze('glanz', 0.9)
+        // Quellen widersprechen sich oft („teils glatt, teils rau, etwas glänzend“): erst sammeln, dann mitteln
+        if (c in GLANZ) glanzWerte.push(GLANZ[c])
+        if (c === 'matt' || c === 'rau') rauOderMatt = true
         if (c === 'bereift') setze('bereifung', 0.7)
         break
       case 'stiel_laenge': setze('stielLaengeMm', stufe(c, { '1': 5, '3': 10, '5': 16, '7': 23, '9': 30 }, 15)); break
@@ -294,8 +299,13 @@ export function darstellungAus(werte: Wert[], farben?: Messfarben, saat = 1): { 
       case 'kernfaecher_oeffnung': setze('kernfaecherOffen', stufe(c, { geschlossen: 0, teilweise: 0.5, offen: 1 }, 0.4)); break
     }
   }
+  if (glanzWerte.length) {
+    const mittel = glanzWerte.reduce((a, b) => a + b, 0) / glanzWerte.length
+    // eine raue oder matte Angabe überwiegt: solche Schalen glänzen höchstens seidig
+    setze('glanz', rauOderMatt ? Math.min(mittel, 0.38) : mittel)
+  }
   // Lage der breitesten Stelle: verschiebt die Bauchung deutlich zum Stiel oder zum Kelch
-  if (breitesteStelle) setze('konisch', stufe(breitesteStelle, { stiel: 0.26, mitte: 0, kelch: -0.2 }, p.konisch))
+  if (breitesteStelle) setze('konisch', stufe(breitesteStelle, { stiel: 0.17, mitte: 0, kelch: -0.13 }, p.konisch))
 
   // Kernhausmaße relativ zur Frucht (Engelbrecht: „Kernhaus 36:37, Kammern 9:20“)
   const fruchtHoeheMm = p.breiteMm * p.hoeheZuBreite

@@ -20,6 +20,7 @@ function vorbereiten() {
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true })
   renderer.setPixelRatio(1)
   renderer.setSize(GROESSE, GROESSE, false)
+  renderer.localClippingEnabled = true
   renderer.toneMapping = THREE.NeutralToneMapping
   renderer.outputColorSpace = THREE.SRGBColorSpace
   szene = new THREE.Scene()
@@ -53,10 +54,15 @@ async function abarbeiten() {
   laeuft = false
 }
 
+/** Blickrichtung für Bilder: von der Seite (Medaillon), von oben auf den Stiel, von unten auf den Kelch */
+export type BildAnsicht = 'seite' | 'stiel' | 'kelch'
+
 /** Liefert eine Bild-URL des Apfels mit der Sonnenseite zum Betrachter */
-export function medaillonBild(p: ApfelParameter): Promise<string> {
+export function medaillonBild(p: ApfelParameter, opt: { ansicht?: BildAnsicht; pixel?: number; speichern?: boolean } = {}): Promise<string> {
   if (!webglVerfuegbar()) return Promise.reject(new Error('kein WebGL'))
-  const key = JSON.stringify(p)
+  const ansicht = opt.ansicht ?? 'seite'
+  const pixel = opt.pixel ?? GROESSE
+  const key = JSON.stringify(p) + (ansicht === 'seite' && pixel === GROESSE ? '' : `|${ansicht}|${pixel}`)
   let v = fertig.get(key)
   if (v) return v
   const speicherKey = `medaillon:${MODELL_VERSION}:${hash(key)}`
@@ -64,18 +70,28 @@ export function medaillonBild(p: ApfelParameter): Promise<string> {
     warteschlange.push(async () => {
       try {
         // schon einmal gerendert (auch in einer früheren Sitzung)?
-        const alt = await get<Blob>(speicherKey).catch(() => undefined)
+        const alt = opt.speichern === false ? undefined : await get<Blob>(speicherKey).catch(() => undefined)
         if (alt) { res(URL.createObjectURL(alt)); return }
         vorbereiten()
-        const apfel = baueApfel(p, { aufloesung: 512, segmente: [64, 40] })
+        const gross = pixel > GROESSE
+        renderer!.setSize(pixel, pixel, false)
+        const apfel = baueApfel(p, gross ? { aufloesung: 2048, segmente: [192, 128] } : { aufloesung: 512, segmente: [64, 40] })
         apfel.gruppe.rotation.y = Math.PI + 0.15
+        if (ansicht === 'stiel') { kamera!.position.set(0, 3.6, 0.9); kamera!.lookAt(0, 0.05, 0) }
+        else if (ansicht === 'kelch') { kamera!.position.set(0, -3.6, 0.9); kamera!.lookAt(0, -0.05, 0) }
+        else { kamera!.position.set(0, 0.75, 2.75); kamera!.lookAt(0, -0.02, 0) }
+        if (ansicht !== 'seite') kamera!.fov = 19
+        else kamera!.fov = 24
+        kamera!.updateProjectionMatrix()
         szene!.add(apfel.gruppe)
         renderer!.render(szene!, kamera!)
         szene!.remove(apfel.gruppe)
         apfel.entsorgen()
         const blob = await new Promise<Blob | null>((r) => renderer!.domElement.toBlob(r, 'image/png'))
+        renderer!.setSize(GROESSE, GROESSE, false)
+        kamera!.position.set(0, 0.75, 2.75); kamera!.lookAt(0, -0.02, 0); kamera!.fov = 24; kamera!.updateProjectionMatrix()
         if (!blob) throw new Error('Bild leer')
-        set(speicherKey, blob).catch(() => {}) // Speicher voll o. Ä.: dann eben nicht
+        if (opt.speichern !== false) set(speicherKey, blob).catch(() => {}) // Speicher voll o. Ä.: dann eben nicht
         res(URL.createObjectURL(blob))
       } catch (e) {
         fertig.delete(key)

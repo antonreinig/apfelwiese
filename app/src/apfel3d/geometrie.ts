@@ -16,8 +16,35 @@ const glatt = (a: number, b: number, x: number) => {
 }
 const delle = (u: number) => (u >= 1 ? 0 : (1 - u * u) ** 2)
 
-/** Längsumriss für t ∈ [0, 1], t = 0 am Kelch, t = 1 am Stiel */
-export function profil(p: ApfelParameter, n = 64): Profilpunkt[] {
+/**
+ * Form einer Grube rund um die Achse. Echte Stiel- und Kelchgruben sind nie kreisrund:
+ * Die Weite schwankt mit dem Winkel, eine Seite trägt oft einen Fleischwulst, und die Rippen
+ * laufen als flache Falten in die Grube (am Kelch als Höcker der Kronung).
+ * Ohne Winkel (phi undefined) liefert sie die mittlere, runde Grube.
+ */
+export function grubenForm(p: ApfelParameter, seite: 'stiel' | 'kelch', phi?: number) {
+  if (phi === undefined) return { weite: 1, wulst: 0, falte: 0 }
+  const s = p.saat * (seite === 'stiel' ? 1 : 2.37) + (seite === 'stiel' ? 0 : 1.1)
+  const stiel = seite === 'stiel'
+  const unruhe = 0.1 + 0.12 * p.unregelmaessig + 0.14 * p.asymmetrie
+  const weite = 1
+    + unruhe * Math.cos(phi + s * 1.7)
+    + unruhe * 0.55 * Math.cos(2 * phi + s * 3.1)
+    + unruhe * 0.35 * Math.cos(3 * phi + s * 0.9)
+    + (stiel ? 0.04 + 0.08 * p.rippung : 0.05 + 0.12 * p.kronung) * Math.cos(5 * phi + 0.4)
+  // Fleischwulst: eine Seite des Rands steht höher (am Stiel häufig, oft schräg zum Stiel)
+  const wulst = (stiel ? 0.35 + 0.65 * p.asymmetrie : 0.15 + 0.4 * p.asymmetrie) * Math.max(0, Math.cos(phi - s * 2.3)) ** 2
+  // Falten und Höcker: fünf Rippen, dazu feinere unregelmäßige Runzeln
+  const falte = Math.cos(5 * phi + 0.4) * (stiel ? 0.2 + 0.8 * p.rippung : 0.3 + 0.9 * p.kronung)
+    + 0.35 * Math.sin(9 * phi + s * 4.2) * Math.sin(3 * phi + s)
+  return { weite, wulst, falte }
+}
+
+/**
+ * Längsumriss für t ∈ [0, 1], t = 0 am Kelch, t = 1 am Stiel. Mit Winkel phi die Kontur in dieser
+ * Richtung (unregelmäßige Gruben), ohne den mittleren, rotationssymmetrischen Umriss.
+ */
+export function profil(p: ApfelParameter, n = 64, phi?: number): Profilpunkt[] {
   const halb = p.hoeheZuBreite / 2
   const exp = 2.12 + p.walze * 1.1 // Superellipse: höher = kantiger, walzenförmiger
   const roh: Profilpunkt[] = []
@@ -40,10 +67,27 @@ export function profil(p: ApfelParameter, n = 64): Profilpunkt[] {
   const st = (0.05 + p.stielgrubeTiefe * 0.22) * p.hoeheZuBreite
   const kw = 0.1 + p.kelchgrubeWeite * 0.26
   const kt = (0.03 + p.kelchgrubeTiefe * 0.17) * p.hoeheZuBreite
+  const gs = grubenForm(p, 'stiel', phi)
+  const gk = grubenForm(p, 'kelch', phi)
   return roh.map((q) => {
     let y = q.y
-    if (y > 0) y -= st * delle(q.x / sw) * glatt(0, 0.25 * halb, y)
-    else y += kt * delle(q.x / kw) * glatt(0, 0.25 * halb, -y)
+    if (y > 0) {
+      const u0 = q.x / sw
+      // nahe der Achse rund (dort sitzt der Stiel), nach außen unregelmäßig
+      const u = u0 / (1 + (gs.weite - 1) * glatt(0.15, 0.85, u0))
+      const zone = glatt(0, 0.25 * halb, y)
+      y -= st * delle(u) * zone
+      y += st * 0.2 * gs.wulst * Math.exp(-(((u - 0.95) / 0.32) ** 2)) * glatt(0.3, 0.6, u) * zone
+      y += st * 0.09 * gs.falte * Math.sin(Math.PI * Math.min(1, Math.max(0, (u - 0.12) / 0.9))) * zone
+    } else {
+      const u0 = q.x / kw
+      const u = u0 / (1 + (gk.weite - 1) * glatt(0.2, 0.85, u0))
+      const zone = glatt(0, 0.25 * halb, -y)
+      y += kt * delle(u) * zone
+      y -= kt * 0.16 * gk.wulst * Math.exp(-(((u - 0.95) / 0.3) ** 2)) * glatt(0.3, 0.6, u) * zone
+      // Höcker um die Kelchgrube (Kronung) und Runzeln an der Grubenwand
+      y -= kt * 0.14 * gk.falte * Math.exp(-(((u - 0.8) / 0.35) ** 2)) * glatt(0.15, 0.45, u) * zone
+    }
     return { x: q.x, y }
   })
 }
@@ -79,7 +123,8 @@ export function verformung(p: ApfelParameter, phi: number, t: number, q: Profilp
 }
 
 export function apfelGeometrie(p: ApfelParameter, segU = 96, segV = 64): THREE.BufferGeometry {
-  const pr = profil(p, segV)
+  // je Richtung ein eigener Umriss (unregelmäßige Gruben); Naht bei u = 0 und u = 1 identisch
+  const umrisse = Array.from({ length: segU + 1 }, (_, j) => profil(p, segV, ((j % segU) / segU) * Math.PI * 2))
   const pos: number[] = []
   const uv: number[] = []
   for (let i = 0; i <= segV; i++) {
@@ -87,7 +132,7 @@ export function apfelGeometrie(p: ApfelParameter, segU = 96, segV = 64): THREE.B
     for (let j = 0; j <= segU; j++) {
       const u = j / segU
       const phi = u * Math.PI * 2
-      const { r, y, dx } = verformung(p, phi, t, pr[i])
+      const { r, y, dx } = verformung(p, phi, t, umrisse[j][i])
       pos.push(r * Math.cos(phi) + dx, y, -r * Math.sin(phi))
       uv.push(u, t)
     }

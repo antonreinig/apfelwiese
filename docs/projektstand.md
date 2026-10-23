@@ -177,6 +177,16 @@ Prototyp als PWA, live unter https://apfelwiese.app (alte Adresse apfelwiese.ver
 - **Region** wählt der Nutzer als Bundesland (nur im Gerät gespeichert, keine Ortung). Regionen einer Sorte: Herkunft und Verbreitung laut Text, dazu Regional- und Empfehlungslisten der Länder (`daten/ratgeber/regionen.json`).
 - **Konto-Knopf** oben rechts auf der Startseite (`#/konto`): Kontokarte, Region, Darstellung hell/dunkel, Einwilligung, Sicherung, Abmelden, Konto löschen. „Über die App“ (i) enthält nur noch Erklärung, Quellen und Rechtliches. Datenschutzerklärung und Einwilligungstext verweisen jetzt auf „Konto“ (Ortsangabe, kein neuer Inhalt; `TEXT_VERSION` unverändert).
 
+## Rendering der Äpfel (überarbeitet 23.10.2026)
+
+- **Gruben unregelmäßig:** Stiel- und Kelchgrube hängen vom Winkel ab (`grubenForm` in `geometrie.ts`): schwankende Weite, einseitiger Fleischwulst, Falten aus den Rippen, am Kelch Höcker. Nahe der Achse bleibt die Grube rund, damit Stiel und Kelchblätter sitzen. Färbung, Schatten und Rost an den Gruben folgen dieser Form (vorher kreisrunde Ringe).
+- **Glanz nach Schale:** Widersprüchliche Angaben werden gemittelt, „rau“ oder „matt“ begrenzt den Glanz auf seidig (Ananasrenette jetzt matt). Klarlack (Wachsschicht) nur bei Glanz über 0,5 und nie auf Rost und Schalenpunkten (eigene Glanzkarte). Rauheit aus einer Karte, Rost fast ganz matt, matte Schalen mit leichtem Flaum (Sheen), Bereifung kühl und zart.
+- **Muster je Apfel verschieden** (`musterWerte` aus der Saat): Lage und Breite der Sonnenseite, Wolkigkeit und Weichheit der Rötung, Sprenkel, Zahl, Breite, Stärke und Abrisse der Streifen, eigene Lagen für feine Streifen und Flammen, weiche Marmorierung, Tupfen, Fleckung und grünliche Inseln der Grundfarbe, goldene Backe bei gelben Sorten, grünere Schattenseite.
+- **Rost** als dünne, lückige Schicht mit Netz, durch die die Farbe scheint; strahlenförmige Ausläufer aus der Stielgrube; zwei Töne (zimtbraun, graugrün-ocker).
+- **Schalenpunkte** auf der Rötung hell, sonst in ihrer Farbe, ungleich groß, zum Kelch hin dichter, an den Polen länglich, matt und leicht erhaben.
+- Prüfung an Referenzfotos mit der Entwicklerseite `#/vergleich?sorten=…` (Seite, Stielgrube, Kelch). Textur etwa 45 ms je Medaillon und 0,4 s für die große Bühne (Desktop). `MODELL_VERSION` 6.
+- Offen: Am iPhone prüfen, wie lange die erste Sortenliste braucht; Rendering echter eigener Fotos (Farben aus der Messung) mit dem neuen Material vergleichen.
+
 ## Offene Punkte und nächste Schritte (Stand 22.10.2026)
 
 **Am iPhone noch nicht geprüft** (manuelle Tests will der Nutzer vorerst nicht; Fehler zeigt jetzt das Fehlerprotokoll):
