@@ -58,6 +58,17 @@ Sichtprüfung: 40 Stichproben mit eingezeichneter Klassenkarte (grün Grund, rot
 - Aquarell und Farbtafel sind seit 05:10 ebenfalls auf das Pixelverfahren (Version 10) umgestellt. Sichtprüfung an 20 Stichproben (15 USDA, 5 Lauche): Rotbacken und Streifen werden erkannt. Glanzlichter auf roten Früchten zählen teils als Grundfarbe, blasse, verwaschene Streifen (z. B. peasgoods-sondergleichen) nur teilweise als Deckfarbe. Rost ist auf den Tafeln kaum noch ausgewiesen (Aquarell 67 Bilder, Farbtafel 1). Belastbar ist er dort ohnehin nicht.
 - Die Commons-Fotos (Version 9, Cluster-Verfahren) haben unkontrollierte Beleuchtung und ungeprüfte Sortenangaben. Sie sind nur als letzte Quelle geeignet.
 
+## 3D-Form aus den Fototafeln (23.10.2026)
+
+`skripte/bilder/form_anpassen.py`, Ausgabe `form3d.json` (`{ schluessel: { bild, seite, verfahren, werte, guete, seiten, richtung_sicher, roh } }`).
+
+- Freistellen gegen ein quadratisches Modell des Hintergrunds in Lab, Raster aus den Tälern der Projektionen, Stiel per Öffnen entfernt und zur Lagebestimmung genutzt, Schatten- und Etikettreste über den schmalsten Hals abgeschnitten.
+- Umriss der linken Seitenansichten gegen den Modellumriss (gleiche Formel wie `geometrie.ts`), Rastersuche über Höhe/Breite 0,60–1,16, Kegelform −0,24–0,36, Walzenform −0,4–1,0. Ohne erkannten Stiel ist die Richtung der Kegelform offen und kommt aus den Merkmalen.
+- `guete`: mittlere Abweichung des Umrisses in Anteilen der Breite; Median 0,027. Die App übernimmt Werte bis 0,035 (1.271 von 1.694 Tafeln).
+- Rippung und Unregelmäßigkeit aus den Harmonischen der Stielansicht, geeicht an den NFC-Stufen (`werte_aus_roh`). Die Schiefe bleibt nur Rohwert.
+- Eichung der Fruchtformen gegen die Merkmalsklassen: siehe `docs/projektstand.md`, Abschnitt „Abgleich mit den NFC-Fototafeln“.
+- Falsch benannte Tafeln stehen in `falsche_bilder.json` (bisher eine: Cox HTC, zeigt Rouge des Flandres).
+
 ## Skripte
 
 `daten/skripte/bilder/`: `strom_messen.py` (lädt Bilder nur in den Speicher, misst, schreibt `daten/roh/bilder/messungen_roh.json`), `messung_ausfuehren.py --nur-ausgabe` (schreibt `farbmessung.json`), `validierung.py` (Abgleich mit NFC), `messen.py` (`schalenfarben_pixel`), `analyse.py` (`analysiere_nfc`), `bilderliste.py`.

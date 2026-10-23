@@ -60,3 +60,37 @@ test('Stiel- und Kelchgrube sind nicht rund, die Achse bleibt aber gleich', asyn
   // ohne Richtung: rotationssymmetrische, runde Grube
   assert.deepEqual(grubenForm(p, 'stiel'), { weite: 1, wulst: 0, falte: 0 })
 })
+
+test('Höhe/Breite gilt von Grubenrand zu Grubenrand, die Gruben laufen ohne Knick in die Schulter', async () => {
+  const { profil } = await import('../../src/apfel3d/geometrie.ts')
+  for (const [hzb, tiefe] of [[0.7, 0.8], [0.9, 0.45], [1.1, 0.2]]) {
+    const p = { ...darstellungAus([]).p, hoeheZuBreite: hzb, stielgrubeTiefe: tiefe, kelchgrubeTiefe: tiefe }
+    const pr = profil(p, 240)
+    const breite = 2 * Math.max(...pr.map((q) => q.x))
+    const hoehe = Math.max(...pr.map((q) => q.y)) - Math.min(...pr.map((q) => q.y))
+    assert.ok(Math.abs(hoehe / breite - hzb) < 0.01, `sichtbar ${hoehe / breite} statt ${hzb}`)
+    // Richtungswechsel zwischen zwei Abschnitten des Umrisses (außerhalb des Stielansatzes) bleibt klein
+    let knick = 0
+    for (let i = 2; i < pr.length - 2; i++) {
+      if (pr[i].x < 0.08 * breite) continue
+      const a = Math.atan2(pr[i].y - pr[i - 1].y, pr[i].x - pr[i - 1].x)
+      const b = Math.atan2(pr[i + 1].y - pr[i].y, pr[i + 1].x - pr[i].x)
+      let d = Math.abs(b - a)
+      if (d > Math.PI) d = 2 * Math.PI - d
+      knick = Math.max(knick, d)
+    }
+    assert.ok(knick < (8 * Math.PI) / 180, `Knick ${(knick * 180) / Math.PI}° bei Höhe/Breite ${hzb}`)
+  }
+})
+
+test('Bildabgleich: Werte von Hand landen im Sortenindex, Sorten mit Abgleich sind gekennzeichnet', () => {
+  const hand = JSON.parse(readFileSync(new URL('../../../daten/bilder/abgleich_hand.json', import.meta.url), 'utf8')) as Record<string, { werte: Record<string, unknown> }>
+  assert.ok(Object.keys(hand).length > 0)
+  for (const [id, h] of Object.entries(hand)) {
+    const s = index.sorten.find((x) => x.id === id)
+    assert.ok(s, `Sorte ${id} fehlt im Index`)
+    assert.ok(s.angeglichen, `${id} ohne Kennzeichen`)
+    for (const [k, v] of Object.entries(h.werte)) assert.deepEqual((s.darstellung as Record<string, unknown>)[k], v, `${id}.${k}`)
+  }
+  assert.ok(index.sorten.filter((s) => s.angeglichen).length > 500, 'zu wenige Sorten mit Formabgleich')
+})

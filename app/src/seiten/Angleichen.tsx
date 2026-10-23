@@ -56,7 +56,7 @@ const REGLER: Record<Ansicht, Regler[]> = {
   schale: [
     { schluessel: 'hoeheZuBreite', titel: 'Höhe zu Breite', min: 0.6, max: 1.2, schritt: 0.01, links: 'flach', rechts: 'hoch' },
     { schluessel: 'konisch', titel: 'Kegelform', min: -0.15, max: 0.3, schritt: 0.01, links: 'zum Kelch breit', rechts: 'zum Stiel breit' },
-    { schluessel: 'walze', titel: 'Walzenform', min: 0, max: 1, schritt: 0.01, links: 'rund', rechts: 'kantig' },
+    { schluessel: 'walze', titel: 'Walzenform', min: -0.4, max: 1, schritt: 0.01, links: 'oval', rechts: 'kantig' },
     { schluessel: 'rippung', titel: 'Rippen', min: 0, max: 1, schritt: 0.01 },
     { schluessel: 'asymmetrie', titel: 'Schiefe', min: 0, max: 1, schritt: 0.01 },
     { schluessel: 'achseKruemmung', titel: 'Krumme Achse', min: 0, max: 1, schritt: 0.01 },

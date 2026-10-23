@@ -195,14 +195,16 @@ export function schalenbilder(p: ApfelParameter, breite = 1024): Schalenbilder {
     const w2 = feld(n3, u, v, 16, 13, 2)
     const { seite, d } = grubenAbstand(u, v)
     const strahlig = feld(n3, u, v * 0.2, 60, 2, 2) // feine Strahlen zur Grube hin
-    const grubeGruen = seite === 'stiel' ? (1 - glatt(0.55, 1.15 + w * 0.4 + strahlig * 0.3, d)) * 0.8 : 0.35 * (1 - glatt(0.3, 0.65, d))
+    // weich zur Grube hin grüner; Strahlen nur angedeutet (stärker wirkten sie neben NFC-Fotos wie Flecken)
+    const grubeGruen = seite === 'stiel' ? (1 - glatt(0.45, 1.3 + w * 0.25 + strahlig * 0.1, d)) * 0.7 : 0.35 * (1 - glatt(0.3, 0.65, d))
     // Schattenseite etwas grüner als die Sonnenseite
     const schatten = 1 - (Math.cos((u - m.sonne) * Math.PI * 2) * 0.5 + 0.5)
     const gruen = Math.max(glatt(0.5, 0.68, w2) * m.gruenRest, grubeGruen * 0.75, glatt(0.55, 1, schatten) * 0.3 * (1 - p.deckfarbeAnteil))
     // Wolken: dunklere, olivgrüne und hellere, gelbere Partien (Fleckung der Grundfarbe)
-    const t = Math.max(-1, Math.min(1, (w - 0.5) * 3.2)) * m.fleckung
+    // weich auslaufend: mit harten Rändern sah die Fleckung wie ein Tarnmuster aus
+    const t = Math.max(-1, Math.min(1, (w - 0.5) * 2)) * m.fleckung
     if (t < 0 || gruen > 0.05) {
-      const a = Math.min(1, Math.max(-t, 0) * 0.75 + gruen * 0.85)
+      const a = Math.min(1, Math.max(-t, 0) * 0.5 + gruen * 0.8)
       return [gr * 0.76, gg * 0.86, gb * 0.6, a]
     }
     // hellere Partien im selben Farbton (sonst werden grüne Äpfel gelblich)
@@ -237,7 +239,8 @@ export function schalenbilder(p: ApfelParameter, breite = 1024): Schalenbilder {
         basis[y * mw + x] = (seite * 0.75 + wolke * 0.6) * (0.55 + 0.45 * pol)
       }
     }
-    const schwelle = gewichtetesQuantil(basis, flaeche, p.deckfarbeAnteil)
+    // deckende Rötung wirkt größer als dünne: Anteil leicht gekürzt (Abgleich mit NFC-Tafeln, 23.10.2026)
+    const schwelle = gewichtetesQuantil(basis, flaeche, p.deckfarbeAnteil * 0.9)
     // Deckfarben aus Fotos wirken nach Licht und Tonwertkurve stumpfer als am Baum: Sättigung leicht anheben
     const [dr, dg, db] = gesaettigt(hexNachRgb(p.deckfarbe), 1.18)
     const arten = new Set(p.deckfarbeArt)
@@ -256,9 +259,12 @@ export function schalenbilder(p: ApfelParameter, breite = 1024): Schalenbilder {
       const laengs = feld(n, u, v, 140, 7, 2)
       const spr = (1 - sprenkel * glatt(0.35, 0.75, fein) * (1 - tiefe * 0.6)) * (0.82 + 0.3 * laengs)
       // unter Streifen ist die Rötung heller und orangestichiger (Mischung mit der Grundfarbe)
-      const a = mm * (nurStreifen ? 0.25 + 0.2 * tiefe : streifen ? 0.5 + 0.35 * tiefe : 0.55 + 0.38 * tiefe) * spr
-      const hell = streifen ? 0.15 * (1 - tiefe) : 0
-      return [mix(dr, gr, hell) * (1 - tiefe * 0.2), mix(dg, gg * 0.8, hell) * (1 - tiefe * 0.3), mix(db, gb * 0.6, hell) * (1 - tiefe * 0.2), a]
+      // gestreifte Sorten: die Rötung unter den Streifen ist meist nur ein heller Hauch (Fotos der NFC)
+      // Abgleich mit 153 NFC-Tafeln (23.10.2026): gerötete Flächen sind auf den Fotos tiefrot (Farbton um 28°),
+      // dünne Deckkraft über Gelb ergab Orange (55°); daher deckender und etwas dunkler
+      const a = mm * (nurStreifen ? 0.3 + 0.3 * tiefe : streifen ? 0.5 + 0.42 * tiefe : 0.62 + 0.36 * tiefe) * spr
+      const hell = streifen ? 0.1 * (1 - tiefe) : 0
+      return [mix(dr, gr, hell) * (0.94 - tiefe * 0.22), mix(dg, gg * 0.8, hell) * (0.9 - tiefe * 0.3), mix(db, gb * 0.6, hell) * (0.94 - tiefe * 0.2), a]
     })
     for (let y = 0; y < mh; y++) {
       const v = 1 - (y + 0.5) / mh
@@ -316,10 +322,11 @@ export function schalenbilder(p: ApfelParameter, breite = 1024): Schalenbilder {
       if (arten.has('getuepfelt')) {
         zeichneMaske(fc, klein ? W / 2 : W, klein ? H / 2 : H, W, H, (u, v) => {
           const b = bAt(u, v)
-          const rand = glatt(schwelle - 0.3, schwelle - 0.05, b) * (1 - glatt(schwelle + 0.05, schwelle + 0.25, b))
+          // nur ein schmaler Saum am Rand der Rötung, zart (Fotos der NFC: Schattenseite ohne Tupfen)
+          const rand = glatt(schwelle - 0.14, schwelle - 0.02, b) * (1 - glatt(schwelle + 0.02, schwelle + 0.14, b))
           if (rand <= 0.002) return [0, 0, 0, 0]
           const t = glatt(0.7, 0.76, feld(n3, u + 0.17, v, 230, 180, 1))
-          return [dr * 0.9, dg * 0.8, db * 0.85, t * rand * 0.75]
+          return [dr * 0.9, dg * 0.8, db * 0.85, t * rand * 0.5]
         })
       }
     }
@@ -338,7 +345,7 @@ export function schalenbilder(p: ApfelParameter, breite = 1024): Schalenbilder {
     if (seite === 'stiel' && p.rostStiel > 0) {
       // Grube berostet, dazu strahlenförmige Ausläufer über die Schulter
       const strahl = feld(n3, u, v * 0.3, m.rostStrahlen, 2, 2)
-      const laenge = 0.8 + p.rostStiel * (0.3 + 1.2 * glatt(0.5, 0.78, strahl)) * (0.7 + 0.6 * w)
+      const laenge = 0.8 + p.rostStiel * (0.3 + 0.8 * glatt(0.55, 0.8, strahl)) * (0.7 + 0.6 * w)
       const grube = 1 - glatt(laenge - 0.35, laenge, d + (w - 0.5) * 0.35)
       const netz = 1 - glatt(0.02, 0.07, Math.abs(feld(n2, u, v, 50, 40, 2) - 0.5))
       mk = Math.max(mk, grube * glatt(0, 0.4, p.rostStiel) * (0.75 + 0.25 * w), netz * (1 - glatt(laenge, laenge + 0.6, d)) * 0.6 * p.rostStiel)
@@ -352,9 +359,11 @@ export function schalenbilder(p: ApfelParameter, breite = 1024): Schalenbilder {
       // Flächen mittlerer Größe, darin und darum ein feines Netz, wie bei Renetten und Boskoop
       // Bedeckung wächst mit der Stärke, bleibt aber lückig: dichte Flecken, dazwischen ein Netz
       const r = p.rostWangen
-      const wolke = feld(n, u, v, 7, 6, 4)
-      // geringe Berostung: wenige kleine Flecken; starke: große, lückige Flächen mit Netz
-      const fl = glatt(0.78 - r * 0.5, 0.86 - r * 0.5, wolke) * (0.55 + 0.35 * feld(n3, u, v, 30, 24, 2))
+      // geringe Berostung: wenige kleine Flecken (feineres Rauschen); starke: große, lückige Flächen mit Netz
+      const fein = 0.5 * (1 - glatt(0.3, 0.7, r))
+      const wolke = feld(n, u, v, 7, 6, 4) * (1 - fein) + feld(n3, u, v, 26, 20, 3) * fein
+      // stark berostete Sorten (Egremont Russet, Boskoop) sind auf den Fotos fast ganz bedeckt
+      const fl = glatt(0.8 - r * 0.62, 0.9 - r * 0.62, wolke) * (0.55 + 0.35 * feld(n3, u, v, 30, 24, 2) + 0.15 * glatt(0.6, 0.9, r))
       const netz = 1 - glatt(0.012, 0.05, Math.abs(feld(n2, u, v, 46, 38, 2) - 0.5))
       const rand = glatt(0.04, 0.18, v) * glatt(1, 0.9, v)
       mk = Math.max(mk, Math.max(fl, netz * Math.min(0.6, r ** 1.5 * 1.3) * glatt(0.62 - r * 0.4, 0.8 - r * 0.4, wolke)) * rand)

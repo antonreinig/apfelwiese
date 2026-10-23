@@ -1,0 +1,75 @@
+{
+ "gravensteiner": {
+  "werte": {
+   "deckfarbe": "#a8343a",
+   "deckfarbeArt": [
+    "gestreift",
+    "geflammt",
+    "verwaschen"
+   ],
+   "grundfarbe": "#d0d36c"
+  },
+  "anmerkung": "NFC-Tafel acc. 1957-215: Rötung karminrot statt orangebraun, gestreift und geflammt über hellem Hauch; Schattenseite einfarbig gelbgrün ohne Tupfen und Marmorierung.",
+  "datum": "2026-10-23",
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Cross_section_of_Gravenstein%2C_National_Fruit_Collection_%28acc._1957-215%29.jpg"
+ },
+ "ananasrenette": {
+  "werte": {
+   "grundfarbe": "#c8bb48",
+   "punkteFarbe": "#5e4a2e",
+   "punkteGroesse": 1,
+   "punkteDichte": 0.55,
+   "rostWangen": 0.2
+  },
+  "anmerkung": "NFC-Tafel acc. 1947-074: Grundfarbe goldgelb mit grünlichem Schimmer statt zitronengelb; Schalenpunkte dunkelbraun, groß und deutlich, weniger dicht; leichter Wangenrost.",
+  "datum": "2026-10-23",
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/7/74/Cross_section_of_Ananas_Reinette%2C_National_Fruit_Collection_%28acc._1947-074%29.jpg"
+ },
+ "berlepsch": {
+  "werte": {
+   "deckfarbe": "#b8303a",
+   "deckfarbeArt": [
+    "verwaschen",
+    "gestreift"
+   ],
+   "punkteFarbe": "#e2d6a8",
+   "deckfarbeAnteil": 0.6
+  },
+  "anmerkung": "NFC-Tafel acc. 1947-084: Rötung karminrot, flächig mit Streifen, ohne Marmorierung; helle Schalenpunkte auf der Rötung.",
+  "datum": "2026-10-23",
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Cross_section_of_Freiherr_von_Berlepsch%2C_National_Fruit_Collection_%28acc._1947-084%29.jpg"
+ },
+ "weisser-klarapfel": {
+  "werte": {
+   "grundfarbe": "#ccd277",
+   "rostStiel": 0.1,
+   "bereifung": 0.35
+  },
+  "anmerkung": "NFC-Tafel White Transparent acc. 2000-096: Grundfarbe blass gelbgrün statt zitronengelb; Stielgrube grün, kaum berostet; Bereifung zart.",
+  "datum": "2026-10-23",
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cross_section_of_White_Transparent%2C_National_Fruit_Collection_%28acc._2000-096%29.jpg"
+ },
+ "egremont-russet": {
+  "werte": {
+   "rostfarbe": "#7f5f38",
+   "deckfarbeAnteil": 0.35,
+   "deckfarbe": "#a8503a",
+   "deckfarbeArt": [
+    "verwaschen"
+   ]
+  },
+  "anmerkung": "NFC-Tafel: Rost bronzebraun statt ocker, fast deckend; darunter eine verwaschene, braunrote Backe.",
+  "datum": "2026-10-23",
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Cross_section_of_Egremont_Russet_%28EMLA_1%29%2C_National_Fruit_Collection_%28acc._1979-159%29.jpg"
+ },
+ "granny-smith": {
+  "werte": {
+   "grundfarbe": "#789a38",
+   "punkteFarbe": "#dfe4bc",
+   "punkteDichte": 0.6
+  },
+  "anmerkung": "NFC-Tafel: kräftig grasgrün statt gelbgrün; viele helle Schalenpunkte.",
+  "datum": "2026-10-23",
+  "bild": "https://upload.wikimedia.org/wikipedia/commons/d/db/Cross_section_of_Granny_Smith_%28LA_73A%29%2C_National_Fruit_Collection_%28acc._1976-145%29.jpg"
+ }
+}

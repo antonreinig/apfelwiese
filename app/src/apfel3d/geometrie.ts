@@ -14,7 +14,8 @@ const glatt = (a: number, b: number, x: number) => {
   const t = Math.min(1, Math.max(0, (x - a) / (b - a)))
   return t * t * (3 - 2 * t)
 }
-const delle = (u: number) => (u >= 1 ? 0 : (1 - u * u) ** 2)
+/** Grubenform: glockenförmig, läuft weich in die Schulter aus (keine Kante am Grubenrand) */
+const delle = (u: number) => Math.exp(-2.4 * u * u)
 
 /**
  * Form einer Grube rund um die Achse. Echte Stiel- und Kelchgruben sind nie kreisrund:
@@ -45,6 +46,31 @@ export function grubenForm(p: ApfelParameter, seite: 'stiel' | 'kelch', phi?: nu
  * Richtung (unregelmäßige Gruben), ohne den mittleren, rotationssymmetrischen Umriss.
  */
 export function profil(p: ApfelParameter, n = 64, phi?: number): Profilpunkt[] {
+  // hoeheZuBreite meint die sichtbare Höhe von Grubenrand zu Grubenrand (so wird gemessen);
+  // der Körper vor dem Eindrücken der Gruben ist entsprechend höher
+  const f = hoehenFaktor(p)
+  return rohesProfil({ ...p, hoeheZuBreite: p.hoeheZuBreite * f }, n, phi)
+}
+
+const faktorSpeicher = new Map<string, number>()
+function hoehenFaktor(p: ApfelParameter) {
+  const k = [p.hoeheZuBreite, p.konisch, p.walze, p.stielgrubeTiefe, p.stielgrubeWeite, p.kelchgrubeTiefe, p.kelchgrubeWeite].join('|')
+  let f = faktorSpeicher.get(k)
+  if (f === undefined) {
+    // zweimal nachstellen genügt: Grubentiefe wächst nur schwach mit der Höhe
+    f = 1
+    for (let i = 0; i < 3; i++) {
+      const pr = rohesProfil({ ...p, hoeheZuBreite: p.hoeheZuBreite * f }, 128)
+      const sichtbar = Math.max(...pr.map((q) => q.y)) - Math.min(...pr.map((q) => q.y))
+      f *= p.hoeheZuBreite / sichtbar
+    }
+    if (faktorSpeicher.size > 5000) faktorSpeicher.clear()
+    faktorSpeicher.set(k, f)
+  }
+  return f
+}
+
+function rohesProfil(p: ApfelParameter, n: number, phi?: number): Profilpunkt[] {
   const halb = p.hoeheZuBreite / 2
   const exp = 2.12 + p.walze * 1.1 // Superellipse: höher = kantiger, walzenförmiger
   const roh: Profilpunkt[] = []
@@ -111,8 +137,10 @@ export function verformung(p: ApfelParameter, phi: number, t: number, q: Profilp
   const halb = p.hoeheZuBreite / 2
   const sin = Math.sin(t * Math.PI)
   const rippe = Math.cos(5 * phi + 0.4)
-  const kelchSchulter = Math.exp(-(((t - 0.2) / 0.12) ** 2))
-  let r = q.x * (1 + p.rippung * 0.035 * rippe * Math.sqrt(sin) + p.kronung * 0.07 * rippe * kelchSchulter)
+  // Kronung: Rippen, die zum Kelch hin stärker werden und in die Kelchgrube auslaufen (weich, ohne Kanten)
+  const kelchSchulter = Math.exp(-(((t - 0.18) / 0.16) ** 2))
+  // Rippen ±4 % bei Rippung 1: bei 3 % wirkten stark gerippte Kalvillen neben den NFC-Fotos rund
+  let r = q.x * (1 + p.rippung * 0.04 * rippe * Math.sqrt(sin) + p.kronung * 0.035 * rippe * kelchSchulter)
   // Beulen und leichte Unregelmäßigkeit, damit kein Apfel perfekt ist
   r *= 1 + (0.01 + p.unregelmaessig * 0.06) * beulen(p, phi, t) * sin
   let y = q.y + p.asymmetrie * 0.07 * Math.cos(phi) * Math.max(0, q.y / halb) * q.x * 2

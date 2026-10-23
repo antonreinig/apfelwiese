@@ -111,6 +111,20 @@ export interface Sorte {
   texte: Sortentext[]
   bilder: Sortenbild[]
   farbmessung?: Farbmessung[]
+  /** 3D-Form und Aussehen an ein Foto angeglichen (per Code, ggf. von Hand nachgestellt) */
+  bildabgleich?: Bildabgleich
+}
+
+export interface Bildabgleich {
+  bild: string // URL des Fotos
+  seite?: string // Beschreibungsseite mit Lizenz
+  verfahren: string
+  /** Modellwerte (ApfelParameter), die das Foto ergab; haben Vorrang vor den aus Merkmalen abgeleiteten */
+  werte: Record<string, unknown>
+  /** mittlere Abweichung des Umrisses (Anteil der Breite), kleiner ist besser */
+  guete?: number
+  /** von Hand nach Sichtvergleich gesetzte Werte, mit Begründung */
+  hand?: { werte: Record<string, unknown>; anmerkung: string; datum: string }
 }
 
 /** Kurzfassung für Listen (public/sorten/index.json) */
@@ -147,4 +161,6 @@ export interface SortenEintrag {
   alt?: boolean
   /** Seltenheit oder Gefährdung laut Quelle */
   selten?: string
+  /** 3D-Modell an ein Foto angeglichen */
+  angeglichen?: boolean
 }

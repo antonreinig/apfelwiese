@@ -69,8 +69,8 @@ export interface ApfelParameter {
 export const STANDARD: ApfelParameter = {
   breiteMm: 70,
   hoeheZuBreite: 0.86,
-  konisch: 0.06,
-  walze: 0.2,
+  konisch: 0.08,
+  walze: -0.2,
   rippung: 0.15,
   kronung: 0.15,
   asymmetrie: 0.1,
@@ -214,12 +214,14 @@ export function darstellungAus(werte: Wert[], farben?: Messfarben, saat = 1): { 
       case 'frucht_hoehe_breite': if (n > 0.4 && n < 1.6) setze('hoeheZuBreite', n); break
       case 'frucht_form': {
         const f: Record<string, [number, number, number]> = {
-          // Höhe/Breite, konisch, walze
-          flachrund: [0.74, 0.03, 0.15], rund: [0.92, 0.02, 0.1], rundkonisch: [0.88, 0.12, 0.15],
-          konisch: [0.95, 0.22, 0.1], stumpfkonisch: [0.84, 0.15, 0.3], walzenfoermig: [0.95, 0.04, 0.85],
-          glockenfoermig: [0.95, 0.18, 0.45], eifoermig: [1.02, 0.1, 0.05], flachkonisch: [0.76, 0.16, 0.2],
-          unregelmaessig: [0.85, 0.08, 0.2], breitrundkonisch: [0.8, 0.12, 0.15], elliptisch: [0.95, 0.0, 0.0],
-          elliptischkonisch: [0.98, 0.14, 0.05], laenglichkonisch: [1.05, 0.2, 0.1],
+          // Höhe/Breite, konisch, walze. Geeicht am 23.10.2026 an 1.271 Umrissen der NFC-Fototafeln
+          // (Median je Klasse, daten/bilder/form3d.json): die Walzenform liegt bei allen Klassen um −0,2,
+          // auch bei „walzenförmig“; die Klassen unterscheiden sich vor allem in Höhe/Breite und Kegelform.
+          flachrund: [0.84, 0.07, -0.2], rund: [0.88, 0.07, -0.2], rundkonisch: [0.92, 0.12, -0.2],
+          konisch: [0.94, 0.14, -0.3], stumpfkonisch: [0.9, 0.12, -0.25], walzenfoermig: [0.92, 0.08, 0.05],
+          glockenfoermig: [0.94, 0.18, -0.1], eifoermig: [0.9, 0.07, -0.2], flachkonisch: [0.8, 0.08, -0.2],
+          unregelmaessig: [0.84, 0.12, -0.1], breitrundkonisch: [0.86, 0.09, -0.2], elliptisch: [0.98, 0.1, -0.2],
+          elliptischkonisch: [1.0, 0.13, -0.15], laenglichkonisch: [0.97, 0.11, -0.2],
         }
         const w = f[c]
         if (w) {
@@ -305,7 +307,8 @@ export function darstellungAus(werte: Wert[], farben?: Messfarben, saat = 1): { 
     setze('glanz', rauOderMatt ? Math.min(mittel, 0.38) : mittel)
   }
   // Lage der breitesten Stelle: verschiebt die Bauchung deutlich zum Stiel oder zum Kelch
-  if (breitesteStelle) setze('konisch', stufe(breitesteStelle, { stiel: 0.17, mitte: 0, kelch: -0.13 }, p.konisch))
+  // Fototafeln: „stiel“ im Median 0,13 (28 Sorten), „mitte“ 0,06 (21); für „kelch“ fehlen Belege
+  if (breitesteStelle) setze('konisch', stufe(breitesteStelle, { stiel: 0.14, mitte: 0.06, kelch: -0.1 }, p.konisch))
 
   // Kernhausmaße relativ zur Frucht (Engelbrecht: „Kernhaus 36:37, Kammern 9:20“)
   const fruchtHoeheMm = p.breiteMm * p.hoeheZuBreite

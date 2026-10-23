@@ -86,6 +86,7 @@ function Inhalt({ sorte, quellen, eintrag }: { sorte: Sorte; quellen: Map<string
       <Belegliste quellen={quellen} />
       <p className="sehr-klein kursiv" style={{ marginTop: 12 }}>
         Das 3D-Modell ist aus den belegten Merkmalen{sorte.farbmessung?.length ? ' und aus Farben, die per Programm aus einem Referenzbild gemessen wurden,' : ''} berechnet. Es zeigt einen typischen Apfel der Sorte; einzelne Früchte weichen ab.
+        {sorte.bildabgleich && <> Die Form ist per Programm an den Umriss eines Fotos angeglichen{sorte.bildabgleich.hand ? ' und danach von Hand nachgestellt' : ''}{sorte.bildabgleich.seite ? <> (<a href={sorte.bildabgleich.seite} target="_blank" rel="noreferrer">Foto</a>)</> : ''}.</>}
       </p>
     </BelegRegister>
   )

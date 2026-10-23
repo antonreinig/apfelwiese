@@ -11,10 +11,13 @@
 //   de/anbau.json                             Anbaumerkmale und Herkunft aus den deutschen Sortentexten
 //   ratgeber/regionen.json                    Regional- und Lokalsortenlisten der Länder
 //   ratgeber/seltenheit.json                  Gefährdungseinstufungen
+//   bilder/form3d.json                        3D-Form per Code an NFC-Fototafeln angepasst
+//   bilder/abgleich_hand.json                 Feinabstimmung von Hand nach Sichtvergleich
+//   bilder/falsche_bilder.json                Bilder, die eine andere Sorte zeigen (ausgelassen)
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs'
 import { join } from 'node:path'
-import type { Sorte, Quelle, SortenEintrag, Sortenbild, Farbmessung, Merkmalswert, Beleg, Regionszuordnung } from '../src/daten/sorte.ts'
+import type { Sorte, Quelle, SortenEintrag, Sortenbild, Farbmessung, Merkmalswert, Beleg, Regionszuordnung, Bildabgleich } from '../src/daten/sorte.ts'
 import { MERKMAL_NACH_ID, auspraegungLabel } from '../src/daten/merkmalskatalog.ts'
 import { darstellungAus, zusammenfassen, STANDARD } from '../src/apfel3d/darstellung.ts'
 
@@ -51,6 +54,8 @@ if (ausStapeln) {
 }
 const nfc = lies<Sorte[]>('nfc/sorten_nfc.json', [])
 const bilder = lies<Record<string, { namen: string[]; bilder: Sortenbild[] }>>('bilder/bilder.json', {})
+// Bilder, die nachweislich eine andere Sorte zeigen (URL → Grund); weder angezeigt noch gemessen
+const falscheBilder = lies<Record<string, string>>('bilder/falsche_bilder.json', {})
 const bildAliase = lies<Record<string, string>>('bilder/aliase.json', {})
 const farbmessungen = lies<Record<string, Farbmessung[]>>('bilder/farbmessung.json', {})
 const quellen = new Map<string, Quelle>()
@@ -129,17 +134,42 @@ for (const s of sorten.values()) {
   for (const k of schluessel) {
     for (const b of bilder[k]?.bilder ?? []) {
       const url = b.url.split('?')[0]
-      if (!urls.has(url)) { s.bilder.push({ ...b, url }); urls.add(url) }
+      if (!urls.has(url) && !falscheBilder[url]) { s.bilder.push({ ...b, url }); urls.add(url) }
     }
     for (const f of farbmessungen[k] ?? []) {
       s.farbmessung ??= []
-      if (!s.farbmessung.some((x) => x.bild === f.bild)) s.farbmessung.push({ ...f, bild: f.bild.split('?')[0] })
+      if (!falscheBilder[f.bild.split('?')[0]] && !s.farbmessung.some((x) => x.bild === f.bild)) s.farbmessung.push({ ...f, bild: f.bild.split('?')[0] })
     }
   }
   if (s.bilder.length) mitBild++
   if (s.farbmessung?.length) mitFarbe++
 }
 console.log(`Mit Bild: ${mitBild}, mit Farbmessung: ${mitFarbe}`)
+
+// ------------------------------------------------------------------ Bildabgleich (3D-Form an Fotos)
+
+// Nur Anpassungen mit kleiner Umrissabweichung übernehmen (Anteil der Breite)
+const GUETE_GRENZE = 0.035
+const form3d = lies<Record<string, Omit<Bildabgleich, 'hand'> & { seiten?: number; richtung_sicher?: boolean; roh?: unknown }>>('bilder/form3d.json', {})
+const hand = lies<Record<string, { werte: Record<string, unknown>; anmerkung: string; datum: string; bild?: string }>>('bilder/abgleich_hand.json', {})
+let angeglichen = 0
+for (const s of sorten.values()) {
+  const schluessel = new Set<string>()
+  for (const n of namenVon(s)) { const k = normalisiere(n); schluessel.add(k); if (bildAliase[k]) schluessel.add(bildAliase[k]) }
+  const k = [s.id, ...schluessel].find((x) => form3d[x] && (form3d[x].guete ?? 1) <= GUETE_GRENZE)
+  if (k) {
+    // Messrohwerte bleiben in form3d.json (zum Kalibrieren), in die App kommt nur das Ergebnis
+    const { seiten: _s, richtung_sicher: _r, roh: _roh, ...f } = form3d[k]
+    s.bildabgleich = { ...f }
+  }
+  const h = hand[s.id]
+  if (h) {
+    s.bildabgleich = s.bildabgleich ?? { bild: h.bild ?? '', verfahren: 'Sichtvergleich von Hand', werte: {} }
+    s.bildabgleich.hand = { werte: h.werte, anmerkung: h.anmerkung, datum: h.datum }
+  }
+  if (s.bildabgleich) angeglichen++
+}
+console.log(`Bildabgleich: ${angeglichen} Sorten (Umrissabweichung höchstens ${(GUETE_GRENZE * 100).toFixed(1)} % der Breite)`)
 
 // ------------------------------------------------------------------ Anbau, Herkunft, Regionen, Seltenheit
 
@@ -319,6 +349,14 @@ for (const s of sorten.values()) {
   const { p, belegt } = darstellungAus(zusammenfassen(s.merkmale), f, 1)
   const darstellung: Record<string, unknown> = {}
   for (const k of belegt) if (JSON.stringify(p[k]) !== JSON.stringify(STANDARD[k])) darstellung[k] = p[k]
+  // Werte aus dem Bildabgleich gehen vor (Form aus dem Foto, dann Feinabstimmung von Hand).
+  // Ausnahme Rippung: Die Stielansicht zeigt nur den Umriss am Äquator, Rippen sitzen meist zum Kelch hin;
+  // gemessen trennt sie die Klassen schwach (Median 0,16 / 0,36 / 0,43 bei Stufe 1 / 5 / 7). Eine Angabe
+  // aus der Sortenbeschreibung bleibt daher maßgeblich.
+  if (s.bildabgleich) {
+    const foto = Object.fromEntries(Object.entries(s.bildabgleich.werte).filter(([k]) => !(k === 'rippung' && belegt.has('rippung'))))
+    Object.assign(darstellung, foto, s.bildabgleich.hand?.werte ?? {})
+  }
   // Ohne Angabe zum Anteil: Streifen deuten auf eine größere Fläche, ein bekannter Farbton auf etwas Rot
   if (!belegt.has('deckfarbeAnteil')) darstellung.deckfarbeAnteil = belegt.has('deckfarbeArt') && p.deckfarbeArt.some((a) => a !== 'verwaschen') ? 0.35 : belegt.has('deckfarbe') ? 0.15 : 0
 
@@ -366,6 +404,7 @@ for (const s of sorten.values()) {
     ...(beschrieben ? { beschrieben } : {}),
     ...(alt ? { alt } : {}),
     ...(s.gefaehrdung?.length ? { selten: kurzeStufe(s) } : {}),
+    ...(s.bildabgleich ? { angeglichen: true } : {}),
   })
 }
 // Alphabetisch; Zuchtnummern und Namen, die mit Ziffern beginnen, ans Ende

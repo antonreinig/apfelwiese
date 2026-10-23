@@ -8,7 +8,7 @@ import { schalenbilder } from './schale.ts'
 import { baueStiel, baueKelch, entsorgen as teilEntsorgen } from './stielKelch.ts'
 
 /** Bei Änderungen am Aussehen erhöhen: verwirft zwischengespeicherte Medaillon-Bilder */
-export const MODELL_VERSION = 6
+export const MODELL_VERSION = 7
 
 // ------------------------------------------------------------------ Schalenmaterial, geteilt
 
@@ -43,8 +43,9 @@ function holeMaterial(key: string, p: ApfelParameter, aufloesung: number) {
     clearcoat: wachs,
     clearcoatMap: wachs > 0 ? glanz : null,
     clearcoatRoughness: 0.32 - p.glanz * 0.12,
-    // Bereifung: zarter, kühler Hauch an den Rändern; zu stark färbt sie rote Äpfel violett
-    sheen: Math.max(p.bereifung * 0.55, (1 - p.glanz) * 0.3),
+    // Bereifung: zarter, kühler Hauch an den Rändern; zu stark färbt sie rote Äpfel violett.
+    // Flaum matter Schalen nur angedeutet: stärker ließ gelbe Renetten neben den NFC-Fotos weißlich-blass wirken
+    sheen: Math.max(p.bereifung * 0.55, (1 - p.glanz) * 0.1),
     sheenColor: new THREE.Color(p.bereifung > 0.3 ? '#d9dee8' : '#e8e2d2'),
     sheenRoughness: 0.75,
     side: THREE.DoubleSide,

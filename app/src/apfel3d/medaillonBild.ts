@@ -55,7 +55,7 @@ async function abarbeiten() {
 }
 
 /** Blickrichtung für Bilder: von der Seite (Medaillon), von oben auf den Stiel, von unten auf den Kelch */
-export type BildAnsicht = 'seite' | 'stiel' | 'kelch'
+export type BildAnsicht = 'seite' | 'stiel' | 'kelch' | 'unten' | 'kopf'
 
 /** Liefert eine Bild-URL des Apfels mit der Sonnenseite zum Betrachter */
 export function medaillonBild(p: ApfelParameter, opt: { ansicht?: BildAnsicht; pixel?: number; speichern?: boolean } = {}): Promise<string> {
@@ -79,6 +79,9 @@ export function medaillonBild(p: ApfelParameter, opt: { ansicht?: BildAnsicht; p
         apfel.gruppe.rotation.y = Math.PI + 0.15
         if (ansicht === 'stiel') { kamera!.position.set(0, 3.6, 0.9); kamera!.lookAt(0, 0.05, 0) }
         else if (ansicht === 'kelch') { kamera!.position.set(0, -3.6, 0.9); kamera!.lookAt(0, -0.05, 0) }
+        else if (ansicht === 'unten') { kamera!.position.set(0, -1.5, 3.4); kamera!.lookAt(0, 0, 0) }
+        else if (ansicht === 'kopf') { apfel.gruppe.rotation.set(Math.PI, Math.PI + 0.15, 0); kamera!.position.set(0, 0.2, 3.6); kamera!.lookAt(0, 0, 0) }
+        else if (ansicht === 'seite' && pixel > GROESSE) { kamera!.position.set(0, 0.2, 3.6); kamera!.lookAt(0, 0, 0) }
         else { kamera!.position.set(0, 0.75, 2.75); kamera!.lookAt(0, -0.02, 0) }
         if (ansicht !== 'seite') kamera!.fov = 19
         else kamera!.fov = 24

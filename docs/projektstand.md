@@ -184,8 +184,19 @@ Prototyp als PWA, live unter https://apfelwiese.app (alte Adresse apfelwiese.ver
 - **Muster je Apfel verschieden** (`musterWerte` aus der Saat): Lage und Breite der Sonnenseite, Wolkigkeit und Weichheit der Rötung, Sprenkel, Zahl, Breite, Stärke und Abrisse der Streifen, eigene Lagen für feine Streifen und Flammen, weiche Marmorierung, Tupfen, Fleckung und grünliche Inseln der Grundfarbe, goldene Backe bei gelben Sorten, grünere Schattenseite.
 - **Rost** als dünne, lückige Schicht mit Netz, durch die die Farbe scheint; strahlenförmige Ausläufer aus der Stielgrube; zwei Töne (zimtbraun, graugrün-ocker).
 - **Schalenpunkte** auf der Rötung hell, sonst in ihrer Farbe, ungleich groß, zum Kelch hin dichter, an den Polen länglich, matt und leicht erhaben.
-- Prüfung an Referenzfotos mit der Entwicklerseite `#/vergleich?sorten=…` (Seite, Stielgrube, Kelch). Textur etwa 45 ms je Medaillon und 0,4 s für die große Bühne (Desktop). `MODELL_VERSION` 6.
+- Prüfung an Referenzfotos mit der Entwicklerseite `#/vergleich?sorten=…` (Seite, Stielgrube, Kopfstand, Kelch; bei einer Sorte zusätzlich Längs- und Querschnitt und ein Feld, um Werte probeweise zu überschreiben). Textur etwa 45 ms je Medaillon und 0,4 s für die große Bühne (Desktop).
 - Offen: Am iPhone prüfen, wie lange die erste Sortenliste braucht; Rendering echter eigener Fotos (Farben aus der Messung) mit dem neuen Material vergleichen.
+
+## Abgleich mit den NFC-Fototafeln (23.10.2026)
+
+- **Form je Sorte aus dem Foto:** `daten/skripte/bilder/form_anpassen.py` vergleicht die Seitenansichten aller 1.694 NFC-Tafeln „Cross section of …“ mit dem Umriss des Modells (Rastersuche über Höhe/Breite, Kegel- und Walzenform; Lage am Stielrest erkannt). Ergebnis je Sorte mit Bild, Verfahren und Güte in `daten/bilder/form3d.json`; 1.271 Tafeln mit Umrissabweichung bis 3,5 % der Breite gelten, das sind 1.073 Sorten der App. Für sie geht die Form aus dem Foto den Werten aus der Sortenbeschreibung vor; die Sortenseite nennt das mit Link auf die Tafel.
+- **Feinabstimmung von Hand:** `daten/bilder/abgleich_hand.json` (Werte, Anmerkung, Datum, Bild), bisher Gravensteiner, Ananasrenette, Freiherr von Berlepsch, Weißer Klarapfel, Egremont Russet, Granny Smith. Sie gilt zuletzt.
+- **Gelernt für Sorten ohne Foto** (Median je Klasse, in `darstellung.ts` übernommen): Die Walzenform liegt bei allen Fruchtformen um −0,2, auch bei „walzenförmig“; die alte Zuordnung (bis 0,85) war viel zu extrem. Die Klassen unterscheiden sich vor allem in Höhe/Breite (flachrund 0,84, rund 0,88, konisch 0,94, elliptisch 0,98) und Kegelform (0,07 bis 0,14). Breiteste Stelle „stiel“ 0,13, „mitte“ 0,06.
+- **Nicht übernommen:** Schiefe aus dem Schulterversatz (trennt schiefe und symmetrische Sorten nicht); Rippung, wo die Beschreibung sie angibt (die Stielansicht zeigt nur den Äquator, gemessen 0,16 / 0,36 / 0,43 bei Stufe 1 / 5 / 7).
+- **Modell:** `hoeheZuBreite` gilt jetzt von Grubenrand zu Grubenrand (vorher vor dem Eindrücken der Gruben, dadurch zu flach). Gruben glockenförmig statt mit spitzer Kante, Wulst und Falten laufen weich aus, Kronung schwächer (±3,5 %), Rippen etwas stärker (±4 %).
+- **Schale** nach Farbmessung an 153 Tafeln und Renderings: Rötung deckender und tiefer (Farbton 41° statt 55°, Foto 28°), Anteil leicht gekürzt; Tupfen nur als schmaler Saum; Fleckung der Grundfarbe, Rostausläufer an der Stielgrube und leichter Wangenrost weicher und feiner; starker Wangenrost fast deckend; heller Flaum matter Schalen schwächer. `MODELL_VERSION` 7.
+- **Falsche Tafel:** Die Commons-Datei „Cox's Orange Pippin (HTC), acc. 1982-202“ zeigt laut Etikett Rouge des Flandres. Sie steht in `daten/bilder/falsche_bilder.json` und wird weder angezeigt noch gemessen.
+- Offen: weitere Sorten von Hand abstimmen; die Renderings sind insgesamt etwas heller als die Tafelfotos (Grundfarbe L* etwa 80 statt 66), grüne Sorten wirken dadurch gelblicher. Rippung und Kronung ließen sich besser aus der Kelchansicht messen.
 
 ## Offene Punkte und nächste Schritte (Stand 22.10.2026)
 
@@ -228,7 +239,7 @@ Prototyp als PWA, live unter https://apfelwiese.app (alte Adresse apfelwiese.ver
 - **360°-Bildfolge des eigenen Apfels:** Apfel auf dem A4-Blatt drehen, die App nimmt etwa 36 Einzelbilder, liest den Winkel aus den Blattecken und stellt frei. Das wäre ein echtes Abbild ohne Rekonstruktion.
 - **Mischweg:** Form aus dem gemessenen Umriss (Foto 1), Schale aus den eigenen Fotos auf das 3D-Modell projiziert; Parameter nur noch für Sorten der Datenbank.
 - **Rundgang mit echten Beispielbildern** je Ausprägung (z. B. Kelchgrube flach/mittel/tief), etwa aus NFC-Fotos von Sorten mit belegtem Wert (OGL); Messung schlägt nur vor.
-- **Bessere Parameter für Sorten:** Rostmuster, Punktdichte zum Kelch hin, Streifenbreite, gezielter Abgleich gegen NFC-Fotos. Grenze sind die groben Sortenbeschreibungen.
+- **Bessere Parameter für Sorten:** Rostmuster, Punktdichte zum Kelch hin, Streifenbreite. Grenze sind die groben Sortenbeschreibungen (Form inzwischen aus NFC-Fotos, siehe oben).
 
 ## Offene Entscheidungen
 
