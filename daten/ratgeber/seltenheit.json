@@ -1,0 +1,3065 @@
+{
+ "stand": "2026-10-23",
+ "quellen": [
+  {
+   "id": "ble-rote-liste",
+   "titel": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland (Version 19.05.2026, Excel)",
+   "herausgeber": "Bundesanstalt für Landwirtschaft und Ernährung (BLE), Informationssystem Genetische Ressourcen (PGRDEU)",
+   "url": "https://pgrdeu.genres.de/fileadmin/SITE_MASTER/content/Test/Dokumente/Rote_Liste_Nutzpflanzen/Rote-Liste-Nutzpflanzen_20260519.xlsx",
+   "abgerufen": "2026-10-23",
+   "anmerkung": "Übersichtsseite: https://pgrdeu.genres.de/on-farm-bewirtschaftung/rote-liste-nutzpflanzen/ . Die Liste hat keine Gefährdungskategorien: Aufgenommen wird, was zugleich einheimisch, gefährdet (geringes bis kein Vorkommen in situ/on farm), bedeutend und ohne Sortenschutz/-zulassung ist. Je Eintrag nur Spalten „ex situ erhalten“ (ja/leer) und Quelle (bei allen Äpfeln „BEKO-Beschluss“). Gesamt 2.623 Einträge aller Kulturarten (Stand Dezember 2025), davon 554 Apfelsorten (Malus domestica). „stufe“ gibt daher den Listentitel wieder."
+  },
+  {
+   "id": "slowfood-arche",
+   "titel": "Arche des Geschmacks – Passagierliste nach Produktkategorien (Stand Mai 2026)",
+   "herausgeber": "Slow Food Deutschland e. V.",
+   "url": "https://www.slowfood.de/was-wir-tun/projekte-aktionen-und-kampagnen/arche-des-geschmacks/die_arche_passagiere",
+   "abgerufen": "2026-10-23",
+   "anmerkung": "Passagiere sind vom Verschwinden bedrohte regionale Lebensmittel, Sorten und Rassen; keine Abstufung. 7 Apfelsorten unter den Früchten (Stand Mai 2026). Aufnahmejahr und Bundesland laut PDF-Übersicht."
+  }
+ ],
+ "gesamtzahl": {
+  "ble-rote-liste": 554,
+  "slowfood-arche": 7
+ },
+ "einstufungen": [
+  {
+   "sorte": "aachener-hausapfel",
+   "name_in_quelle": "Aachener Hausapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "aargauer-jubilaeumsapfel",
+   "name_in_quelle": "Aargauer Jubiläumsapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "adams-parmaene",
+   "name_in_quelle": "Adams Parmäne",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "adersleber-kalvill",
+   "name_in_quelle": "Adersleber Kalvill",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "allington-pippin",
+   "name_in_quelle": "Allington Pepping",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "uelzener-rambour",
+   "name_in_quelle": "Alter Hannoveraner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "altlaender-pfannkuchenapfel",
+   "name_in_quelle": "Altländer Pfannkuchenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "altlaender-rosenapfel",
+   "name_in_quelle": "Altländer Rosenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ananasrenette",
+   "name_in_quelle": "Ananasrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "apfel-von-akeroe",
+   "name_in_quelle": "Apfel von Akerö",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "apfel-aus-lunow",
+   "name_in_quelle": "Apfel von Lunow",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "api-noir",
+   "name_in_quelle": "Api Noir",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ashmeads-kernel",
+   "name_in_quelle": "Ashmeads Kernel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "astillisch",
+   "name_in_quelle": "Astillisch",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "astramel",
+   "name_in_quelle": "Astramel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "atlas",
+   "name_in_quelle": "Atlas",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ausbacher-roter",
+   "name_in_quelle": "Ausbacher Roter",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "baldwin",
+   "name_in_quelle": "Baldwin",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "baumanns-renette",
+   "name_in_quelle": "Baumanns Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "benoni",
+   "name_in_quelle": "Benoni",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "berliner-schafsnase",
+   "name_in_quelle": "Berliner Schafsnase",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "berner-rosenapfel",
+   "name_in_quelle": "Berner Rosenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "biesterfelder-renette",
+   "name_in_quelle": "Biesterfelder Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "birnfoermiger-apfel",
+   "name_in_quelle": "Birnförmiger Apfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "bismarckapfel",
+   "name_in_quelle": "Bismarckapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "bittenfelder",
+   "name_in_quelle": "Bittenfelder Sämling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "boikenapfel",
+   "name_in_quelle": "Boikenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "boertlinger-weinapfel",
+   "name_in_quelle": "Börtlinger Weinapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "bramleys-seedling",
+   "name_in_quelle": "Bramleys Sämling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "brauner-matapfel",
+   "name_in_quelle": "Brauner Matapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "brettacher",
+   "name_in_quelle": "Brettacher",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "burchardts-renette",
+   "name_in_quelle": "Burchardts Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "carpentin",
+   "name_in_quelle": "Carpentin",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "cellini",
+   "name_in_quelle": "Cellini",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "champagnerrenette",
+   "name_in_quelle": "Champagner Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "charlamowsky",
+   "name_in_quelle": "Charlamowsky",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "charles-ross",
+   "name_in_quelle": "Charles Ross",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "cornwalliser-nelkenapfel",
+   "name_in_quelle": "Cornvaliser Nelkenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "reinette-coulon",
+   "name_in_quelle": "Coulons Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "cox-orange",
+   "name_in_quelle": "Cox' Orange",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "cox-pomona",
+   "name_in_quelle": "Cox Pomona",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "danziger-kantapfel",
+   "name_in_quelle": "Danziger Kantapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "delicious",
+   "name_in_quelle": "Delicious",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "deutscher-goldpepping",
+   "name_in_quelle": "Deutscher Goldpepping",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "dietzer-goldrenette",
+   "name_in_quelle": "Dietzer Goldrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rosa-claussen",
+   "name_in_quelle": "Dithmarscher Borsdorfer",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "dithmarscher-paradiesapfel",
+   "name_in_quelle": "Dithmarscher Paradiesapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "doppelter-haertling",
+   "name_in_quelle": "Doppelter Härtling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "doppelter-melonenapfel",
+   "name_in_quelle": "Doppelter Melonenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "dorheimer-streifling",
+   "name_in_quelle": "Dorheimer Streifling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kleiner-herrenapfel",
+   "name_in_quelle": "Drüwken",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "duelmener-herbstrosenapfel",
+   "name_in_quelle": "Dülmener Rosenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "echter-winterstreifling",
+   "name_in_quelle": "Echter Winterstreifling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "edelborsdorfer",
+   "name_in_quelle": "Edelborsdorfer",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "edelroter",
+   "name_in_quelle": "Edelroter",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "edler-von-leipzig",
+   "name_in_quelle": "Edler von Leipzig",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "eifeler-rambur",
+   "name_in_quelle": "Eifeler Rambur",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "elektra",
+   "name_in_quelle": "Elektra",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "elise-rathke",
+   "name_in_quelle": "Elise Rathke",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "engelsberger-renette",
+   "name_in_quelle": "Engelsberger Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "englische-spital-renette",
+   "name_in_quelle": "Englische Spitalrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "erbachhofer-weinapfel",
+   "name_in_quelle": "Erbachhofer Weinapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ernst-bosch",
+   "name_in_quelle": "Ernst Bosch",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "fiessers-erstling",
+   "name_in_quelle": "Fießers Erstling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "finkenwerder-herbstprinz",
+   "name_in_quelle": "Finkenwerder Prinzenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "flandrischer-rambour",
+   "name_in_quelle": "Flandrischer Rambur",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "florianer-rosenapfel",
+   "name_in_quelle": "Florianer Rosenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "fraas-sommerkalvill",
+   "name_in_quelle": "Fraas' Sommerkalvill",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "berlepsch",
+   "name_in_quelle": "Freiherr von Berlepsch",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "fromms-goldrenette",
+   "name_in_quelle": "Fromms Goldrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "emneth-early",
+   "name_in_quelle": "Früher Viktoria",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja",
+   "anmerkung": "Zuordnung über ein in der Roten Liste angegebenes Synonym"
+  },
+  {
+   "sorte": "fuerst-bluecher",
+   "name_in_quelle": "Fürst Blücher",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gacksapfel",
+   "name_in_quelle": "Gacksapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gascoynes-scharlachroter",
+   "name_in_quelle": "Gascoynes Scharlachroter",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "geflammter-kardinal",
+   "name_in_quelle": "Geflammter Kardinal",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "geheimrat-breuhahn",
+   "name_in_quelle": "Geheimrat Breuhahn",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "geheimrat-dr-oldenburg",
+   "name_in_quelle": "Geheimrat Dr. Oldenburg",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gehrers-rambour",
+   "name_in_quelle": "Gehrers Rambur",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gelbe-saechsische-renette",
+   "name_in_quelle": "Gelbe Sächsische Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gelber-bellefleur",
+   "name_in_quelle": "Gelber Bellefleur",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gelber-edelapfel",
+   "name_in_quelle": "Gelber Edelapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gelber-herbst-kalvill",
+   "name_in_quelle": "Gelber Herbstkalvill",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gelber-muensterlaender-borsdorfer",
+   "name_in_quelle": "Gelber Münsterländer Borsdorfer",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gelber-richard",
+   "name_in_quelle": "Gelber Richard",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gelber-winter-stettiner",
+   "name_in_quelle": "Gelber Winterstettiner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gewuerzluiken",
+   "name_in_quelle": "Gewürzluiken",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "glanz-renette",
+   "name_in_quelle": "Glanzrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "glockenapfel",
+   "name_in_quelle": "Glockenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gloria-mundi",
+   "name_in_quelle": "Gloria Mundi",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "goldparmaene",
+   "name_in_quelle": "Goldparmäne",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "goldrenette-von-blenheim",
+   "name_in_quelle": "Goldrenette von Blenheim",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "goldzeugapfel",
+   "name_in_quelle": "Goldzeugapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "grasbluemchen",
+   "name_in_quelle": "Grasblümchen",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "graue-herbstrenette",
+   "name_in_quelle": "Graue Herbstrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gravensteiner",
+   "name_in_quelle": "Gravensteiner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "grosse-kasseler-renette",
+   "name_in_quelle": "Große Kasseler Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "grosser-gruener-rambour",
+   "name_in_quelle": "Großer grüner Rambur",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gruener-stettiner",
+   "name_in_quelle": "Grüner Stettiner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "gubener-warraschke",
+   "name_in_quelle": "Gubener Warraschke",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "hawthornden",
+   "name_in_quelle": "Hagedornapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Zuordnung über ein in der Roten Liste angegebenes Synonym"
+  },
+  {
+   "sorte": "halberstaedter-jungfernapfel",
+   "name_in_quelle": "Halberstädter Jungfernapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "harberts-renette",
+   "name_in_quelle": "Harberts Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "grosser-rambour",
+   "name_in_quelle": "Hausmütterchen",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Zuordnung über ein in der Roten Liste angegebenes Synonym"
+  },
+  {
+   "sorte": "helios",
+   "name_in_quelle": "Helios",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "herma",
+   "name_in_quelle": "Herma",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "herrgottsapfel",
+   "name_in_quelle": "Herrgottsapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "heuchelheimer-schneeapfel",
+   "name_in_quelle": "Heuchelheimer Schneeapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "himbacher-gruener",
+   "name_in_quelle": "Himbacher Grüner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "holsteiner-cox",
+   "name_in_quelle": "Holsteiner Cox",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "horneburger-pfannkuchen",
+   "name_in_quelle": "Horneburger Pfannkuchenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ingol",
+   "name_in_quelle": "Ingol",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ingrid-marie",
+   "name_in_quelle": "Ingrid Marie",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "jakob-fischer",
+   "name_in_quelle": "Jakob Fischer",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "jakob-lebel",
+   "name_in_quelle": "Jakob Lebel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "james-grieve",
+   "name_in_quelle": "James Grieve",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "joseph-musch",
+   "name_in_quelle": "Josef Musch",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "juno",
+   "name_in_quelle": "Juno",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "juwel-aus-kirchwerder",
+   "name_in_quelle": "Juwel aus Kirchwerder",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kaiser-alexander",
+   "name_in_quelle": "Kaiser Alexander",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "peter-broich",
+   "name_in_quelle": "Kaiser Wilhelm",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kalterer-boehmer",
+   "name_in_quelle": "Kalterer Böhmer",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kanadarenette",
+   "name_in_quelle": "Kanada Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kandil-sinap",
+   "name_in_quelle": "Kandil Sinap",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "karmeliterrenette",
+   "name_in_quelle": "Karmeliter Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "karmijn-de-sonnaville",
+   "name_in_quelle": "Karmijn de Sonnaville",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "keswick-codlin",
+   "name_in_quelle": "Keswicker Küchenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kirchmessapfel",
+   "name_in_quelle": "Kirchmeßapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "weisser-klarapfel",
+   "name_in_quelle": "Klarapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kleiner-fleiner",
+   "name_in_quelle": "Kleiner Fleiner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kleiner-langstiel",
+   "name_in_quelle": "Kleiner Langstiel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kloppenheimer-streifling",
+   "name_in_quelle": "Kloppenheimer Streifling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "queen",
+   "name_in_quelle": "Königinapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja",
+   "anmerkung": "Zuordnung über ein in der Roten Liste angegebenes Synonym"
+  },
+  {
+   "sorte": "koenigsapfel-von-jersey",
+   "name_in_quelle": "Königsapfel von Jersey",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "korbiniansapfel",
+   "name_in_quelle": "Korbiniansapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "kronprinz-rudolf",
+   "name_in_quelle": "Kronprinz Rudolf",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "celler-dickstiel",
+   "name_in_quelle": "Krügers Dickstiel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "landsberger-renette",
+   "name_in_quelle": "Landsberger Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "lanes-prince-albert",
+   "name_in_quelle": "Lanes Prinz Albert",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "langer-gruener-gulderling",
+   "name_in_quelle": "Langer Grüner Gulderling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "lavanttaler-bananenapfel",
+   "name_in_quelle": "Lavanttaler Bananenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "laxtons-superb",
+   "name_in_quelle": "Laxton's Superb",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "laxtons-triumph",
+   "name_in_quelle": "Laxtons Triumph",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "lombarts-calville",
+   "name_in_quelle": "Lombarts Kalvill",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "london-pepping",
+   "name_in_quelle": "London Pepping",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "lord-grosvenor",
+   "name_in_quelle": "Lord Grosvenor",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "lord-lambourne",
+   "name_in_quelle": "Lord Lambourne",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "lord-suffield",
+   "name_in_quelle": "Lord Suffield",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "lothringer-renette",
+   "name_in_quelle": "Lothringer Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "luikenapfel",
+   "name_in_quelle": "Luikenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "luetticher-ananas-kalvill",
+   "name_in_quelle": "Lütticher Ananas Kalvill",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "luxemburger-renette",
+   "name_in_quelle": "Luxemburger Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "macoun",
+   "name_in_quelle": "Macoun",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "maibiers-parmaene",
+   "name_in_quelle": "Maibiers Parmäne",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "eveapfel",
+   "name_in_quelle": "Manks Küchenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "maren-nis",
+   "name_in_quelle": "Maren Nissen",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "marienwerder-gulderling",
+   "name_in_quelle": "Marienwerder Gulderling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "martini",
+   "name_in_quelle": "Martini",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "maunzen",
+   "name_in_quelle": "Maunzenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-brasil",
+   "name_in_quelle": "Mecklenburger Königsapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "metzrenette",
+   "name_in_quelle": "Metz´Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "minister-von-hammerstein",
+   "name_in_quelle": "Minister von Hammerstein",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "moringer-rosenapfel",
+   "name_in_quelle": "Moringer Rosenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "multhaupts-renette",
+   "name_in_quelle": "Multhaupts Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "mueschens-rosenapfel",
+   "name_in_quelle": "Müschens Rosenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "muskatrenette",
+   "name_in_quelle": "Muskatrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "nathusius-taubenapfel",
+   "name_in_quelle": "Nathusius' Taubenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "neilds-drooper",
+   "name_in_quelle": "Neild's Drooper",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "notarisappel",
+   "name_in_quelle": "Notarisappel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "oberdiecks-renette",
+   "name_in_quelle": "Oberdiecks Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "oberlausitzer-muskatrenette",
+   "name_in_quelle": "Oberlausitzer Muskatrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "oehringer-blutstreifling",
+   "name_in_quelle": "Öhringer Blutstreifling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ontarioapfel",
+   "name_in_quelle": "Ontario",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "orangenburg",
+   "name_in_quelle": "Orangenburg",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "orleansrenette",
+   "name_in_quelle": "Orleansrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "osnabruecker-renette",
+   "name_in_quelle": "Osnabrücker Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "parkers-pepping",
+   "name_in_quelle": "Parkers Pepping",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "goldrenette-von-peasgood",
+   "name_in_quelle": "Peasgoods Sondergleichen",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "pfirsichroter-sommerapfel",
+   "name_in_quelle": "Pfirsichroter Sommerapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "pommerscher-krummstiel",
+   "name_in_quelle": "Pommerscher Krummstiel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "pommerscher-schneeapfel",
+   "name_in_quelle": "Pommerscher Schneeapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "prinz-albrecht-von-preussen",
+   "name_in_quelle": "Prinz Albrecht von Preußen",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "prinzenapfel",
+   "name_in_quelle": "Prinzenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "purpurroter-cousinot",
+   "name_in_quelle": "Purpurroter Cousinot",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "purpurroter-zwiebelapfel",
+   "name_in_quelle": "Purpurroter Zwiebelapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rheinische-schafsnase",
+   "name_in_quelle": "Rheinische Schafsnase",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "bohnapfel",
+   "name_in_quelle": "Rheinischer Bohnapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rheinischer-krummstiel",
+   "name_in_quelle": "Rheinischer Krummstiel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rheinischer-winterrambur",
+   "name_in_quelle": "Rheinischer Winterrambur",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ribston-pepping",
+   "name_in_quelle": "Ribston Pepping",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rival",
+   "name_in_quelle": "Rival",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rome-beauty",
+   "name_in_quelle": "Rome Beauty",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rote-sternrenette",
+   "name_in_quelle": "Rote Sternrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rote-walze",
+   "name_in_quelle": "Rote Walze",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-astrachan",
+   "name_in_quelle": "Roter Astrachan",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-augustiner",
+   "name_in_quelle": "Roter Augustiner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-bellefleur",
+   "name_in_quelle": "Roter Bellefleur",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-eiserapfel",
+   "name_in_quelle": "Roter Eiserapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-herbstkalvill",
+   "name_in_quelle": "Roter Herbstkalvill",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-metternich",
+   "name_in_quelle": "Roter Metternich",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-muensterlaender-borsdorfer",
+   "name_in_quelle": "Roter Münsterländer Borsdorfer",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-sauergrauech",
+   "name_in_quelle": "Roter Sauergrauech",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "roter-stettiner",
+   "name_in_quelle": "Roter Stettiner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-trierer-weinapfel",
+   "name_in_quelle": "Roter Trierer Weinapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-winterkalvill",
+   "name_in_quelle": "Roter Winterkalvill",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "roter-taubenapfel",
+   "name_in_quelle": "Roter Wintertaubenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "rotfranch",
+   "name_in_quelle": "Rotfranch",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "ruhm-aus-kirchwerder",
+   "name_in_quelle": "Ruhm aus Kirchwerder",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "safranapfel",
+   "name_in_quelle": "Safranapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "schieblers-taubenapfel",
+   "name_in_quelle": "Schieblers Taubenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "schmidtbergers-rote-renette",
+   "name_in_quelle": "Schmidtbergers Rote Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "beauty-of-bath",
+   "name_in_quelle": "Schöner aus Bath",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "schoener-aus-boskoop",
+   "name_in_quelle": "Schöner aus Boskoop",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "freiburger-prinzenapfel",
+   "name_in_quelle": "Schöner aus Haseldorf",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "schoener-aus-herrnhut",
+   "name_in_quelle": "Schöner aus Herrnhut",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "schoener-aus-nordhausen",
+   "name_in_quelle": "Schöner aus Nordhausen",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "schoener-aus-wiedenbrueck",
+   "name_in_quelle": "Schöner aus Wiedenbrück",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "schoener-von-wiltshire",
+   "name_in_quelle": "Schöner aus Wiltshire",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "schweizer-orangenapfel",
+   "name_in_quelle": "Schweizer Orangenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "seestermueher-zitronenapfel",
+   "name_in_quelle": "Seestermüher Zitronenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "siebenschlaefer",
+   "name_in_quelle": "Siebenschläfer",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "signe-tillisch",
+   "name_in_quelle": "Signe Tillisch",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "sommer-gewuerzapfel",
+   "name_in_quelle": "Sommergewürzapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "sommerparmaene",
+   "name_in_quelle": "Sommerparmäne",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "sommer-zimtapfel",
+   "name_in_quelle": "Sommerzimtapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "sonnenwirtsapfel",
+   "name_in_quelle": "Sonnenwirtsapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "spaetbluehender-taffetapfel",
+   "name_in_quelle": "Spätblühender Taffetapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "sternapi",
+   "name_in_quelle": "Sternapi",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "stina-lohmann",
+   "name_in_quelle": "Stina Lohmann",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "suesse-herbstrenette",
+   "name_in_quelle": "Süße Herbstrenette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "pommerscher-langsuesser",
+   "name_in_quelle": "Süßer Prinzenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "thurgauer-weinapfel",
+   "name_in_quelle": "Thurgauer Weinapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "tietjenapfel",
+   "name_in_quelle": "Tietjenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "transparent-von-croncels",
+   "name_in_quelle": "Transparent aus Croncels",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "tulpenapfel",
+   "name_in_quelle": "Tulpenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "undine",
+   "name_in_quelle": "Undine",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "unseldapfel",
+   "name_in_quelle": "Unseldapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "wagenerapfel",
+   "name_in_quelle": "Wagenerapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "sorte": "weisser-astrakan",
+   "name_in_quelle": "Weißer Astrachan",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "weisser-matapfel",
+   "name_in_quelle": "Weißer Matapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "weisser-winter-calville",
+   "name_in_quelle": "Weißer Winterkalvill",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "weisser-taffetapfel",
+   "name_in_quelle": "Weißer Wintertaffetapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "weisses-seidenhemdchen",
+   "name_in_quelle": "Weißes Seidenhemdchen",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "welschisner",
+   "name_in_quelle": "Welschisner",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "westfaelischer-guelderling",
+   "name_in_quelle": "Westfälischer Gülderling",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "wilstedter-apfel",
+   "name_in_quelle": "Wilstedter Apfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "winterbananenapfel",
+   "name_in_quelle": "Winterbananenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "winter-zitronenapfel",
+   "name_in_quelle": "Winterzitronenapfel",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "wohlschmecker-aus-vierlanden",
+   "name_in_quelle": "Wohlschmecker aus Vierlanden",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "worcester-pearmain",
+   "name_in_quelle": "Worcester Pearmain",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "zabergaeu-renette",
+   "name_in_quelle": "Zabergäu Renette",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "zigeunerin",
+   "name_in_quelle": "Zigeunerin",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "zuccalmaglios-renette",
+   "name_in_quelle": "Zuccalmaglio",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "zwiebelborsdorfer",
+   "name_in_quelle": "Zwiebelborsdorfer",
+   "stufe": "Rote Liste der gefährdeten einheimischen Nutzpflanzen in Deutschland",
+   "quelle": "ble-rote-liste",
+   "ex_situ_erhalten": "ja"
+  },
+  {
+   "sorte": "birkenfelder-rotaepfelchen",
+   "name_in_quelle": "Birkenfelder Rotapfel",
+   "stufe": "Passagier der Arche des Geschmacks",
+   "quelle": "slowfood-arche",
+   "aufnahme": 2014,
+   "region": "DE-RP"
+  },
+  {
+   "sorte": "bittenfelder",
+   "name_in_quelle": "Bittenfelder Sämling",
+   "stufe": "Passagier der Arche des Geschmacks",
+   "quelle": "slowfood-arche",
+   "aufnahme": 2022,
+   "region": "DE-BW"
+  },
+  {
+   "sorte": "finkenwerder-herbstprinz",
+   "name_in_quelle": "Finkenwerder Herbstprinz Hochstamm (Apfel)",
+   "stufe": "Passagier der Arche des Geschmacks",
+   "quelle": "slowfood-arche",
+   "aufnahme": 2014,
+   "region": "DE-HH"
+  },
+  {
+   "sorte": "jakob-fischer",
+   "name_in_quelle": "Jakob Fischer Apfel",
+   "stufe": "Passagier der Arche des Geschmacks",
+   "quelle": "slowfood-arche",
+   "aufnahme": 2011,
+   "region": "DE-BW"
+  },
+  {
+   "sorte": "luikenapfel",
+   "name_in_quelle": "Luikenapfel",
+   "stufe": "Passagier der Arche des Geschmacks",
+   "quelle": "slowfood-arche",
+   "aufnahme": 2017,
+   "region": "DE-BW"
+  },
+  {
+   "sorte": "schoener-von-herrnhut",
+   "name_in_quelle": "Schöner von Herrnhut",
+   "stufe": "Passagier der Arche des Geschmacks",
+   "quelle": "slowfood-arche",
+   "aufnahme": 2021,
+   "region": "DE-SN"
+  }
+ ],
+ "nicht_in_datenbank": [
+  {
+   "name_in_quelle": "Äckerleapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Adamsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Alantapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Altenburger Bergapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Altländer Jakobsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Altmärker Brautapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Altmärker Goldrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Angeliter Borsdorfer",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Angeliter Herrenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Anhalter Apfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Anton Fischer",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Apfel aus Grignon",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Apfel aus Höfgen",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Apfel von Grünheide",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Apfel von Halder",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Api Etoile",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Api Rose",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Apollo",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Aufhofer Klosterapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Aujäger",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Bamberger Blauapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Batullenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Bäumchens Apfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Bayh's Mostapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Beimerstetter Luiken",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Betzinger Grünapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Beutelsbacher Rambour",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Beutelspacher Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Bischofshut",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Blauacher Wädenswil",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Blochingers Sämling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Blumberger Langstiel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Böblinger Apfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Böblinger Straßenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Bockenhusen",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Borsdorfer",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Bratwurstapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Bratzelapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Breitarsch",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Breitauge",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Bremer Doodapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Bremervörder Winterapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Burgstädter Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Cadel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Claudius Herbstapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Colonistenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Credes Taubenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Creo",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Damason Renette",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Dean´s Küchenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Dietzels Rosenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Doberaner Borsdorfer Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Doppelter Gretapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Doppelter Prinzenapfel",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Doppelter Roter Bellefleur",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Dundenheimer Schätzler",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Dupple Zoete Aagt",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Edelgraeuch",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Edler Prinzessinapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Edler Rosenstreifling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Eisbrucker",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Eisrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Ellison Orange Peppin",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Englischer Prinz",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Erfurter Rosenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Erwin Baur",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Erwin Junge",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Extertaler",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Fettapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Feys Rekord",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Filippas Apfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Frankenbacher Feldschützapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Franksenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Französische Goldrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Freinsheimer Taffetapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Freudenberger Nützerling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Friedberger Bohnapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Friesenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Früher Prinzenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Galloway Pepping",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Gartenmeister Simon",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Geheimrat Wesener",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Gelbe Schleswiger Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Gelber Osterapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Gestreifte Winterrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Gestreifter Backapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Gestreifter Herbstkalvill",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Gniedelsteiner",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Gochsheimer Stammapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Goldgelbe Sommerrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Goldrenette aus Hildesheim",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Graf Ezzo",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Graf Nostitz",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Grahams Jubiläumsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Grauer Hordapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Grauer Kurzstiel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Großer Weißer Fresquin",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Großherzog Friedrich von Baden",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Grünapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Grüner Fürstenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Grüner Himbacher",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Grüner Richard",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Grüner Wilhelm",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Häckerapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hadelner Rotfrance",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hartapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hauschildapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hauxapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Havelgold",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Heimeldinger Apfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Heinemanns Jubiläumsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Herbststreifling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Herrenapfel",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Herzogin Olga",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Heslacher Gereutapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Heslacher Luiken",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hilde",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hildesheimer Goldrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Himbeerapfel von Holowaus",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hinznanger",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hochzeitsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hofstetter",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hohe Wart",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Hohenheimer Rieslingapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Holländischer Prinz",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Holsteiner Zitronenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Honigmilchapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Horrenberger Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Jägers Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Jeverländer Süßapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Johannes Böttner",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Johannes Hannes",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Kardinal Bea",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Kaschaker",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Kasseler Renette",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Kirschweinling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Knäckerla",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Kohlenbacher",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Königlicher Kurzstiel",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Korbacher Edelrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Körler Edelapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Krummer Hasenkopf",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Krumstedter Paradies",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Kugelapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Kumpfenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Langtons Sondergleichen",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Lausitzer Nelkenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Lautertaler Waldapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Leupoldsdorfer Süßapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Linsenhofener Sämling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Liptays Rosmarinapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Litauer Pepping",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Lohrer Rambur",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Ludivigs Rosenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Luisenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Margol",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Martens Gravensteiner",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Martens Sämling",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Maschanzker",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Mauks Hybride",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Mauthausener Limoniapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Möriker",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Mosel-Eisenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Münnerstädter",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Mutterapfel",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Nelkenapfel",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt auf dieselbe Datenbanksorte (cornwalliser-nelkenapfel) wie ein anderer Eintrag der Liste; nicht doppelt zugeordnet"
+  },
+  {
+   "name_in_quelle": "Neuhäuser Boikenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Neunzerling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Neustadts Gelber Pepping",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Oberländer Himbeerapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Oberlausitzer Nelkenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Odenwälder",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Odenwälder Herbstapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Odenwälder Kurzstiel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Oetwiler Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Osterkamps Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Ostfriesischer Herbstkalvill",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Pannemanns Apfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Pfaffenhofer Schmelzling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Pflankenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Pohls Schlotterapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Pomme d'Or",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Porzenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Prinzess Noble",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Prinzessin Irene",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Prinzessinapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Puntschapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Purpurroter Agataapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Quittenförmiger Gulderling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Raafs Liebling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rambour von Winitza",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Ravensberger",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Reders Goldrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Reichelsheimer Mostapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Reichtragender vom Zenngrund",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Renette von Clochard",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rheingold",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rheinisches Seidenhemdchen",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rheinlands Ruhm",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Riesenboiken",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Ritters Stolz",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rochlitzer Königsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rosenapfel vom Schönbuch",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rote Alkmene",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rote Goldparmäne",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Altländer Pfannkuchenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter aus Fuchshain",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Berlepsch",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Boskoop",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Boskoop",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Erwin Baur - Roba",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Finkenwerder",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Fuchs",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Hauptmannsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter James Grieve",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Jungfernapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Oldenburg",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Rheinischer Bohnapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Sossenheimer",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Winterhimbeerapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Roter Ziegler",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rotgestreifte Gelbe Schafsnase",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Röthaer Blenheim",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Rudolf Goethe",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Ruhm aus Vierlanden",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Ruhm von Kelsterbach",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Sächsischer Königsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Salemer Klosterapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Sauergrauech",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schick Johannes",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schicks Rheinischer Landapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schlesischer Lehmapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schlesischer Rotborsdorfer",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schleswiger Erdbeerapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schnabelsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schneiderapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner aus Berwangen",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner aus Burscheid",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner aus Elmpt",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner aus Hadeln",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner aus Holstein",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner aus Miltenberg",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner aus Pontoise",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner von Altenegloffsheim",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner von Lutten",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner von Miltenberg",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schöner von Schönlind",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schönster vom Neckartal",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schussentäler",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schwaikheimer Rambur",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Schwarzschillernder Kohlapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Seidenhemdchen",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Sohländer Streifling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Sommerananas",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Sommerborsdorfer",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Sommermaschanzker",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Sommerregent",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Spätblüher von Bockedra",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Spielberger Wieslesapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Stehdinger Prinz",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Steinbacher",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Steirische Schafsnase",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Steirischer Maschanzker",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Stern von Bühren",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Stolberger Seidenhemdchen",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Strauwaldts Goldparmäne",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Streifapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Suislepper",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Sulinger Grünling",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Tannenkrüger",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Teltower Winter-Gravensteiner",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Tiefenblüte",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Trierer Weinapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Triumph aus Luxemburg",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Uelzener Kalvill",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Uelzener Rambur",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt auf dieselbe Datenbanksorte (uelzener-rambour) wie ein anderer Eintrag der Liste; nicht doppelt zugeordnet"
+  },
+  {
+   "name_in_quelle": "Uhlhorns Augustkalvill",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Ulmer Polizeiapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wachendorfer Renette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wachsrenette von Benediktbeuren",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Weiße Kanadarenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Weißer Rosmarin",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Weißer Taubenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Weißer Trierer Weinapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Weißer Winterrambour",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Welschweinling",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Werdersche Wachsrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Westfälische Tiefblüte",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Westfälischer Frühapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wettringer Taubenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wiesenapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wiesenbacher Gänsgarten",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wildeshauser Goldrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wilhelmsapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wintergravensteiner",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Winterprinzenapfel",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Winter-Veilchen­apfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wittgensteiner Glasapfel",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wöbers Rambour",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Wollenschläger",
+   "quelle": "ble-rote-liste",
+   "anmerkung": "Name passt nur über ein Datenbank-Synonym, das der Quelle oder der Roten Liste widerspricht, oder ist mehrdeutig"
+  },
+  {
+   "name_in_quelle": "Zimtrenette",
+   "quelle": "ble-rote-liste"
+  },
+  {
+   "name_in_quelle": "Lausitzer Nelkenapfel",
+   "quelle": "slowfood-arche",
+   "region": "DE-SN"
+  }
+ ]
+}

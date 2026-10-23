@@ -31,7 +31,8 @@ export interface Merkmal {
   /** Mehrere Ausprägungen gleichzeitig möglich (z. B. Deckfarbe gestreift und verwaschen) */
   mehrfach?: boolean
   ansichten: Ansicht[]
-  erfassung: 'messung' | 'sprachmodell' | 'abfrage'
+  /** literatur: nur aus Sortenbeschreibungen, wird am eigenen Baum nicht abgefragt */
+  erfassung: 'messung' | 'sprachmodell' | 'abfrage' | 'literatur'
   erklaerung: string
   parameter3d?: string
   quellen: {}
@@ -518,6 +519,68 @@ export const MERKMALE: Merkmal[] = [
     id: 'ploidie', name: 'Ploidie', gruppe: 'baum', typ: 'kategorie',
     auspraegungen: [{ code: 'diploid', label: 'diploid' }, { code: 'triploid', label: 'triploid' }],
     ansichten: [], erfassung: 'abfrage', erklaerung: 'Triploide Sorten sind schlechte Pollenspender und haben oft wenige Kerne.', quellen: {},
+  },
+
+  // ---------------------------------------------------------------- Anbau (aus Sortenbeschreibungen, für den Ratgeber)
+  {
+    id: 'lagerfaehigkeit', name: 'Lagerfähigkeit', gruppe: 'phaenologie', typ: 'ordinal',
+    auspraegungen: [{ code: '3', label: 'kurz, wenige Wochen' }, { code: '5', label: 'mittel, bis in den Winter' }, { code: '7', label: 'lang, bis ins Frühjahr' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Wie lange sich die Früchte nach der Ernte in einem kühlen Keller halten.', quellen: {},
+  },
+  {
+    id: 'bluete_frost', name: 'Frostempfindlichkeit der Blüte', gruppe: 'phaenologie', typ: 'ordinal',
+    auspraegungen: [{ code: '3', label: 'wenig empfindlich' }, { code: '7', label: 'empfindlich' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Spätfröste während der Blüte kosten die Ernte. In Senken und Höhenlagen zählen robuste oder spät blühende Sorten.', quellen: {},
+  },
+  {
+    id: 'ertrag_beginn', name: 'Ertragsbeginn', gruppe: 'baum', typ: 'kategorie',
+    auspraegungen: [{ code: 'frueh', label: 'früh' }, { code: 'mittel', label: 'mittel' }, { code: 'spaet', label: 'spät' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Wie viele Jahre nach der Pflanzung der Baum nennenswert trägt. Hängt stark von der Unterlage ab.', quellen: {},
+  },
+  {
+    id: 'ertrag_alternanz', name: 'Regelmäßigkeit des Ertrags', gruppe: 'baum', typ: 'kategorie',
+    auspraegungen: [{ code: 'regelmaessig', label: 'jährlich' }, { code: 'alternierend', label: 'im Wechsel, ein Jahr viel, eins wenig' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Manche Sorten tragen nur jedes zweite Jahr reich (Alternanz).', quellen: {},
+  },
+  {
+    id: 'gesundheit', name: 'Gesundheit', gruppe: 'baum', typ: 'ordinal',
+    auspraegungen: [{ code: '3', label: 'empfindlich' }, { code: '5', label: 'mittel' }, { code: '7', label: 'robust' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Allgemeine Aussagen der Quellen zur Gesundheit von Baum und Frucht.', quellen: {},
+  },
+  {
+    id: 'anfaelligkeit_schorf', name: 'Anfälligkeit für Schorf', gruppe: 'baum', typ: 'ordinal',
+    auspraegungen: [{ code: '3', label: 'gering' }, { code: '5', label: 'mittel' }, { code: '7', label: 'hoch' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Schorf ist eine Pilzkrankheit mit dunklen Flecken auf Blättern und Früchten, häufig in feuchten Lagen.', quellen: {},
+  },
+  {
+    id: 'anfaelligkeit_mehltau', name: 'Anfälligkeit für Mehltau', gruppe: 'baum', typ: 'ordinal',
+    auspraegungen: [{ code: '3', label: 'gering' }, { code: '5', label: 'mittel' }, { code: '7', label: 'hoch' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Echter Mehltau überzieht junge Triebe mit weißem Belag, häufig in warmen, trockenen Lagen.', quellen: {},
+  },
+  {
+    id: 'anfaelligkeit_krebs', name: 'Anfälligkeit für Obstbaumkrebs', gruppe: 'baum', typ: 'ordinal',
+    auspraegungen: [{ code: '3', label: 'gering' }, { code: '5', label: 'mittel' }, { code: '7', label: 'hoch' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Obstbaumkrebs zerstört die Rinde an Ästen und Stamm, vor allem auf schweren, nassen Böden.', quellen: {},
+  },
+  {
+    id: 'standort_klima', name: 'Ansprüche an die Lage', gruppe: 'baum', typ: 'ordinal',
+    auspraegungen: [{ code: '3', label: 'gering, auch raue Lagen' }, { code: '5', label: 'mittel' }, { code: '7', label: 'hoch, warme und geschützte Lagen' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Ob die Sorte auch in Höhenlagen, im Wind und in kühlem Klima gedeiht.', quellen: {},
+  },
+  {
+    id: 'standort_boden', name: 'Ansprüche an den Boden', gruppe: 'baum', typ: 'ordinal',
+    auspraegungen: [{ code: '3', label: 'gering' }, { code: '5', label: 'mittel' }, { code: '7', label: 'hoch, nährstoffreich und tiefgründig' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Wie nährstoffreich und tiefgründig der Boden sein muss.', quellen: {},
+  },
+  {
+    id: 'standort_feuchte', name: 'Wasserbedarf', gruppe: 'baum', typ: 'kategorie',
+    auspraegungen: [{ code: 'trocken', label: 'verträgt Trockenheit' }, { code: 'feucht', label: 'braucht ausreichend Feuchtigkeit' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Ob die Sorte trockene Standorte verträgt oder genügend feuchten Boden braucht.', quellen: {},
+  },
+  {
+    id: 'hochstamm', name: 'Eignung als Hochstamm', gruppe: 'baum', typ: 'kategorie',
+    auspraegungen: [{ code: 'gut', label: 'gut geeignet (Streuobst, Straßen, Feld)' }, { code: 'eingeschraenkt', label: 'eingeschränkt' }],
+    ansichten: [], erfassung: 'literatur', erklaerung: 'Hochstämme auf Wiesen und an Wegen brauchen gesunde, kräftige und langlebige Sorten.', quellen: {},
   },
 ]
 

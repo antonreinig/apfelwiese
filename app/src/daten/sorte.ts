@@ -32,6 +32,8 @@ export interface Merkmalswert extends Beleg {
   wert: string | number // Ausprägungscode oder Messwert
   /** Originalangabe in der Quelle, z. B. "small" oder "mittelgroß" */
   original?: string
+  /** Wert aus einem zusammengefassten Sortentext: alle Belege dieses Textes (quelle ist dann der erste) */
+  belege?: Beleg[]
 }
 
 export type Textthema =
@@ -71,13 +73,40 @@ export interface Farbmessung {
   hoeheZuBreite?: number // aus dem Umriss, falls Frucht von der Seite fotografiert
 }
 
+/** Region (Bundesland, ISO 3166-2) mit Art der Zuordnung */
+export interface Regionszuordnung {
+  region: string // z. B. "DE-NW"
+  /** herkunft: dort entstanden; regionalsorte: in einer Regional- oder Lokalsortenliste; empfehlung: in einer Sortenempfehlung des Landes; verbreitung: laut Quelle dort verbreitet */
+  art: 'herkunft' | 'regionalsorte' | 'empfehlung' | 'verbreitung'
+  belege: Beleg[]
+  original?: string
+}
+
+/** Angabe zur Seltenheit oder Gefährdung, wörtlich wie in der Quelle */
+export interface Gefaehrdung {
+  stufe: string
+  belege: Beleg[]
+  original?: string
+}
+
 export interface Sorte {
   id: string // kleingeschrieben, ohne Umlaute und Leerzeichen: "ananasrenette"
   name: string // gebräuchlicher deutscher Name, sonst Originalname
   synonyme: { name: string; beleg?: Beleg }[]
   munq?: number
   akzessionen?: { sammlung: string; nummer: string; name: string }[]
-  herkunft?: { text: string; belege: Beleg[] }
+  herkunft?: {
+    text: string
+    belege: Beleg[]
+    /** Entstehungsland (ISO 3166-1), aus dem Text abgeleitet */
+    land?: string
+    landSicher?: boolean
+    ort?: string
+    /** Entstehung oder erste Erwähnung laut Text, ungefähr */
+    jahr?: number
+  }
+  regionen?: Regionszuordnung[]
+  gefaehrdung?: Gefaehrdung[]
   merkmale: Merkmalswert[]
   texte: Sortentext[]
   bilder: Sortenbild[]
@@ -104,6 +133,18 @@ export interface SortenEintrag {
   genuss?: number[]
   /** Mehrere Textabschnitte aus mindestens zwei Quellen */
   ausfuehrlich?: boolean
-  /** Kompakte Merkmalswerte für den Abgleich: Merkmal-ID → Codes oder Messwerte */
+  /** Kompakte Merkmalswerte für Abgleich und Ratgeber: Merkmal-ID → Codes oder Messwerte */
   m?: Record<string, (string | number)[]>
+  /** Entstehungsland (ISO 3166-1) */
+  land?: string
+  /** Regionen als "DE-NW:h" (h herkunft, r regionalsorte, e empfehlung, v verbreitung) */
+  regionen?: string[]
+  /** Entstehung oder erste Erwähnung (ungefähr), laut Herkunftstext */
+  jahr?: number
+  /** Ältestes Werk der Quellen, das die Sorte beschreibt oder abbildet (Erscheinungsjahr) */
+  beschrieben?: number
+  /** Belegt vor 1950 (Entstehung oder Beschreibung) */
+  alt?: boolean
+  /** Seltenheit oder Gefährdung laut Quelle */
+  selten?: string
 }

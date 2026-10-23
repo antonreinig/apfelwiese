@@ -17,7 +17,7 @@ npm run build                                # Typprüfung und Produktionsbuild 
 
 Im Desktop-App-Browser starten die Konfigurationen `apfelwiese` (5174) und `apfelwiese-live-api` (5175) aus `../.claude/launch.json`.
 
-Mit `APFEL_API=live` entstehen echte Konten und Daten auf dem Live-Server. Testkonten danach löschen (Info → Konto löschen oder `DELETE /api/konto`). Für Mails die Testadresse `delivered@resend.dev` nehmen. Den Code liest man über die Resend-API (`GET https://api.resend.com/emails`, dann `/emails/<id>`).
+Mit `APFEL_API=live` entstehen echte Konten und Daten auf dem Live-Server. Testkonten danach löschen (Konto → Konto löschen oder `DELETE /api/konto`). Für Mails die Testadresse `delivered@resend.dev` nehmen. Den Code liest man über die Resend-API (`GET https://api.resend.com/emails`, dann `/emails/<id>`).
 
 Testvideo als Kamerabild: `public/testfeed.mp4` (nur lokal, nicht im Deployment) und `?testfeed` an die URL hängen, z. B. `http://localhost:5174/?testfeed#/neu`.
 
@@ -31,7 +31,7 @@ npm run pruefen          # vor dem Deployment: Typprüfung, Einzeltests, Build
 npm run pruefen:live     # nach dem Deployment: API- und Browsertests gegen die Live-Version
 ```
 
-Das Testkonto ist `delivered@resend.dev`. Den Code liest der Test über die Resend-API, am Ende löscht er das Konto. `RESEND_API_KEY` liegt lokal in `.env.local`, bei GitHub als Secret. Die Browsertests prüfen alle Tabs auf Skriptfehler und Verstöße gegen die Sicherheitsregeln. Sie stellen auch den Fall nach, dass nach einem Update ein Teil der App fehlt. Mit Konto gehen sie den ganzen Ablauf durch: Anmelden, Baum aus den Beispielfotos, Rundgang bis „Fertig“, Platz auf der Wiese, Konto löschen.
+Das Testkonto ist `delivered@resend.dev`. Den Code liest der Test über die Resend-API, am Ende löscht er das Konto. `RESEND_API_KEY` liegt lokal in `.env.local`, bei GitHub als Secret. Die Browsertests prüfen alle Tabs auf Skriptfehler und Verstöße gegen die Sicherheitsregeln. Sie stellen auch den Fall nach, dass nach einem Update ein Teil der App fehlt. Ohne Konto klicken sie Sorten-Startseite, Sammlung und Ratgeber durch und prüfen Konto-Knopf, Region und Darstellung. Mit Konto gehen sie den ganzen Ablauf durch: Anmelden, Konto-Seite, Baum aus den Beispielfotos, Rundgang bis „Fertig“, Platz auf der Wiese, Konto löschen.
 
 ## Aufbau
 
@@ -47,7 +47,7 @@ Das Testkonto ist `delivered@resend.dev`. Den Code liest der Test über die Rese
 | `src/daten/sicherung.ts` | Sicherung als Datei herunterladen und einspielen |
 | `src/apfel3d/` | Parametrisches 3D-Modell: Parameter (`darstellung.ts`), Form, Schale, Stiel/Kelch, Schnitte, Bühne, Neigung, Medaillon-Bilder (`MODELL_VERSION` in `modell.ts`) |
 | `src/kamera/` | Live-Blatterkennung, Kamera, Messung per Code (Entzerren, Weißabgleich, Freistellen, Maße, Farben, Ausschnitte), Worker |
-| `src/seiten/` | Äpfel (`Wiese.tsx`), Baumblatt, Bestimmen, Rundgang, Angleichen, Sorten, Sortenporträt, Wiese (`Karte.tsx`), Anmelden, Info, Installieren, Rückmeldung, Rechtliches; Entwicklerseiten Test3d, TestStielKelch, Vergleich (nur im Dev-Server) |
+| `src/seiten/` | Äpfel (`Wiese.tsx`), Baumblatt, Bestimmen, Rundgang, Angleichen, Sorten (Erkunden und Listen), Ratgeber, Bezug (alte Sorten bekommen), Sortenporträt, Wiese (`Karte.tsx`), Anmelden, Konto, Info, Installieren, Rückmeldung, Rechtliches; Entwicklerseiten Test3d, TestStielKelch, Vergleich (nur im Dev-Server) |
 | `src/ui/` | Navigation, Router, Symbole, Einführung, Kontopflicht, Übernahme-Dialog, Chips, Leuchtkasten … |
 | `api/` | Vercel Functions: `anmelden`, `bestaetigen`, `anfrage`, `ich`, `abmelden`, `einwilligung`, `baeume`, `foto-hochladen`, `foto`, `konto`, `rueckmeldung`, `protokoll` (Fehler aus der App), `betrieb` (Betriebsübersicht), `kachel` (Proxy für Luftbild, Wikimedia und Internet Archive), `aufraeumen` und `tagesbericht` (Cron); gemeinsame Hilfen in `api/_lib/` |
 | `vercel.json` | Region fra1, Sicherheits-Header (CSP), Umleitungen `/kacheln/luftbild`, `/wm`, `/wmt`, `/ia` auf `api/kachel`, Weiterleitung der alten Domain, Cron |

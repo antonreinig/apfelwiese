@@ -4,8 +4,9 @@ import { useBaeume, sortiert, type Baum } from '../daten/baeume.ts'
 import { useSortenindex, parameterAusEintrag } from '../daten/sorten.ts'
 import { modellFuerBaum, roemisch } from '../daten/baumModell.ts'
 import { gehe } from '../ui/router.ts'
-import { Plus, Raster, Einzeln, Hoch, Info } from '../ui/symbole.tsx'
+import { Plus, Raster, Einzeln, Hoch, Info, Person } from '../ui/symbole.tsx'
 import { Sortenname } from '../ui/Sortenname.tsx'
+import { apfelDesTages } from '../daten/erkunden.ts'
 import { useKonto, bereit, zurAnmeldung } from '../daten/konto.ts'
 
 const ANSICHT_SCHLUESSEL = 'wiese-ansicht'
@@ -37,12 +38,24 @@ export function WieseSeite() {
           >
             {ansicht === 'einzeln' ? <Raster /> : <Einzeln />}
           </button>
+          <KontoKnopf />
         </span>
       </div>
       {ansicht === 'einzeln'
         ? <Karussell liste={liste} modelle={modelle} onRaster={() => setAnsicht('raster')} />
         : <WieseRaster liste={liste} />}
     </div>
+  )
+}
+
+/** Kopfleisten-Knopf zu Konto und Einstellungen; angemeldet mit Anfangsbuchstaben */
+function KontoKnopf() {
+  const konto = useKonto()
+  const buchstabe = konto.status === 'angemeldet' ? konto.konto.email.slice(0, 1).toUpperCase() : ''
+  return (
+    <button className="rund-knopf" style={{ width: 36, height: 36, fontSize: 17 }} aria-label="Konto und Einstellungen" onClick={() => gehe('/konto')}>
+      {buchstabe || <Person />}
+    </button>
   )
 }
 
@@ -195,18 +208,15 @@ function WieseRaster({ liste }: { liste: Baum[] }) {
 
 function LeereWiese({ ohneKonto = false }: { ohneKonto?: boolean }) {
   const index = useSortenindex()
-  const sorte = useMemo(() => {
-    if (!index?.sorten.length) return null
-    const mitBild = index.sorten.filter((s) => s.hatBild)
-    const auswahl = mitBild.length ? mitBild : index.sorten
-    return auswahl[new Date().getDate() % auswahl.length]
-  }, [index])
+  // dieselbe Sorte wie der Apfel des Tages im Tab Sorten
+  const sorte = useMemo(() => (index ? apfelDesTages(index.sorten) ?? null : null), [index])
   return (
     <div className="seite" style={{ display: 'flex', flexDirection: 'column' }}>
       <div className="tafelkopf">
         <span>Meine Äpfel</span>
-        <span style={{ display: 'flex', gap: 10, alignItems: 'center' }}>Sorte des Tages
+        <span style={{ display: 'flex', gap: 10, alignItems: 'center' }}>Apfel des Tages
           <button className="rund-knopf" style={{ width: 36, height: 36 }} aria-label="Über die App" onClick={() => gehe('/info')}><Info /></button>
+          <KontoKnopf />
         </span>
       </div>
       <div style={{ position: 'relative', flex: 1, minHeight: 300, margin: '0 -16px' }}>

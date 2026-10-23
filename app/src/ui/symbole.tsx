@@ -93,3 +93,15 @@ export const Muell = (p: SVGProps<SVGSVGElement>) => (
 export const Info = (p: SVGProps<SVGSVGElement>) => (
   <svg {...basis(p)}><circle cx="12" cy="12" r="8.5" /><path d="M12 11v5.5M12 8v.01" /></svg>
 )
+export const Person = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...basis(p)}><circle cx="12" cy="8.5" r="3.6" /><path d="M4.8 20c.8-3.8 3.6-6 7.2-6s6.4 2.2 7.2 6" /></svg>
+)
+export const Kompass = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...basis(p)}><circle cx="12" cy="12" r="8.5" /><path d="M15.5 8.5l-2 5-5 2 2-5z" /></svg>
+)
+export const Stern = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...basis(p)}><path d="M12 3.8l2.4 5 5.4.7-4 3.7 1 5.4L12 16l-4.8 2.6 1-5.4-4-3.7 5.4-.7z" /></svg>
+)
+export const Wuerfel = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...basis(p)}><rect x="4.5" y="4.5" width="15" height="15" rx="3" /><path d="M9 9h.01M15 15h.01M15 9h.01M9 15h.01M12 12h.01" strokeWidth={2.4} /></svg>
+)

@@ -23,7 +23,8 @@ test('Ganzer Ablauf mit Testkonto', async ({ page, request, baseURL }) => {
 
   // Anmelden
   await page.goto('/#/anmelden')
-  await page.getByPlaceholder('name@beispiel.de').fill(`delivered+test${Date.now()}@resend.dev`)
+  const email = `delivered+test${Date.now()}@resend.dev`
+  await page.getByPlaceholder('name@beispiel.de').fill(email)
   const antwort = page.waitForResponse((r) => r.url().endsWith('/api/anmelden'))
   await page.getByRole('button', { name: 'Code per E-Mail schicken' }).click()
   const { anfrage } = await (await antwort).json()
@@ -32,6 +33,14 @@ test('Ganzer Ablauf mit Testkonto', async ({ page, request, baseURL }) => {
   await expect(page.getByText('Bevor es losgeht')).toBeVisible()
   await page.getByRole('checkbox').first().check()
   await page.getByRole('button', { name: 'Weiter' }).click()
+
+  // Konto-Knopf in der Kopfleiste zeigt das Konto mit Abmelden und Löschen
+  await expect(page.getByText('Bevor es losgeht')).toHaveCount(0)
+  await page.goto('/')
+  await page.getByRole('button', { name: 'Konto und Einstellungen' }).click()
+  await expect(page.getByText(email)).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Konto löschen' })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Sicherung herunterladen' })).toBeVisible()
 
   {
     // Neuen Baum aus den vier Beispielfotos

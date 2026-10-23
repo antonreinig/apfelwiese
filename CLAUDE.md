@@ -41,7 +41,8 @@ PWA zur Bestimmung und Dokumentation alter Apfelsorten aus vier standardisierten
 
 ## Architektur in Kürze
 
-- **Frontend:** Vite 8, React 19, TypeScript, Hash-Router (`#/…`), vite-plugin-pwa, three.js + @react-three/fiber, Leaflet, idb-keyval. Tabs: **Äpfel** (`#/`, Start mit 3D-Apfel), **Sorten** (`#/sorten`), **Wiese** (`#/wiese`, Luftbildkarte).
+- **Frontend:** Vite 8, React 19, TypeScript, Hash-Router (`#/…`), vite-plugin-pwa, three.js + @react-three/fiber, Leaflet, idb-keyval. Tabs: **Äpfel** (`#/`, Start mit 3D-Apfel; oben Info, Raster, Konto `#/konto`), **Sorten** (`#/sorten`, Erkunden mit Ratgeber `#/sorten/ratgeber`, Bezugsquellen `#/sorten/bezug`, Listen `#/sorten/sammlung|monat|region/…`), **Wiese** (`#/wiese`, Luftbildkarte).
+- **Sorten erkunden:** Sammlungen, Apfel des Tages und Regionen in `src/daten/erkunden.ts`, Ratgeber-Bewertung in `src/daten/ratgeber.ts` (nur belegte Werte aus dem Index, fehlende Angaben zählen nicht). Region und Darstellung liegen nur im Gerät (`src/daten/einstellungen.ts`).
 - **3D:** `app/src/apfel3d/`. Parameter in `darstellung.ts`, Geometrie, prozedurale Schale, Stiel/Kelch, Schnitte. Medaillons werden einmal als Bild gerendert und gespeichert (`medaillonBild.ts`). **Nach sichtbaren Änderungen `MODELL_VERSION` in `modell.ts` erhöhen**, sonst bleiben alte Bilder im Speicher.
 - **Kamera und Messung:** `app/src/kamera/`. Live-Blatterkennung (auch bei farbigem Licht), Entzerren, Weißabgleich, Freistellen, Maße, Farben, Ausschnitte je Apfel.
 - **Server:** Vercel Functions in `app/api/`, Region fra1, Web-Handler `GET`/`POST`/…

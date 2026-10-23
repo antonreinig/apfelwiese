@@ -3,7 +3,7 @@ import { usePfad, passt } from './ui/router.ts'
 import { Navigation } from './ui/Navigation.tsx'
 import { neigungErlauben } from './apfel3d/neigung.ts'
 import { WieseSeite } from './seiten/Wiese.tsx'
-import { SortenSeite } from './seiten/Sorten.tsx'
+import { SortenSeite, SortenListeSeite } from './seiten/Sorten.tsx'
 import { Kontopflicht } from './ui/Kontopflicht.tsx'
 import { Einfuehrung, einfuehrungOffen } from './ui/Einfuehrung.tsx'
 import { useKonto, bereit } from './daten/konto.ts'
@@ -16,6 +16,9 @@ const SorteSeite = lazy(() => import('./seiten/Sorte.tsx'))
 const KarteSeite = lazy(() => import('./seiten/Karte.tsx'))
 const BestimmenSeite = lazy(() => import('./seiten/Bestimmen.tsx'))
 const InfoSeite = lazy(() => import('./seiten/Info.tsx'))
+const KontoSeite = lazy(() => import('./seiten/Konto.tsx'))
+const RatgeberSeite = lazy(() => import('./seiten/Ratgeber.tsx'))
+const BezugSeite = lazy(() => import('./seiten/Bezug.tsx'))
 const Test3dSeite = lazy(() => import('./seiten/Test3d.tsx'))
 const RundgangSeite = lazy(() => import('./seiten/Rundgang.tsx'))
 const AngleichenSeite = lazy(() => import('./seiten/Angleichen.tsx'))
@@ -57,7 +60,7 @@ export default function App() {
 
   // für Rückmeldungen: zuletzt besuchte Seite
   useEffect(() => {
-    if (!/^\/(rueckmeldung|info)/.test(pfad)) try { sessionStorage.setItem('letzte-seite', pfad.split('?')[0]) } catch { /* privat */ }
+    if (!/^\/(rueckmeldung|info|konto)/.test(pfad)) try { sessionStorage.setItem('letzte-seite', pfad.split('?')[0]) } catch { /* privat */ }
   }, [pfad])
 
   let inhalt: React.ReactNode
@@ -68,9 +71,14 @@ export default function App() {
   else if ((p = passt('/baum/:id/angleichen', pfad))) { inhalt = mitKonto(<AngleichenSeite id={p.id} />); mitNavigation = false }
   else if ((p = passt('/baum/:id', pfad))) inhalt = mitKonto(<BaumSeite id={p.id} />)
   else if ((p = passt('/sorte/:id', pfad))) inhalt = <SorteSeite id={p.id} />
+  else if (passt('/sorten/ratgeber', pfad)) inhalt = <RatgeberSeite />
+  else if (passt('/sorten/bezug', pfad)) inhalt = <BezugSeite />
+  else if (passt('/sorten/alle', pfad)) inhalt = <SortenListeSeite art="alle" />
+  else if ((p = passt('/sorten/:art/:wert', pfad)) && ['sammlung', 'monat', 'region'].includes(p.art)) inhalt = <SortenListeSeite key={pfad} art={p.art as 'sammlung'} wert={p.wert} />
   else if (passt('/sorten', pfad)) inhalt = <SortenSeite />
   else if (passt('/wiese', pfad) || passt('/karte', pfad)) inhalt = mitKonto(<KarteSeite />, 'Deine Wiese')
   else if (passt('/info', pfad)) inhalt = <InfoSeite />
+  else if (passt('/konto', pfad)) inhalt = <KontoSeite />
   else if (passt('/anmelden', pfad)) { inhalt = <AnmeldenSeite />; mitNavigation = false }
   else if (passt('/installieren', pfad)) inhalt = <InstallierenSeite />
   else if (passt('/rueckmeldung', pfad)) inhalt = <RueckmeldungSeite />

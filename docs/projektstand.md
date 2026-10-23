@@ -168,6 +168,15 @@ Prototyp als PWA, live unter https://apfelwiese.app (alte Adresse apfelwiese.ver
 - **Sicherheitsprüfung 22.10.2026:** kein Zugriff auf fremde Daten gefunden; behoben wurden u. a. Code-Raten über parallele Anfragen, Link-Adresse aus Anfrage-Headern, fremde Anmeldelinks, Daten auf geteilten Geräten, fehlende Mengen- und Speichergrenzen.
 - **Verbesserungsnutzung der Fotos** nur mit freiwilliger, gesonderter Einwilligung.
 
+## Entscheidungen vom 23.10.2026 (Sorten erkunden, Konto)
+
+- **Sorten-Tab als Erkunden-Seite** statt langer Liste: Apfel des Tages (für alle gleich, aus gut beschriebenen Sorten mit Bild), Ratgeber, Jetzt genussreif, Aus deiner Region, Selten und erhaltenswert, Reifekalender, Sammlungen nach Farbe, Sortenfamilie und Thema, Seite „Alte Sorten bekommen und erhalten“, Liste aller Sorten. Code: `src/seiten/Sorten.tsx`, `src/daten/erkunden.ts`.
+- **Sortenratgeber** (`src/daten/ratgeber.ts`, `src/seiten/Ratgeber.tsx`): neun Fragen, Bewertung nur aus belegten Werten, fehlende Angaben zählen nicht gegen eine Sorte, Sorten mit schwerem Gegengrund (z. B. frostempfindliche Blüte in einer Spätfrostsenke) fallen heraus. Bewertet werden nur Sorten mit mindestens zwei Anbauangaben (derzeit vor allem die deutschen Quellen). Kaufhinweise mit Quellen (LWG Bayern, Pomologen-Verein).
+- **Anbaumerkmale im Katalog** (`erfassung: 'literatur'`, am eigenen Baum nicht abgefragt): Lagerfähigkeit, Frostempfindlichkeit der Blüte, Ertragsbeginn, Alternanz, Gesundheit, Anfälligkeit für Schorf, Mehltau, Obstbaumkrebs, Ansprüche an Lage und Boden, Wasserbedarf, Hochstamm-Eignung. Werte aus den deutschen Sortentexten, je Wert mit wörtlichem Ausschnitt und den Belegen des Textes (`daten/de/anbau.json`).
+- **„Alte Sorte“** heißt: Entstehung laut Herkunftstext vor 1950 oder beschrieben bzw. abgebildet in einem Werk vor 1950. Für viele NFC-Sorten fehlt eine solche Angabe; sie gelten dann nicht als alt, auch wenn sie es sein mögen.
+- **Region** wählt der Nutzer als Bundesland (nur im Gerät gespeichert, keine Ortung). Regionen einer Sorte: Herkunft und Verbreitung laut Text, dazu Regional- und Empfehlungslisten der Länder (`daten/ratgeber/regionen.json`).
+- **Konto-Knopf** oben rechts auf der Startseite (`#/konto`): Kontokarte, Region, Darstellung hell/dunkel, Einwilligung, Sicherung, Abmelden, Konto löschen. „Über die App“ (i) enthält nur noch Erklärung, Quellen und Rechtliches. Datenschutzerklärung und Einwilligungstext verweisen jetzt auf „Konto“ (Ortsangabe, kein neuer Inhalt; `TEXT_VERSION` unverändert).
+
 ## Offene Punkte und nächste Schritte (Stand 22.10.2026)
 
 **Am iPhone noch nicht geprüft** (manuelle Tests will der Nutzer vorerst nicht; Fehler zeigt jetzt das Fehlerprotokoll):
@@ -175,6 +184,14 @@ Prototyp als PWA, live unter https://apfelwiese.app (alte Adresse apfelwiese.ver
 - Abstand oben (`--oben` in `app/src/styles.css`, 22 px unter der sicheren Zone): Greift die Unschärfe der Statusleiste (iOS 26) noch in Bedienelemente?
 - Anmeldung in der App auf dem Home-Bildschirm mit Code; Upload großer Kamerafotos; Neigungssensor.
 - Rechtstexte von jemandem mit Rechtskenntnis gegenlesen lassen.
+
+**Sorten erkunden (23.10.2026):**
+- Anbauangaben gibt es fast nur für die 331 deutschen Sorten; NFC-Sorten haben dafür keine Daten. Der Ratgeber nennt die Zahl der bewerteten Sorten.
+- Ob eine Baumschule eine Sorte führt, weiß die App nicht. Offene Recherchepunkte in `daten/ratgeber/recherche-bezug.md` (NABU-Baumschullisten waren am 23.10.2026 offline, Einsendung von Früchten an die LG SH/HH, Lohnveredelung im Norden).
+- Regionallisten (`daten/ratgeber/regionen.json`, 27 Quellen, Bericht `recherche-regionen.md`): Lücken bei Bremen (nur eine Herkunftsangabe), Niedersachsen (keine landesweite Liste online), Bayern (nur die LWG-Empfehlung), Thüringen (Liste von 2002), NRW (NABU-Listen am 23.10.2026 offline). Viele Regionalsorten fehlen ganz in der Datenbank (z. B. Riesenboiken, Luxemburger Triumph, Lohrer Rambur, Hauxapfel).
+- Seltenheit: Rote Liste der gefährdeten einheimischen Nutzpflanzen (BLE, Fassung 19.05.2026, ohne Gefährdungsstufen; 253 von 554 Apfelsorten in der Datenbank) und Arche des Geschmacks (Slow Food, Mai 2026). Dazu Aussagen „heute selten“ aus den Sortentexten.
+- Pomologisch prüfen: Dubletten `schoener-aus-herrnhut`/`schoener-von-herrnhut` und `adersleber-kalvill`/`adersleber-calville`; Synonyme, die der Roten Liste widersprechen (Martens Sämling, Mutterapfel, Winterprinzenapfel, Bischofsmütze; siehe `nicht_in_datenbank` in `regionen.json`).
+- Weitere Ratgeber-Merkmale aus den Texten wären möglich: Befruchtersorten, Fruchtfall, Feuerbrand, Winterhärte, Eignung für kleine Baumformen.
 
 **Fachlich offen:**
 - Test mit 20–30 Bäumen bekannter Sorte (Vater): Trefferquote Platz 1 und Top 3 (Meilenstein 7).

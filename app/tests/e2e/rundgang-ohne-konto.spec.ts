@@ -32,11 +32,58 @@ test('Alle Tabs und Seiten laden ohne Fehler', async ({ page }) => {
   await page.getByRole('link', { name: 'Wiese' }).click()
   await expect(page.getByText('Deine Wiese')).toBeVisible()
 
-  for (const [pfad, text] of [['#/info', 'Dein Konto'], ['#/impressum', 'Loki-Schmidt-Platz'], ['#/datenschutz', 'Fehlerprotokoll'], ['#/nutzung', 'Sortenvorschläge'], ['#/installieren', 'Home-Bildschirm'], ['#/anmelden', 'Code per E-Mail schicken']] as const) {
+  for (const [pfad, text] of [['#/info', 'So funktioniert es'], ['#/konto', 'Deine Region'], ['#/sorten/bezug', 'Pomologen'], ['#/sorten/sammlung/renetten', 'Renetten'], ['#/sorten/monat/10', 'Genussreif im Oktober'], ['#/impressum', 'Loki-Schmidt-Platz'], ['#/datenschutz', 'Fehlerprotokoll'], ['#/nutzung', 'Sortenvorschläge'], ['#/installieren', 'Home-Bildschirm'], ['#/anmelden', 'Code per E-Mail schicken']] as const) {
     await page.goto('/' + pfad)
     await nichtLeer(page)
     await expect(page.getByText(text).first()).toBeVisible()
   }
+  expect(fehler, fehler.join('\n')).toEqual([])
+})
+
+test('Kopfleiste führt zu Konto und Einstellungen; die Region steuert den Sorten-Tab', async ({ page }) => {
+  const fehler = konsolenfehler(page)
+  await ohneEinfuehrung(page)
+  await page.goto('/')
+  await page.getByRole('button', { name: 'Konto und Einstellungen' }).click()
+  await expect(page.getByText('Du bist nicht angemeldet')).toBeVisible()
+  await page.getByRole('combobox', { name: 'Bundesland' }).selectOption('DE-HH')
+  await page.getByRole('radio', { name: 'Dunkel' }).click()
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
+  await page.getByRole('radio', { name: 'Wie das Gerät' }).click()
+  await page.getByRole('link', { name: 'Sorten' }).click()
+  await expect(page.getByText(/^Aus (Hamburg|der Nachbarschaft von Hamburg)$/)).toBeVisible()
+  expect(fehler, fehler.join('\n')).toEqual([])
+})
+
+test('Sorten erkunden: Apfel des Tages, Sammlung, Reifekalender, Ratgeber', async ({ page }) => {
+  const fehler = konsolenfehler(page)
+  await ohneEinfuehrung(page)
+  await page.goto('/#/sorten')
+  await expect(page.getByLabel('Apfel des Tages')).toBeVisible()
+  await page.getByRole('button', { name: 'Zufällige Sorte' }).click()
+  await expect(page.getByLabel('Zufallsfund')).toBeVisible()
+
+  await page.getByRole('link', { name: /Kalvillen/ }).click()
+  await expect(page.getByRole('heading', { name: 'Kalvillen' })).toBeVisible()
+  await expect(page.locator('a.zeile[href^="#/sorte/"]').first()).toBeVisible()
+  await page.goBack()
+
+  await page.getByRole('link', { name: /Welcher Apfelbaum passt zu dir/ }).click()
+  await page.getByRole('combobox', { name: 'Bundesland' }).selectOption('DE-NW')
+  await page.getByRole('button', { name: 'Weiter' }).click()
+  await page.getByRole('radio', { name: /Rau/ }).click()
+  await page.getByRole('radio', { name: /Normaler Gartenboden/ }).click()
+  await page.getByRole('radio', { name: /Wiese oder großer Garten/ }).click()
+  await page.getByRole('checkbox', { name: /Lagern bis ins Frühjahr/ }).click()
+  await page.getByRole('button', { name: 'Weiter' }).click()
+  await page.getByRole('radio', { name: /Ist mir nicht so wichtig/ }).click()
+  await page.getByRole('radio', { name: /robust/ }).click()
+  await page.getByRole('radio', { name: /Weiß ich nicht/ }).click()
+  await page.getByRole('checkbox', { name: /Eine alte Sorte/ }).click()
+  await page.getByRole('button', { name: 'Weiter' }).click()
+  await expect(page.getByText('Diese Sorten passen')).toBeVisible()
+  await expect(page.locator('a.karte-papier[href^="#/sorte/"]').first()).toBeVisible()
+  await expect(page.getByText('Worauf du beim Kauf achten solltest')).toBeVisible()
   expect(fehler, fehler.join('\n')).toEqual([])
 })
 

@@ -8,10 +8,13 @@
 //   de/sorten_de.json, de/quellen.json        deutsche Quellen (alte Pomologien, Wikipedia)
 //   nfc/sorten_nfc.json, nfc/quellen.json     UK National Fruit Collection
 //   bilder/bilder.json, bilder/aliase.json, bilder/farbmessung.json, bilder/quellen.json
+//   de/anbau.json                             Anbaumerkmale und Herkunft aus den deutschen Sortentexten
+//   ratgeber/regionen.json                    Regional- und Lokalsortenlisten der Länder
+//   ratgeber/seltenheit.json                  Gefährdungseinstufungen
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs'
 import { join } from 'node:path'
-import type { Sorte, Quelle, SortenEintrag, Sortenbild, Farbmessung, Merkmalswert } from '../src/daten/sorte.ts'
+import type { Sorte, Quelle, SortenEintrag, Sortenbild, Farbmessung, Merkmalswert, Beleg, Regionszuordnung } from '../src/daten/sorte.ts'
 import { MERKMAL_NACH_ID, auspraegungLabel } from '../src/daten/merkmalskatalog.ts'
 import { darstellungAus, zusammenfassen, STANDARD } from '../src/apfel3d/darstellung.ts'
 
@@ -94,10 +97,12 @@ function zusammenfuehren(ziel: Sorte, neu: Sorte) {
   ziel.farbmessung = [...(ziel.farbmessung ?? []), ...(neu.farbmessung ?? [])]
 }
 
+const ausDe = new Map<string, string>() // ID in sorten_de.json → ID in der App
 for (const s of de) {
   const kopie: Sorte = structuredClone(s)
   kopie.id = freieId(normalisiere(kopie.id || kopie.name))
   sorten.set(kopie.id, kopie)
+  ausDe.set(s.id, kopie.id)
   registriere(kopie)
 }
 let zusammen = 0
@@ -136,6 +141,72 @@ for (const s of sorten.values()) {
 }
 console.log(`Mit Bild: ${mitBild}, mit Farbmessung: ${mitFarbe}`)
 
+// ------------------------------------------------------------------ Anbau, Herkunft, Regionen, Seltenheit
+
+interface AnbauEintrag {
+  id: string
+  merkmale: { merkmal: string; wert: string; original: string; thema: string; quelle?: string }[]
+  herkunft?: {
+    land?: string; sicher?: boolean; regionen?: string[]; ort?: string; jahr?: number
+    verbreitung?: { region: string; original: string }[]; selten?: { original: string; thema?: string } | null
+  }
+}
+const anbau = lies<AnbauEintrag[]>('de/anbau.json', [])
+let anbauWerte = 0
+for (const a of anbau) {
+  const s = sorten.get(ausDe.get(a.id) ?? '')
+  const quelleDe = de.find((x) => x.id === a.id)
+  if (!s || !quelleDe) { console.log(`  Anbau: unbekannte Sorte ${a.id}`); continue }
+  const herkunftBelege = [...(quelleDe.herkunft?.belege ?? []), ...quelleDe.texte.filter((t) => t.thema === 'herkunft').flatMap((t) => t.belege)]
+  for (const w of a.merkmale) {
+    const text = quelleDe.texte.find((t) => t.thema === w.thema && t.text.includes(w.original))
+    if (!text) { console.log(`  Anbau: Ausschnitt nicht im Text (${a.id}, ${w.merkmal}): ${w.original}`); continue }
+    const genannt = w.quelle ? text.belege.filter((b) => b.quelle === w.quelle) : []
+    const belege = genannt.length ? genannt : text.belege
+    if (s.merkmale.some((x) => x.merkmal === w.merkmal && String(x.wert) === w.wert && belege.some((b) => b.quelle === x.quelle))) continue
+    s.merkmale.push({ merkmal: w.merkmal, wert: w.wert, original: w.original, ...belege[0], ...(belege.length > 1 ? { belege } : {}) })
+    anbauWerte++
+  }
+  const h = a.herkunft
+  if (h && s.herkunft) {
+    if (h.land) { s.herkunft.land = h.land; s.herkunft.landSicher = h.sicher !== false }
+    if (h.ort) s.herkunft.ort = h.ort
+    if (h.jahr) s.herkunft.jahr = h.jahr
+    for (const r of h.regionen ?? []) (s.regionen ??= []).push({ region: r, art: 'herkunft', belege: herkunftBelege })
+    for (const v of h.verbreitung ?? []) (s.regionen ??= []).push({ region: v.region, art: 'verbreitung', belege: herkunftBelege, original: v.original })
+  }
+  if (h?.selten) {
+    const thema = h.selten.thema
+    const belege = thema ? quelleDe.texte.filter((t) => t.thema === thema && t.text.includes(h.selten!.original)).flatMap((t) => t.belege) : herkunftBelege
+    ;(s.gefaehrdung ??= []).push({ stufe: 'selten', belege: belege.length ? belege : herkunftBelege, original: h.selten.original })
+  }
+}
+if (anbau.length) console.log(`Anbau: ${anbauWerte} Werte aus ${anbau.length} Sortentexten`)
+
+/** Externe Listen (Ratgeber-Recherche): Quellen mit eigenem Präfix, Sorten über ihre ID in der App */
+interface ListenQuelle { id: string; titel: string; herausgeber?: string; url?: string; abgerufen?: string; anmerkung?: string }
+function listenQuellen(qs: ListenQuelle[]) {
+  for (const q of qs) quellen.set(`rg_${q.id}`, { id: `rg_${q.id}`, werk: q.titel, autor: q.herausgeber, url: q.url, abgerufen: q.abgerufen, anmerkung: q.anmerkung, lizenz: 'Angabe übernommen, Quelle verlinkt' })
+}
+const regionen = lies<{ quellen: ListenQuelle[]; zuordnungen: { sorte: string; name_in_quelle?: string; region: string; art: Regionszuordnung['art']; quelle: string; seite?: string }[] }>('ratgeber/regionen.json', { quellen: [], zuordnungen: [] })
+listenQuellen(regionen.quellen)
+for (const z of regionen.zuordnungen) {
+  const s = sorten.get(z.sorte)
+  if (!s) { console.log(`  Regionen: unbekannte Sorte ${z.sorte}`); continue }
+  const beleg: Beleg = { quelle: `rg_${z.quelle}`, ...(z.seite ? { seite: z.seite } : {}) }
+  const da = s.regionen?.find((r) => r.region === z.region && r.art === z.art)
+  if (da) { if (!da.belege.some((b) => b.quelle === beleg.quelle)) da.belege.push(beleg) }
+  else (s.regionen ??= []).push({ region: z.region, art: z.art, belege: [beleg], original: z.name_in_quelle })
+}
+const seltenheit = lies<{ quellen: ListenQuelle[]; einstufungen: { sorte: string; name_in_quelle?: string; stufe: string; quelle: string; seite?: string }[] }>('ratgeber/seltenheit.json', { quellen: [], einstufungen: [] })
+listenQuellen(seltenheit.quellen)
+for (const e of seltenheit.einstufungen) {
+  const s = sorten.get(e.sorte)
+  if (!s) { console.log(`  Seltenheit: unbekannte Sorte ${e.sorte}`); continue }
+  ;(s.gefaehrdung ??= []).push({ stufe: e.stufe, belege: [{ quelle: `rg_${e.quelle}`, ...(e.seite ? { seite: e.seite } : {}) }], original: e.name_in_quelle })
+}
+console.log(`Regionen: ${[...sorten.values()].filter((s) => s.regionen?.length).length} Sorten, Seltenheit: ${[...sorten.values()].filter((s) => s.gefaehrdung?.length).length} Sorten`)
+
 // ------------------------------------------------------------------ Prüfen
 
 let fehler = 0
@@ -158,7 +229,20 @@ const ABGLEICH = new Set([
   'genussreife_ende', 'geschmack_suesse', 'geschmack_saeure', 'fleisch_festigkeit', 'fleisch_saftigkeit', 'kerne_anzahl',
   'aroma_noten', 'aroma_staerke', 'duft_noten', 'duft_staerke', 'schale_beschaffenheit', 'schale_lentizellen_art', 'kelch_offenheit',
   'kernhaus_lage', 'kernhaus_achse', 'stiel_laenge', 'genussreife_beginn', 'kernhaus_breite_mm', 'kernhaus_hoehe_mm', 'bluete_zeit',
+  // Ratgeber und Erkunden
+  'verwendung', 'baum_wuchs', 'ploidie', 'lagerfaehigkeit', 'bluete_frost', 'ertrag_beginn', 'ertrag_alternanz', 'gesundheit',
+  'anfaelligkeit_schorf', 'anfaelligkeit_mehltau', 'anfaelligkeit_krebs', 'standort_klima', 'standort_boden', 'standort_feuchte', 'hochstamm',
 ])
+// Werke vor 1950 ohne einzelnes Erscheinungsjahr (Sammlungen über mehrere Jahrzehnte)
+const VOR_1950 = new Set(['pomologische-monatshefte', 'usda-pomological', 'pomological-magazine'])
+/** Kurzbezeichnung für Listen: externe Einstufung vor der Aussage im Sortentext */
+function kurzeStufe(s: Sorte) {
+  const stufen = (s.gefaehrdung ?? []).map((g) => g.stufe)
+  if (stufen.some((x) => /Rote Liste/.test(x))) return 'Rote Liste'
+  if (stufen.some((x) => /Arche/.test(x))) return 'Arche des Geschmacks'
+  return stufen[0]
+}
+const REGION_ART = { herkunft: 'h', regionalsorte: 'r', empfehlung: 'e', verbreitung: 'v' } as const
 const SCHNITT = new Set(['kernhaus', 'kerne', 'kelch'])
 const KURZMONAT = ['', 'Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']
 
@@ -255,6 +339,13 @@ for (const s of sorten.values()) {
     ? `${KURZMONAT[beginn]}–${KURZMONAT[ende]}`
     : ersterWert(s, 'pflueckreife') ? `pflückreif ${auspraegungLabel('pflueckreife', ersterWert(s, 'pflueckreife')!)}` : undefined
   const fruchtbild = s.bilder.find((b) => b.art === 'frucht') ?? s.bilder[0]
+  // Älteste Beschreibung oder Abbildung in einem datierten Werk
+  const belegQuellen = new Set([...s.merkmale.map((w) => w.quelle), ...s.texte.flatMap((t) => t.belege.map((b) => b.quelle)), ...s.bilder.map((b) => b.quelle)])
+  const jahre = [...belegQuellen].map((q) => quellen.get(q)?.jahr).filter((j): j is number => typeof j === 'number' && j < 1950)
+  const beschrieben = jahre.length ? Math.min(...jahre) : undefined
+  const jahr = s.herkunft?.jahr
+  const alt = (jahr !== undefined && jahr < 1950) || beschrieben !== undefined || [...belegQuellen].some((q) => VOR_1950.has(q))
+  const regionenKurz = [...new Set((s.regionen ?? []).map((r) => `${r.region}:${REGION_ART[r.art]}`))]
   eintraege.push({
     id: s.id,
     name: s.name,
@@ -269,6 +360,12 @@ for (const s of sorten.values()) {
     genuss: genuss.length ? genuss : undefined,
     ausfuehrlich: s.texte.length >= 4 && new Set(s.texte.flatMap((t) => t.belege.map((b) => b.quelle))).size >= 2,
     m,
+    ...(s.herkunft?.land && s.herkunft.landSicher !== false ? { land: s.herkunft.land } : {}),
+    ...(regionenKurz.length ? { regionen: regionenKurz } : {}),
+    ...(jahr ? { jahr } : {}),
+    ...(beschrieben ? { beschrieben } : {}),
+    ...(alt ? { alt } : {}),
+    ...(s.gefaehrdung?.length ? { selten: kurzeStufe(s) } : {}),
   })
 }
 // Alphabetisch; Zuchtnummern und Namen, die mit Ziffern beginnen, ans Ende
@@ -281,7 +378,9 @@ if (existsSync(ZIEL)) for (const f of readdirSync(ZIEL)) rmSync(join(ZIEL, f))
 mkdirSync(ZIEL, { recursive: true })
 const genutzt = new Set<string>()
 for (const s of sorten.values()) {
-  for (const w of s.merkmale) genutzt.add(w.quelle)
+  for (const w of s.merkmale) { genutzt.add(w.quelle); w.belege?.forEach((b) => genutzt.add(b.quelle)) }
+  for (const r of s.regionen ?? []) r.belege.forEach((b) => genutzt.add(b.quelle))
+  for (const g of s.gefaehrdung ?? []) g.belege.forEach((b) => genutzt.add(b.quelle))
   for (const t of s.texte) for (const b of t.belege) genutzt.add(b.quelle)
   for (const b of s.bilder) genutzt.add(b.quelle)
   s.herkunft?.belege.forEach((b) => genutzt.add(b.quelle))

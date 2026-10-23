@@ -124,7 +124,7 @@ function Zustimmung() {
   return (
     <div className="seite">
       <h1 className="name" style={{ fontSize: 40 }}>Bevor es losgeht</h1>
-      <p>Deine Bäume, Fotos, Standorte und Angaben werden in deinem Konto auf einem Server in Frankfurt am Main gespeichert, damit du sie nicht verlierst und auf mehreren Geräten nutzen kannst. Nur du hast darauf Zugriff. Du kannst dein Konto mit allen Daten jederzeit unter „Über die App“ löschen.</p>
+      <p>Deine Bäume, Fotos, Standorte und Angaben werden in deinem Konto auf einem Server in Frankfurt am Main gespeichert, damit du sie nicht verlierst und auf mehreren Geräten nutzen kannst. Nur du hast darauf Zugriff. Du kannst dein Konto mit allen Daten jederzeit unter „Konto“ löschen.</p>
       <label style={{ display: 'flex', gap: 12, alignItems: 'flex-start', margin: '16px 0' }}>
         <input type="checkbox" checked={nutzung} onChange={(e) => setNutzung(e.target.checked)} style={{ width: 22, height: 22, marginTop: 3, flex: 'none' }} />
         <span>Ich habe die <a href="#/nutzung">Nutzungsbedingungen</a> und die <a href="#/datenschutz">Datenschutzhinweise</a> gelesen und bin mit der Speicherung meiner Daten in meinem Konto einverstanden. <i>(erforderlich)</i></span>
@@ -133,7 +133,7 @@ function Zustimmung() {
         <input type="checkbox" checked={verbesserung} onChange={(e) => setVerbesserung(e.target.checked)} style={{ width: 22, height: 22, marginTop: 3, flex: 'none' }} />
         <span>Meine Fotos und Angaben dürfen zusätzlich verwendet werden, um die App zu verbessern, etwa um die Blatterkennung, die Messung und den Sortenvorschlag zu testen und weiterzuentwickeln. Sie werden dafür nicht veröffentlicht. <i>(freiwillig, jederzeit widerrufbar)</i></span>
       </label>
-      <p className="sehr-klein">Die Bestimmung funktioniert auch ohne das zweite Häkchen. Du kannst diese Einwilligung jederzeit unter „Über die App“ ändern.</p>
+      <p className="sehr-klein">Die Bestimmung funktioniert auch ohne das zweite Häkchen. Du kannst diese Einwilligung jederzeit unter „Konto“ ändern.</p>
       {fehler && <p className="klein" style={{ color: 'var(--warn)' }}>{fehler}</p>}
       <button className="knopf haupt" style={{ width: '100%' }} disabled={!nutzung || laeuft} onClick={absenden}>{laeuft ? 'Wird gespeichert …' : 'Weiter'}</button>
     </div>
