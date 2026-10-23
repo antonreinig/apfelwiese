@@ -26,7 +26,11 @@ async function letzte24h<T extends { zeit: string }>(bereich: string): Promise<T
 async function get(req: Request) {
   const geheim = process.env.CRON_SECRET
   if (!geheim || req.headers.get('authorization') !== `Bearer ${geheim}`) return fehler(401, 'Nicht erlaubt')
-  const [ereignisse, fehlerliste] = await Promise.all([letzte24h<Ereignis>('ereignisse'), letzte24h<Fehlereintrag>('fehler')])
+  const [alleEreignisse, alleFehler] = await Promise.all([letzte24h<Ereignis>('ereignisse'), letzte24h<Fehlereintrag>('fehler')])
+  // automatische Tests (Testkonten, Testläufe) zählen nicht als Nutzung
+  const ereignisse = alleEreignisse.filter((e) => !e.test)
+  const fehlerliste = alleFehler.filter((f) => !f.test)
+  const testkonten = alleEreignisse.filter((e) => e.test && e.art === 'konto-neu').length
   if (!ereignisse.length && !fehlerliste.length) return json({ verschickt: false })
 
   const zaehle = (art: Ereignis['art']) => ereignisse.filter((e) => e.art === art).length
@@ -41,6 +45,7 @@ async function get(req: Request) {
     `Fehler: ${fehlerliste.length}`,
     ...[...arten.entries()].sort((a, b) => b[1] - a[1]).slice(0, 15).map(([t, n]) => `  ${n}× ${t}`),
     '',
+    ...(testkonten ? [`(Nicht mitgezählt: ${testkonten} Testkonten der automatischen Prüfung)`] : []),
     'Details: https://apfelwiese.app/#/betrieb',
   ]
   await sendeMail(BETREIBER_MAIL, `Apfelwiese: ${fehlerliste.length} Fehler, ${zaehle('konto-neu')} neue Konten`, zeilen.join('\n'),

@@ -1,7 +1,10 @@
 // Ohne Konto: Einführung, alle Tabs, Sorten, rechtliche Seiten. Keine leeren Seiten, keine Skriptfehler.
 
 import { test, expect } from '@playwright/test'
-import { konsolenfehler, ohneEinfuehrung, nichtLeer } from './hilfen.ts'
+import { konsolenfehler, ohneEinfuehrung, nichtLeer, alsTest } from './hilfen.ts'
+
+// Fehlermeldungen dieser Läufe zählen nicht als Nutzung
+test.beforeEach(async ({ page }) => { await alsTest(page) })
 
 test('Einführung erscheint beim ersten Start und lässt sich durchblättern', async ({ page }) => {
   await page.goto('/')
@@ -49,4 +52,23 @@ test('Fehlt nach einem Update ein Teil der App, lädt sie sich neu statt leer zu
   await nichtLeer(page)
   await expect(page.getByText('Gravensteiner').first()).toBeVisible()
   expect(abgefangen).toBeGreaterThanOrEqual(2)
+})
+
+test('Ohne 3D-Grafik (kein WebGL) erscheint ein flacher Apfel statt eines Fehlers', async ({ page }) => {
+  const fehler = konsolenfehler(page)
+  await ohneEinfuehrung(page)
+  await page.addInitScript(() => {
+    const original = HTMLCanvasElement.prototype.getContext
+    // WebGL abschalten, 2D-Zeichnen erlauben
+    HTMLCanvasElement.prototype.getContext = function (this: HTMLCanvasElement, art: string, ...rest: unknown[]) {
+      if (/webgl/i.test(art)) return null
+      return (original as (...a: unknown[]) => RenderingContext | null).call(this, art, ...rest)
+    } as typeof original
+  })
+  await page.goto('/')
+  await expect(page.getByRole('img', { name: 'Apfel' }).first()).toBeVisible()
+  await expect(page.getByText('Da ist etwas schiefgelaufen')).toHaveCount(0)
+  await page.getByRole('link', { name: 'Sorten' }).click()
+  await expect(page.getByText('Sortenverzeichnis')).toBeVisible()
+  expect(fehler, fehler.join('\n')).toEqual([])
 })

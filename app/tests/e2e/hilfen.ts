@@ -18,6 +18,11 @@ export async function ohneEinfuehrung(page: Page) {
   await page.addInitScript(() => { try { localStorage.setItem('einfuehrung-gesehen', '1') } catch { /* */ } })
 }
 
+/** Fehlermeldungen dieses Laufs als Test kennzeichnen (zählen nicht im Tagesbericht) */
+export async function alsTest(page: Page) {
+  await page.addInitScript(() => { try { localStorage.setItem('aw-test', '1') } catch { /* */ } })
+}
+
 /** Die Seite darf nie leer bleiben */
 export async function nichtLeer(page: Page) {
   await expect.poll(async () => (await page.locator('#root').innerText()).trim().length, { timeout: 15_000 }).toBeGreaterThan(20)

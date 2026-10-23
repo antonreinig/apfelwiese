@@ -3,7 +3,10 @@
 
 import { test, expect } from '@playwright/test'
 import { codeAusResend } from '../api/resend.ts'
-import { konsolenfehler, ohneEinfuehrung } from './hilfen.ts'
+import { konsolenfehler, ohneEinfuehrung, alsTest } from './hilfen.ts'
+
+// Fehlermeldungen dieser Läufe zählen nicht als Nutzung
+test.beforeEach(async ({ page }) => { await alsTest(page) })
 
 test.skip(!process.env.RESEND_API_KEY, 'RESEND_API_KEY fehlt')
 

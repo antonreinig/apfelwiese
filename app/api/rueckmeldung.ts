@@ -4,7 +4,7 @@ import { json, fehler, herkunftOk, koerper, clientIp, text as zeichen, EMAIL_MUS
 import { angemeldet } from './_lib/sitzung.js'
 import { imLimit } from './_lib/speicher.js'
 import { sendeMail, escape, BETREIBER_MAIL } from './_lib/mail.js'
-import { mitProtokoll, protokolliereEreignis } from './_lib/protokoll.js'
+import { mitProtokoll, protokolliereEreignis, istTest } from './_lib/protokoll.js'
 
 async function post(req: Request) {
   if (!herkunftOk(req)) return fehler(403, 'Herkunft nicht erlaubt')
@@ -40,7 +40,7 @@ async function post(req: Request) {
   } catch {
     return fehler(502, 'Die Nachricht konnte nicht verschickt werden.')
   }
-  await protokolliereEreignis('rueckmeldung', konto?.uid)
+  await protokolliereEreignis('rueckmeldung', konto?.uid, istTest(req, konto?.email))
   return json({ ok: true })
 }
 

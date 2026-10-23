@@ -65,14 +65,20 @@ PWA zur Bestimmung und Dokumentation alter Apfelsorten aus vier standardisierten
   - `api/`: gegen `BASIS_URL`, Standard ist die Live-Version.
   - `e2e/`: Playwright mit dem installierten Chrome. In CI kommt Chromium dazu, lokal wird wegen knappen Speicherplatzes kein Browser heruntergeladen.
   - Neue Funktionen bekommen einen Test in der passenden Ebene.
-- **GitHub Actions** (`.github/workflows/pruefung.yml`): Bei jedem Push läuft `pruefen`, jede Nacht um 03:30 UTC zusätzlich `pruefen:live`. Der Resend-Schlüssel liegt dort als Secret `RESEND_API_KEY`; GitHub schickt bei Fehlschlag eine Mail.
+- **GitHub Actions** (`.github/workflows/pruefung.yml`): Bei jedem Push läuft `pruefen`, jede Nacht um 02:17 UTC zusätzlich `pruefen:live` (nicht zur vollen oder halben Stunde, dann lässt GitHub geplante Läufe oft ausfallen; der Lauf um 03:30 UTC am 23.10.2026 fehlte). Der Resend-Schlüssel liegt dort als Secret `RESEND_API_KEY`; GitHub schickt bei Fehlschlag eine Mail.
 - **Firewall-Limit** „Anmeldung begrenzen“: 20 Anfragen je 10 Minuten und IP auf `/api/anmelden`, `/api/bestaetigen`, `/api/rueckmeldung`. Mehrere Testläufe hintereinander stoßen daran (Antwort 403 von Vercel); dann 10 Minuten warten.
 - **Fehlerprotokoll:**
   - Die App meldet unerwartete Fehler an `/api/protokoll` (`src/ui/protokoll.ts`, Fehlergrenze in `src/ui/Fehlergrenze.tsx`).
   - API-Routen sind mit `mitProtokoll` umhüllt (`api/_lib/protokoll.ts`).
   - Ereignisse (neues Konto, Löschung, Rückmeldung) liegen unter `log/` im Blob-Speicher und werden nach 30 Tagen gelöscht.
+- **Testläufe kennzeichnen:**
+  - Testkonten haben Adressen `delivered+…@resend.dev`.
+  - API-Tests senden den Header `x-apfelwiese-test: 1`.
+  - Browsertests setzen `localStorage['aw-test']`.
+  - Solche Ereignisse und Fehler tragen `test: true` und erscheinen nicht im Tagesbericht und auf der Betriebsseite; dort steht nur ihre Anzahl.
 - **Betriebsseite** `#/betrieb`: Konten, Ereignisse, gruppierte Fehler mit Ablauf, Mail-Kontingent. Nur sichtbar für E-Mails in `BETREIBER_EMAILS`. Der Cron `api/tagesbericht.ts` (06:00 UTC) schickt eine Mail, wenn es Fehler oder Ereignisse gab.
 - **Vercel-Logs** (etwa 1 Tag): `npx vercel@latest logs requests --since 24h --limit 5000 --json --scope anton-reinigs-projects` zeigt jede Anfrage mit Pfad, Status, Land und Browser.
+- **Ohne WebGL** (alte Geräte, Crawler): `src/apfel3d/ohne3d.tsx` zeigt einen flachen Apfel statt der 3D-Bühne.
 - **Nachladefehler nach Updates:** Jeder Tab ist eine eigene Datei mit wechselndem Namen. Ist eine alte Version geöffnet, lädt die App einmal neu (`einmalNeuLaden`); die Fehlergrenze verhindert leere Seiten.
 
 ## Befehle (aus `app/`)

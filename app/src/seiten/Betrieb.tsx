@@ -15,6 +15,7 @@ interface Betriebsdaten {
   ereignisse: { zeit: string; art: string }[]
   fehler: Fehlergruppe[]
   kontingent: { anmeldemails: number; anmeldemailsMax: number; rueckmeldungen: number; rueckmeldungenMax: number }
+  tests?: { konten: number; fehler: number }
 }
 
 const zeit = (t: string) => new Date(t).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
@@ -41,6 +42,7 @@ export default function BetriebSeite() {
       {!d && !fehler && <p className="hinweis">Lädt …</p>}
       {d && (
         <>
+          {d.tests && (d.tests.konten > 0 || d.tests.fehler > 0) && <p className="sehr-klein">Ausgeblendet: {d.tests.konten} Testkonten und {d.tests.fehler} Fehler der automatischen Prüfung.</p>}
           <p className="sehr-klein">Heute: {d.kontingent.anmeldemails} von {d.kontingent.anmeldemailsMax} Anmeldemails, {d.kontingent.rueckmeldungen} von {d.kontingent.rueckmeldungenMax} Rückmeldungen (je 24 Stunden).</p>
 
           <div className="tafelkopf" style={{ marginTop: 18 }}><span>Fehler, 7 Tage</span><span>{d.fehler.reduce((s, f) => s + f.anzahl, 0)}</span></div>

@@ -3,7 +3,7 @@
 import { json, fehler, herkunftOk, koerper, clientIp, text } from './_lib/http.js'
 import { angemeldet } from './_lib/sitzung.js'
 import { imLimit } from './_lib/speicher.js'
-import { protokolliereFehler, mitProtokoll } from './_lib/protokoll.js'
+import { protokolliereFehler, mitProtokoll, istTest } from './_lib/protokoll.js'
 
 const ARTEN = new Set(['js', 'versprechen', 'darstellung', 'nachladen', 'abgleich', 'upload', 'kamera', 'messung', 'sonstiges'])
 
@@ -25,6 +25,7 @@ async function post(req: Request) {
     version: text(b?.version, 40),
     geraet: text(b?.geraet, 300),
     uid: k instanceof Response ? undefined : k.uid,
+    ...(b?.test === true || istTest(req, k instanceof Response ? undefined : k.email) ? { test: true } : {}),
   })
   return json({ ok: true })
 }

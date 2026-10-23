@@ -7,6 +7,7 @@ import { profil, verformung, pole } from './geometrie.ts'
 import { Umgebung, Licht, Bereit, Platzhalter, neuerBlick, useDrehgeste, blickHoehe, type Blick } from './Buehne.tsx'
 import { neigung, bewegungReduziert } from './neigung.ts'
 import { hexNachRgb } from './schale.ts'
+import { webglVerfuegbar, FlacherApfel } from './ohne3d.tsx'
 
 // Schnittansichten: Längsschnitt durch Stiel und Kelch, Querschnitt an der breitesten Stelle.
 // Der halbe Apfel steht still, die Kamera kreist um ihn; so bleibt die Schnittebene (in
@@ -364,7 +365,20 @@ function Clipping() {
   return null
 }
 
-export function Schnittansicht({ p, className, art: vorgabe, wahl = true, zoom = 1 }: { p: ApfelParameter; className?: string; art?: Schnittart; wahl?: boolean; zoom?: number }) {
+type SchnittProps = { p: ApfelParameter; className?: string; art?: Schnittart; wahl?: boolean; zoom?: number }
+
+/** Schnittansicht in 3D; ohne WebGL ein flacher Apfel mit Hinweis */
+export function Schnittansicht(props: SchnittProps) {
+  if (webglVerfuegbar()) return <Schnittansicht3d {...props} />
+  return (
+    <div className={props.className} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+      <FlacherApfel p={props.p} groesse="45%" />
+      <span className="sehr-klein">Die Schnittansicht braucht 3D-Grafik, die dieses Gerät nicht anbietet.</span>
+    </div>
+  )
+}
+
+function Schnittansicht3d({ p, className, art: vorgabe, wahl = true, zoom = 1 }: SchnittProps) {
   const [artIntern, setArt] = useState<Schnittart>('laengs')
   const art = vorgabe ?? artIntern
   const [bereit, setBereit] = useState(false)

@@ -72,9 +72,18 @@ async function abarbeiten() {
     setzeStatus({ laeuft: false, zuletzt: new Date().toISOString() })
   } catch (e) {
     setzeStatus({ laeuft: false, fehler: (e as Error).message })
-    if (navigator.onLine) meldeFehler('upload', e)
+    if (await meldenswert(e)) meldeFehler('upload', e)
     zeitgeber = setTimeout(abarbeiten, 30_000) // später erneut
   }
+}
+
+/** Ohne Netz oder mit beendeter Sitzung (abgemeldet, Konto gelöscht) ist ein Fehler erwartbar */
+async function meldenswert(e: unknown) {
+  if (!navigator.onLine) return false
+  const status = (e as { status?: number }).status
+  if (status === 401) return false
+  const ich = await fetch('/api/ich', { credentials: 'same-origin' }).then((r) => r.status).catch(() => 0)
+  return ich === 200
 }
 
 /** Vollständiger Abgleich nach dem Start oder der Anmeldung */
@@ -122,7 +131,7 @@ export async function synchronisieren() {
     setzeStatus({ laeuft: false, zuletzt: new Date().toISOString() })
   } catch (e) {
     setzeStatus({ laeuft: false, fehler: (e as Error).message })
-    if (navigator.onLine) meldeFehler('abgleich', e)
+    if (await meldenswert(e)) meldeFehler('abgleich', e)
   }
 }
 

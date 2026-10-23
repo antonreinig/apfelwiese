@@ -7,7 +7,7 @@ import { json, fehler, herkunftOk, koerper, clientIp, text } from './_lib/http.j
 import { liesJson, schreibeJson, loesche, aendereAtomar, imLimit, anzahlIm } from './_lib/speicher.js'
 import { sitzungCookie, type Konto } from './_lib/sitzung.js'
 import type { Anfrage } from './anmelden.js'
-import { mitProtokoll, protokolliereEreignis } from './_lib/protokoll.js'
+import { mitProtokoll, protokolliereEreignis, istTest } from './_lib/protokoll.js'
 
 const MAX_VERSUCHE = 5
 const MAX_FEHLER_TAG = 10
@@ -61,7 +61,7 @@ async function post(req: Request) {
     konto = { uid, email: a.email, erstellt: new Date().toISOString(), version: 1, einwilligungen: [] }
     await schreibeJson(`n/${uid}/konto.json`, konto, false)
     await schreibeJson(indexPfad, { uid })
-    await protokolliereEreignis('konto-neu', uid)
+    await protokolliereEreignis('konto-neu', uid, istTest(req, a.email))
   }
   return json({ ok: true, neu }, 200, { 'set-cookie': sitzungCookie(konto.uid, konto.version) })
 }

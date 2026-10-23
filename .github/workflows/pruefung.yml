@@ -1,13 +1,14 @@
 # Automatische Prüfung der Apfelwiese
 # - bei jedem Push: Typprüfung, Einzeltests (Katalog, Abgleich, 3D-Parameter, Bildverarbeitung), Build
-# - jede Nacht und von Hand: zusätzlich API- und Browsertests gegen die Live-Version mit Testkonto
+# - jede Nacht (02:17 UTC) und von Hand: zusätzlich API- und Browsertests gegen die Live-Version mit Testkonto
 name: Prüfung
 
 on:
   push:
     branches: [main]
   schedule:
-    - cron: '30 3 * * *'
+    # nicht zur vollen oder halben Stunde: dann verschiebt oder überspringt GitHub geplante Läufe oft
+    - cron: '17 2 * * *'
   workflow_dispatch:
 
 jobs:

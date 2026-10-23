@@ -7,6 +7,7 @@ import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment
 import type { ApfelParameter } from './darstellung.ts'
 import { get, set } from 'idb-keyval'
 import { baueApfel, MODELL_VERSION } from './modell.ts'
+import { webglVerfuegbar } from './ohne3d.tsx'
 
 const GROESSE = 320 // Pixel; reicht für Medaillons bis etwa 160 CSS-Pixel bei 2-facher Auflösung
 
@@ -54,6 +55,7 @@ async function abarbeiten() {
 
 /** Liefert eine Bild-URL des Apfels mit der Sonnenseite zum Betrachter */
 export function medaillonBild(p: ApfelParameter): Promise<string> {
+  if (!webglVerfuegbar()) return Promise.reject(new Error('kein WebGL'))
   const key = JSON.stringify(p)
   let v = fertig.get(key)
   if (v) return v

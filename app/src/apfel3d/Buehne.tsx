@@ -6,6 +6,7 @@ import { Apfel } from './Apfel.tsx'
 import type { ApfelParameter } from './darstellung.ts'
 import { neigung, bewegungReduziert } from './neigung.ts'
 import { medaillonBild } from './medaillonBild.ts'
+import { webglVerfuegbar, FlacherApfel } from './ohne3d.tsx'
 
 // ------------------------------------------------------------------ Umgebung und Licht
 
@@ -232,7 +233,18 @@ interface BuehneProps {
   zielY?: number
 }
 
-export function ApfelBuehne({ aepfel, position = 0, className, drehbar = true, blickHoehe: zielHoehe = 0, zoom = 1, zielY = -0.03 }: BuehneProps) {
+/** 3D-Bühne; ohne WebGL ein flacher Apfel statt einer abgestürzten Seite */
+export function ApfelBuehne(props: BuehneProps) {
+  if (webglVerfuegbar()) return <ApfelBuehne3d {...props} />
+  const p = props.aepfel[Math.round(props.position ?? 0)] ?? props.aepfel[0]
+  return (
+    <div className={props.className} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      {p && <FlacherApfel p={p} groesse="58%" />}
+    </div>
+  )
+}
+
+function ApfelBuehne3d({ aepfel, position = 0, className, drehbar = true, blickHoehe: zielHoehe = 0, zoom = 1, zielY = -0.03 }: BuehneProps) {
   const [bereit, setBereit] = useState(false)
   const blick = useRef<Blick>(neuerBlick(zielHoehe))
   useEffect(() => { blick.current.zielHoehe = zielHoehe; blick.current.hoehe = zielHoehe; blick.current.letzteGeste = performance.now() - 3000 }, [zielHoehe])
@@ -266,6 +278,7 @@ export function Medaillon({ p, groesse = 56, rahmen = true }: { p: ApfelParamete
   const ref = useRef<HTMLDivElement>(null)
   const [sichtbar, setSichtbar] = useState(false)
   const [url, setUrl] = useState<string | null>(null)
+  const [ohne3d, setOhne3d] = useState(false)
   const key = JSON.stringify(p)
   useEffect(() => {
     const el = ref.current
@@ -277,7 +290,7 @@ export function Medaillon({ p, groesse = 56, rahmen = true }: { p: ApfelParamete
   useEffect(() => {
     if (!sichtbar) return
     let aktiv = true
-    medaillonBild(JSON.parse(key) as ApfelParameter).then((u) => aktiv && setUrl(u)).catch(() => {})
+    medaillonBild(JSON.parse(key) as ApfelParameter).then((u) => aktiv && setUrl(u)).catch(() => aktiv && setOhne3d(true))
     return () => { aktiv = false }
   }, [sichtbar, key])
   useEffect(() => { neigung() }, []) // startet die Neigungsmessung
@@ -292,6 +305,7 @@ export function Medaillon({ p, groesse = 56, rahmen = true }: { p: ApfelParamete
         boxShadow: rahmen ? 'inset 0 0 0 0.5px var(--linie-stark)' : undefined,
       }}
     >
+      {ohne3d && !url && <div style={{ position: 'absolute', inset: '10%' }}><FlacherApfel p={p} groesse="100%" /></div>}
       {url && (
         <>
           <img src={url} alt="" draggable={false} style={{ position: 'absolute', inset: '4%', width: '92%', height: '92%' }} />

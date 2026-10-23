@@ -22,9 +22,15 @@ export function meldeFehler(art: Fehlerart, fehler: unknown, zusatz?: string) {
       ablauf: (e.stack ?? '').slice(0, 2000),
       zusatz: zusatz?.slice(0, 300),
       seite, version: __APP_STAND__, geraet: navigator.userAgent,
+      test: istTestlauf() || undefined,
     })
     fetch('/api/protokoll', { method: 'POST', headers: { 'content-type': 'application/json' }, body: daten, keepalive: true }).catch(() => {})
   } catch { /* Protokoll darf nie selbst Fehler werfen */ }
+}
+
+/** Automatische Browsertests setzen dieses Kennzeichen; ihre Meldungen zählen nicht als Nutzung */
+function istTestlauf() {
+  try { return localStorage.getItem('aw-test') === '1' } catch { return false }
 }
 
 /** Ein Teil der App ließ sich nicht nachladen (meist nach einem Update): einmal neu laden */

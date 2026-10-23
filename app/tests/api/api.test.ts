@@ -14,7 +14,7 @@ const HERKUNFT = new URL(BASIS).origin
 let keks = ''
 
 async function api(pfad: string, init: RequestInit & { ohneHerkunft?: boolean } = {}) {
-  const kopf: Record<string, string> = { 'content-type': 'application/json', ...(init.headers as Record<string, string>) }
+  const kopf: Record<string, string> = { 'content-type': 'application/json', 'x-apfelwiese-test': '1', ...(init.headers as Record<string, string>) }
   if (!init.ohneHerkunft && !kopf.origin) kopf.origin = HERKUNFT
   if (keks) kopf.cookie = keks
   const r = await fetch(BASIS + pfad, { ...init, headers: kopf, redirect: 'manual' })
@@ -101,7 +101,7 @@ test('Ganzer Ablauf mit Testkonto', { skip: !MIT_KONTO && 'RESEND_API_KEY fehlt'
     const foto = new Uint8Array(await (await fetch(`${BASIS}/beispiel/foto1_laengshaelften_schale.jpg`)).arrayBuffer())
     await uploadPresigned(`n/${uid}/f/foto-apitest01`, new Blob([foto], { type: 'image/jpeg' }), {
       access: 'private', handleUploadUrl: `${BASIS}/api/foto-hochladen`, contentType: 'image/jpeg',
-      headers: { cookie: keks, origin: HERKUNFT },
+      headers: { cookie: keks, origin: HERKUNFT, 'x-apfelwiese-test': '1' },
     })
     const baum = { id: 'testbaum', geaendert: new Date().toISOString(), name: 'API-Test', fotosaetze: [{ fotos: ['foto:apitest01', null, null, null] }] }
     assert.equal((await api('/api/baeume?id=testbaum', { method: 'PUT', body: JSON.stringify(baum) })).status, 200)

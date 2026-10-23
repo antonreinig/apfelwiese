@@ -36,7 +36,7 @@ async function get(req: Request) {
   const konten: { email: string; erstellt: string; baeume: number; fotos: number; verbesserung: boolean }[] = []
   for (const p of kontoPfade) {
     const kk = await liesJson<Konto>(p)
-    if (!kk || kk.geloescht) continue
+    if (!kk || kk.geloescht || /@resend\.dev$/i.test(kk.email)) continue
     const inhalt = await alleUnter(`n/${kk.uid}/`)
     const verbesserung = [...kk.einwilligungen].reverse().find((e) => e.zweck === 'verbesserung')?.erteilt ?? false
     konten.push({
@@ -47,10 +47,14 @@ async function get(req: Request) {
   }
   konten.sort((a, b) => b.erstellt.localeCompare(a.erstellt))
 
-  const [ereignisse, fehlerliste] = await Promise.all([
+  const [alleEreignisse, alleFehler] = await Promise.all([
     eintraege<Ereignis>('ereignisse', 14, 300),
     eintraege<Fehlereintrag>('fehler', 7, 400),
   ])
+  // Einträge der automatischen Tests nur zählen, nicht anzeigen
+  const ereignisse = alleEreignisse.filter((e) => !e.test)
+  const fehlerliste = alleFehler.filter((f) => !f.test)
+  const tests = { konten: alleEreignisse.filter((e) => e.test && e.art === 'konto-neu').length, fehler: alleFehler.length - fehlerliste.length }
 
   // Fehler nach Art und Meldung gruppieren
   const gruppen = new Map<string, { art: string; quelle: string; meldung: string; anzahl: number; zuletzt: string; seiten: string[]; geraete: string[]; versionen: string[]; beispiel?: Fehlereintrag }>()
@@ -69,6 +73,7 @@ async function get(req: Request) {
     konten,
     ereignisse,
     fehler: [...gruppen.values()].sort((a, b) => b.zuletzt.localeCompare(a.zuletzt)),
+    tests,
     kontingent: {
       anmeldemails: await anzahlIm('alle-mails', TAG), anmeldemailsMax: 80,
       rueckmeldungen: await anzahlIm('rm-alle', TAG), rueckmeldungenMax: 15,
